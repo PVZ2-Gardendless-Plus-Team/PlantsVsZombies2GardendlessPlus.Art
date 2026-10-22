@@ -1,0 +1,4926 @@
+{
+ "armors_BasicBucketARMOR": {
+  "path": "armors/BasicBucketARMOR",
+  "uuid": "38d0503b-d72e-45e2-b45f-bbe56db32ee8",
+  "type": "cc.Prefab",
+  "skeleton": "ZombieAnimate",
+  "frame_rate": 30,
+  "armature": "Bucket",
+  "armatures": [
+   {
+    "name": "BasicZombie",
+    "bones": 30,
+    "slots": 26,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTube",
+    "bones": 37,
+    "slots": 37,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "FlagZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "head",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "arm",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "Cone",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bucket",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bricks",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "RallyZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeFlag",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeRally",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "BricksDrop",
+    "bones": 2,
+    "slots": 4,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "ZombieAnimate",
+   "image": "ZombieAnimate_tex.png",
+   "size": [
+    1024,
+    512
+   ],
+   "regions": 55
+  },
+  "textures": [
+   "e5e6e663-06a3-4ff8-a2ae-b5a35e821ed5.png"
+  ]
+ },
+ "armors_BasicConeARMOR": {
+  "path": "armors/BasicConeARMOR",
+  "uuid": "ca0e6958-414d-4211-bc2f-bec6feb2441a",
+  "type": "cc.Prefab",
+  "skeleton": "ZombieAnimate",
+  "frame_rate": 30,
+  "armature": "Cone",
+  "armatures": [
+   {
+    "name": "BasicZombie",
+    "bones": 30,
+    "slots": 26,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTube",
+    "bones": 37,
+    "slots": 37,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "FlagZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "head",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "arm",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "Cone",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bucket",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bricks",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "RallyZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeFlag",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeRally",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "BricksDrop",
+    "bones": 2,
+    "slots": 4,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "ZombieAnimate",
+   "image": "ZombieAnimate_tex.png",
+   "size": [
+    1024,
+    512
+   ],
+   "regions": 55
+  },
+  "textures": [
+   "e5e6e663-06a3-4ff8-a2ae-b5a35e821ed5.png"
+  ]
+ },
+ "lawns_TutorialLAWN": {
+  "path": "lawns/TutorialLAWN",
+  "uuid": "19bc1ee5-0090-431d-9e29-6b3e058711b7",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 30,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 5,
+    "slots": 4,
+    "animations": [
+     "row0",
+     "row1",
+     "row3",
+     "row5"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Row5",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Row3",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Row1",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "SodRoll",
+    "bones": 8,
+    "slots": 11,
+    "animations": [
+     "Play"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 16
+  },
+  "textures": [
+   "4d737c62-4e44-42e6-a4ab-313fa745e20a.png"
+  ]
+ },
+ "plants_PeashooterPLANT": {
+  "path": "plants/PeashooterPLANT",
+  "uuid": "0327f954-d401-4fe7-a6e1-ffd5c1beca9e",
+  "type": "cc.Prefab",
+  "skeleton": "PlantAnimate",
+  "frame_rate": 24,
+  "armature": "Peashooter",
+  "armatures": [
+   {
+    "name": "Peashooter",
+    "bones": 26,
+    "slots": 38,
+    "animations": [
+     "Idle",
+     "Shoot",
+     "Death",
+     "Food",
+     "Water",
+     "Random"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PlantAnimate",
+   "image": "PlantAnimate_tex.png",
+   "size": [
+    512,
+    512
+   ],
+   "regions": 41
+  },
+  "textures": [
+   "70911506-154e-43ab-8809-bbbcd09c1dd4.png"
+  ]
+ },
+ "plants_PotatoMinePLANT": {
+  "path": "plants/PotatoMinePLANT",
+  "uuid": "668b1eb0-4107-401e-b8cb-2692fd30186e",
+  "type": "cc.Prefab",
+  "skeleton": "PlantAnimate",
+  "frame_rate": 30,
+  "armature": "PotatoMine",
+  "armatures": [
+   {
+    "name": "PotatoMine",
+    "bones": 26,
+    "slots": 29,
+    "animations": [
+     "Idle",
+     "Idle_Baby",
+     "Grow",
+     "Charging",
+     "Food",
+     "Flying",
+     "Spawn",
+     "Water",
+     "Death_Baby",
+     "Spawn_Baby",
+     "LeapEnd"
+    ]
+   },
+   {
+    "name": "ExplosionSpudow",
+    "bones": 10,
+    "slots": 8,
+    "animations": [
+     "Explode"
+    ]
+   },
+   {
+    "name": "Explosion",
+    "bones": 9,
+    "slots": 7,
+    "animations": [
+     "Explode"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PlantAnimate",
+   "image": "PlantAnimate_tex.png",
+   "size": [
+    1024,
+    512
+   ],
+   "regions": 33
+  },
+  "region_coverage": 1.0,
+  "textures": [
+   "a2b7fa28-e8bf-4cae-ac22-54a015693597.png"
+  ]
+ },
+ "plants_SunflowerPLANT": {
+  "path": "plants/SunflowerPLANT",
+  "uuid": "121e5187-f232-40b8-961b-63a3ae9d754b",
+  "type": "cc.Prefab",
+  "skeleton": "PlantAnimate",
+  "frame_rate": 30,
+  "armature": "Sunflower",
+  "armatures": [
+   {
+    "name": "Sunflower",
+    "bones": 21,
+    "slots": 28,
+    "animations": [
+     "Produce",
+     "Death",
+     "Food",
+     "Water",
+     "Idle",
+     "Rand2",
+     "Rand1"
+    ]
+   },
+   {
+    "name": "cos3",
+    "bones": 1,
+    "slots": 8,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "cos4",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PlantAnimate",
+   "image": "PlantAnimate_tex.png",
+   "size": [
+    256,
+    512
+   ],
+   "regions": 28
+  },
+  "textures": [
+   "618695df-2a0b-4247-b54e-c2c8051a2331.png"
+  ]
+ },
+ "plants_WallnutPLANT": {
+  "path": "plants/WallnutPLANT",
+  "uuid": "6b09a12b-16d5-4a3d-82d6-ff799bd75ec3",
+  "type": "cc.Prefab",
+  "skeleton": "PlantAnimate",
+  "frame_rate": 30,
+  "armature": "Wall-nut",
+  "armatures": [
+   {
+    "name": "Wall-nut",
+    "bones": 19,
+    "slots": 25,
+    "animations": [
+     "Idle1",
+     "Rand11",
+     "Rand12",
+     "Idle2",
+     "Idle3",
+     "Idle4",
+     "Death4",
+     "Death1",
+     "Death2",
+     "Death3",
+     "Food",
+     "Water"
+    ]
+   },
+   {
+    "name": "Bowling",
+    "bones": 16,
+    "slots": 12,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "BowlingMega",
+    "bones": 16,
+    "slots": 12,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PlantAnimate",
+   "image": "PlantAnimate_tex.png",
+   "size": [
+    512,
+    1024
+   ],
+   "regions": 37
+  },
+  "textures": [
+   "3dae2989-a1db-4f3b-a1b9-ba2c08e7c199.png"
+  ]
+ },
+ "projectiles_Pea0PRJ": {
+  "path": "projectiles/Pea0PRJ",
+  "uuid": "2c3dbb49-a5b0-46c0-a6ac-2d07d77b6ad9",
+  "type": "cc.Prefab",
+  "skeleton": "PrjGroup",
+  "frame_rate": 24,
+  "armature": "pea0",
+  "armatures": [
+   {
+    "name": "par0",
+    "bones": 12,
+    "slots": 4,
+    "animations": [
+     "Play",
+     "Play1",
+     "Play2"
+    ]
+   },
+   {
+    "name": "pea0",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "pea_g",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "par_g",
+    "bones": 17,
+    "slots": 8,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "pea1",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "pea2",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "par2",
+    "bones": 25,
+    "slots": 16,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "par1",
+    "bones": 13,
+    "slots": 5,
+    "animations": [
+     "Play",
+     "Play1",
+     "Play2"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PrjGroup",
+   "image": "PrjGroup_tex.png",
+   "size": [
+    512,
+    512
+   ],
+   "regions": 27
+  },
+  "textures": [
+   "74e13133-a9d5-410c-a555-3ddb8a88947c.png"
+  ]
+ },
+ "zombies_BasicZOMBIE": {
+  "path": "zombies/BasicZOMBIE",
+  "uuid": "ef60bc45-ded6-4c8f-9130-4a9e25c9b995",
+  "type": "cc.Prefab",
+  "skeleton": "ZombieAnimate",
+  "frame_rate": 30,
+  "armature": "BasicZombie",
+  "armatures": [
+   {
+    "name": "BasicZombie",
+    "bones": 30,
+    "slots": 26,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTube",
+    "bones": 37,
+    "slots": 37,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "FlagZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "head",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "arm",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "Cone",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bucket",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "Bricks",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   },
+   {
+    "name": "RallyZombie",
+    "bones": 34,
+    "slots": 31,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeFlag",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "DuckyTubeRally",
+    "bones": 40,
+    "slots": 42,
+    "animations": [
+     "Idle",
+     "Eat",
+     "Death",
+     "_Walk",
+     "Walk"
+    ]
+   },
+   {
+    "name": "BricksDrop",
+    "bones": 2,
+    "slots": 4,
+    "animations": [
+     "Broken0",
+     "Broken1",
+     "Broken2"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "ZombieAnimate",
+   "image": "ZombieAnimate_tex.png",
+   "size": [
+    1024,
+    512
+   ],
+   "regions": 55
+  },
+  "textures": [
+   "e5e6e663-06a3-4ff8-a2ae-b5a35e821ed5.png"
+  ]
+ },
+ "lawns_ArenaLAWN": {
+  "path": "lawns/ArenaLAWN",
+  "uuid": "15efaddb-244a-4b90-86d2-d9e413fef75a",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "fd2e9cdd-a8c8-4c1a-97f8-c3e033da98f9.png"
+  ]
+ },
+ "lawns_BeachLAWN": {
+  "path": "lawns/BeachLAWN",
+  "uuid": "69c7b99d-c727-4bc4-81cf-40ddbce3833a",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 30,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "rockThere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "rockHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "665044ef-022d-4ce9-ad21-a65efc1fdbad.png"
+  ]
+ },
+ "lawns_CowboyLAWN": {
+  "path": "lawns/CowboyLAWN",
+  "uuid": "a8b0fa4e-51a9-46ad-9718-c4863534c707",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "76151ddc-679f-4428-8c54-043d650e1258.png"
+  ]
+ },
+ "lawns_DarkLAWN": {
+  "path": "lawns/DarkLAWN",
+  "uuid": "adbbd41b-b16b-4bbf-95c1-49db95ee5c28",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 30,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "LawnUpper",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fire",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "fire"
+    ]
+   },
+   {
+    "name": "Sparkles",
+    "bones": 11,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "LawnUpperThere",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "_lantern",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "_firefly",
+    "bones": 11,
+    "slots": 3,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 13
+  },
+  "textures": [
+   "81007ff5-005c-4468-8a68-2804f580351a.png"
+  ]
+ },
+ "lawns_DinoLAWN": {
+  "path": "lawns/DinoLAWN",
+  "uuid": "8d378b06-44f3-434e-82c2-ac7462f9a776",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "624119c4-9472-4e64-85f6-8b7c4003c673.png"
+  ]
+ },
+ "lawns_EgyptLAWN": {
+  "path": "lawns/EgyptLAWN",
+  "uuid": "1b8afad1-e171-406a-abd6-570bb5974bb4",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "d3b1a43c-5dbb-4fe9-adc3-97c56fe92b07.png"
+  ]
+ },
+ "lawns_EgyptNightLAWN": {
+  "path": "lawns/EgyptNightLAWN",
+  "uuid": "fb4ea12f-a87b-468d-ac99-94a6aa5986de",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouperNight",
+  "frame_rate": 24,
+  "armature": "Lawn_Night",
+  "armatures": [
+   {
+    "name": "Lawn_Night",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper_Night",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere_Night",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouperNight",
+   "image": "LawnGrouperNight_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "d9f6475d-6fd2-4843-b94a-38aba4786a16.png"
+  ]
+ },
+ "lawns_EightiesLAWN": {
+  "path": "lawns/EightiesLAWN",
+  "uuid": "2175833c-31c0-4b29-98fe-7c84c4aa3403",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "a9359116-c226-4c02-9505-ba6de028f826.png"
+  ]
+ },
+ "lawns_FrontyardBeachLAWN": {
+  "path": "lawns/FrontyardBeachLAWN",
+  "uuid": "b72c7b76-c206-48a7-a8a5-7eae64f6fb52",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "a18f485f-5942-4f6a-abbe-61371b10683d.png"
+  ]
+ },
+ "lawns_FrontyardBirthdayLAWN": {
+  "path": "lawns/FrontyardBirthdayLAWN",
+  "uuid": "088fef8d-df29-43df-8ae0-a07b3f566eeb",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "8a78a4a8-c14e-4b71-aa1a-359d6af6f229.png"
+  ]
+ },
+ "lawns_FrontyardCircusLAWN": {
+  "path": "lawns/FrontyardCircusLAWN",
+  "uuid": "e1e3065e-2d9e-4f04-becd-2e7b23fc12e9",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 30,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 8,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    2048
+   ],
+   "regions": 2
+  },
+  "textures": [
+   "24811089-f3d2-4a3c-a059-7793012a2b64.png"
+  ]
+ },
+ "lawns_FrontyardDarkLAWN": {
+  "path": "lawns/FrontyardDarkLAWN",
+  "uuid": "d8fc2bff-6868-4ea1-9249-b4dd48f1a6df",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "8ed80740-3ce7-4ee1-822f-b84db8077661.png"
+  ]
+ },
+ "lawns_FrontyardDinoLAWN": {
+  "path": "lawns/FrontyardDinoLAWN",
+  "uuid": "e9351ef0-fb45-4a66-ad7a-994fe9cec1e0",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "e8cd05af-e3b6-4109-bc56-38db117fdc28.png"
+  ]
+ },
+ "lawns_FrontyardEightiesLAWN": {
+  "path": "lawns/FrontyardEightiesLAWN",
+  "uuid": "dd10e50b-debb-4c89-b325-1f1c6db0aa14",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "f758a3ec-16d4-4276-9647-f02ee0f2bcc8.png"
+  ]
+ },
+ "lawns_FrontyardFallsLAWN": {
+  "path": "lawns/FrontyardFallsLAWN",
+  "uuid": "523ea857-686f-47e4-9f43-d11b9494f716",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "39ae959f-a41e-43a5-92c5-db536790f32d.png"
+  ]
+ },
+ "lawns_FrontyardFarmLAWN": {
+  "path": "lawns/FrontyardFarmLAWN",
+  "uuid": "2dbb5595-f165-45e7-b6fb-b3c60ca8a0c4",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "8b2120ca-c712-4b29-935d-df4f3ef9bdf8.png"
+  ]
+ },
+ "lawns_FrontyardFutureLAWN": {
+  "path": "lawns/FrontyardFutureLAWN",
+  "uuid": "62f9632e-1df0-40fe-9c11-2caa8807e674",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 28,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 8
+  },
+  "textures": [
+   "5e33b9d1-b95b-4c59-a384-b768e1c9c3ea.png"
+  ]
+ },
+ "lawns_FrontyardHalloweenLAWN": {
+  "path": "lawns/FrontyardHalloweenLAWN",
+  "uuid": "a629380b-a6f3-4380-9f7f-1f86d3654341",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "bbce4a18-ac0f-4f0d-be61-55b97c0b91aa.png"
+  ]
+ },
+ "lawns_FrontyardHeroesLAWN": {
+  "path": "lawns/FrontyardHeroesLAWN",
+  "uuid": "05b4715f-a1db-4f06-a250-12da86b26009",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "545de3e5-b60a-48b1-87b1-ee218567defc.png"
+  ]
+ },
+ "lawns_FrontyardIceageLAWN": {
+  "path": "lawns/FrontyardIceageLAWN",
+  "uuid": "e5d2b086-5d3c-4d91-988b-359c186a65f3",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "d18678ae-28b0-4e80-8420-4f87e010f430.png"
+  ]
+ },
+ "lawns_FrontyardLostCityLAWN": {
+  "path": "lawns/FrontyardLostCityLAWN",
+  "uuid": "57d18e95-1c28-49e6-ac66-747be06cbb3e",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "afed7add-acf1-4562-bb55-ac4568ebd819.png"
+  ]
+ },
+ "lawns_FrontyardLunarLAWN": {
+  "path": "lawns/FrontyardLunarLAWN",
+  "uuid": "ac4dd5a8-aa0c-4883-be23-18f06316482b",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "0f69e983-00fa-4f2c-8ca6-753b029d44a0.png"
+  ]
+ },
+ "lawns_FrontyardNightLAWN": {
+  "path": "lawns/FrontyardNightLAWN",
+  "uuid": "7c0fd445-bd17-4cd2-a721-1f1cede85ffd",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "75bf58ef-bf6a-4fc0-b819-58a5b0de108a.png"
+  ]
+ },
+ "lawns_FrontyardPaddysLAWN": {
+  "path": "lawns/FrontyardPaddysLAWN",
+  "uuid": "fc6d5a4b-4e78-4bed-b708-98494d7c58cd",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "6f68480b-9acf-4acd-a6dc-3ae56dfebe25.png"
+  ]
+ },
+ "lawns_FrontyardSportzBallLAWN": {
+  "path": "lawns/FrontyardSportzBallLAWN",
+  "uuid": "e5738b37-3283-4821-ac10-aaf7eb0eb575",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 6
+  },
+  "textures": [
+   "dcec3220-7c8d-4068-adfa-1a49d5d7600d.png"
+  ]
+ },
+ "lawns_FrontyardSpringLAWN": {
+  "path": "lawns/FrontyardSpringLAWN",
+  "uuid": "4e245866-ec9b-4f16-a836-cccdbf3beedb",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 6
+  },
+  "textures": [
+   "fabce6a6-b6cc-4331-98fa-c9d941a71c11.png"
+  ]
+ },
+ "lawns_FrontyardSummerNightLAWN": {
+  "path": "lawns/FrontyardSummerNightLAWN",
+  "uuid": "1fc9312e-80a8-4e75-86eb-8534bcd34a55",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "e79ae850-3389-4f10-bd7b-a1473ce947eb.png"
+  ]
+ },
+ "lawns_FrontyardValentinesLAWN": {
+  "path": "lawns/FrontyardValentinesLAWN",
+  "uuid": "f14375c0-10a2-4d91-b450-52b0a8e4799d",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "387b798e-134f-4030-8c64-ca7b75ee40d6.png"
+  ]
+ },
+ "lawns_FrontyardXmasLAWN": {
+  "path": "lawns/FrontyardXmasLAWN",
+  "uuid": "8e0a0150-c50e-404e-8be9-bc98dd624238",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "81fa5f36-aad5-4bc7-a2e6-72349e7643c0.png"
+  ]
+ },
+ "lawns_FrontyardXmasNightLAWN": {
+  "path": "lawns/FrontyardXmasNightLAWN",
+  "uuid": "32994f58-ce69-4c2f-9d77-1565804537d4",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperHere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "90f2d18b-e4a7-4bfc-8ea6-bb967cb1de8e.png"
+  ]
+ },
+ "lawns_FutureLAWN": {
+  "path": "lawns/FutureLAWN",
+  "uuid": "1b6cd8d7-d2dc-45d5-9014-156edd59d298",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "07b5e25b-973c-4fbc-894b-8a9c8fb3bb10.png"
+  ]
+ },
+ "lawns_FutureNightLAWN": {
+  "path": "lawns/FutureNightLAWN",
+  "uuid": "ed64695a-57dd-474d-8d6e-78e38138404e",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouperNight",
+  "frame_rate": 24,
+  "armature": "LawnNight",
+  "armatures": [
+   {
+    "name": "LawnNight",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperNight",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThereNight",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouperNight",
+   "image": "LawnGrouperNight_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "8a73d431-1b8c-40d4-92cd-cec8dc0e0bdc.png"
+  ]
+ },
+ "lawns_GreenLAWN": {
+  "path": "lawns/GreenLAWN",
+  "uuid": "f02ec4fc-bdec-4762-8d42-24fcd55d9a27",
+  "type": "cc.Prefab",
+  "skeleton": "SeedPacker",
+  "frame_rate": 30,
+  "armature": "Card",
+  "armatures": [
+   {
+    "name": "Card",
+    "bones": 1,
+    "slots": 8,
+    "animations": [
+     "Idle",
+     "Dark",
+     "Chosen"
+    ]
+   },
+   {
+    "name": "plants",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "banana",
+     "applemortar",
+     "aloe",
+     "akee",
+     "xshot",
+     "witchhazel",
+     "wintermelon",
+     "wasabiwhip",
+     "wallnut",
+     "twinsunflower",
+     "torchwood",
+     "toadstool",
+     "thymewarp",
+     "threepeater",
+     "tanglekelp",
+     "tallnut",
+     "tacticalcuke",
+     "sweetpotato",
+     "sunshroom",
+     "sunflower",
+     "sunbean",
+     "stunion",
+     "strawburst",
+     "starfruit",
+     "stallia",
+     "squash",
+     "springbean",
+     "sporeshroom",
+     "splitpea",
+     "spikeweed",
+     "spikerock",
+     "snowpea",
+     "snapdragon",
+     "shrinkingviolet",
+     "shadowshroom",
+     "sapfling",
+     "repeater",
+     "redstinger",
+     "puffshroom",
+     "projectile_bowlingbulb_mega",
+     "projectile_bowlingbulb_explode",
+     "projectile_bowlingbulb3",
+     "projectile_bowlingbulb2",
+     "projectile_bowlingbulb1",
+     "primalwallnut",
+     "primalsunflower",
+     "primalpotatomine",
+     "primalpeashooter",
+     "powertile_gamma",
+     "powertile_delta",
+     "powertile_beta",
+     "powertile_alpha",
+     "powerlily",
+     "potatomine",
+     "phatbeet",
+     "perfumeshroom",
+     "pepperpult",
+     "peashooter",
+     "peapod",
+     "peanut",
+     "parsnip",
+     "nightshade",
+     "moonflower",
+     "missiletoe",
+     "melonpult",
+     "marigold",
+     "magnifyinggrass",
+     "lilypad",
+     "lightningreed",
+     "lavaguava",
+     "laserbean",
+     "magnetshroom",
+     "kiwibeast",
+     "kernelpult",
+     "jalapeno",
+     "jackolantern",
+     "intensivecarrot",
+     "imitator",
+     "icycurrant",
+     "iceburg",
+     "hypnoshroom",
+     "hurrikale",
+     "hotpotato",
+     "homingthistle",
+     "holonut",
+     "guacodile",
+     "grimrose",
+     "gravebuster",
+     "grapeshot",
+     "goldleaf",
+     "goldbloom",
+     "ghostpepper",
+     "garlic",
+     "fumeshroom",
+     "firepeashooter",
+     "explodeonut",
+     "escaperoot",
+     "endurian",
+     "empeach",
+     "electriccurrant",
+     "electricblueberry",
+     "dusklobber",
+     "dandelion",
+     "coldsnapdragon",
+     "coconutcannon",
+     "citron",
+     "chomper",
+     "chilibean",
+     "cherribomb",
+     "chardguard",
+     "celerystalker",
+     "cactus",
+     "cabbagepult",
+     "bowlingbulb",
+     "bonkchoy",
+     "bombegranate",
+     "blover",
+     "bloomingheart",
+     "bloomerang",
+     "zoybeanpod",
+     "turkeypult",
+     "stickybombrice",
+     "solarsage",
+     "slingpea",
+     "shadowpeashooter",
+     "pyrevine",
+     "puffball",
+     "pokra",
+     "olivepit",
+     "murkadamianut",
+     "levitator",
+     "imppear",
+     "hotdate",
+     "hocuscrocus",
+     "headbutterlettuce",
+     "gloomvine",
+     "electricpeashooter",
+     "draftodil",
+     "dartichoke",
+     "buttercup",
+     "bommballoonflower",
+     "blockoli",
+     "blastberrivine",
+     "boingsetta",
+     "bramblebush",
+     "caulipower",
+     "dazeychain",
+     "electricitea",
+     "explodeovine",
+     "gumnut",
+     "heathseeker",
+     "hollybarrier",
+     "icebloom",
+     "inferno",
+     "megagatlingpea",
+     "noctarine",
+     "peavine",
+     "powervine",
+     "pumpkinhead",
+     "rhubarbarian",
+     "shinevine",
+     "snappea",
+     "solartomato",
+     "teleportatomine",
+     "tumbleweed",
+     "ultomato",
+     "goopeashooter",
+     "iceweed",
+     "mint_sun",
+     "mint_slow",
+     "mint_sharp",
+     "mint_shadow",
+     "mint_poison",
+     "mint_peashooter",
+     "mint_melee",
+     "mint_magic",
+     "mint_lobber",
+     "mint_fire",
+     "mint_explosive",
+     "mint_electric",
+     "mint_defence",
+     "mint_cold",
+     "scaredyShroom",
+     "floawerPot",
+     "shootingstarfruit",
+     "dragonbruit",
+     "meteorflower",
+     "umbrella",
+     "glacierShroom",
+     "doomshroom",
+     "cranjelly",
+     "dragonbruitBaby",
+     "vamporcini",
+     "gatlingpea",
+     "gloomshroom",
+     "plantern",
+     "heavenlypeach",
+     "turnip",
+     "powerplant_alpha",
+     "powerplant_beta",
+     "powerplant_delta",
+     "powerplant_gamma",
+     "powerplant_epsilon",
+     "marigold_blue",
+     "marigold_yellow",
+     "marigold_red",
+     "marigold_orange",
+     "marigold_green",
+     "marigold_purple",
+     "marigold_pink",
+     "skyshooter",
+     "potion_speed",
+     "potion_toughness",
+     "potion_invisibility",
+     "projectile_bowlingbulb_iceburg",
+     "seashroom",
+     "moonbean",
+     "firegourd",
+     "bambooshoot",
+     "snowdrop",
+     "lychee",
+     "bamboozle",
+     "bamboobusket",
+     "cantaloupepult",
+     "pinkstarfruit",
+     "atombomb",
+     "seedling",
+     "hollyleaf",
+     "hollyleaf_pf",
+     "seashooter",
+     "asparagus",
+     "pineapple",
+     "anthurium",
+     "bulbkekengi",
+     "loquat",
+     "peacommando",
+     "darkmatterdragonfruit",
+     "mirrornut",
+     "chillypepper",
+     "lotorpedo",
+     "firepeashooter_mgp",
+     "goopeashooter_mgp",
+     "snowpea_mgp",
+     "primalpeashooter_mgp",
+     "electricpeashooter_mgp",
+     "shadowpeashooter_mgp",
+     "threepeater_mgp",
+     "repeater_mgp",
+     "splitpea_mgp",
+     "slingpea_mgp",
+     "peapod_mgp",
+     "seashooter_mgp",
+     "snappea_mgp",
+     "skyshooter_mgp",
+     "gatlingpea_mgp",
+     "peacommando_mgp"
+    ]
+   },
+   {
+    "name": "background",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "beach",
+     "modern",
+     "egypt",
+     "pirate",
+     "cowboy",
+     "future",
+     "dark",
+     "ice",
+     "lostcity",
+     "eighties",
+     "dino",
+     "frontyard",
+     "homeless",
+     "prenium",
+     "kongfu",
+     "epic",
+     "sky",
+     "classic",
+     "boost",
+     "mint",
+     "lod"
+    ]
+   },
+   {
+    "name": "upper_dots",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "dotsNoPrice",
+     "dotPrice",
+     "dotsPricePremium",
+     "dotsPriceLod"
+    ]
+   },
+   {
+    "name": "disallow",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "disallow",
+     "lock_medium",
+     "lock_golden",
+     "nope"
+    ]
+   },
+   {
+    "name": "lv",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Nope",
+     "Wood",
+     "Silver",
+     "Gold",
+     "Star"
+    ]
+   },
+   {
+    "name": "family",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "Nope",
+     "Cold",
+     "Electricity",
+     "Fire",
+     "Magic",
+     "Peashooter",
+     "Shadow",
+     "Slow",
+     "Trap",
+     "Sun",
+     "Sharp",
+     "Poison",
+     "Defence",
+     "Explosive",
+     "Lobber",
+     "Melee"
+    ]
+   },
+   {
+    "name": "powerups",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "normal",
+     "prenium"
+    ]
+   },
+   {
+    "name": "emptyslot",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "emptyslot"
+    ]
+   },
+   {
+    "name": "selection",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "nope",
+     "point",
+     "select"
+    ]
+   },
+   {
+    "name": "dots_lower",
+    "bones": 1,
+    "slots": 11,
+    "animations": [
+     "newAnimation"
+    ]
+   },
+   {
+    "name": "sign",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "none",
+     "fault",
+     "change",
+     "correct",
+     "half"
+    ]
+   },
+   {
+    "name": "cooldown",
+    "bones": 5,
+    "slots": 4,
+    "animations": [
+     "P",
+     "N"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "SeedPacker",
+   "image": "SeedPacker_tex.png",
+   "size": [
+    2048,
+    4096
+   ],
+   "regions": 317
+  },
+  "textures": [
+   "3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png"
+  ]
+ },
+ "lawns_IceageLAWN": {
+  "path": "lawns/IceageLAWN",
+  "uuid": "26c63b17-210e-48c4-95b0-8c6e21625b03",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 8
+  },
+  "textures": [
+   "cfba9cd2-dde8-467d-888d-7c98479715c1.png"
+  ]
+ },
+ "lawns_IceageUltLAWN": {
+  "path": "lawns/IceageUltLAWN",
+  "uuid": "3da4b338-8bab-4ef1-b4d2-6f3a8ce41dd8",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouperUlt",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouperUlt",
+   "image": "LawnGrouperUlt_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 7
+  },
+  "textures": [
+   "922a9100-f107-4ab1-9e4a-3b8c307d5379.png"
+  ]
+ },
+ "lawns_KongfuLAWN": {
+  "path": "lawns/KongfuLAWN",
+  "uuid": "21aa9e6d-66bc-4eed-84eb-31db71609d32",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "LawnBoss",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "ThereBoss",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 12
+  },
+  "textures": [
+   "0480cf0a-019a-4454-9e80-26beb84b139d.png"
+  ]
+ },
+ "lawns_KongfuVeteranLAWN": {
+  "path": "lawns/KongfuVeteranLAWN",
+  "uuid": "62cab998-8fb0-4057-9aea-b4f1acba07dd",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "LawnBoss",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "LawnBoss",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Here",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "There",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "ThereBoss",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "i"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 12
+  },
+  "textures": [
+   "0480cf0a-019a-4454-9e80-26beb84b139d.png"
+  ]
+ },
+ "lawns_LostCityLAWN": {
+  "path": "lawns/LostCityLAWN",
+  "uuid": "e8e1bf5f-d2c0-481c-878c-85ac9817379e",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "12f1760a-154a-48ea-ba31-9e1ca81ca55b.png"
+  ]
+ },
+ "lawns_LostCityNightLAWN": {
+  "path": "lawns/LostCityNightLAWN",
+  "uuid": "015f6894-ca7b-4943-bac6-dd32d4ca028c",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouperNight",
+  "frame_rate": 24,
+  "armature": "LawnNight",
+  "armatures": [
+   {
+    "name": "LawnNight",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperNight",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouperNight",
+   "image": "LawnGrouperNight_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "252aed17-680a-4a57-8f34-5305212a4a47.png"
+  ]
+ },
+ "lawns_LostCityVolcanoLAWN": {
+  "path": "lawns/LostCityVolcanoLAWN",
+  "uuid": "d62c6ddb-30d9-47b9-a3ad-5c866dd3ec5e",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouperVolcano",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 3,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouperVolcano",
+   "image": "LawnGrouperVolcano_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 4
+  },
+  "textures": [
+   "a2c38f3a-d43b-44a4-a487-a87fc3390d99.png"
+  ]
+ },
+ "lawns_ModernLAWN": {
+  "path": "lawns/ModernLAWN",
+  "uuid": "063aa539-047b-4a67-b5f0-a243e7344818",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 30,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 5,
+    "slots": 4,
+    "animations": [
+     "row0",
+     "row1",
+     "row3",
+     "row5"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Row5",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Row3",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "Row1",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "i"
+    ]
+   },
+   {
+    "name": "SodRoll",
+    "bones": 8,
+    "slots": 11,
+    "animations": [
+     "Play"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 16
+  },
+  "textures": [
+   "4d737c62-4e44-42e6-a4ab-313fa745e20a.png"
+  ]
+ },
+ "lawns_PersuitLAWN": {
+  "path": "lawns/PersuitLAWN",
+  "uuid": "4acadc22-87bb-4f0b-b3bd-de5b6c8a4fcd",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    2048
+   ],
+   "regions": 1
+  },
+  "textures": [
+   "dc97c59f-957c-4968-9e86-0d7fa3ced9a3.png"
+  ]
+ },
+ "lawns_PirateLAWN": {
+  "path": "lawns/PirateLAWN",
+  "uuid": "f1a58596-75e0-470b-873a-3ae0e95b98f9",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 24,
+  "armature": "Lawn",
+  "armatures": [
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 13,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "idleWater",
+    "bones": 6,
+    "slots": 5,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "idleWaves",
+    "bones": 17,
+    "slots": 16,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Deck0",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Off",
+     "On"
+    ]
+   },
+   {
+    "name": "Deck1",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "On",
+     "Off"
+    ]
+   },
+   {
+    "name": "Deck2",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "On",
+     "Off"
+    ]
+   },
+   {
+    "name": "Deck3",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "On",
+     "Off"
+    ]
+   },
+   {
+    "name": "Deck4",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "On",
+     "Off"
+    ]
+   },
+   {
+    "name": "Upper",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "UpperThere",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "CannonGuide",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 12
+  },
+  "textures": [
+   "fbb61222-8332-4eb4-8a5d-6ee603b3481a.png"
+  ]
+ },
+ "lawns_SkyLAWN": {
+  "path": "lawns/SkyLAWN",
+  "uuid": "af87ce19-5b3b-4770-8ad3-b6d538eb359d",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 15,
+  "armature": "Clouds",
+  "armatures": [
+   {
+    "name": "Clouds",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   },
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanHere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "land_moving",
+    "bones": 8,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanThere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "cloud_moving0",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving1",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving2",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "display",
+    "bones": 1,
+    "slots": 0,
+    "animations": [
+     "newAnimation"
+    ]
+   },
+   {
+    "name": "cloud_moving3",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "Sky",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 14
+  },
+  "textures": [
+   "447233d7-4623-4ba9-945a-fd6e00263cb9.png"
+  ]
+ },
+ "lawns_SkyShiplessLAWN": {
+  "path": "lawns/SkyShiplessLAWN",
+  "uuid": "f73c2f38-a5c4-4a50-bd97-682796262ff2",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 15,
+  "armature": "Clouds",
+  "armatures": [
+   {
+    "name": "Clouds",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   },
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanHere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "land_moving",
+    "bones": 8,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanThere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "cloud_moving0",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving1",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving2",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "display",
+    "bones": 1,
+    "slots": 0,
+    "animations": [
+     "newAnimation"
+    ]
+   },
+   {
+    "name": "cloud_moving3",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "Sky",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 14
+  },
+  "textures": [
+   "447233d7-4623-4ba9-945a-fd6e00263cb9.png"
+  ]
+ },
+ "lawns_SkyShiplessNightLAWN": {
+  "path": "lawns/SkyShiplessNightLAWN",
+  "uuid": "ed546f5d-2506-468c-945c-598adf12a3f4",
+  "type": "cc.Prefab",
+  "skeleton": "LawnGrouper",
+  "frame_rate": 15,
+  "armature": "Clouds",
+  "armatures": [
+   {
+    "name": "Clouds",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   },
+   {
+    "name": "Lawn",
+    "bones": 1,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanHere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "land_moving",
+    "bones": 8,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fanThere",
+    "bones": 4,
+    "slots": 6,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "cloud_moving0",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving1",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "cloud_moving2",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "display",
+    "bones": 1,
+    "slots": 0,
+    "animations": [
+     "newAnimation"
+    ]
+   },
+   {
+    "name": "cloud_moving3",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Moving"
+    ]
+   },
+   {
+    "name": "Sky",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Dark"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "LawnGrouper",
+   "image": "LawnGrouper_tex.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "regions": 14
+  },
+  "textures": [
+   "447233d7-4623-4ba9-945a-fd6e00263cb9.png"
+  ]
+ },
+ "projectiles_BeachMowerPRJ": {
+  "path": "projectiles/BeachMowerPRJ",
+  "uuid": "43f27a5a-9202-4e9a-833c-29def1ea3550",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 9,
+    "slots": 11,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   },
+   {
+    "name": "_dirt",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "waterSplash",
+    "bones": 5,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    512,
+    512
+   ],
+   "regions": 17
+  },
+  "textures": [
+   "dde66993-ccc6-46e9-95f5-0ce1f570302b.png"
+  ]
+ },
+ "projectiles_CowboyMowerPRJ": {
+  "path": "projectiles/CowboyMowerPRJ",
+  "uuid": "477b553d-ac32-4742-b91f-d759fa82a088",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 17,
+    "slots": 22,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   },
+   {
+    "name": "_wheel_ro",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    128,
+    256
+   ],
+   "regions": 13
+  },
+  "textures": [
+   "a7969dca-e651-44fc-ab1e-7446cc2fc89d.png"
+  ]
+ },
+ "projectiles_DarkMowerPRJ": {
+  "path": "projectiles/DarkMowerPRJ",
+  "uuid": "6853610e-55b7-42eb-a8f8-bbe5490e509c",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "_dirt",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "Mower",
+    "bones": 9,
+    "slots": 10,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    512
+   ],
+   "regions": 10
+  },
+  "textures": [
+   "a1506e7c-9b58-40a3-a957-c5a3cbd38ba6.png"
+  ]
+ },
+ "projectiles_DinoMowerPRJ": {
+  "path": "projectiles/DinoMowerPRJ",
+  "uuid": "35b70156-9201-4793-8dfd-acafb885a4c1",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 24,
+    "slots": 21,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack",
+     "Idle2"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    256
+   ],
+   "regions": 10
+  },
+  "textures": [
+   "57ce00ab-663e-4af8-9cd2-3e31b7446200.png"
+  ]
+ },
+ "projectiles_EgyptMowerPRJ": {
+  "path": "projectiles/EgyptMowerPRJ",
+  "uuid": "de4b84c1-df7e-43a6-913f-64c36baf8d19",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 11,
+    "slots": 11,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    512,
+    256
+   ],
+   "regions": 11
+  },
+  "textures": [
+   "52c5fe74-6a28-4964-bf4f-146dc1465939.png"
+  ]
+ },
+ "projectiles_EightiesMowerPRJ": {
+  "path": "projectiles/EightiesMowerPRJ",
+  "uuid": "43302cb8-d5ff-4383-aaf5-4f4cd8725acd",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 22,
+    "slots": 19,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    512
+   ],
+   "regions": 18
+  },
+  "textures": [
+   "f53dba20-a093-4108-9c93-9266c4e9162c.png"
+  ]
+ },
+ "projectiles_FutureMowerPRJ": {
+  "path": "projectiles/FutureMowerPRJ",
+  "uuid": "867cec64-60c3-4d27-a58e-53a8d576d7e9",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 7,
+    "slots": 6,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   },
+   {
+    "name": "_engine",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "_engine_powered",
+    "bones": 2,
+    "slots": 3,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    512
+   ],
+   "regions": 8
+  },
+  "textures": [
+   "d9754128-e5ee-4a37-9bbd-ad3b4847fc5b.png"
+  ]
+ },
+ "projectiles_IceageMowerPRJ": {
+  "path": "projectiles/IceageMowerPRJ",
+  "uuid": "195d0f36-0fae-4371-a0d5-4d8a82bb3f75",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 21,
+    "slots": 23,
+    "animations": [
+     "Idle",
+     "Attack",
+     "Trans",
+     "Idle2",
+     "Idle3"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    512,
+    512
+   ],
+   "regions": 25
+  },
+  "textures": [
+   "ad0dcd85-c350-4b4b-9e73-e1234b8968a8.png"
+  ]
+ },
+ "projectiles_KongfuMowerPRJ": {
+  "path": "projectiles/KongfuMowerPRJ",
+  "uuid": "bab41417-2462-41be-9896-09594dcd3a2c",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 22,
+    "slots": 22,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    256
+   ],
+   "regions": 9
+  },
+  "textures": [
+   "eb5f982b-7a4b-4df2-b8b0-38d44b550ddf.png"
+  ]
+ },
+ "projectiles_LostcityMowerPRJ": {
+  "path": "projectiles/LostcityMowerPRJ",
+  "uuid": "63b08ebe-3ec5-4146-b2d9-52ee5397b6cb",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 13,
+    "slots": 14,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    256
+   ],
+   "regions": 11
+  },
+  "textures": [
+   "d5a2ec74-61ad-4650-83c3-b5b43846b231.png"
+  ]
+ },
+ "projectiles_ModernMowerPRJ": {
+  "path": "projectiles/ModernMowerPRJ",
+  "uuid": "2fe765ed-b3e0-4057-b246-f9386bedf362",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 19,
+    "slots": 20,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    256
+   ],
+   "regions": 11
+  },
+  "textures": [
+   "6796f968-594b-40c2-a74c-6e41503317a0.png"
+  ]
+ },
+ "projectiles_PirateMowerPRJ": {
+  "path": "projectiles/PirateMowerPRJ",
+  "uuid": "8b9880e3-8b6c-4d12-93e3-e28fb7ffbf69",
+  "type": "cc.Prefab",
+  "skeleton": "MowerAnimate",
+  "frame_rate": 30,
+  "armature": "Mower",
+  "armatures": [
+   {
+    "name": "Mower",
+    "bones": 24,
+    "slots": 27,
+    "animations": [
+     "Idle",
+     "Trans",
+     "Attack"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "MowerAnimate",
+   "image": "MowerAnimate_tex.png",
+   "size": [
+    256,
+    256
+   ],
+   "regions": 26
+  },
+  "textures": [
+   "8ccd81cd-29b6-4d5a-810c-52f398c04dbb.png"
+  ]
+ },
+ "rigs_SunAnimate": {
+  "path": "rig:SunAnimate",
+  "source": "0188bd84b.json",
+  "skeleton": "SunAnimate",
+  "frame_rate": 30,
+  "armature": "Sun",
+  "armatures": [
+   {
+    "name": "Sun",
+    "bones": 4,
+    "slots": 4,
+    "animations": [
+     "Normal",
+     "Red",
+     "Blue",
+     "N-R",
+     "N-B",
+     "B-N",
+     "R-N",
+     "Purple",
+     "P-N"
+    ]
+   },
+   {
+    "name": "Ray",
+    "bones": 6,
+    "slots": 26,
+    "animations": [
+     "Start",
+     "Idle",
+     "Die"
+    ]
+   },
+   {
+    "name": "Foot",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Start",
+     "Idle",
+     "Die"
+    ]
+   },
+   {
+    "name": "Blast",
+    "bones": 17,
+    "slots": 16,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "_ele",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "SunAnimate",
+   "image": "SunAnimate_tex.png",
+   "size": [
+    1024,
+    2048
+   ],
+   "regions": 45
+  },
+  "textures": [
+   "38b7e4c8-06cb-4b3f-baf6-f4214b845c9e.png"
+  ]
+ },
+ "rigs_SunSlot": {
+  "path": "rig:SunSlot",
+  "source": "08ddc9585.json",
+  "skeleton": "SunSlot",
+  "frame_rate": 24,
+  "armature": "SunIcon",
+  "armatures": [
+   {
+    "name": "SunIcon",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "sun",
+     "sunRising"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "SunSlot",
+   "image": "SunSlot_tex.png",
+   "size": [
+    512,
+    256
+   ],
+   "regions": 2
+  },
+  "textures": [
+   "15b5350a-131c-442a-8d4b-f4059f5cd4e0.png"
+  ]
+ },
+ "rigs_Shovel": {
+  "path": "rig:Shovel",
+  "source": "0a9af60a0.json",
+  "skeleton": "Shovel",
+  "frame_rate": 30,
+  "armature": "shovelInHand",
+  "armatures": [
+   {
+    "name": "shovelInHand",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "ShovelInHand"
+    ]
+   },
+   {
+    "name": "shovelButtonNormal",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Pointed",
+     "Chosen",
+     "Idle",
+     "ChosenSunback",
+     "IdleSunback",
+     "PointedSunback"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "Shovel",
+   "image": "Shovel_tex.png",
+   "size": [
+    512,
+    512
+   ],
+   "regions": 7
+  },
+  "textures": [
+   "0649eedc-60e0-488b-85c3-5ccbdc17da2d.png"
+  ]
+ },
+ "rigs_PlantFoodSlot": {
+  "path": "rig:PlantFoodSlot",
+  "source": "058753b6c.json",
+  "skeleton": "PlantFoodSlot",
+  "frame_rate": 24,
+  "armature": "IconCollecting",
+  "armatures": [
+   {
+    "name": "IconCollecting",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "IconCollecting",
+     "Idle"
+    ]
+   },
+   {
+    "name": "plantfoodInSlot",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "Empty",
+     "Collecting",
+     "Filled"
+    ]
+   },
+   {
+    "name": "Icon",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Pushed"
+    ]
+   },
+   {
+    "name": "plantFoodInHand",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "PlantFoodSlot",
+   "image": "PlantFoodSlot_tex.png",
+   "size": [
+    512,
+    256
+   ],
+   "regions": 5
+  },
+  "textures": [
+   "31903480-6140-4ddc-9b4a-a80cf92a977c.png"
+  ]
+ },
+ "rigs_SeedPacker_Card": {
+  "path": "rig:SeedPacker:Card",
+  "source": "0fcfa5147.json",
+  "skeleton": "SeedPacker",
+  "frame_rate": 30,
+  "armature": "Card",
+  "armatures": [
+   {
+    "name": "Card",
+    "bones": 1,
+    "slots": 8,
+    "animations": [
+     "Idle",
+     "Dark",
+     "Chosen"
+    ]
+   },
+   {
+    "name": "plants",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "banana",
+     "applemortar",
+     "aloe",
+     "akee",
+     "xshot",
+     "witchhazel",
+     "wintermelon",
+     "wasabiwhip",
+     "wallnut",
+     "twinsunflower",
+     "torchwood",
+     "toadstool",
+     "thymewarp",
+     "threepeater",
+     "tanglekelp",
+     "tallnut",
+     "tacticalcuke",
+     "sweetpotato",
+     "sunshroom",
+     "sunflower",
+     "sunbean",
+     "stunion",
+     "strawburst",
+     "starfruit",
+     "stallia",
+     "squash",
+     "springbean",
+     "sporeshroom",
+     "splitpea",
+     "spikeweed",
+     "spikerock",
+     "snowpea",
+     "snapdragon",
+     "shrinkingviolet",
+     "shadowshroom",
+     "sapfling",
+     "repeater",
+     "redstinger",
+     "puffshroom",
+     "projectile_bowlingbulb_mega",
+     "projectile_bowlingbulb_explode",
+     "projectile_bowlingbulb3",
+     "projectile_bowlingbulb2",
+     "projectile_bowlingbulb1",
+     "primalwallnut",
+     "primalsunflower",
+     "primalpotatomine",
+     "primalpeashooter",
+     "powertile_gamma",
+     "powertile_delta",
+     "powertile_beta",
+     "powertile_alpha",
+     "powerlily",
+     "potatomine",
+     "phatbeet",
+     "perfumeshroom",
+     "pepperpult",
+     "peashooter",
+     "peapod",
+     "peanut",
+     "parsnip",
+     "nightshade",
+     "moonflower",
+     "missiletoe",
+     "melonpult",
+     "marigold",
+     "magnifyinggrass",
+     "lilypad",
+     "lightningreed",
+     "lavaguava",
+     "laserbean",
+     "magnetshroom",
+     "kiwibeast",
+     "kernelpult",
+     "jalapeno",
+     "jackolantern",
+     "intensivecarrot",
+     "imitator",
+     "icycurrant",
+     "iceburg",
+     "hypnoshroom",
+     "hurrikale",
+     "hotpotato",
+     "homingthistle",
+     "holonut",
+     "guacodile",
+     "grimrose",
+     "gravebuster",
+     "grapeshot",
+     "goldleaf",
+     "goldbloom",
+     "ghostpepper",
+     "garlic",
+     "fumeshroom",
+     "firepeashooter",
+     "explodeonut",
+     "escaperoot",
+     "endurian",
+     "empeach",
+     "electriccurrant",
+     "electricblueberry",
+     "dusklobber",
+     "dandelion",
+     "coldsnapdragon",
+     "coconutcannon",
+     "citron",
+     "chomper",
+     "chilibean",
+     "cherribomb",
+     "chardguard",
+     "celerystalker",
+     "cactus",
+     "cabbagepult",
+     "bowlingbulb",
+     "bonkchoy",
+     "bombegranate",
+     "blover",
+     "bloomingheart",
+     "bloomerang",
+     "zoybeanpod",
+     "turkeypult",
+     "stickybombrice",
+     "solarsage",
+     "slingpea",
+     "shadowpeashooter",
+     "pyrevine",
+     "puffball",
+     "pokra",
+     "olivepit",
+     "murkadamianut",
+     "levitator",
+     "imppear",
+     "hotdate",
+     "hocuscrocus",
+     "headbutterlettuce",
+     "gloomvine",
+     "electricpeashooter",
+     "draftodil",
+     "dartichoke",
+     "buttercup",
+     "bommballoonflower",
+     "blockoli",
+     "blastberrivine",
+     "boingsetta",
+     "bramblebush",
+     "caulipower",
+     "dazeychain",
+     "electricitea",
+     "explodeovine",
+     "gumnut",
+     "heathseeker",
+     "hollybarrier",
+     "icebloom",
+     "inferno",
+     "megagatlingpea",
+     "noctarine",
+     "peavine",
+     "powervine",
+     "pumpkinhead",
+     "rhubarbarian",
+     "shinevine",
+     "snappea",
+     "solartomato",
+     "teleportatomine",
+     "tumbleweed",
+     "ultomato",
+     "goopeashooter",
+     "iceweed",
+     "mint_sun",
+     "mint_slow",
+     "mint_sharp",
+     "mint_shadow",
+     "mint_poison",
+     "mint_peashooter",
+     "mint_melee",
+     "mint_magic",
+     "mint_lobber",
+     "mint_fire",
+     "mint_explosive",
+     "mint_electric",
+     "mint_defence",
+     "mint_cold",
+     "scaredyShroom",
+     "floawerPot",
+     "shootingstarfruit",
+     "dragonbruit",
+     "meteorflower",
+     "umbrella",
+     "glacierShroom",
+     "doomshroom",
+     "cranjelly",
+     "dragonbruitBaby",
+     "vamporcini",
+     "gatlingpea",
+     "gloomshroom",
+     "plantern",
+     "heavenlypeach",
+     "turnip",
+     "powerplant_alpha",
+     "powerplant_beta",
+     "powerplant_delta",
+     "powerplant_gamma",
+     "powerplant_epsilon",
+     "marigold_blue",
+     "marigold_yellow",
+     "marigold_red",
+     "marigold_orange",
+     "marigold_green",
+     "marigold_purple",
+     "marigold_pink",
+     "skyshooter",
+     "potion_speed",
+     "potion_toughness",
+     "potion_invisibility",
+     "projectile_bowlingbulb_iceburg",
+     "seashroom",
+     "moonbean",
+     "firegourd",
+     "bambooshoot",
+     "snowdrop",
+     "lychee",
+     "bamboozle",
+     "bamboobusket",
+     "cantaloupepult",
+     "pinkstarfruit",
+     "atombomb",
+     "seedling",
+     "hollyleaf",
+     "hollyleaf_pf",
+     "seashooter",
+     "asparagus",
+     "pineapple",
+     "anthurium",
+     "bulbkekengi",
+     "loquat",
+     "peacommando",
+     "darkmatterdragonfruit",
+     "mirrornut",
+     "chillypepper",
+     "lotorpedo",
+     "firepeashooter_mgp",
+     "goopeashooter_mgp",
+     "snowpea_mgp",
+     "primalpeashooter_mgp",
+     "electricpeashooter_mgp",
+     "shadowpeashooter_mgp",
+     "threepeater_mgp",
+     "repeater_mgp",
+     "splitpea_mgp",
+     "slingpea_mgp",
+     "peapod_mgp",
+     "seashooter_mgp",
+     "snappea_mgp",
+     "skyshooter_mgp",
+     "gatlingpea_mgp",
+     "peacommando_mgp"
+    ]
+   },
+   {
+    "name": "background",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "beach",
+     "modern",
+     "egypt",
+     "pirate",
+     "cowboy",
+     "future",
+     "dark",
+     "ice",
+     "lostcity",
+     "eighties",
+     "dino",
+     "frontyard",
+     "homeless",
+     "prenium",
+     "kongfu",
+     "epic",
+     "sky",
+     "classic",
+     "boost",
+     "mint",
+     "lod"
+    ]
+   },
+   {
+    "name": "upper_dots",
+    "bones": 1,
+    "slots": 2,
+    "animations": [
+     "dotsNoPrice",
+     "dotPrice",
+     "dotsPricePremium",
+     "dotsPriceLod"
+    ]
+   },
+   {
+    "name": "disallow",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "disallow",
+     "lock_medium",
+     "lock_golden",
+     "nope"
+    ]
+   },
+   {
+    "name": "lv",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Nope",
+     "Wood",
+     "Silver",
+     "Gold",
+     "Star"
+    ]
+   },
+   {
+    "name": "family",
+    "bones": 2,
+    "slots": 2,
+    "animations": [
+     "Nope",
+     "Cold",
+     "Electricity",
+     "Fire",
+     "Magic",
+     "Peashooter",
+     "Shadow",
+     "Slow",
+     "Trap",
+     "Sun",
+     "Sharp",
+     "Poison",
+     "Defence",
+     "Explosive",
+     "Lobber",
+     "Melee"
+    ]
+   },
+   {
+    "name": "powerups",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "normal",
+     "prenium"
+    ]
+   },
+   {
+    "name": "emptyslot",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "emptyslot"
+    ]
+   },
+   {
+    "name": "selection",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "nope",
+     "point",
+     "select"
+    ]
+   },
+   {
+    "name": "dots_lower",
+    "bones": 1,
+    "slots": 11,
+    "animations": [
+     "newAnimation"
+    ]
+   },
+   {
+    "name": "sign",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "none",
+     "fault",
+     "change",
+     "correct",
+     "half"
+    ]
+   },
+   {
+    "name": "cooldown",
+    "bones": 5,
+    "slots": 4,
+    "animations": [
+     "P",
+     "N"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "SeedPacker",
+   "image": "SeedPacker_tex.png",
+   "size": [
+    2048,
+    4096
+   ],
+   "regions": 317
+  },
+  "textures": [
+   "3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png"
+  ]
+ },
+ "rigs_Particles": {
+  "path": "rig:Particles",
+  "source": "0506b3b5c.json",
+  "skeleton": "Particles",
+  "frame_rate": 30,
+  "armature": "plant_food_light",
+  "armatures": [
+   {
+    "name": "plant_food_light",
+    "bones": 7,
+    "slots": 2,
+    "animations": [
+     "Start",
+     "Idle",
+     "End"
+    ]
+   },
+   {
+    "name": "groundFire",
+    "bones": 26,
+    "slots": 36,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "fire",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Spawn",
+     "Fade"
+    ]
+   },
+   {
+    "name": "shade",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "shade"
+    ]
+   },
+   {
+    "name": "dirt",
+    "bones": 7,
+    "slots": 6,
+    "animations": [
+     "Plant",
+     "Remove"
+    ]
+   },
+   {
+    "name": "plantfood",
+    "bones": 5,
+    "slots": 4,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "trophyLight",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "prizeLight",
+    "bones": 19,
+    "slots": 16,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "dirtSpawn",
+    "bones": 8,
+    "slots": 6,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "PFLightning",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Idle2"
+    ]
+   },
+   {
+    "name": "butter",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "PeaBuff",
+    "bones": 11,
+    "slots": 8,
+    "animations": [
+     "Idle",
+     "Die"
+    ]
+   },
+   {
+    "name": "PeaBuffWing",
+    "bones": 5,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "ShadowBuff",
+    "bones": 28,
+    "slots": 23,
+    "animations": [
+     "Idle",
+     "Start",
+     "End"
+    ]
+   },
+   {
+    "name": "PlantHeat",
+    "bones": 1,
+    "slots": 1,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "Deadplant",
+    "bones": 8,
+    "slots": 6,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "PlantStrengthen",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "_plant_str_rays",
+    "bones": 14,
+    "slots": 12,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "Icetrap",
+    "bones": 2,
+    "slots": 1,
+    "animations": [
+     "Idle",
+     "Die"
+    ]
+   },
+   {
+    "name": "MowerWater",
+    "bones": 5,
+    "slots": 2,
+    "animations": [
+     "Idle"
+    ]
+   },
+   {
+    "name": "PlantEvolve",
+    "bones": 10,
+    "slots": 15,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "_plant_weak_rays",
+    "bones": 14,
+    "slots": 12,
+    "animations": [
+     "idle"
+    ]
+   },
+   {
+    "name": "PlantWeaken",
+    "bones": 3,
+    "slots": 2,
+    "animations": [
+     "Play"
+    ]
+   },
+   {
+    "name": "PlantUnevolve",
+    "bones": 10,
+    "slots": 15,
+    "animations": [
+     "Play"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "Particles",
+   "image": "Particles_tex.png",
+   "size": [
+    1024,
+    1024
+   ],
+   "regions": 61
+  },
+  "textures": [
+   "59ac1411-bb28-4c38-9e4a-f79b82316c65.png"
+  ]
+ }
+}
