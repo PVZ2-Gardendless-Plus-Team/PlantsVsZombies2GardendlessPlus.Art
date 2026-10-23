@@ -40,6 +40,11 @@ into the same `_index.json`, so either can be re-run on its own.
 with `tools/extract_desktop.py`. Without `--native <dir>`, extract_prefabs.py
 pulls the images from the Docker image directly; extract_rigs.py needs it.
 
+`fonts/` holds PVZGE's text face, copied as-is from the build's
+`native/86/86615cb2-9939-4358-b8e2-ec2d020efeea/FBUSV8C5EI.ttf` (the font
+its seed packet prices and HUD labels use; the main repository maps it as
+`font:ui`).
+
 Then open the main project in Godot once so it writes the `.import` files for
 any new images, and commit them with the art.
 
@@ -48,6 +53,7 @@ any new images, and commit them with the art.
 ```
 _index.json            what each prefab resolved to: skeleton, armature, atlas, texture
 _textures/<uuid>.png   the atlas images, shared between entities
+fonts/                 the game's fonts
 <bundle>_<Name>/
   skeleton.json        DragonBones armatures, bones, slots, animations
   atlas.json           the regions, in the texture named by _index.json
