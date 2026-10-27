@@ -133594,5 +133594,44 @@
   "textures": [
    "4f288b06-0427-484d-91e5-712bf41b1b19.png"
   ]
+ },
+ "rigs_WorldmapAnimate_WorldmapBG": {
+  "path": "rig:WorldmapAnimate:WorldmapBG",
+  "source": "09cd415ad.json",
+  "skeleton": "WorldmapAnimate",
+  "frame_rate": 12,
+  "armature": "WorldmapBG",
+  "armatures": [
+   {
+    "name": "WorldmapBG",
+    "bones": 1,
+    "slots": 5,
+    "animations": [
+     "IdleDay",
+     "IdleNight"
+    ]
+   },
+   {
+    "name": "rotate",
+    "bones": 10,
+    "slots": 8,
+    "animations": [
+     "IdleDay",
+     "IdleNight"
+    ]
+   }
+  ],
+  "atlas": {
+   "name": "WorldmapAnimate",
+   "image": "WorldmapAnimate_tex.png",
+   "size": [
+    1024,
+    512
+   ],
+   "regions": 3
+  },
+  "textures": [
+   "201c8e38-0573-4744-a79c-fac86dc60efd.png"
+  ]
  }
 }
