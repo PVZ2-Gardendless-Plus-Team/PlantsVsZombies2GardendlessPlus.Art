@@ -1,0 +1,4559 @@
+{
+ "2x": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   139,
+   139
+  ],
+  "size": [
+   139,
+   139
+  ],
+  "texture": "1d58c144f"
+ },
+ "2xActive": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   150
+  ],
+  "size": [
+   148,
+   148
+  ],
+  "texture": "1d58c144f"
+ },
+ "2xHover": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   150
+  ],
+  "size": [
+   148,
+   148
+  ],
+  "texture": "1d58c144f"
+ },
+ "AlmanacDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "AlmanacUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "Arrow": {
+  "insets": [
+   0,
+   44,
+   0,
+   15
+  ],
+  "offset": [
+   0,
+   0.5
+  ],
+  "original": [
+   81,
+   85
+  ],
+  "size": [
+   69,
+   72
+  ],
+  "texture": "1d58c144f"
+ },
+ "BeghouledPowerUpSlots": {
+  "insets": [
+   209,
+   0,
+   208,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   614,
+   183
+  ],
+  "size": [
+   614,
+   183
+  ],
+  "texture": "1d58c144f"
+ },
+ "BeghouledShovelDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "BeghouledShovelUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "BeghouledShuffleDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "BeghouledShuffleUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnBlueBigDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnBlueBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnBrownDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnBrownUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnGreenBigDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnGreenBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnGreenSmallDown": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   97
+  ],
+  "size": [
+   225,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnGreenSmallUp": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   97
+  ],
+  "size": [
+   225,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnGreyBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnPurpleBigDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnPurpleBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnPurpleSmallDown": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   -2
+  ],
+  "original": [
+   168,
+   101
+  ],
+  "size": [
+   168,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnPurpleSmallUp": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   -2
+  ],
+  "original": [
+   168,
+   101
+  ],
+  "size": [
+   168,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnRedBigDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnRedBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnRedSmallDown": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   -2
+  ],
+  "original": [
+   168,
+   101
+  ],
+  "size": [
+   168,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnRedSmallUp": {
+  "insets": [
+   70,
+   45,
+   70,
+   45
+  ],
+  "offset": [
+   0,
+   -2
+  ],
+  "original": [
+   168,
+   101
+  ],
+  "size": [
+   168,
+   97
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnYellowBigDown": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "BtnYellowBigUp": {
+  "insets": [
+   70,
+   60,
+   70,
+   60
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   225,
+   130
+  ],
+  "size": [
+   225,
+   130
+  ],
+  "texture": "1d58c144f"
+ },
+ "CheatAddDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   114,
+   114
+  ],
+  "size": [
+   112,
+   112
+  ],
+  "texture": "1d58c144f"
+ },
+ "CheatAddUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   114,
+   114
+  ],
+  "size": [
+   112,
+   112
+  ],
+  "texture": "1d58c144f"
+ },
+ "CleanAllCards": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0.5,
+   0
+  ],
+  "original": [
+   88,
+   84
+  ],
+  "size": [
+   81,
+   84
+  ],
+  "texture": "1d58c144f"
+ },
+ "CloseRoundDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   121,
+   121
+  ],
+  "size": [
+   121,
+   121
+  ],
+  "texture": "1d58c144f"
+ },
+ "CloseRoundUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   121,
+   121
+  ],
+  "size": [
+   121,
+   121
+  ],
+  "texture": "1d58c144f"
+ },
+ "CloseSquareDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   157,
+   157
+  ],
+  "size": [
+   157,
+   157
+  ],
+  "texture": "1d58c144f"
+ },
+ "CloseSquareUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   157,
+   157
+  ],
+  "size": [
+   157,
+   157
+  ],
+  "texture": "1d58c144f"
+ },
+ "CoinCounter": {
+  "insets": [
+   133,
+   0,
+   41,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   315,
+   113
+  ],
+  "size": [
+   315,
+   113
+  ],
+  "texture": "1d58c144f"
+ },
+ "CoinIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   121,
+   118
+  ],
+  "size": [
+   117,
+   114
+  ],
+  "texture": "1d58c144f"
+ },
+ "DecksIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   322,
+   306
+  ],
+  "size": [
+   322,
+   306
+  ],
+  "texture": "1d58c144f"
+ },
+ "DeltaArrow": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   61,
+   55
+  ],
+  "size": [
+   61,
+   55
+  ],
+  "texture": "1d58c144f"
+ },
+ "Difficulty_Empty": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   108,
+   180
+  ],
+  "size": [
+   108,
+   180
+  ],
+  "texture": "1d58c144f"
+ },
+ "Difficulty_Filled": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   108,
+   180
+  ],
+  "size": [
+   108,
+   180
+  ],
+  "texture": "1d58c144f"
+ },
+ "DiscountTag": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   243,
+   84
+  ],
+  "size": [
+   243,
+   84
+  ],
+  "texture": "1d58c144f"
+ },
+ "FanmadeDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1.5,
+   1.5
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   147,
+   141
+  ],
+  "texture": "1d58c144f"
+ },
+ "FanmadeUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1.5,
+   1.5
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   147,
+   141
+  ],
+  "texture": "1d58c144f"
+ },
+ "Gear": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   128,
+   128
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "texture": "1d58c144f"
+ },
+ "GemCounter": {
+  "insets": [
+   124,
+   0,
+   31,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   271,
+   118
+  ],
+  "size": [
+   271,
+   118
+  ],
+  "texture": "1d58c144f"
+ },
+ "GemIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -3.5,
+   0
+  ],
+  "original": [
+   145,
+   112
+  ],
+  "size": [
+   108,
+   112
+  ],
+  "texture": "1d58c144f"
+ },
+ "Locate": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   96,
+   96
+  ],
+  "size": [
+   96,
+   96
+  ],
+  "texture": "1d58c144f"
+ },
+ "MedalIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   312,
+   243
+  ],
+  "size": [
+   312,
+   243
+  ],
+  "texture": "1d58c144f"
+ },
+ "MowerCircle": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   334,
+   334
+  ],
+  "size": [
+   334,
+   334
+  ],
+  "texture": "1d58c144f"
+ },
+ "NewsDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "NewsUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "Pause": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   139,
+   139
+  ],
+  "size": [
+   139,
+   139
+  ],
+  "texture": "1d58c144f"
+ },
+ "PauseActive": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   139,
+   139
+  ],
+  "size": [
+   139,
+   139
+  ],
+  "texture": "1d58c144f"
+ },
+ "PauseHover": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   139,
+   139
+  ],
+  "size": [
+   139,
+   139
+  ],
+  "texture": "1d58c144f"
+ },
+ "PlayerHighlight": {
+  "insets": [
+   10,
+   10,
+   10,
+   10
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   36,
+   108
+  ],
+  "size": [
+   36,
+   108
+  ],
+  "texture": "1d58c144f"
+ },
+ "PlayerIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   55,
+   64
+  ],
+  "size": [
+   53,
+   62
+  ],
+  "texture": "1d58c144f"
+ },
+ "PlayerName": {
+  "insets": [
+   20,
+   21,
+   21,
+   22
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   66,
+   57
+  ],
+  "size": [
+   66,
+   57
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerCherryDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1,
+   -1
+  ],
+  "original": [
+   200,
+   200
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerCherryUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1,
+   -1
+  ],
+  "original": [
+   200,
+   200
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerFireDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerFireUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerSnowDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   148,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerSnowUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   147,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerTossDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   145,
+   144
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerTossUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   145,
+   144
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerUpSlots": {
+  "insets": [
+   211,
+   0,
+   211,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   616,
+   184
+  ],
+  "size": [
+   616,
+   184
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerZapDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   145,
+   144
+  ],
+  "texture": "1d58c144f"
+ },
+ "PowerZapUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   148,
+   148
+  ],
+  "size": [
+   145,
+   144
+  ],
+  "texture": "1d58c144f"
+ },
+ "ReloadMemoryCards": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   88,
+   84
+  ],
+  "size": [
+   88,
+   84
+  ],
+  "texture": "1d58c144f"
+ },
+ "ReturnDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   150,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "ReturnUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0.5,
+   0
+  ],
+  "original": [
+   151,
+   144
+  ],
+  "size": [
+   150,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "SPL10": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   2048,
+   1536
+  ],
+  "size": [
+   2048,
+   1536
+  ],
+  "texture": "1aae2f737"
+ },
+ "SPL9": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   2048,
+   1536
+  ],
+  "size": [
+   2048,
+   1536
+  ],
+  "texture": "1aae2f737"
+ },
+ "ScrollBarBG": {
+  "insets": [
+   0,
+   17,
+   0,
+   17
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   33,
+   45
+  ],
+  "size": [
+   33,
+   45
+  ],
+  "texture": "1d58c144f"
+ },
+ "ScrollBarBar": {
+  "insets": [
+   0,
+   18,
+   0,
+   21
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   39,
+   60
+  ],
+  "size": [
+   39,
+   60
+  ],
+  "texture": "1d58c144f"
+ },
+ "SettingDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "SettingUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   144,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "SproutCounter": {
+  "insets": [
+   141,
+   0,
+   33,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   211,
+   129
+  ],
+  "size": [
+   211,
+   129
+  ],
+  "texture": "1d58c144f"
+ },
+ "SunCountBG": {
+  "insets": [
+   23,
+   20,
+   23,
+   20
+  ],
+  "offset": [
+   0,
+   -1
+  ],
+  "original": [
+   168,
+   84
+  ],
+  "size": [
+   168,
+   72
+  ],
+  "texture": "53f1a256-a0d2-4d3e-a414-26dac46cf69f"
+ },
+ "TicketCountDown": {
+  "insets": [
+   90,
+   50,
+   88,
+   36
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   287,
+   109
+  ],
+  "size": [
+   287,
+   109
+  ],
+  "texture": "1d58c144f"
+ },
+ "TicketCounter": {
+  "insets": [
+   110,
+   0,
+   35,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   174,
+   88
+  ],
+  "size": [
+   174,
+   88
+  ],
+  "texture": "1d58c144f"
+ },
+ "TicketIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   98,
+   88
+  ],
+  "size": [
+   98,
+   88
+  ],
+  "texture": "1d58c144f"
+ },
+ "VaseZapDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "VaseZapUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   146
+  ],
+  "size": [
+   146,
+   146
+  ],
+  "texture": "1d58c144f"
+ },
+ "WorldkeyCounter": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   8,
+   -0.5
+  ],
+  "original": [
+   180,
+   130
+  ],
+  "size": [
+   158,
+   129
+  ],
+  "texture": "1d58c144f"
+ },
+ "ZenDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1,
+   -0.5
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   148,
+   139
+  ],
+  "texture": "1d58c144f"
+ },
+ "ZenTag": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0.5,
+   0
+  ],
+  "original": [
+   330,
+   148
+  ],
+  "size": [
+   329,
+   148
+  ],
+  "texture": "1d58c144f"
+ },
+ "ZenTagDown": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0.5,
+   0
+  ],
+  "original": [
+   330,
+   148
+  ],
+  "size": [
+   329,
+   148
+  ],
+  "texture": "1d58c144f"
+ },
+ "ZenUp": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   1.5,
+   0
+  ],
+  "original": [
+   150,
+   144
+  ],
+  "size": [
+   147,
+   138
+  ],
+  "texture": "1d58c144f"
+ },
+ "audioBg": {
+  "insets": [
+   40,
+   0,
+   40,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   96,
+   67
+  ],
+  "size": [
+   96,
+   67
+  ],
+  "texture": "1d58c144f"
+ },
+ "audioFill": {
+  "insets": [
+   20,
+   0,
+   20,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   69,
+   47
+  ],
+  "size": [
+   69,
+   47
+  ],
+  "texture": "1d58c144f"
+ },
+ "banner_default": {
+  "insets": [
+   281,
+   0,
+   281,
+   0
+  ],
+  "offset": [
+   0,
+   4.5
+  ],
+  "original": [
+   840,
+   370
+  ],
+  "size": [
+   840,
+   361
+  ],
+  "texture": "73ec19cb-6e46-4820-aa54-fe5342c4d952"
+ },
+ "banner_summer": {
+  "insets": [
+   276,
+   0,
+   276,
+   0
+  ],
+  "offset": [
+   0,
+   5
+  ],
+  "original": [
+   840,
+   370
+  ],
+  "size": [
+   840,
+   360
+  ],
+  "texture": "b934f654-264a-420d-aa6d-4f8d8ab9a14f"
+ },
+ "banner_twist": {
+  "insets": [
+   304,
+   0,
+   304,
+   0
+  ],
+  "offset": [
+   0,
+   28
+  ],
+  "original": [
+   840,
+   370
+  ],
+  "size": [
+   840,
+   314
+  ],
+  "texture": "5c0c85a5-39ae-4eba-90d7-d12bfacbfa88"
+ },
+ "beach": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   555,
+   547
+  ],
+  "size": [
+   555,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "beach_watered": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   547
+  ],
+  "size": [
+   554,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "bg": {
+  "insets": [
+   7,
+   0,
+   6,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   173,
+   146
+  ],
+  "size": [
+   169,
+   142
+  ],
+  "texture": "55b815e7-94fc-4dec-85a3-02a8b71ce81a"
+ },
+ "bg1": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   1135,
+   768
+  ],
+  "size": [
+   1135,
+   768
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg@1d58c144f": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0.5
+  ],
+  "original": [
+   378,
+   378
+  ],
+  "size": [
+   373,
+   373
+  ],
+  "texture": "1d58c144f"
+ },
+ "bg_base": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_change": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_correct": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_frame": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   167,
+   151
+  ],
+  "size": [
+   167,
+   151
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_grass": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   476,
+   564
+  ],
+  "size": [
+   476,
+   564
+  ],
+  "texture": "1d58c144f"
+ },
+ "bg_half": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_merged": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bg_wrong": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   146,
+   130
+  ],
+  "size": [
+   146,
+   130
+  ],
+  "texture": "1bf00b314"
+ },
+ "bladeHead": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   124,
+   140
+  ],
+  "size": [
+   124,
+   140
+  ],
+  "texture": "1d58c144f"
+ },
+ "boost": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   545
+  ],
+  "size": [
+   553,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "card_active_state": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   86,
+   82
+  ],
+  "size": [
+   86,
+   82
+  ],
+  "texture": "1d58c144f"
+ },
+ "card_back": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   347,
+   549
+  ],
+  "size": [
+   343,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "card_face": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   347,
+   549
+  ],
+  "size": [
+   343,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "chiHead": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   97,
+   150
+  ],
+  "size": [
+   97,
+   150
+  ],
+  "texture": "1d58c144f"
+ },
+ "choose_0": {
+  "insets": [
+   0,
+   26,
+   0,
+   21
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   462,
+   81
+  ],
+  "size": [
+   462,
+   81
+  ],
+  "texture": "1bf00b314"
+ },
+ "choose_1": {
+  "insets": [
+   0,
+   26,
+   0,
+   21
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   462,
+   83
+  ],
+  "size": [
+   462,
+   83
+  ],
+  "texture": "1bf00b314"
+ },
+ "choose_2": {
+  "insets": [
+   0,
+   26,
+   0,
+   21
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   462,
+   83
+  ],
+  "size": [
+   462,
+   83
+  ],
+  "texture": "1bf00b314"
+ },
+ "circ": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0.5
+  ],
+  "original": [
+   409,
+   409
+  ],
+  "size": [
+   405,
+   404
+  ],
+  "texture": "1d58c144f"
+ },
+ "confirm_frame": {
+  "insets": [
+   42,
+   37,
+   39,
+   37
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   241,
+   156
+  ],
+  "size": [
+   241,
+   156
+  ],
+  "texture": "1bf00b314"
+ },
+ "costume_roller": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   83,
+   72
+  ],
+  "size": [
+   83,
+   72
+  ],
+  "texture": "fcabdbde-4b79-4239-a341-946c5f0eac8e"
+ },
+ "cowboy": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   546
+  ],
+  "size": [
+   554,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "dark": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   547
+  ],
+  "size": [
+   554,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "default": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   546
+  ],
+  "size": [
+   554,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "default_panel": {
+  "insets": [
+   8,
+   8,
+   8,
+   8
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   20,
+   20
+  ],
+  "size": [
+   20,
+   20
+  ],
+  "texture": "b730527c-3233-41c2-aaf7-7cdab58f9749"
+ },
+ "default_progressbar": {
+  "insets": [
+   10,
+   4,
+   10,
+   4
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   30,
+   15
+  ],
+  "size": [
+   30,
+   15
+  ],
+  "texture": "24a704da-2867-446d-8d1a-5e920c75e09d"
+ },
+ "default_scrollbar_vertical": {
+  "insets": [
+   4,
+   10,
+   4,
+   10
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   15,
+   30
+  ],
+  "size": [
+   15,
+   30
+  ],
+  "texture": "afc47931-f066-46b0-90be-9fe61f213428"
+ },
+ "default_scrollbar_vertical_bg": {
+  "insets": [
+   4,
+   10,
+   4,
+   10
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   15,
+   30
+  ],
+  "size": [
+   15,
+   30
+  ],
+  "texture": "ffb88a8f-af62-48f4-8f1d-3cb606443a43"
+ },
+ "default_sprite_splash": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   2,
+   2
+  ],
+  "size": [
+   2,
+   2
+  ],
+  "texture": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca"
+ },
+ "dino": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   544
+  ],
+  "size": [
+   553,
+   544
+  ],
+  "texture": "1d58c144f"
+ },
+ "door": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   1135,
+   768
+  ],
+  "size": [
+   1135,
+   768
+  ],
+  "texture": "1bf00b314"
+ },
+ "egypt": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   545
+  ],
+  "size": [
+   554,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "eighties": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   543
+  ],
+  "size": [
+   553,
+   543
+  ],
+  "texture": "1d58c144f"
+ },
+ "elementBG_dark": {
+  "insets": [
+   20,
+   20,
+   20,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   128,
+   128
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "texture": "1b40a4542"
+ },
+ "elementBG_white": {
+  "insets": [
+   20,
+   20,
+   20,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   128,
+   128
+  ],
+  "size": [
+   128,
+   128
+  ],
+  "texture": "1b40a4542"
+ },
+ "epic": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   552,
+   547
+  ],
+  "size": [
+   552,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "exit": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   136,
+   124
+  ],
+  "size": [
+   136,
+   124
+  ],
+  "texture": "1b40a4542"
+ },
+ "exit_pressed": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   136,
+   124
+  ],
+  "size": [
+   136,
+   124
+  ],
+  "texture": "1b40a4542"
+ },
+ "explodeHead": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   113,
+   134
+  ],
+  "size": [
+   113,
+   134
+  ],
+  "texture": "1d58c144f"
+ },
+ "flagFan": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   -0.5
+  ],
+  "original": [
+   54,
+   44
+  ],
+  "size": [
+   54,
+   43
+  ],
+  "texture": "1d58c144f"
+ },
+ "flagStick": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -18.5,
+   0
+  ],
+  "original": [
+   57,
+   76
+  ],
+  "size": [
+   20,
+   74
+  ],
+  "texture": "1d58c144f"
+ },
+ "frame": {
+  "insets": [
+   12,
+   12,
+   12,
+   12
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   32,
+   32
+  ],
+  "size": [
+   32,
+   32
+  ],
+  "texture": "1d58c144f"
+ },
+ "frontyard": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   546
+  ],
+  "size": [
+   554,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "future": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   545
+  ],
+  "size": [
+   553,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "gameLoseBrain": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   1170,
+   757
+  ],
+  "size": [
+   1170,
+   757
+  ],
+  "texture": "1d58c144f"
+ },
+ "health_progress": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   382,
+   473
+  ],
+  "size": [
+   382,
+   473
+  ],
+  "texture": "0b3a742b-425a-4bbe-b202-0ae7e8479366"
+ },
+ "iceTile": {
+  "insets": [
+   0,
+   98,
+   0,
+   99
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   164,
+   197
+  ],
+  "size": [
+   164,
+   197
+  ],
+  "texture": "320b7abb-60be-474c-b0d4-0c97d480fbd4"
+ },
+ "iceage": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   547
+  ],
+  "size": [
+   553,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "ingameBg": {
+  "insets": [
+   21,
+   18,
+   21,
+   18
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   546,
+   65
+  ],
+  "size": [
+   546,
+   65
+  ],
+  "texture": "1d58c144f"
+ },
+ "ingameFill": {
+  "insets": [
+   6,
+   0,
+   6,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   44,
+   34
+  ],
+  "size": [
+   44,
+   34
+  ],
+  "texture": "1d58c144f"
+ },
+ "ingameFillHead": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   84,
+   89
+  ],
+  "size": [
+   84,
+   89
+  ],
+  "texture": "1d58c144f"
+ },
+ "kongfu": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   556,
+   546
+  ],
+  "size": [
+   556,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "left": {
+  "insets": [
+   256,
+   0,
+   4,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   446,
+   175
+  ],
+  "size": [
+   446,
+   175
+  ],
+  "texture": "1f4b53c6-0396-4d82-a2ae-0b0006a80796"
+ },
+ "lod": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   552,
+   547
+  ],
+  "size": [
+   552,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "lod_5x_prizes_frame": {
+  "insets": [
+   25,
+   25,
+   25,
+   25
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   66,
+   66
+  ],
+  "size": [
+   66,
+   66
+  ],
+  "texture": "1b40a4542"
+ },
+ "logoGardendless": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   3
+  ],
+  "original": [
+   819,
+   258
+  ],
+  "size": [
+   803,
+   230
+  ],
+  "texture": "973350cd-95e1-46f2-88da-4804e24e7d66"
+ },
+ "lostcity": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   545
+  ],
+  "size": [
+   554,
+   545
+  ],
+  "texture": "1d58c144f"
+ },
+ "market": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   552,
+   547
+  ],
+  "size": [
+   552,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "mint": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   552,
+   547
+  ],
+  "size": [
+   552,
+   547
+  ],
+  "texture": "1d58c144f"
+ },
+ "missionWindow": {
+  "insets": [
+   40,
+   45,
+   38,
+   38
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   116,
+   121
+  ],
+  "size": [
+   108,
+   111
+  ],
+  "texture": "be9be0fd-8bae-405f-8ac6-7a6e2eb1e3a6"
+ },
+ "modern": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   546
+  ],
+  "size": [
+   554,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "npc_bubble": {
+  "insets": [
+   50,
+   50,
+   50,
+   110
+  ],
+  "offset": [
+   -0.5,
+   0
+  ],
+  "original": [
+   720,
+   471
+  ],
+  "size": [
+   719,
+   471
+  ],
+  "texture": "46d97927-b8f5-4657-aa01-bc70e2bdc4ac"
+ },
+ "panel": {
+  "insets": [
+   300,
+   221,
+   300,
+   169
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   627,
+   403
+  ],
+  "size": [
+   627,
+   403
+  ],
+  "texture": "1bf00b314"
+ },
+ "panel_below": {
+  "insets": [
+   264,
+   69,
+   264,
+   47
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   534,
+   201
+  ],
+  "size": [
+   534,
+   201
+  ],
+  "texture": "1bf00b314"
+ },
+ "panels_3": {
+  "insets": [
+   0,
+   159,
+   0,
+   78
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   770,
+   248
+  ],
+  "size": [
+   770,
+   248
+  ],
+  "texture": "1bf00b314"
+ },
+ "panels_3_below": {
+  "insets": [
+   0,
+   40,
+   0,
+   39
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   742,
+   131
+  ],
+  "size": [
+   742,
+   131
+  ],
+  "texture": "1bf00b314"
+ },
+ "pirate": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   554,
+   546
+  ],
+  "size": [
+   554,
+   546
+  ],
+  "texture": "1d58c144f"
+ },
+ "plantDisplayGlass": {
+  "insets": [
+   88,
+   88,
+   88,
+   88
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   380,
+   289
+  ],
+  "size": [
+   378,
+   287
+  ],
+  "texture": "83ded967-4ad9-4b9a-a73b-1835bc9bc94f"
+ },
+ "plantFoodSlots": {
+  "insets": [
+   197,
+   0,
+   69,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   412,
+   176
+  ],
+  "size": [
+   410,
+   172
+  ],
+  "texture": "958b3638-6748-469d-8f6b-e58a5e7931e7"
+ },
+ "powerUpBorder": {
+  "insets": [
+   61,
+   63,
+   63,
+   61
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   124,
+   124
+  ],
+  "size": [
+   124,
+   124
+  ],
+  "texture": "1d58c144f"
+ },
+ "progress_fill": {
+  "insets": [
+   8,
+   0,
+   8,
+   0
+  ],
+  "offset": [
+   0,
+   1
+  ],
+  "original": [
+   30,
+   24
+  ],
+  "size": [
+   24,
+   18
+  ],
+  "texture": "1b40a4542"
+ },
+ "progress_mover": {
+  "insets": [
+   0,
+   20,
+   0,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   39,
+   62
+  ],
+  "size": [
+   39,
+   60
+  ],
+  "texture": "1b40a4542"
+ },
+ "progress_slot": {
+  "insets": [
+   0,
+   16,
+   0,
+   16
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   33,
+   45
+  ],
+  "size": [
+   33,
+   45
+  ],
+  "texture": "1b40a4542"
+ },
+ "progress_z": {
+  "insets": [
+   10,
+   0,
+   10,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   30,
+   24
+  ],
+  "size": [
+   30,
+   24
+  ],
+  "texture": "1b40a4542"
+ },
+ "redFill": {
+  "insets": [
+   20,
+   0,
+   20,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   69,
+   47
+  ],
+  "size": [
+   69,
+   47
+  ],
+  "texture": "1d58c144f"
+ },
+ "ribbon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   562,
+   108
+  ],
+  "size": [
+   562,
+   108
+  ],
+  "texture": "1d58c144f"
+ },
+ "scrst": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   724,
+   478
+  ],
+  "size": [
+   724,
+   478
+  ],
+  "texture": "1bf00b314"
+ },
+ "settingElement": {
+  "insets": [
+   15,
+   14,
+   20,
+   17
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   120,
+   51
+  ],
+  "size": [
+   120,
+   51
+  ],
+  "texture": "c3510398-da1d-4f80-ae7a-3000a0fdae67"
+ },
+ "shieldFill": {
+  "insets": [
+   6,
+   0,
+   6,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   44,
+   34
+  ],
+  "size": [
+   44,
+   34
+  ],
+  "texture": "1d58c144f"
+ },
+ "shipIcon": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   103,
+   110
+  ],
+  "size": [
+   103,
+   110
+  ],
+  "texture": "1d58c144f"
+ },
+ "sky": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   553,
+   543
+  ],
+  "size": [
+   553,
+   543
+  ],
+  "texture": "1d58c144f"
+ },
+ "sky@c118ee76-": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   1840,
+   1019
+  ],
+  "size": [
+   1840,
+   1019
+  ],
+  "texture": "c118ee76-c9ad-4762-ad34-f8d2a9a66bec"
+ },
+ "slider": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   -1
+  ],
+  "original": [
+   97,
+   96
+  ],
+  "size": [
+   95,
+   94
+  ],
+  "texture": "f8e823c3-0369-4e70-9ff5-7f9f5be97f6a"
+ },
+ "splash": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   2048,
+   1024
+  ],
+  "size": [
+   2048,
+   1024
+  ],
+  "texture": "039b97f1-1211-4b58-91fa-bdebae5aec20"
+ },
+ "store": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -1.5,
+   9.5
+  ],
+  "original": [
+   210,
+   210
+  ],
+  "size": [
+   187,
+   191
+  ],
+  "texture": "1b40a4542"
+ },
+ "store_pressed": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -1.5,
+   9.5
+  ],
+  "original": [
+   210,
+   210
+  ],
+  "size": [
+   187,
+   191
+  ],
+  "texture": "1b40a4542"
+ },
+ "task": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0.5
+  ],
+  "original": [
+   62,
+   62
+  ],
+  "size": [
+   59,
+   59
+  ],
+  "texture": "a7963ece-6488-4dff-b1ef-c53537d6ae11"
+ },
+ "taskFail": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0.5
+  ],
+  "original": [
+   53,
+   56
+  ],
+  "size": [
+   51,
+   55
+  ],
+  "texture": "1d58c144f"
+ },
+ "taskFinished": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0.5
+  ],
+  "original": [
+   53,
+   56
+  ],
+  "size": [
+   53,
+   53
+  ],
+  "texture": "1d58c144f"
+ },
+ "taskWindow": {
+  "insets": [
+   25,
+   25,
+   25,
+   25
+  ],
+  "offset": [
+   0,
+   -1
+  ],
+  "original": [
+   168,
+   84
+  ],
+  "size": [
+   168,
+   72
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_costSunLimit": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0.5
+  ],
+  "original": [
+   67,
+   69
+  ],
+  "size": [
+   67,
+   68
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_mustProduceSun": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0.5
+  ],
+  "original": [
+   70,
+   73
+  ],
+  "size": [
+   69,
+   72
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_plantLimit": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   52,
+   73
+  ],
+  "size": [
+   52,
+   73
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_plantLoseLimit": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   57,
+   72
+  ],
+  "size": [
+   57,
+   72
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_sunCostTimeLimit": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   -0.5,
+   0.5
+  ],
+  "original": [
+   71,
+   71
+  ],
+  "size": [
+   70,
+   70
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_zombieMustKill": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   73,
+   74
+  ],
+  "size": [
+   73,
+   74
+  ],
+  "texture": "1d58c144f"
+ },
+ "task_zombieMustKillProgress": {
+  "insets": [
+   3,
+   0,
+   3,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   8,
+   42
+  ],
+  "size": [
+   8,
+   42
+  ],
+  "texture": "1d58c144f"
+ },
+ "upgradeGreenFill": {
+  "insets": [
+   14,
+   20,
+   14,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   66,
+   92
+  ],
+  "size": [
+   66,
+   92
+  ],
+  "texture": "1d58c144f"
+ },
+ "upgradeRedFill": {
+  "insets": [
+   14,
+   20,
+   14,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   66,
+   92
+  ],
+  "size": [
+   66,
+   92
+  ],
+  "texture": "1d58c144f"
+ },
+ "upgradeYellowFill": {
+  "insets": [
+   14,
+   20,
+   14,
+   20
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   66,
+   92
+  ],
+  "size": [
+   66,
+   92
+  ],
+  "texture": "1d58c144f"
+ },
+ "upper_cover": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   158,
+   158
+  ],
+  "size": [
+   156,
+   156
+  ],
+  "texture": "1d58c144f"
+ },
+ "window": {
+  "insets": [
+   23,
+   58,
+   23,
+   58
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   51,
+   121
+  ],
+  "size": [
+   51,
+   121
+  ],
+  "texture": "1b40a4542"
+ },
+ "windowBlue": {
+  "insets": [
+   40,
+   160,
+   40,
+   40
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "20ca78a4-34a7-4881-9e1c-89f26bb31ffe"
+ },
+ "windowBrownUp": {
+  "insets": [
+   40,
+   160,
+   40,
+   40
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "1a2e8ec4-0993-4dba-a004-8e6f12b48a90"
+ },
+ "windowCommon": {
+  "insets": [
+   80,
+   80,
+   80,
+   80
+  ],
+  "offset": [
+   -0.5,
+   0.5
+  ],
+  "original": [
+   265,
+   265
+  ],
+  "size": [
+   246,
+   246
+  ],
+  "texture": "675b41ad-c77a-4770-8608-a9aa1e463010"
+ },
+ "windowCommonBorder": {
+  "insets": [
+   80,
+   80,
+   80,
+   80
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   246,
+   246
+  ],
+  "size": [
+   246,
+   246
+  ],
+  "texture": "ec0ccdd0-5bdf-4b35-b748-d57c0b5c33c9"
+ },
+ "windowDeep": {
+  "insets": [
+   80,
+   80,
+   80,
+   80
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   256,
+   256
+  ],
+  "size": [
+   256,
+   256
+  ],
+  "texture": "9ecb036f-f9a4-40e6-a226-c35bad522711"
+ },
+ "windowGray": {
+  "insets": [
+   26,
+   232,
+   37,
+   55
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   690
+  ],
+  "size": [
+   121,
+   680
+  ],
+  "texture": "209d6c53-6b46-4aa5-84e3-fe9c1d8d1220"
+ },
+ "windowLevelTask": {
+  "insets": [
+   28,
+   175,
+   33,
+   41
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "3cd2801c-06cb-470d-8faf-90632c0c9530"
+ },
+ "windowLime": {
+  "insets": [
+   40,
+   160,
+   40,
+   40
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "3ef51de4-ea54-4eae-9094-3d151f64d03e"
+ },
+ "windowPurple": {
+  "insets": [
+   40,
+   160,
+   40,
+   40
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "3d48d484-62e0-4658-902a-87e8bdf1a514"
+ },
+ "windowRed": {
+  "insets": [
+   40,
+   160,
+   40,
+   40
+  ],
+  "offset": [
+   4,
+   -5
+  ],
+  "original": [
+   129,
+   498
+  ],
+  "size": [
+   121,
+   488
+  ],
+  "texture": "06b04808-7f48-419a-aed8-f2b109292bc6"
+ },
+ "zombossHPBg": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   625,
+   65
+  ],
+  "size": [
+   625,
+   65
+  ],
+  "texture": "1d58c144f"
+ },
+ "zombossHPFill": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   44,
+   34
+  ],
+  "size": [
+   44,
+   34
+  ],
+  "texture": "1d58c144f"
+ },
+ "zombossHPNotch": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0,
+   0
+  ],
+  "original": [
+   9,
+   34
+  ],
+  "size": [
+   9,
+   34
+  ],
+  "texture": "1d58c144f"
+ },
+ "zombossHead": {
+  "insets": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "offset": [
+   0.5,
+   0.5
+  ],
+  "original": [
+   94,
+   105
+  ],
+  "size": [
+   93,
+   104
+  ],
+  "texture": "1d58c144f"
+ }
+}
