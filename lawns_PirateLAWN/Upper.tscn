@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_uog45"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_bmpeg"]
+[ext_resource type="Texture2D" path="res://art/_textures/fbb61222-8332-4eb4-8a5d-6ee603b3481a.png" id="3_f2plu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uog45"]
+atlas = ExtResource("3_f2plu")
+region = Rect2(1, 1539, 3948, 1536)
+
+[sub_resource type="Animation" id="Animation_bmpeg"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f2plu"]
+_data = {
+&"Idle": SubResource("Animation_bmpeg")
+}
+
+[node name="Upper" type="Node2D" unique_id=2042168576]
+script = ExtResource("1_uog45")
+bounds = Rect2(-1577.9, -768.51, 3948, 1536)
+
+[node name="Upper" type="Node2D" parent="." unique_id=716998313]
+script = ExtResource("2_bmpeg")
+
+[node name="0" type="Sprite2D" parent="Upper" unique_id=335614042]
+position = Vector2(396.1, -0.51)
+texture = SubResource("AtlasTexture_uog45")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1713693326]
+libraries/ = SubResource("AnimationLibrary_f2plu")

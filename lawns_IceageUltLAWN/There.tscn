@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_oiihs"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_g0hrd"]
+[ext_resource type="Texture2D" path="res://art/_textures/922a9100-f107-4ab1-9e4a-3b8c307d5379.png" id="3_i2jix"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oiihs"]
+atlas = ExtResource("3_i2jix")
+region = Rect2(886, 2005, 784, 593)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0hrd"]
+atlas = ExtResource("3_i2jix")
+region = Rect2(1672, 2005, 216, 185)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2jix"]
+atlas = ExtResource("3_i2jix")
+region = Rect2(886, 2600, 961, 338)
+
+[sub_resource type="Animation" id="Animation_v8flp"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dha16"]
+_data = {
+&"idle": SubResource("Animation_v8flp")
+}
+
+[node name="There" type="Node2D" unique_id=1312000699]
+script = ExtResource("1_oiihs")
+bounds = Rect2(-524.04, -700.54, 2282.74, 1012.69)
+
+[node name="there1" type="Node2D" parent="." unique_id=233390696]
+script = ExtResource("2_g0hrd")
+
+[node name="0" type="Sprite2D" parent="there1" unique_id=40520129]
+position = Vector2(1366.7, -237.36)
+texture = SubResource("AtlasTexture_oiihs")
+
+[node name="there3" type="Node2D" parent="." unique_id=131734447]
+script = ExtResource("2_g0hrd")
+
+[node name="0" type="Sprite2D" parent="there3" unique_id=1194476603]
+position = Vector2(1571.48, 219.65)
+texture = SubResource("AtlasTexture_g0hrd")
+
+[node name="there2" type="Node2D" parent="." unique_id=375414581]
+script = ExtResource("2_g0hrd")
+
+[node name="0" type="Sprite2D" parent="there2" unique_id=1999035617]
+position = Vector2(-43.54, -531.54)
+texture = SubResource("AtlasTexture_i2jix")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=256863875]
+libraries/ = SubResource("AnimationLibrary_dha16")

@@ -1,0 +1,226 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1xr3h"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_pb55j"]
+[ext_resource type="Texture2D" path="res://art/_textures/24811089-f3d2-4a3c-a059-7793012a2b64.png" id="3_1jk7q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xr3h"]
+atlas = ExtResource("3_1jk7q")
+region = Rect2(1, 1, 3948, 1536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb55j"]
+atlas = ExtResource("3_1jk7q")
+region = Rect2(3951, 1, 57, 58)
+
+[sub_resource type="Animation" id="Animation_1jk7q"]
+length = 3.466666666666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("light:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("light2:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("light3:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.8666666, 3.4666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("light4:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("light6:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2.4, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("light:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.28), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("light2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.28), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("light3:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 2.8666666, 3.0666666, 3.1, 3.4666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0.28), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("light4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.6, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0.28), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("light6:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 2.4, 2.6, 2.6333334, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0.28), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1jpcv"]
+_data = {
+&"Idle": SubResource("Animation_1jk7q")
+}
+
+[node name="Lawn" type="Node2D" unique_id=1008341010]
+script = ExtResource("1_1xr3h")
+bounds = Rect2(-1579.29, -768, 3949, 1536)
+
+[node name="Lawn" type="Node2D" parent="." unique_id=1257999107]
+script = ExtResource("2_pb55j")
+
+[node name="0" type="Sprite2D" parent="Lawn" unique_id=2065068664]
+position = Vector2(395.21, 0)
+texture = SubResource("AtlasTexture_1xr3h")
+offset = Vector2(-0.5, 0)
+
+[node name="light" type="Node2D" parent="." unique_id=1590040446]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light" unique_id=434838243]
+visible = false
+position = Vector2(-395.02, -363.29)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light1" type="Node2D" parent="." unique_id=170331420]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light1" unique_id=149838468]
+visible = false
+position = Vector2(-319.86, -366.07)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light2" type="Node2D" parent="." unique_id=1083904429]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light2" unique_id=694867213]
+visible = false
+position = Vector2(103.56, -369.06)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light3" type="Node2D" parent="." unique_id=969123229]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light3" unique_id=575243488]
+visible = false
+position = Vector2(328.11, -364.6)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light4" type="Node2D" parent="." unique_id=1099202474]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light4" unique_id=166169125]
+visible = false
+position = Vector2(412.83, -369.46)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light5" type="Node2D" parent="." unique_id=689904714]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light5" unique_id=872371998]
+visible = false
+position = Vector2(692.29, -409.33)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="light6" type="Node2D" parent="." unique_id=117164736]
+script = ExtResource("2_pb55j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="light6" unique_id=1901206140]
+visible = false
+position = Vector2(886.44, -365.4)
+texture = SubResource("AtlasTexture_pb55j")
+offset = Vector2(0.5, 1.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=852537589]
+libraries/ = SubResource("AnimationLibrary_1jpcv")

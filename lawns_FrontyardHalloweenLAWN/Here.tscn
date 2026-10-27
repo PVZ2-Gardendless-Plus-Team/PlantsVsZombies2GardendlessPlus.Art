@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_4jowg"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_q03ap"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbce4a18-ac0f-4f0d-be61-55b97c0b91aa.png" id="3_oaght"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jowg"]
+atlas = ExtResource("3_oaght")
+region = Rect2(1, 1539, 2788, 482)
+
+[sub_resource type="Animation" id="Animation_q03ap"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oaght"]
+_data = {
+&"i": SubResource("Animation_q03ap")
+}
+
+[node name="Here" type="Node2D" unique_id=478876702]
+script = ExtResource("1_4jowg")
+bounds = Rect2(-885.78, 284.96, 2788, 482)
+
+[node name="here" type="Node2D" parent="." unique_id=1963391591]
+script = ExtResource("2_q03ap")
+
+[node name="0" type="Sprite2D" parent="here" unique_id=1432801135]
+position = Vector2(508.22, 525.96)
+texture = SubResource("AtlasTexture_4jowg")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1202137466]
+libraries/ = SubResource("AnimationLibrary_oaght")

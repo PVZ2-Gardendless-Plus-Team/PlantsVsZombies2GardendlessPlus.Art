@@ -46,7 +46,11 @@ its seed packet prices and HUD labels use; the main repository maps it as
 `font:ui`).
 
 Then open the main project in Godot once so it writes the `.import` files for
-any new images, and commit them with the art.
+any new images, bake the rig scenes, and commit them with the art:
+
+```sh
+godot --headless -s tools/bake_rigs.gd
+```
 
 ## Layout
 
@@ -57,6 +61,10 @@ fonts/                 the game's fonts
 <bundle>_<Name>/
   skeleton.json        DragonBones armatures, bones, slots, animations
   atlas.json           the regions, in the texture named by _index.json
+  <Armature>.tscn      each armature as a Godot scene: slots, sprites and an
+                       AnimationPlayer. What the game loads, and what to open
+                       in the Godot editor to change an animation. Baked for
+                       the bundles the game maps; the rest bake on demand.
 ```
 
 One texture serves many entities: the basic zombie and both its armors all

@@ -1,0 +1,6805 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_kqnc0"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_aylh3"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_ekcgf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_argsd"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1737, 1, 239, 151)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqnc0"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1792, 2503, 140, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aylh3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(425, 3159, 129, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekcgf"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1583, 1305, 164, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gexck"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(146, 2744, 141, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jevjx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1736, 1933, 153, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5gtb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(528, 1485, 158, 147)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5whia"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(876, 1854, 179, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_miwlr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(311, 2309, 144, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nce5q"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(266, 3452, 132, 131)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikehw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(199, 1069, 177, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifej4"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1353, 2015, 173, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5dqw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1749, 1403, 166, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqbme"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2060, 153, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia6ai"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(847, 750, 194, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha1in"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1316, 1435, 164, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clmgb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1095, 2541, 132, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qt0l"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1937, 2787, 99, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08bys"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3300, 134, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_506xd"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(163, 3588, 100, 106)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tbor"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1909, 2362, 138, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v02qv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(535, 3690, 115, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jj20s"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(638, 3826, 130, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6so13"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1736, 1012, 175, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06jh5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(331, 1617, 177, 131)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mr6q6"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(528, 1634, 167, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6guh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(273, 3311, 131, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3da5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1953, 1066, 90, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tacci"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(628, 2144, 149, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7mma"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1102, 192, 129)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc1it"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1028, 2927, 159, 79)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g36ju"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(537, 3591, 172, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhmkm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1059, 1809, 166, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewwul"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(134, 3446, 130, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dewvk"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1690, 2075, 148, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tdfw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1411, 1032, 179, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8gip"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1759, 2362, 148, 135)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etjks"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2345, 150, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hc5gv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(776, 159, 207, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5imk"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1054, 616, 110, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1hdh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 501, 234, 149)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32pxn"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1043, 1015, 202, 123)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wrpf"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2485, 180, 113)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylxht"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1041, 2828, 184, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgig3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1014, 3020, 183, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xdr3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1792, 2648, 143, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6tvm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(178, 1361, 168, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqmjp"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(363, 1334, 168, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yeb1n"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1255, 1578, 157, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pj0ou"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(898, 1328, 82, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gupbv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1063, 1431, 81, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e10te"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(711, 3586, 82, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8ojm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(809, 3373, 82, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lb0cx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(862, 3149, 143, 115)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg13s"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1592, 1157, 163, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ne2k"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(160, 1655, 169, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kyes"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(156, 2059, 154, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iygrr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(463, 2195, 153, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tqsv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(779, 2270, 158, 131)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rudj"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(155, 2203, 154, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81tsw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(555, 3448, 116, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17iyj"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1063, 1549, 171, 135)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rknbx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1233, 175, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8twb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(893, 2774, 146, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ei70e"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(872, 1980, 154, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6erk7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1414, 1597, 179, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gthf"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(952, 2345, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fnw7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(398, 3870, 114, 137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3d24b"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1014, 3119, 117, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yyc8f"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(839, 3266, 156, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ivi7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1199, 3050, 118, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oir5x"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1375, 157, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86v7f"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(179, 3848, 104, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jl86"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(751, 2669, 140, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08hn7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1418, 1723, 156, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmuj2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1264, 740, 89, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlfrr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(153, 3725, 132, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ou617"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(638, 3946, 111, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40wts"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(305, 2455, 143, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7xcr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(140, 2890, 137, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwib4"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1475, 2264, 146, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjwmw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(690, 3335, 117, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb70v"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(983, 1140, 169, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kviij"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(807, 1040, 174, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18m4n"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(312, 2164, 149, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aho8n"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1891, 2073, 149, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjjaq"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1367, 2742, 159, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8dcl"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1752, 1808, 176, 123)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8n242"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(378, 1189, 172, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci2fb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1532, 197, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g07x"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(573, 1189, 164, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_344gc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1757, 1157, 194, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p46jc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(287, 3725, 111, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3no1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1595, 1679, 155, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3k42"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(526, 1775, 163, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asqgv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1592, 1032, 142, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vi7cv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(289, 2889, 143, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hiby"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(533, 1341, 168, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ddelw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1181, 2134, 145, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1k4fv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(786, 3477, 112, 106)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gieis"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(156, 1909, 154, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkdro"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(843, 891, 169, 147)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fduy"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(556, 3169, 123, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_renoi"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1151, 1403, 163, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wht5e"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(139, 3300, 132, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w386l"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(884, 1720, 173, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_refwd"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2203, 152, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo0nu"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(331, 1872, 162, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0l6dg"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1937, 2646, 103, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elvpc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1202, 1991, 149, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xglrl"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(697, 3207, 140, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqyse"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1802, 1541, 178, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnoj1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(207, 784, 208, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yf0j8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1199, 2927, 143, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yi8ht"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1482, 1451, 156, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ucyk1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1364, 626, 179, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjyv6"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1043, 865, 169, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikvuj"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(154, 3172, 122, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_you1i"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(155, 2343, 148, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_778j0"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(495, 1917, 160, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vpdk8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(514, 3870, 122, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wj4k"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(450, 2457, 159, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muvyo"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1367, 2961, 152, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pxsv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(884, 1576, 161, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sblg"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(628, 2286, 147, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2id"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1413, 2404, 175, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oiymw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1934, 2500, 111, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h65sc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1238, 2398, 173, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frwyh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(406, 3447, 147, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cc7w"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(305, 2600, 142, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gm2tx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1164, 2280, 172, 116)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_34ux8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(652, 3690, 134, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0vca"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1367, 2858, 178, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfgtw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3028, 136, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6uqmb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(434, 3009, 130, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adbv7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1328, 2138, 145, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4mn3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1399, 1864, 142, 149)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03lqj"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(398, 4009, 213, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m48eu"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1655, 156, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge7uh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1095, 2684, 130, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogexk"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(279, 3030, 133, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtstc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1545, 887, 176, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_armbs"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1227, 1864, 170, 125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nx0e"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(898, 1431, 163, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dusqv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(331, 1750, 193, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0huwa"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1640, 1541, 160, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og5ds"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(968, 2236, 194, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfha2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3443, 131, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6kus"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1802, 1665, 154, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6h3i7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1623, 2503, 167, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7pei"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3943, 176, 89)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_udt56"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3808, 118, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odcos"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1154, 1231, 170, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t8l2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1543, 1991, 145, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1kfe"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1054, 740, 208, 123)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jr7fm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1909, 153, 149)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lf3x"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(556, 3314, 132, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tpcfc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(266, 3585, 125, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6u0f"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3588, 160, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqcx7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1367, 2632, 170, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny2hw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1410, 2514, 162, 116)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0jw3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(434, 2875, 146, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cknc6"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(847, 616, 205, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvrhf"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(983, 1285, 166, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ib3a7"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1738, 599, 186, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8pcgq"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(872, 2902, 154, 116)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jxpi"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(592, 2887, 143, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwiu1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(819, 2126, 147, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1erwg"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1338, 2280, 135, 116)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtncc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(697, 3096, 163, 109)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xpqr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1169, 596, 193, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ahrr"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 812, 204, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tui2h"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 957, 196, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxers"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1891, 1933, 155, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vdk4"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1551, 609, 183, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo6fy"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(600, 923, 205, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4pul"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(207, 928, 202, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfmck"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1255, 1723, 161, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r3x1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1411, 1168, 170, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi2h6"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1757, 1281, 197, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66ymc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1326, 1311, 193, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1sl5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(457, 2333, 169, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmmk2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2600, 154, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oggop"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(400, 3567, 135, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6uua8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3695, 150, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_plfwq"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 3172, 151, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yec0x"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(779, 2403, 171, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6a3e"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(312, 2017, 152, 145)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptewj"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(961, 460, 206, 154)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hai2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(438, 690, 172, 177)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vaq1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(807, 1184, 174, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7cns"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1364, 771, 175, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rr5il"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(466, 2057, 160, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlet2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(703, 1482, 179, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ye7if"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1917, 1403, 130, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qogmm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1574, 2744, 147, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwlsn"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1640, 2219, 155, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhqj1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 652, 204, 158)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qr48v"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1247, 1079, 162, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ais6d"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(195, 1211, 166, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ae0h1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(237, 617, 199, 165)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bga0e"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(566, 3025, 129, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppomi"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1227, 2765, 127, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_safgu"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(425, 3303, 129, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umji1"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(200, 1508, 129, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bpa0t"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(737, 2952, 129, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bf8c"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(952, 2488, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sx7fu"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1095, 2398, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_viqc3"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(770, 2526, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmk3q"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(608, 2604, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dea15"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(289, 2746, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_womb5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(449, 2732, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7scx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(952, 2631, 141, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c04it"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1028, 2095, 151, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mft76"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(482, 465, 154, 223)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trbs8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1660, 2899, 103, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28ujc"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1958, 1665, 87, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gu3pi"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 1, 291, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3f2ec"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(279, 3176, 144, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_joi8d"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1551, 460, 185, 147)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vw0ls"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1738, 742, 195, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nrlm"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(751, 3946, 126, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohdv5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1576, 1821, 158, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymhxw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(411, 1032, 160, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kerv5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1574, 2625, 160, 117)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_laskp"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(697, 1748, 177, 129)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1wwa"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(691, 1879, 179, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yolwv"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(703, 1614, 176, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbigt"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1545, 751, 189, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhb8u"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(157, 2600, 143, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mby5"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1933, 461, 112, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a2gb"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1928, 878, 112, 186)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ay4y"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1840, 2218, 148, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_671l8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1238, 2514, 170, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0omw"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(348, 1481, 178, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_winfy"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1475, 2138, 163, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_238kt"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(638, 614, 207, 153)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edags"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1063, 1686, 190, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pcc0"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1736, 878, 190, 132)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrjjh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1738, 461, 193, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1tb0"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(657, 2005, 160, 137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13irf"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1623, 2351, 134, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gov26"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(400, 3690, 133, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hygyl"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1229, 2627, 136, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4ki6"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(737, 2812, 133, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3tkh"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2878, 137, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pkuu"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(628, 2455, 140, 147)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk2ou"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(592, 2747, 141, 138)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivci2"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(417, 869, 181, 159)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufqss"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(872, 3020, 140, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmmfq"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1, 2734, 143, 142)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk31r"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(638, 769, 203, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mis1d"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(573, 1046, 175, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w7kos"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(739, 1328, 157, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sht3h"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1247, 919, 154, 158)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88cbx"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1379, 460, 170, 164)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ymbg8"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(139, 3037, 137, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v827"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(449, 2600, 157, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjxm4"]
+atlas = ExtResource("3_ekcgf")
+region = Rect2(1169, 460, 208, 134)
+
+[sub_resource type="Animation" id="Animation_h4vt0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_ra0xo"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_44a1b"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [234]
+}
+
+[sub_resource type="Animation" id="Animation_4gafb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_1d2nc"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [232]
+}
+
+[sub_resource type="Animation" id="Animation_62ukv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [227]
+}
+
+[sub_resource type="Animation" id="Animation_6c4q5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [224]
+}
+
+[sub_resource type="Animation" id="Animation_io1d4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [220]
+}
+
+[sub_resource type="Animation" id="Animation_1f5w5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [223]
+}
+
+[sub_resource type="Animation" id="Animation_o2bu7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_gamir"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [143]
+}
+
+[sub_resource type="Animation" id="Animation_njrbn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [142]
+}
+
+[sub_resource type="Animation" id="Animation_2kusb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [118]
+}
+
+[sub_resource type="Animation" id="Animation_bu2us"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [117]
+}
+
+[sub_resource type="Animation" id="Animation_1sh74"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [116]
+}
+
+[sub_resource type="Animation" id="Animation_ty2rt"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [144]
+}
+
+[sub_resource type="Animation" id="Animation_6nikh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [115]
+}
+
+[sub_resource type="Animation" id="Animation_sjtr6"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [141]
+}
+
+[sub_resource type="Animation" id="Animation_ck8lr"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [114]
+}
+
+[sub_resource type="Animation" id="Animation_budkv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [113]
+}
+
+[sub_resource type="Animation" id="Animation_v64sn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [145]
+}
+
+[sub_resource type="Animation" id="Animation_3p6ae"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [235]
+}
+
+[sub_resource type="Animation" id="Animation_3rtne"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [140]
+}
+
+[sub_resource type="Animation" id="Animation_sdbux"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [112]
+}
+
+[sub_resource type="Animation" id="Animation_7o7ip"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [111]
+}
+
+[sub_resource type="Animation" id="Animation_m0ih2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [225]
+}
+
+[sub_resource type="Animation" id="Animation_lc4b7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [146]
+}
+
+[sub_resource type="Animation" id="Animation_vmshh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [110]
+}
+
+[sub_resource type="Animation" id="Animation_ggcio"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [109]
+}
+
+[sub_resource type="Animation" id="Animation_3471w"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [108]
+}
+
+[sub_resource type="Animation" id="Animation_nirkq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [107]
+}
+
+[sub_resource type="Animation" id="Animation_renjl"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [240]
+}
+
+[sub_resource type="Animation" id="Animation_2w52k"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [106]
+}
+
+[sub_resource type="Animation" id="Animation_pg3qx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [105]
+}
+
+[sub_resource type="Animation" id="Animation_5w2qj"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [104]
+}
+
+[sub_resource type="Animation" id="Animation_l3gyk"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [103]
+}
+
+[sub_resource type="Animation" id="Animation_m8k48"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [192]
+}
+
+[sub_resource type="Animation" id="Animation_q5oj6"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [102]
+}
+
+[sub_resource type="Animation" id="Animation_64qgd"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [238]
+}
+
+[sub_resource type="Animation" id="Animation_h1gsr"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [139]
+}
+
+[sub_resource type="Animation" id="Animation_jov4o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [147]
+}
+
+[sub_resource type="Animation" id="Animation_o6820"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [191]
+}
+
+[sub_resource type="Animation" id="Animation_coq8h"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [138]
+}
+
+[sub_resource type="Animation" id="Animation_75vgm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [187]
+}
+
+[sub_resource type="Animation" id="Animation_74wtw"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [193]
+}
+
+[sub_resource type="Animation" id="Animation_i0g0e"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [101]
+}
+
+[sub_resource type="Animation" id="Animation_54hc2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [100]
+}
+
+[sub_resource type="Animation" id="Animation_fdp7o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [99]
+}
+
+[sub_resource type="Animation" id="Animation_tkhlf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [148]
+}
+
+[sub_resource type="Animation" id="Animation_oluov"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [137]
+}
+
+[sub_resource type="Animation" id="Animation_w6k53"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [246]
+}
+
+[sub_resource type="Animation" id="Animation_hrpav"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [98]
+}
+
+[sub_resource type="Animation" id="Animation_l3oxb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [97]
+}
+
+[sub_resource type="Animation" id="Animation_glaob"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [96]
+}
+
+[sub_resource type="Animation" id="Animation_ljlq7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [95]
+}
+
+[sub_resource type="Animation" id="Animation_3yiqb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [149]
+}
+
+[sub_resource type="Animation" id="Animation_schud"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [219]
+}
+
+[sub_resource type="Animation" id="Animation_pdc5b"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [94]
+}
+
+[sub_resource type="Animation" id="Animation_r62qo"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [242]
+}
+
+[sub_resource type="Animation" id="Animation_ygrrf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [185]
+}
+
+[sub_resource type="Animation" id="Animation_ucnoj"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [93]
+}
+
+[sub_resource type="Animation" id="Animation_s6drq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [92]
+}
+
+[sub_resource type="Animation" id="Animation_6ainw"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [195]
+}
+
+[sub_resource type="Animation" id="Animation_0b7wx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [256]
+}
+
+[sub_resource type="Animation" id="Animation_n3e6w"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [91]
+}
+
+[sub_resource type="Animation" id="Animation_k313n"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [190]
+}
+
+[sub_resource type="Animation" id="Animation_vmmis"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [196]
+}
+
+[sub_resource type="Animation" id="Animation_jljon"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [136]
+}
+
+[sub_resource type="Animation" id="Animation_myf46"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [90]
+}
+
+[sub_resource type="Animation" id="Animation_dyym0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [89]
+}
+
+[sub_resource type="Animation" id="Animation_3a1pm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [167]
+}
+
+[sub_resource type="Animation" id="Animation_8dx7s"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [243]
+}
+
+[sub_resource type="Animation" id="Animation_ywosl"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [88]
+}
+
+[sub_resource type="Animation" id="Animation_c48ej"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [87]
+}
+
+[sub_resource type="Animation" id="Animation_aqy3u"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [86]
+}
+
+[sub_resource type="Animation" id="Animation_23axi"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [85]
+}
+
+[sub_resource type="Animation" id="Animation_wmplh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [150]
+}
+
+[sub_resource type="Animation" id="Animation_0ndfa"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [135]
+}
+
+[sub_resource type="Animation" id="Animation_7rece"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [151]
+}
+
+[sub_resource type="Animation" id="Animation_nftc5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [198]
+}
+
+[sub_resource type="Animation" id="Animation_0ey72"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [134]
+}
+
+[sub_resource type="Animation" id="Animation_nwvkp"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [152]
+}
+
+[sub_resource type="Animation" id="Animation_oa3nl"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [229]
+}
+
+[sub_resource type="Animation" id="Animation_horhk"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [230]
+}
+
+[sub_resource type="Animation" id="Animation_byg7m"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [84]
+}
+
+[sub_resource type="Animation" id="Animation_2t1n1"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [83]
+}
+
+[sub_resource type="Animation" id="Animation_juh67"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [133]
+}
+
+[sub_resource type="Animation" id="Animation_1jdfu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [82]
+}
+
+[sub_resource type="Animation" id="Animation_foav2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [81]
+}
+
+[sub_resource type="Animation" id="Animation_ijmhq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [80]
+}
+
+[sub_resource type="Animation" id="Animation_kn54a"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [153]
+}
+
+[sub_resource type="Animation" id="Animation_bp6hn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [79]
+}
+
+[sub_resource type="Animation" id="Animation_mg48m"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [168]
+}
+
+[sub_resource type="Animation" id="Animation_y5uw3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [78]
+}
+
+[sub_resource type="Animation" id="Animation_he37j"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [77]
+}
+
+[sub_resource type="Animation" id="Animation_73bbf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [132]
+}
+
+[sub_resource type="Animation" id="Animation_3wlcg"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [154]
+}
+
+[sub_resource type="Animation" id="Animation_cfylc"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [76]
+}
+
+[sub_resource type="Animation" id="Animation_akcif"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [75]
+}
+
+[sub_resource type="Animation" id="Animation_mjy16"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [74]
+}
+
+[sub_resource type="Animation" id="Animation_g61b7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [73]
+}
+
+[sub_resource type="Animation" id="Animation_m5t2a"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [72]
+}
+
+[sub_resource type="Animation" id="Animation_7sx3t"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [71]
+}
+
+[sub_resource type="Animation" id="Animation_d4ivg"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [70]
+}
+
+[sub_resource type="Animation" id="Animation_v4cls"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [131]
+}
+
+[sub_resource type="Animation" id="Animation_sl5rh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [69]
+}
+
+[sub_resource type="Animation" id="Animation_on1f7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [68]
+}
+
+[sub_resource type="Animation" id="Animation_skt3r"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [236]
+}
+
+[sub_resource type="Animation" id="Animation_ih8nq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [241]
+}
+
+[sub_resource type="Animation" id="Animation_vbt0v"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [222]
+}
+
+[sub_resource type="Animation" id="Animation_ijy4t"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [67]
+}
+
+[sub_resource type="Animation" id="Animation_hccm5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [66]
+}
+
+[sub_resource type="Animation" id="Animation_xcsh1"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [65]
+}
+
+[sub_resource type="Animation" id="Animation_nqxdy"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [211]
+}
+
+[sub_resource type="Animation" id="Animation_olasc"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [205]
+}
+
+[sub_resource type="Animation" id="Animation_5nuu5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [207]
+}
+
+[sub_resource type="Animation" id="Animation_rc7d0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [208]
+}
+
+[sub_resource type="Animation" id="Animation_o3wrv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [209]
+}
+
+[sub_resource type="Animation" id="Animation_5eo0y"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [210]
+}
+
+[sub_resource type="Animation" id="Animation_gs2k1"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [206]
+}
+
+[sub_resource type="Animation" id="Animation_dwa5l"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [155]
+}
+
+[sub_resource type="Animation" id="Animation_fxoqq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [64]
+}
+
+[sub_resource type="Animation" id="Animation_ra3wi"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [188]
+}
+
+[sub_resource type="Animation" id="Animation_w21x4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [182]
+}
+
+[sub_resource type="Animation" id="Animation_cs6au"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [181]
+}
+
+[sub_resource type="Animation" id="Animation_maq8o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [180]
+}
+
+[sub_resource type="Animation" id="Animation_7v5tn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [179]
+}
+
+[sub_resource type="Animation" id="Animation_trmwu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [178]
+}
+
+[sub_resource type="Animation" id="Animation_8ohvx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [177]
+}
+
+[sub_resource type="Animation" id="Animation_m1lh2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [176]
+}
+
+[sub_resource type="Animation" id="Animation_wh3ui"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [175]
+}
+
+[sub_resource type="Animation" id="Animation_5b8io"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [174]
+}
+
+[sub_resource type="Animation" id="Animation_ngywg"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [173]
+}
+
+[sub_resource type="Animation" id="Animation_p6p28"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [172]
+}
+
+[sub_resource type="Animation" id="Animation_ygtxd"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [171]
+}
+
+[sub_resource type="Animation" id="Animation_4fo3o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [170]
+}
+
+[sub_resource type="Animation" id="Animation_l5txu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [169]
+}
+
+[sub_resource type="Animation" id="Animation_nohib"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [239]
+}
+
+[sub_resource type="Animation" id="Animation_lxged"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [63]
+}
+
+[sub_resource type="Animation" id="Animation_al1eq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [218]
+}
+
+[sub_resource type="Animation" id="Animation_epxap"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [62]
+}
+
+[sub_resource type="Animation" id="Animation_42p6l"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [130]
+}
+
+[sub_resource type="Animation" id="Animation_7p0eb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [61]
+}
+
+[sub_resource type="Animation" id="Animation_vjunr"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [156]
+}
+
+[sub_resource type="Animation" id="Animation_67xqs"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [129]
+}
+
+[sub_resource type="Animation" id="Animation_76vrf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [60]
+}
+
+[sub_resource type="Animation" id="Animation_ix71y"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [237]
+}
+
+[sub_resource type="Animation" id="Animation_nkpln"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [257]
+}
+
+[sub_resource type="Animation" id="Animation_e3u6n"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [59]
+}
+
+[sub_resource type="Animation" id="Animation_rjo61"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [58]
+}
+
+[sub_resource type="Animation" id="Animation_3yho7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [252]
+}
+
+[sub_resource type="Animation" id="Animation_fpcpw"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [57]
+}
+
+[sub_resource type="Animation" id="Animation_fvmgf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [157]
+}
+
+[sub_resource type="Animation" id="Animation_merb8"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [56]
+}
+
+[sub_resource type="Animation" id="Animation_8yswm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [55]
+}
+
+[sub_resource type="Animation" id="Animation_xy4wm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [54]
+}
+
+[sub_resource type="Animation" id="Animation_hm68h"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [233]
+}
+
+[sub_resource type="Animation" id="Animation_bx60h"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [226]
+}
+
+[sub_resource type="Animation" id="Animation_ggm25"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [197]
+}
+
+[sub_resource type="Animation" id="Animation_b7nvy"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [128]
+}
+
+[sub_resource type="Animation" id="Animation_xy7nt"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [53]
+}
+
+[sub_resource type="Animation" id="Animation_5q5df"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [215]
+}
+
+[sub_resource type="Animation" id="Animation_abxr2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [214]
+}
+
+[sub_resource type="Animation" id="Animation_1lsiu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [213]
+}
+
+[sub_resource type="Animation" id="Animation_2vd8o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [52]
+}
+
+[sub_resource type="Animation" id="Animation_ctqo0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [204]
+}
+
+[sub_resource type="Animation" id="Animation_f473b"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [203]
+}
+
+[sub_resource type="Animation" id="Animation_xj185"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [201]
+}
+
+[sub_resource type="Animation" id="Animation_b47l3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [200]
+}
+
+[sub_resource type="Animation" id="Animation_jgru2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [202]
+}
+
+[sub_resource type="Animation" id="Animation_ug5vj"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [51]
+}
+
+[sub_resource type="Animation" id="Animation_xmim7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [50]
+}
+
+[sub_resource type="Animation" id="Animation_q8o7y"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [49]
+}
+
+[sub_resource type="Animation" id="Animation_mm6oh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [48]
+}
+
+[sub_resource type="Animation" id="Animation_qpidx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [158]
+}
+
+[sub_resource type="Animation" id="Animation_t4ocu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [47]
+}
+
+[sub_resource type="Animation" id="Animation_vux53"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [245]
+}
+
+[sub_resource type="Animation" id="Animation_33qoj"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [46]
+}
+
+[sub_resource type="Animation" id="Animation_gropp"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [45]
+}
+
+[sub_resource type="Animation" id="Animation_puot6"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [44]
+}
+
+[sub_resource type="Animation" id="Animation_8qua5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [43]
+}
+
+[sub_resource type="Animation" id="Animation_bp6yi"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [42]
+}
+
+[sub_resource type="Animation" id="Animation_qx4p0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [41]
+}
+
+[sub_resource type="Animation" id="Animation_chdj3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [40]
+}
+
+[sub_resource type="Animation" id="Animation_qr8io"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [216]
+}
+
+[sub_resource type="Animation" id="Animation_dbybx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [39]
+}
+
+[sub_resource type="Animation" id="Animation_vtuxu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [127]
+}
+
+[sub_resource type="Animation" id="Animation_s0tjd"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [38]
+}
+
+[sub_resource type="Animation" id="Animation_cdybj"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [159]
+}
+
+[sub_resource type="Animation" id="Animation_gwb2u"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [126]
+}
+
+[sub_resource type="Animation" id="Animation_b3xxm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [37]
+}
+
+[sub_resource type="Animation" id="Animation_fohoa"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [36]
+}
+
+[sub_resource type="Animation" id="Animation_6firg"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [249]
+}
+
+[sub_resource type="Animation" id="Animation_dqoiy"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [160]
+}
+
+[sub_resource type="Animation" id="Animation_cwxb2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [35]
+}
+
+[sub_resource type="Animation" id="Animation_se05k"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [184]
+}
+
+[sub_resource type="Animation" id="Animation_qbw0r"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [231]
+}
+
+[sub_resource type="Animation" id="Animation_hvqmh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [253]
+}
+
+[sub_resource type="Animation" id="Animation_42mh4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [217]
+}
+
+[sub_resource type="Animation" id="Animation_hfm7f"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [228]
+}
+
+[sub_resource type="Animation" id="Animation_lyfka"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [125]
+}
+
+[sub_resource type="Animation" id="Animation_43n31"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [248]
+}
+
+[sub_resource type="Animation" id="Animation_d3d5i"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [34]
+}
+
+[sub_resource type="Animation" id="Animation_yu33s"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [161]
+}
+
+[sub_resource type="Animation" id="Animation_a48nm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [186]
+}
+
+[sub_resource type="Animation" id="Animation_y55r4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [33]
+}
+
+[sub_resource type="Animation" id="Animation_tlmnd"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [212]
+}
+
+[sub_resource type="Animation" id="Animation_xq5s3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [255]
+}
+
+[sub_resource type="Animation" id="Animation_vk7ka"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [124]
+}
+
+[sub_resource type="Animation" id="Animation_30cdd"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [251]
+}
+
+[sub_resource type="Animation" id="Animation_wwvf4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [32]
+}
+
+[sub_resource type="Animation" id="Animation_urs5l"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [162]
+}
+
+[sub_resource type="Animation" id="Animation_q556p"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [254]
+}
+
+[sub_resource type="Animation" id="Animation_w34vt"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [221]
+}
+
+[sub_resource type="Animation" id="Animation_v8i2m"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [31]
+}
+
+[sub_resource type="Animation" id="Animation_g5if7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [244]
+}
+
+[sub_resource type="Animation" id="Animation_bixvf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [123]
+}
+
+[sub_resource type="Animation" id="Animation_afigy"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [163]
+}
+
+[sub_resource type="Animation" id="Animation_tc0q7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [30]
+}
+
+[sub_resource type="Animation" id="Animation_wb4fm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [29]
+}
+
+[sub_resource type="Animation" id="Animation_f4vu5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [28]
+}
+
+[sub_resource type="Animation" id="Animation_fiuhm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [250]
+}
+
+[sub_resource type="Animation" id="Animation_177nk"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [27]
+}
+
+[sub_resource type="Animation" id="Animation_oe2vn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [26]
+}
+
+[sub_resource type="Animation" id="Animation_kosdv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [25]
+}
+
+[sub_resource type="Animation" id="Animation_ialbh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [24]
+}
+
+[sub_resource type="Animation" id="Animation_xryq8"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [23]
+}
+
+[sub_resource type="Animation" id="Animation_7o587"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [122]
+}
+
+[sub_resource type="Animation" id="Animation_bt0o3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [22]
+}
+
+[sub_resource type="Animation" id="Animation_oaslx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [21]
+}
+
+[sub_resource type="Animation" id="Animation_4ehkq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20]
+}
+
+[sub_resource type="Animation" id="Animation_bqvjb"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [19]
+}
+
+[sub_resource type="Animation" id="Animation_5nxiq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [18]
+}
+
+[sub_resource type="Animation" id="Animation_slmnn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [17]
+}
+
+[sub_resource type="Animation" id="Animation_fhc3o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [16]
+}
+
+[sub_resource type="Animation" id="Animation_8xh4w"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+
+[sub_resource type="Animation" id="Animation_mhroh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [14]
+}
+
+[sub_resource type="Animation" id="Animation_nuv1o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [164]
+}
+
+[sub_resource type="Animation" id="Animation_y15rk"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+
+[sub_resource type="Animation" id="Animation_yo6ih"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [247]
+}
+
+[sub_resource type="Animation" id="Animation_tvehv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+
+[sub_resource type="Animation" id="Animation_kyofn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+
+[sub_resource type="Animation" id="Animation_innae"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_lilkp"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [165]
+}
+
+[sub_resource type="Animation" id="Animation_sld6w"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [120]
+}
+
+[sub_resource type="Animation" id="Animation_3qlg3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [199]
+}
+
+[sub_resource type="Animation" id="Animation_rlxba"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_1k4ip"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [166]
+}
+
+[sub_resource type="Animation" id="Animation_sh4eu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [189]
+}
+
+[sub_resource type="Animation" id="Animation_84xiu"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [194]
+}
+
+[sub_resource type="Animation" id="Animation_h4gnt"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+
+[sub_resource type="Animation" id="Animation_2wcyn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="Animation" id="Animation_qer4p"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+
+[sub_resource type="Animation" id="Animation_4vf27"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+
+[sub_resource type="Animation" id="Animation_f2vw3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_fga3w"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant_body:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [119]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ho8yn"]
+_data = {
+&"akee": SubResource("Animation_h4vt0"),
+&"aloe": SubResource("Animation_ra0xo"),
+&"anthurium": SubResource("Animation_44a1b"),
+&"applemortar": SubResource("Animation_4gafb"),
+&"asparagus": SubResource("Animation_1d2nc"),
+&"atombomb": SubResource("Animation_62ukv"),
+&"bamboobusket": SubResource("Animation_6c4q5"),
+&"bambooshoot": SubResource("Animation_io1d4"),
+&"bamboozle": SubResource("Animation_1f5w5"),
+&"banana": SubResource("Animation_o2bu7"),
+&"blastberrivine": SubResource("Animation_gamir"),
+&"blockoli": SubResource("Animation_njrbn"),
+&"bloomerang": SubResource("Animation_2kusb"),
+&"bloomingheart": SubResource("Animation_bu2us"),
+&"blover": SubResource("Animation_1sh74"),
+&"boingsetta": SubResource("Animation_ty2rt"),
+&"bombegranate": SubResource("Animation_6nikh"),
+&"bommballoonflower": SubResource("Animation_sjtr6"),
+&"bonkchoy": SubResource("Animation_ck8lr"),
+&"bowlingbulb": SubResource("Animation_budkv"),
+&"bramblebush": SubResource("Animation_v64sn"),
+&"bulbkekengi": SubResource("Animation_3p6ae"),
+&"buttercup": SubResource("Animation_3rtne"),
+&"cabbagepult": SubResource("Animation_sdbux"),
+&"cactus": SubResource("Animation_7o7ip"),
+&"cantaloupepult": SubResource("Animation_m0ih2"),
+&"caulipower": SubResource("Animation_lc4b7"),
+&"celerystalker": SubResource("Animation_vmshh"),
+&"chardguard": SubResource("Animation_ggcio"),
+&"cherribomb": SubResource("Animation_3471w"),
+&"chilibean": SubResource("Animation_nirkq"),
+&"chillypepper": SubResource("Animation_renjl"),
+&"chomper": SubResource("Animation_2w52k"),
+&"citron": SubResource("Animation_pg3qx"),
+&"coconutcannon": SubResource("Animation_5w2qj"),
+&"coldsnapdragon": SubResource("Animation_l3gyk"),
+&"cranjelly": SubResource("Animation_m8k48"),
+&"dandelion": SubResource("Animation_q5oj6"),
+&"darkmatterdragonfruit": SubResource("Animation_64qgd"),
+&"dartichoke": SubResource("Animation_h1gsr"),
+&"dazeychain": SubResource("Animation_jov4o"),
+&"doomshroom": SubResource("Animation_o6820"),
+&"draftodil": SubResource("Animation_coq8h"),
+&"dragonbruit": SubResource("Animation_75vgm"),
+&"dragonbruitBaby": SubResource("Animation_74wtw"),
+&"dusklobber": SubResource("Animation_i0g0e"),
+&"electricblueberry": SubResource("Animation_54hc2"),
+&"electriccurrant": SubResource("Animation_fdp7o"),
+&"electricitea": SubResource("Animation_tkhlf"),
+&"electricpeashooter": SubResource("Animation_oluov"),
+&"electricpeashooter_mgp": SubResource("Animation_w6k53"),
+&"empeach": SubResource("Animation_hrpav"),
+&"endurian": SubResource("Animation_l3oxb"),
+&"escaperoot": SubResource("Animation_glaob"),
+&"explodeonut": SubResource("Animation_ljlq7"),
+&"explodeovine": SubResource("Animation_3yiqb"),
+&"firegourd": SubResource("Animation_schud"),
+&"firepeashooter": SubResource("Animation_pdc5b"),
+&"firepeashooter_mgp": SubResource("Animation_r62qo"),
+&"floawerPot": SubResource("Animation_ygrrf"),
+&"fumeshroom": SubResource("Animation_ucnoj"),
+&"garlic": SubResource("Animation_s6drq"),
+&"gatlingpea": SubResource("Animation_6ainw"),
+&"gatlingpea_mgp": SubResource("Animation_0b7wx"),
+&"ghostpepper": SubResource("Animation_n3e6w"),
+&"glacierShroom": SubResource("Animation_k313n"),
+&"gloomshroom": SubResource("Animation_vmmis"),
+&"gloomvine": SubResource("Animation_jljon"),
+&"goldbloom": SubResource("Animation_myf46"),
+&"goldleaf": SubResource("Animation_dyym0"),
+&"goopeashooter": SubResource("Animation_3a1pm"),
+&"goopeashooter_mgp": SubResource("Animation_8dx7s"),
+&"grapeshot": SubResource("Animation_ywosl"),
+&"gravebuster": SubResource("Animation_c48ej"),
+&"grimrose": SubResource("Animation_aqy3u"),
+&"guacodile": SubResource("Animation_23axi"),
+&"gumnut": SubResource("Animation_wmplh"),
+&"headbutterlettuce": SubResource("Animation_0ndfa"),
+&"heathseeker": SubResource("Animation_7rece"),
+&"heavenlypeach": SubResource("Animation_nftc5"),
+&"hocuscrocus": SubResource("Animation_0ey72"),
+&"hollybarrier": SubResource("Animation_nwvkp"),
+&"hollyleaf": SubResource("Animation_oa3nl"),
+&"hollyleaf_pf": SubResource("Animation_horhk"),
+&"holonut": SubResource("Animation_byg7m"),
+&"homingthistle": SubResource("Animation_2t1n1"),
+&"hotdate": SubResource("Animation_juh67"),
+&"hotpotato": SubResource("Animation_1jdfu"),
+&"hurrikale": SubResource("Animation_foav2"),
+&"hypnoshroom": SubResource("Animation_ijmhq"),
+&"icebloom": SubResource("Animation_kn54a"),
+&"iceburg": SubResource("Animation_bp6hn"),
+&"iceweed": SubResource("Animation_mg48m"),
+&"icycurrant": SubResource("Animation_y5uw3"),
+&"imitator": SubResource("Animation_he37j"),
+&"imppear": SubResource("Animation_73bbf"),
+&"inferno": SubResource("Animation_3wlcg"),
+&"intensivecarrot": SubResource("Animation_cfylc"),
+&"jackolantern": SubResource("Animation_akcif"),
+&"jalapeno": SubResource("Animation_mjy16"),
+&"kernelpult": SubResource("Animation_g61b7"),
+&"kiwibeast": SubResource("Animation_m5t2a"),
+&"laserbean": SubResource("Animation_7sx3t"),
+&"lavaguava": SubResource("Animation_d4ivg"),
+&"levitator": SubResource("Animation_v4cls"),
+&"lightningreed": SubResource("Animation_sl5rh"),
+&"lilypad": SubResource("Animation_on1f7"),
+&"loquat": SubResource("Animation_skt3r"),
+&"lotorpedo": SubResource("Animation_ih8nq"),
+&"lychee": SubResource("Animation_vbt0v"),
+&"magnetshroom": SubResource("Animation_ijy4t"),
+&"magnifyinggrass": SubResource("Animation_hccm5"),
+&"marigold": SubResource("Animation_xcsh1"),
+&"marigold_blue": SubResource("Animation_nqxdy"),
+&"marigold_green": SubResource("Animation_olasc"),
+&"marigold_orange": SubResource("Animation_5nuu5"),
+&"marigold_pink": SubResource("Animation_rc7d0"),
+&"marigold_purple": SubResource("Animation_o3wrv"),
+&"marigold_red": SubResource("Animation_5eo0y"),
+&"marigold_yellow": SubResource("Animation_gs2k1"),
+&"megagatlingpea": SubResource("Animation_dwa5l"),
+&"melonpult": SubResource("Animation_fxoqq"),
+&"meteorflower": SubResource("Animation_ra3wi"),
+&"mint_cold": SubResource("Animation_w21x4"),
+&"mint_defence": SubResource("Animation_cs6au"),
+&"mint_electric": SubResource("Animation_maq8o"),
+&"mint_explosive": SubResource("Animation_7v5tn"),
+&"mint_fire": SubResource("Animation_trmwu"),
+&"mint_lobber": SubResource("Animation_8ohvx"),
+&"mint_magic": SubResource("Animation_m1lh2"),
+&"mint_melee": SubResource("Animation_wh3ui"),
+&"mint_peashooter": SubResource("Animation_5b8io"),
+&"mint_poison": SubResource("Animation_ngywg"),
+&"mint_shadow": SubResource("Animation_p6p28"),
+&"mint_sharp": SubResource("Animation_ygtxd"),
+&"mint_slow": SubResource("Animation_4fo3o"),
+&"mint_sun": SubResource("Animation_l5txu"),
+&"mirrornut": SubResource("Animation_nohib"),
+&"missiletoe": SubResource("Animation_lxged"),
+&"moonbean": SubResource("Animation_al1eq"),
+&"moonflower": SubResource("Animation_epxap"),
+&"murkadamianut": SubResource("Animation_42p6l"),
+&"nightshade": SubResource("Animation_7p0eb"),
+&"noctarine": SubResource("Animation_vjunr"),
+&"olivepit": SubResource("Animation_67xqs"),
+&"parsnip": SubResource("Animation_76vrf"),
+&"peacommando": SubResource("Animation_ix71y"),
+&"peacommando_mgp": SubResource("Animation_nkpln"),
+&"peanut": SubResource("Animation_e3u6n"),
+&"peapod": SubResource("Animation_rjo61"),
+&"peapod_mgp": SubResource("Animation_3yho7"),
+&"peashooter": SubResource("Animation_fpcpw"),
+&"peavine": SubResource("Animation_fvmgf"),
+&"pepperpult": SubResource("Animation_merb8"),
+&"perfumeshroom": SubResource("Animation_8yswm"),
+&"phatbeet": SubResource("Animation_xy4wm"),
+&"pineapple": SubResource("Animation_hm68h"),
+&"pinkstarfruit": SubResource("Animation_bx60h"),
+&"plantern": SubResource("Animation_ggm25"),
+&"pokra": SubResource("Animation_b7nvy"),
+&"potatomine": SubResource("Animation_xy7nt"),
+&"potion_invisibility": SubResource("Animation_5q5df"),
+&"potion_speed": SubResource("Animation_abxr2"),
+&"potion_toughness": SubResource("Animation_1lsiu"),
+&"powerlily": SubResource("Animation_2vd8o"),
+&"powerplant_alpha": SubResource("Animation_ctqo0"),
+&"powerplant_beta": SubResource("Animation_f473b"),
+&"powerplant_delta": SubResource("Animation_xj185"),
+&"powerplant_epsilon": SubResource("Animation_b47l3"),
+&"powerplant_gamma": SubResource("Animation_jgru2"),
+&"powertile_alpha": SubResource("Animation_ug5vj"),
+&"powertile_beta": SubResource("Animation_xmim7"),
+&"powertile_delta": SubResource("Animation_q8o7y"),
+&"powertile_gamma": SubResource("Animation_mm6oh"),
+&"powervine": SubResource("Animation_qpidx"),
+&"primalpeashooter": SubResource("Animation_t4ocu"),
+&"primalpeashooter_mgp": SubResource("Animation_vux53"),
+&"primalpotatomine": SubResource("Animation_33qoj"),
+&"primalsunflower": SubResource("Animation_gropp"),
+&"primalwallnut": SubResource("Animation_puot6"),
+&"projectile_bowlingbulb1": SubResource("Animation_8qua5"),
+&"projectile_bowlingbulb2": SubResource("Animation_bp6yi"),
+&"projectile_bowlingbulb3": SubResource("Animation_qx4p0"),
+&"projectile_bowlingbulb_explode": SubResource("Animation_chdj3"),
+&"projectile_bowlingbulb_iceburg": SubResource("Animation_qr8io"),
+&"projectile_bowlingbulb_mega": SubResource("Animation_dbybx"),
+&"puffball": SubResource("Animation_vtuxu"),
+&"puffshroom": SubResource("Animation_s0tjd"),
+&"pumpkinhead": SubResource("Animation_cdybj"),
+&"pyrevine": SubResource("Animation_gwb2u"),
+&"redstinger": SubResource("Animation_b3xxm"),
+&"repeater": SubResource("Animation_fohoa"),
+&"repeater_mgp": SubResource("Animation_6firg"),
+&"rhubarbarian": SubResource("Animation_dqoiy"),
+&"sapfling": SubResource("Animation_cwxb2"),
+&"scaredyShroom": SubResource("Animation_se05k"),
+&"seashooter": SubResource("Animation_qbw0r"),
+&"seashooter_mgp": SubResource("Animation_hvqmh"),
+&"seashroom": SubResource("Animation_42mh4"),
+&"seedling": SubResource("Animation_hfm7f"),
+&"shadowpeashooter": SubResource("Animation_lyfka"),
+&"shadowpeashooter_mgp": SubResource("Animation_43n31"),
+&"shadowshroom": SubResource("Animation_d3d5i"),
+&"shinevine": SubResource("Animation_yu33s"),
+&"shootingstarfruit": SubResource("Animation_a48nm"),
+&"shrinkingviolet": SubResource("Animation_y55r4"),
+&"skyshooter": SubResource("Animation_tlmnd"),
+&"skyshooter_mgp": SubResource("Animation_xq5s3"),
+&"slingpea": SubResource("Animation_vk7ka"),
+&"slingpea_mgp": SubResource("Animation_30cdd"),
+&"snapdragon": SubResource("Animation_wwvf4"),
+&"snappea": SubResource("Animation_urs5l"),
+&"snappea_mgp": SubResource("Animation_q556p"),
+&"snowdrop": SubResource("Animation_w34vt"),
+&"snowpea": SubResource("Animation_v8i2m"),
+&"snowpea_mgp": SubResource("Animation_g5if7"),
+&"solarsage": SubResource("Animation_bixvf"),
+&"solartomato": SubResource("Animation_afigy"),
+&"spikerock": SubResource("Animation_tc0q7"),
+&"spikeweed": SubResource("Animation_wb4fm"),
+&"splitpea": SubResource("Animation_f4vu5"),
+&"splitpea_mgp": SubResource("Animation_fiuhm"),
+&"sporeshroom": SubResource("Animation_177nk"),
+&"springbean": SubResource("Animation_oe2vn"),
+&"squash": SubResource("Animation_kosdv"),
+&"stallia": SubResource("Animation_ialbh"),
+&"starfruit": SubResource("Animation_xryq8"),
+&"stickybombrice": SubResource("Animation_7o587"),
+&"strawburst": SubResource("Animation_bt0o3"),
+&"stunion": SubResource("Animation_oaslx"),
+&"sunbean": SubResource("Animation_4ehkq"),
+&"sunflower": SubResource("Animation_bqvjb"),
+&"sunshroom": SubResource("Animation_5nxiq"),
+&"sweetpotato": SubResource("Animation_slmnn"),
+&"tacticalcuke": SubResource("Animation_fhc3o"),
+&"tallnut": SubResource("Animation_8xh4w"),
+&"tanglekelp": SubResource("Animation_mhroh"),
+&"teleportatomine": SubResource("Animation_nuv1o"),
+&"threepeater": SubResource("Animation_y15rk"),
+&"threepeater_mgp": SubResource("Animation_yo6ih"),
+&"thymewarp": SubResource("Animation_tvehv"),
+&"toadstool": SubResource("Animation_kyofn"),
+&"torchwood": SubResource("Animation_innae"),
+&"tumbleweed": SubResource("Animation_lilkp"),
+&"turkeypult": SubResource("Animation_sld6w"),
+&"turnip": SubResource("Animation_3qlg3"),
+&"twinsunflower": SubResource("Animation_rlxba"),
+&"ultomato": SubResource("Animation_1k4ip"),
+&"umbrella": SubResource("Animation_sh4eu"),
+&"vamporcini": SubResource("Animation_84xiu"),
+&"wallnut": SubResource("Animation_h4gnt"),
+&"wasabiwhip": SubResource("Animation_2wcyn"),
+&"wintermelon": SubResource("Animation_qer4p"),
+&"witchhazel": SubResource("Animation_4vf27"),
+&"xshot": SubResource("Animation_f2vw3"),
+&"zoybeanpod": SubResource("Animation_fga3w")
+}
+
+[node name="plants" type="Node2D" unique_id=1196736067]
+script = ExtResource("1_kqnc0")
+bounds = Rect2(-105.66, -73.5, 208, 134)
+
+[node name="bg" type="Node2D" parent="." unique_id=192580397]
+script = ExtResource("2_aylh3")
+display = -1
+
+[node name="0" type="Sprite2D" parent="bg" unique_id=1937975365]
+visible = false
+position = Vector2(-0.16, -0.16)
+texture = SubResource("AtlasTexture_argsd")
+
+[node name="plant_body" type="Node2D" parent="." unique_id=308436668]
+script = ExtResource("2_aylh3")
+display = 257
+
+[node name="0" type="Sprite2D" parent="plant_body" unique_id=1997657882]
+visible = false
+position = Vector2(-36.32, -10.75)
+texture = SubResource("AtlasTexture_kqnc0")
+
+[node name="1" type="Sprite2D" parent="plant_body" unique_id=1473446475]
+visible = false
+position = Vector2(-37.67, -10.25)
+texture = SubResource("AtlasTexture_aylh3")
+
+[node name="2" type="Sprite2D" parent="plant_body" unique_id=1253554572]
+visible = false
+position = Vector2(-23.5, -11.18)
+texture = SubResource("AtlasTexture_ekcgf")
+
+[node name="3" type="Sprite2D" parent="plant_body" unique_id=168165292]
+visible = false
+position = Vector2(-28.94, -11.47)
+texture = SubResource("AtlasTexture_gexck")
+
+[node name="4" type="Sprite2D" parent="plant_body" unique_id=1032789464]
+visible = false
+position = Vector2(-19.56, -9.87)
+texture = SubResource("AtlasTexture_jevjx")
+
+[node name="5" type="Sprite2D" parent="plant_body" unique_id=1567355722]
+visible = false
+position = Vector2(-25.56, -13.9)
+texture = SubResource("AtlasTexture_i5gtb")
+offset = Vector2(-1.5, 0.5)
+
+[node name="6" type="Sprite2D" parent="plant_body" unique_id=437568736]
+visible = false
+position = Vector2(-17.09, -0.83)
+scale = Vector2(0.9889, 0.9889)
+texture = SubResource("AtlasTexture_5whia")
+
+[node name="7" type="Sprite2D" parent="plant_body" unique_id=1940192215]
+visible = false
+position = Vector2(-34.11, -11.56)
+texture = SubResource("AtlasTexture_miwlr")
+
+[node name="8" type="Sprite2D" parent="plant_body" unique_id=708796359]
+visible = false
+position = Vector2(-35.87, -4.93)
+texture = SubResource("AtlasTexture_nce5q")
+
+[node name="9" type="Sprite2D" parent="plant_body" unique_id=216875780]
+visible = false
+position = Vector2(-13.45, -9.87)
+texture = SubResource("AtlasTexture_ikehw")
+
+[node name="10" type="Sprite2D" parent="plant_body" unique_id=1534552633]
+visible = false
+position = Vector2(-19.28, 0)
+texture = SubResource("AtlasTexture_ifej4")
+
+[node name="11" type="Sprite2D" parent="plant_body" unique_id=1592674484]
+visible = false
+position = Vector2(-22.63, -6.86)
+texture = SubResource("AtlasTexture_m5dqw")
+
+[node name="12" type="Sprite2D" parent="plant_body" unique_id=880309510]
+visible = false
+position = Vector2(-23.77, -9.87)
+texture = SubResource("AtlasTexture_yqbme")
+
+[node name="13" type="Sprite2D" parent="plant_body" unique_id=844751780]
+visible = false
+position = Vector2(-17.05, -8.98)
+texture = SubResource("AtlasTexture_ia6ai")
+
+[node name="14" type="Sprite2D" parent="plant_body" unique_id=1517475304]
+visible = false
+position = Vector2(-27.8, -23.32)
+scale = Vector2(1, 1.2)
+texture = SubResource("AtlasTexture_ha1in")
+
+[node name="15" type="Sprite2D" parent="plant_body" unique_id=369940230]
+visible = false
+position = Vector2(-34.98, -10.31)
+texture = SubResource("AtlasTexture_clmgb")
+
+[node name="16" type="Sprite2D" parent="plant_body" unique_id=347656751]
+visible = false
+position = Vector2(-33.18, -8.52)
+texture = SubResource("AtlasTexture_4qt0l")
+
+[node name="17" type="Sprite2D" parent="plant_body" unique_id=673427445]
+visible = false
+position = Vector2(-35.11, -10.25)
+texture = SubResource("AtlasTexture_08bys")
+
+[node name="18" type="Sprite2D" parent="plant_body" unique_id=1042267417]
+visible = false
+position = Vector2(-25.49, 3.45)
+scale = Vector2(1.1344, 1.1344)
+texture = SubResource("AtlasTexture_506xd")
+offset = Vector2(-0.5, -0.5)
+
+[node name="19" type="Sprite2D" parent="plant_body" unique_id=1720608499]
+visible = false
+position = Vector2(-24.66, -7.62)
+texture = SubResource("AtlasTexture_7tbor")
+
+[node name="20" type="Sprite2D" parent="plant_body" unique_id=2047317126]
+visible = false
+position = Vector2(-40.36, -6.73)
+texture = SubResource("AtlasTexture_v02qv")
+
+[node name="21" type="Sprite2D" parent="plant_body" unique_id=826323700]
+visible = false
+position = Vector2(-37.22, 0.42)
+scale = Vector2(1.05, 1.05)
+texture = SubResource("AtlasTexture_jj20s")
+
+[node name="22" type="Sprite2D" parent="plant_body" unique_id=119582928]
+visible = false
+position = Vector2(-18.02, -11.14)
+texture = SubResource("AtlasTexture_6so13")
+
+[node name="23" type="Sprite2D" parent="plant_body" unique_id=249674760]
+visible = false
+position = Vector2(-17.04, -4.48)
+texture = SubResource("AtlasTexture_06jh5")
+
+[node name="24" type="Sprite2D" parent="plant_body" unique_id=956068196]
+visible = false
+position = Vector2(-22.06, -8.53)
+texture = SubResource("AtlasTexture_mr6q6")
+
+[node name="25" type="Sprite2D" parent="plant_body" unique_id=725125893]
+visible = false
+position = Vector2(-30.49, -9.42)
+texture = SubResource("AtlasTexture_w6guh")
+
+[node name="26" type="Sprite2D" parent="plant_body" unique_id=404236369]
+visible = false
+position = Vector2(-26.01, -9.87)
+texture = SubResource("AtlasTexture_v3da5")
+
+[node name="27" type="Sprite2D" parent="plant_body" unique_id=439369931]
+visible = false
+position = Vector2(-35.42, -5.84)
+scale = Vector2(0.9476, 0.9476)
+texture = SubResource("AtlasTexture_tacci")
+
+[node name="28" type="Sprite2D" parent="plant_body" unique_id=385306282]
+visible = false
+position = Vector2(-9.87, -4.48)
+texture = SubResource("AtlasTexture_u7mma")
+
+[node name="29" type="Sprite2D" parent="plant_body" unique_id=568313156]
+visible = false
+position = Vector2(-25.97, 10.76)
+texture = SubResource("AtlasTexture_vc1it")
+
+[node name="30" type="Sprite2D" parent="plant_body" unique_id=1257675867]
+visible = false
+position = Vector2(-19.71, 16.59)
+texture = SubResource("AtlasTexture_g36ju")
+
+[node name="31" type="Sprite2D" parent="plant_body" unique_id=311714127]
+visible = false
+position = Vector2(-35.43, -6.28)
+texture = SubResource("AtlasTexture_nhmkm")
+
+[node name="32" type="Sprite2D" parent="plant_body" unique_id=1096071606]
+visible = false
+position = Vector2(-25.11, -9.42)
+texture = SubResource("AtlasTexture_ewwul")
+
+[node name="33" type="Sprite2D" parent="plant_body" unique_id=1008614329]
+visible = false
+position = Vector2(-26.46, -10.31)
+texture = SubResource("AtlasTexture_dewvk")
+
+[node name="34" type="Sprite2D" parent="plant_body" unique_id=587123450]
+visible = false
+position = Vector2(-16.59, -6.28)
+texture = SubResource("AtlasTexture_4tdfw")
+
+[node name="35" type="Sprite2D" parent="plant_body" unique_id=641389128]
+visible = false
+position = Vector2(-31.89, -7.17)
+texture = SubResource("AtlasTexture_h8gip")
+
+[node name="36" type="Sprite2D" parent="plant_body" unique_id=971782843]
+visible = false
+position = Vector2(-33.09, -8.52)
+texture = SubResource("AtlasTexture_etjks")
+
+[node name="37" type="Sprite2D" parent="plant_body" unique_id=978173045]
+visible = false
+position = Vector2(-2.37, -11.44)
+texture = SubResource("AtlasTexture_hc5gv")
+
+[node name="38" type="Sprite2D" parent="plant_body" unique_id=411792596]
+visible = false
+position = Vector2(-39.01, -0.45)
+texture = SubResource("AtlasTexture_c5imk")
+
+[node name="39" type="Sprite2D" parent="plant_body" unique_id=692152987]
+visible = false
+position = Vector2(-6.28, -13.45)
+texture = SubResource("AtlasTexture_e1hdh")
+offset = Vector2(-2.5, -0.5)
+
+[node name="40" type="Sprite2D" parent="plant_body" unique_id=1960313598]
+visible = false
+texture = SubResource("AtlasTexture_32pxn")
+offset = Vector2(-5.5, 2.5)
+
+[node name="41" type="Sprite2D" parent="plant_body" unique_id=572586701]
+visible = false
+texture = SubResource("AtlasTexture_2wrpf")
+offset = Vector2(-5.5, -1.5)
+
+[node name="42" type="Sprite2D" parent="plant_body" unique_id=1431160996]
+visible = false
+texture = SubResource("AtlasTexture_ylxht")
+offset = Vector2(-3.5, 4.5)
+
+[node name="43" type="Sprite2D" parent="plant_body" unique_id=664556762]
+visible = false
+texture = SubResource("AtlasTexture_dgig3")
+offset = Vector2(-4, 4.5)
+
+[node name="44" type="Sprite2D" parent="plant_body" unique_id=2124284451]
+visible = false
+position = Vector2(-26.01, -9.17)
+texture = SubResource("AtlasTexture_5xdr3")
+
+[node name="45" type="Sprite2D" parent="plant_body" unique_id=1354537743]
+visible = false
+position = Vector2(-24.86, -11.58)
+texture = SubResource("AtlasTexture_h6tvm")
+
+[node name="46" type="Sprite2D" parent="plant_body" unique_id=1700246164]
+visible = false
+position = Vector2(-21.53, -11.91)
+texture = SubResource("AtlasTexture_sqmjp")
+
+[node name="47" type="Sprite2D" parent="plant_body" unique_id=304539181]
+visible = false
+position = Vector2(-27.4, -10.93)
+texture = SubResource("AtlasTexture_yeb1n")
+
+[node name="48" type="Sprite2D" parent="plant_body" unique_id=1835207379]
+visible = false
+position = Vector2(-35.87, -9.87)
+scale = Vector2(1.45, 1.45)
+texture = SubResource("AtlasTexture_pj0ou")
+
+[node name="49" type="Sprite2D" parent="plant_body" unique_id=1053308993]
+visible = false
+position = Vector2(-35.87, -9.87)
+scale = Vector2(1.45, 1.45)
+texture = SubResource("AtlasTexture_gupbv")
+
+[node name="50" type="Sprite2D" parent="plant_body" unique_id=1316178604]
+visible = false
+position = Vector2(-35.87, -9.87)
+scale = Vector2(1.45, 1.45)
+texture = SubResource("AtlasTexture_e10te")
+
+[node name="51" type="Sprite2D" parent="plant_body" unique_id=48862707]
+visible = false
+position = Vector2(-35.87, -9.87)
+scale = Vector2(1.45, 1.45)
+texture = SubResource("AtlasTexture_f8ojm")
+
+[node name="52" type="Sprite2D" parent="plant_body" unique_id=1907732904]
+visible = false
+position = Vector2(-22.87, 2.81)
+texture = SubResource("AtlasTexture_lb0cx")
+
+[node name="53" type="Sprite2D" parent="plant_body" unique_id=1812203024]
+visible = false
+position = Vector2(-24.22, -12.89)
+texture = SubResource("AtlasTexture_jg13s")
+
+[node name="54" type="Sprite2D" parent="plant_body" unique_id=2065363010]
+visible = false
+position = Vector2(-21.1, -9.95)
+texture = SubResource("AtlasTexture_5ne2k")
+
+[node name="55" type="Sprite2D" parent="plant_body" unique_id=1643228468]
+visible = false
+position = Vector2(-28.25, -10.4)
+texture = SubResource("AtlasTexture_6kyes")
+
+[node name="56" type="Sprite2D" parent="plant_body" unique_id=905305448]
+visible = false
+position = Vector2(-31.35, -5.31)
+scale = Vector2(0.9697, 0.9697)
+texture = SubResource("AtlasTexture_iygrr")
+
+[node name="57" type="Sprite2D" parent="plant_body" unique_id=13567792]
+visible = false
+position = Vector2(-34.98, -4.95)
+texture = SubResource("AtlasTexture_2tqsv")
+
+[node name="58" type="Sprite2D" parent="plant_body" unique_id=692599624]
+visible = false
+position = Vector2(-23.32, -8.52)
+texture = SubResource("AtlasTexture_7rudj")
+
+[node name="59" type="Sprite2D" parent="plant_body" unique_id=1906949507]
+visible = false
+position = Vector2(-42.6, -10.31)
+texture = SubResource("AtlasTexture_81tsw")
+
+[node name="60" type="Sprite2D" parent="plant_body" unique_id=637019257]
+visible = false
+position = Vector2(-20.43, -6.93)
+texture = SubResource("AtlasTexture_17iyj")
+
+[node name="61" type="Sprite2D" parent="plant_body" unique_id=1522901691]
+visible = false
+position = Vector2(-17.57, -9.29)
+texture = SubResource("AtlasTexture_rknbx")
+
+[node name="62" type="Sprite2D" parent="plant_body" unique_id=406649019]
+visible = false
+position = Vector2(-29.46, -6)
+scale = Vector2(1.0508, 1.0508)
+texture = SubResource("AtlasTexture_q8twb")
+
+[node name="63" type="Sprite2D" parent="plant_body" unique_id=643602843]
+visible = false
+position = Vector2(-28.7, -11.02)
+texture = SubResource("AtlasTexture_ei70e")
+
+[node name="64" type="Sprite2D" parent="plant_body" unique_id=866847033]
+visible = false
+position = Vector2(-17.09, -0.83)
+scale = Vector2(0.9889, 0.9889)
+texture = SubResource("AtlasTexture_6erk7")
+
+[node name="65" type="Sprite2D" parent="plant_body" unique_id=1339118001]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_6gthf")
+
+[node name="66" type="Sprite2D" parent="plant_body" unique_id=455501956]
+visible = false
+position = Vector2(-40.81, -8.07)
+texture = SubResource("AtlasTexture_8fnw7")
+
+[node name="67" type="Sprite2D" parent="plant_body" unique_id=2130623186]
+visible = false
+position = Vector2(-24.66, -10.31)
+texture = SubResource("AtlasTexture_3d24b")
+
+[node name="68" type="Sprite2D" parent="plant_body" unique_id=337229047]
+visible = false
+position = Vector2(-24.22, 3.14)
+texture = SubResource("AtlasTexture_yyc8f")
+
+[node name="69" type="Sprite2D" parent="plant_body" unique_id=1745595953]
+visible = false
+position = Vector2(-49.33, -9.87)
+texture = SubResource("AtlasTexture_6ivi7")
+offset = Vector2(0.5, 0)
+
+[node name="70" type="Sprite2D" parent="plant_body" unique_id=1412956641]
+visible = false
+position = Vector2(-23.76, -8.58)
+scale = Vector2(0.8866, 0.8866)
+texture = SubResource("AtlasTexture_oir5x")
+
+[node name="71" type="Sprite2D" parent="plant_body" unique_id=1775050497]
+visible = false
+position = Vector2(-37.67, -9.42)
+texture = SubResource("AtlasTexture_86v7f")
+
+[node name="72" type="Sprite2D" parent="plant_body" unique_id=358390873]
+visible = false
+position = Vector2(-39.54, -6.1)
+scale = Vector2(0.9398, 0.9398)
+texture = SubResource("AtlasTexture_1jl86")
+
+[node name="73" type="Sprite2D" parent="plant_body" unique_id=1016485311]
+visible = false
+position = Vector2(-27.62, -9.19)
+texture = SubResource("AtlasTexture_08hn7")
+
+[node name="74" type="Sprite2D" parent="plant_body" unique_id=783924582]
+visible = false
+position = Vector2(-44.35, -21.72)
+scale = Vector2(1.1465, 1.1465)
+texture = SubResource("AtlasTexture_wmuj2")
+
+[node name="75" type="Sprite2D" parent="plant_body" unique_id=1128887197]
+visible = false
+position = Vector2(-39.5, -0.33)
+texture = SubResource("AtlasTexture_wlfrr")
+
+[node name="76" type="Sprite2D" parent="plant_body" unique_id=1528279305]
+visible = false
+position = Vector2(-19.52, -5.63)
+scale = Vector2(0.9852, 0.9852)
+texture = SubResource("AtlasTexture_ou617")
+
+[node name="77" type="Sprite2D" parent="plant_body" unique_id=1462934494]
+visible = false
+position = Vector2(-32.74, -10.76)
+texture = SubResource("AtlasTexture_40wts")
+
+[node name="78" type="Sprite2D" parent="plant_body" unique_id=1784279535]
+visible = false
+position = Vector2(-35.48, -12.55)
+texture = SubResource("AtlasTexture_m7xcr")
+offset = Vector2(-0.5, 0)
+
+[node name="79" type="Sprite2D" parent="plant_body" unique_id=99446664]
+visible = false
+position = Vector2(-25.88, -8.66)
+texture = SubResource("AtlasTexture_fwib4")
+
+[node name="80" type="Sprite2D" parent="plant_body" unique_id=987327025]
+visible = false
+position = Vector2(-30.04, -9.87)
+texture = SubResource("AtlasTexture_sjwmw")
+
+[node name="81" type="Sprite2D" parent="plant_body" unique_id=1667654626]
+visible = false
+position = Vector2(-21.31, -10.97)
+texture = SubResource("AtlasTexture_vb70v")
+
+[node name="82" type="Sprite2D" parent="plant_body" unique_id=730250277]
+visible = false
+position = Vector2(-18.83, -0.45)
+texture = SubResource("AtlasTexture_kviij")
+offset = Vector2(-0.5, 0.5)
+
+[node name="83" type="Sprite2D" parent="plant_body" unique_id=352740338]
+visible = false
+position = Vector2(-26.26, -10.73)
+texture = SubResource("AtlasTexture_18m4n")
+
+[node name="84" type="Sprite2D" parent="plant_body" unique_id=846435731]
+visible = false
+position = Vector2(-32.29, -10.93)
+texture = SubResource("AtlasTexture_aho8n")
+offset = Vector2(0.5, 0)
+
+[node name="85" type="Sprite2D" parent="plant_body" unique_id=1078477772]
+visible = false
+position = Vector2(-26.04, 3.8)
+texture = SubResource("AtlasTexture_mjjaq")
+
+[node name="86" type="Sprite2D" parent="plant_body" unique_id=1750805416]
+visible = false
+position = Vector2(-17.64, -0.77)
+texture = SubResource("AtlasTexture_v8dcl")
+
+[node name="87" type="Sprite2D" parent="plant_body" unique_id=407148253]
+visible = false
+position = Vector2(-13.9, -10.31)
+texture = SubResource("AtlasTexture_8n242")
+
+[node name="88" type="Sprite2D" parent="plant_body" unique_id=960122709]
+visible = false
+position = Vector2(-6.63, -0.91)
+scale = Vector2(1.0062, 1.0062)
+texture = SubResource("AtlasTexture_ci2fb")
+
+[node name="89" type="Sprite2D" parent="plant_body" unique_id=2033309602]
+visible = false
+position = Vector2(-23.87, -14.54)
+texture = SubResource("AtlasTexture_8g07x")
+
+[node name="90" type="Sprite2D" parent="plant_body" unique_id=1711390737]
+visible = false
+position = Vector2(-11.7, -5.61)
+scale = Vector2(1.0773, 1.0773)
+texture = SubResource("AtlasTexture_344gc")
+
+[node name="91" type="Sprite2D" parent="plant_body" unique_id=2032070267]
+visible = false
+position = Vector2(-34.98, -10.43)
+texture = SubResource("AtlasTexture_p46jc")
+
+[node name="92" type="Sprite2D" parent="plant_body" unique_id=1226503935]
+visible = false
+position = Vector2(-32.02, -5.65)
+scale = Vector2(0.9473, 0.9473)
+texture = SubResource("AtlasTexture_i3no1")
+
+[node name="93" type="Sprite2D" parent="plant_body" unique_id=276781642]
+visible = false
+position = Vector2(-20.18, -9.87)
+texture = SubResource("AtlasTexture_k3k42")
+
+[node name="94" type="Sprite2D" parent="plant_body" unique_id=157134299]
+visible = false
+position = Vector2(-28.95, -5.45)
+scale = Vector2(1.0834, 1.0834)
+texture = SubResource("AtlasTexture_asqgv")
+
+[node name="95" type="Sprite2D" parent="plant_body" unique_id=2009832962]
+visible = false
+position = Vector2(-37.33, -8.31)
+scale = Vector2(1.0481, 1.0481)
+texture = SubResource("AtlasTexture_vi7cv")
+offset = Vector2(-0.5, 0)
+
+[node name="96" type="Sprite2D" parent="plant_body" unique_id=185975425]
+visible = false
+position = Vector2(-40.24, -5.9)
+scale = Vector2(0.9349, 0.9349)
+texture = SubResource("AtlasTexture_8hiby")
+
+[node name="97" type="Sprite2D" parent="plant_body" unique_id=964721722]
+visible = false
+position = Vector2(-29.15, -11.41)
+texture = SubResource("AtlasTexture_ddelw")
+
+[node name="98" type="Sprite2D" parent="plant_body" unique_id=1956321713]
+visible = false
+position = Vector2(-30.85, -4.96)
+scale = Vector2(1.2495, 1.2495)
+texture = SubResource("AtlasTexture_1k4fv")
+
+[node name="99" type="Sprite2D" parent="plant_body" unique_id=369646148]
+visible = false
+position = Vector2(-20.11, -13.22)
+texture = SubResource("AtlasTexture_gieis")
+offset = Vector2(-0.5, 0)
+
+[node name="100" type="Sprite2D" parent="plant_body" unique_id=535835702]
+visible = false
+position = Vector2(-28.43, -12.77)
+texture = SubResource("AtlasTexture_vkdro")
+
+[node name="101" type="Sprite2D" parent="plant_body" unique_id=598813581]
+visible = false
+position = Vector2(-44.06, -10.7)
+texture = SubResource("AtlasTexture_1fduy")
+
+[node name="102" type="Sprite2D" parent="plant_body" unique_id=1519960433]
+visible = false
+position = Vector2(-32.29, -11.16)
+texture = SubResource("AtlasTexture_renoi")
+
+[node name="103" type="Sprite2D" parent="plant_body" unique_id=1680876415]
+visible = false
+position = Vector2(-25.56, -11.25)
+texture = SubResource("AtlasTexture_wht5e")
+
+[node name="104" type="Sprite2D" parent="plant_body" unique_id=751807869]
+visible = false
+position = Vector2(-19.21, -5.56)
+texture = SubResource("AtlasTexture_w386l")
+
+[node name="105" type="Sprite2D" parent="plant_body" unique_id=459436223]
+visible = false
+position = Vector2(-25.43, -9.7)
+texture = SubResource("AtlasTexture_refwd")
+
+[node name="106" type="Sprite2D" parent="plant_body" unique_id=778076004]
+visible = false
+position = Vector2(-24.62, -11.27)
+texture = SubResource("AtlasTexture_xo0nu")
+
+[node name="107" type="Sprite2D" parent="plant_body" unique_id=216182299]
+visible = false
+position = Vector2(-35.43, -8.97)
+texture = SubResource("AtlasTexture_0l6dg")
+
+[node name="108" type="Sprite2D" parent="plant_body" unique_id=1854873853]
+visible = false
+position = Vector2(-22.42, -9.87)
+texture = SubResource("AtlasTexture_elvpc")
+
+[node name="109" type="Sprite2D" parent="plant_body" unique_id=1577482369]
+visible = false
+position = Vector2(-32, -5.32)
+scale = Vector2(1.0473, 1.0473)
+texture = SubResource("AtlasTexture_xglrl")
+
+[node name="110" type="Sprite2D" parent="plant_body" unique_id=327112074]
+visible = false
+position = Vector2(-16.46, -0.58)
+texture = SubResource("AtlasTexture_eqyse")
+
+[node name="111" type="Sprite2D" parent="plant_body" unique_id=848266718]
+visible = false
+position = Vector2(-7.82, -6.04)
+scale = Vector2(0.9347, 0.9347)
+texture = SubResource("AtlasTexture_hnoj1")
+
+[node name="112" type="Sprite2D" parent="plant_body" unique_id=757517401]
+visible = false
+position = Vector2(-33.82, -0.19)
+texture = SubResource("AtlasTexture_yf0j8")
+
+[node name="113" type="Sprite2D" parent="plant_body" unique_id=1890539395]
+visible = false
+position = Vector2(-27.27, -11.73)
+texture = SubResource("AtlasTexture_yi8ht")
+
+[node name="114" type="Sprite2D" parent="plant_body" unique_id=607532472]
+visible = false
+position = Vector2(-16.05, -11.15)
+texture = SubResource("AtlasTexture_ucyk1")
+
+[node name="115" type="Sprite2D" parent="plant_body" unique_id=967973349]
+visible = false
+position = Vector2(-20.55, -13.43)
+texture = SubResource("AtlasTexture_wjyv6")
+
+[node name="116" type="Sprite2D" parent="plant_body" unique_id=648789089]
+visible = false
+position = Vector2(-31.2, -6.69)
+scale = Vector2(1.1199, 1.1199)
+texture = SubResource("AtlasTexture_ikvuj")
+
+[node name="117" type="Sprite2D" parent="plant_body" unique_id=35595977]
+visible = false
+position = Vector2(-34.96, -5.84)
+scale = Vector2(0.9504, 0.9504)
+texture = SubResource("AtlasTexture_you1i")
+
+[node name="118" type="Sprite2D" parent="plant_body" unique_id=2120135285]
+visible = false
+position = Vector2(-25.13, -8.52)
+texture = SubResource("AtlasTexture_778j0")
+
+[node name="119" type="Sprite2D" parent="plant_body" unique_id=297011576]
+visible = false
+position = Vector2(-44.68, -3.14)
+texture = SubResource("AtlasTexture_vpdk8")
+
+[node name="120" type="Sprite2D" parent="plant_body" unique_id=375578260]
+visible = false
+position = Vector2(-26.15, -3.4)
+texture = SubResource("AtlasTexture_5wj4k")
+
+[node name="121" type="Sprite2D" parent="plant_body" unique_id=1380480159]
+visible = false
+position = Vector2(-16.57, 1.68)
+texture = SubResource("AtlasTexture_muvyo")
+
+[node name="122" type="Sprite2D" parent="plant_body" unique_id=1582815747]
+visible = false
+position = Vector2(-25.07, -10.41)
+texture = SubResource("AtlasTexture_7pxsv")
+
+[node name="123" type="Sprite2D" parent="plant_body" unique_id=1582692718]
+visible = false
+position = Vector2(-31.34, -8.96)
+texture = SubResource("AtlasTexture_4sblg")
+
+[node name="124" type="Sprite2D" parent="plant_body" unique_id=338214887]
+visible = false
+position = Vector2(-17.82, 6.21)
+texture = SubResource("AtlasTexture_sv2id")
+
+[node name="125" type="Sprite2D" parent="plant_body" unique_id=422587564]
+visible = false
+position = Vector2(-30.63, -11.57)
+texture = SubResource("AtlasTexture_oiymw")
+offset = Vector2(2.5, 0)
+
+[node name="126" type="Sprite2D" parent="plant_body" unique_id=962889359]
+visible = false
+position = Vector2(-7.54, -5.22)
+scale = Vector2(1.1287, 1.1287)
+texture = SubResource("AtlasTexture_h65sc")
+offset = Vector2(-0.5, 0.5)
+
+[node name="127" type="Sprite2D" parent="plant_body" unique_id=1861734735]
+visible = false
+position = Vector2(-31.79, 1.61)
+texture = SubResource("AtlasTexture_frwyh")
+
+[node name="128" type="Sprite2D" parent="plant_body" unique_id=1592879498]
+visible = false
+position = Vector2(-34.56, -11.46)
+texture = SubResource("AtlasTexture_4cc7w")
+
+[node name="129" type="Sprite2D" parent="plant_body" unique_id=2133612661]
+visible = false
+position = Vector2(-19.7, 2.86)
+texture = SubResource("AtlasTexture_gm2tx")
+
+[node name="130" type="Sprite2D" parent="plant_body" unique_id=1163935119]
+visible = false
+position = Vector2(-31.79, 3.67)
+texture = SubResource("AtlasTexture_34ux8")
+
+[node name="131" type="Sprite2D" parent="plant_body" unique_id=1335064645]
+visible = false
+position = Vector2(-16.65, 9.94)
+texture = SubResource("AtlasTexture_r0vca")
+
+[node name="132" type="Sprite2D" parent="plant_body" unique_id=1962271609]
+visible = false
+position = Vector2(-25.52, -10.48)
+texture = SubResource("AtlasTexture_xfgtw")
+
+[node name="133" type="Sprite2D" parent="plant_body" unique_id=2034539505]
+visible = false
+position = Vector2(-40.63, -13.45)
+texture = SubResource("AtlasTexture_6uqmb")
+
+[node name="134" type="Sprite2D" parent="plant_body" unique_id=1113825610]
+visible = false
+position = Vector2(-34.92, -9.59)
+texture = SubResource("AtlasTexture_adbv7")
+
+[node name="135" type="Sprite2D" parent="plant_body" unique_id=552522111]
+visible = false
+position = Vector2(-34.41, -9.57)
+texture = SubResource("AtlasTexture_a4mn3")
+
+[node name="136" type="Sprite2D" parent="plant_body" unique_id=1136153560]
+visible = false
+position = Vector2(0.91, 27.08)
+texture = SubResource("AtlasTexture_03lqj")
+
+[node name="137" type="Sprite2D" parent="plant_body" unique_id=1860381458]
+visible = false
+position = Vector2(-15.67, -11.19)
+texture = SubResource("AtlasTexture_m48eu")
+offset = Vector2(0, 0.5)
+
+[node name="138" type="Sprite2D" parent="plant_body" unique_id=1423744347]
+visible = false
+position = Vector2(-41.73, -10.48)
+texture = SubResource("AtlasTexture_ge7uh")
+
+[node name="139" type="Sprite2D" parent="plant_body" unique_id=728726286]
+visible = false
+position = Vector2(-36.72, -11.46)
+texture = SubResource("AtlasTexture_ogexk")
+
+[node name="140" type="Sprite2D" parent="plant_body" unique_id=1200467800]
+visible = false
+position = Vector2(-17.41, -11.12)
+texture = SubResource("AtlasTexture_jtstc")
+
+[node name="141" type="Sprite2D" parent="plant_body" unique_id=455470391]
+visible = false
+position = Vector2(-20.54, -1.98)
+texture = SubResource("AtlasTexture_armbs")
+
+[node name="142" type="Sprite2D" parent="plant_body" unique_id=1738467265]
+visible = false
+position = Vector2(-24.27, -10.91)
+texture = SubResource("AtlasTexture_2nx0e")
+
+[node name="143" type="Sprite2D" parent="plant_body" unique_id=569296055]
+visible = false
+position = Vector2(-8.87, 0.54)
+texture = SubResource("AtlasTexture_dusqv")
+
+[node name="144" type="Sprite2D" parent="plant_body" unique_id=868834160]
+visible = false
+position = Vector2(-25.69, -7.66)
+texture = SubResource("AtlasTexture_0huwa")
+
+[node name="145" type="Sprite2D" parent="plant_body" unique_id=447445092]
+visible = false
+position = Vector2(-8.63, 6.8)
+texture = SubResource("AtlasTexture_og5ds")
+
+[node name="146" type="Sprite2D" parent="plant_body" unique_id=791313440]
+visible = false
+position = Vector2(-40.14, -10.94)
+texture = SubResource("AtlasTexture_sfha2")
+
+[node name="147" type="Sprite2D" parent="plant_body" unique_id=852769558]
+visible = false
+position = Vector2(-28.81, -10.14)
+texture = SubResource("AtlasTexture_u6kus")
+
+[node name="148" type="Sprite2D" parent="plant_body" unique_id=1599496140]
+visible = false
+position = Vector2(-13.99, -5.82)
+scale = Vector2(1.0981, 1.0981)
+texture = SubResource("AtlasTexture_6h3i7")
+
+[node name="149" type="Sprite2D" parent="plant_body" unique_id=1796549365]
+visible = false
+position = Vector2(-17.64, 15.94)
+texture = SubResource("AtlasTexture_e7pei")
+
+[node name="150" type="Sprite2D" parent="plant_body" unique_id=1280596139]
+visible = false
+position = Vector2(-46.82, -5.76)
+texture = SubResource("AtlasTexture_udt56")
+
+[node name="151" type="Sprite2D" parent="plant_body" unique_id=89242641]
+visible = false
+position = Vector2(-26.19, -5.53)
+scale = Vector2(0.9382, 0.9382)
+texture = SubResource("AtlasTexture_odcos")
+
+[node name="152" type="Sprite2D" parent="plant_body" unique_id=632030545]
+visible = false
+position = Vector2(-33.19, -11.59)
+texture = SubResource("AtlasTexture_0t8l2")
+
+[node name="153" type="Sprite2D" parent="plant_body" unique_id=343640405]
+visible = false
+position = Vector2(-1.48, -1.11)
+texture = SubResource("AtlasTexture_j1kfe")
+
+[node name="154" type="Sprite2D" parent="plant_body" unique_id=879252246]
+visible = false
+position = Vector2(-29.55, -13.54)
+texture = SubResource("AtlasTexture_jr7fm")
+
+[node name="155" type="Sprite2D" parent="plant_body" unique_id=1620722972]
+visible = false
+position = Vector2(-27.25, -18.08)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_0lf3x")
+offset = Vector2(-2.5, 2.5)
+
+[node name="156" type="Sprite2D" parent="plant_body" unique_id=1146229141]
+visible = false
+position = Vector2(-43.01, -7.9)
+texture = SubResource("AtlasTexture_tpcfc")
+
+[node name="157" type="Sprite2D" parent="plant_body" unique_id=1809376541]
+visible = false
+position = Vector2(-25.01, 6.38)
+texture = SubResource("AtlasTexture_n6u0f")
+
+[node name="158" type="Sprite2D" parent="plant_body" unique_id=1395788102]
+visible = false
+position = Vector2(-20.62, 6.45)
+texture = SubResource("AtlasTexture_wqcx7")
+
+[node name="159" type="Sprite2D" parent="plant_body" unique_id=290158464]
+visible = false
+position = Vector2(-24.65, 0.45)
+texture = SubResource("AtlasTexture_ny2hw")
+
+[node name="160" type="Sprite2D" parent="plant_body" unique_id=1650164282]
+visible = false
+position = Vector2(-32.85, -5.51)
+texture = SubResource("AtlasTexture_s0jw3")
+
+[node name="161" type="Sprite2D" parent="plant_body" unique_id=1995803395]
+visible = false
+position = Vector2(-2.07, -5.64)
+scale = Vector2(1.01, 1.01)
+texture = SubResource("AtlasTexture_cknc6")
+
+[node name="162" type="Sprite2D" parent="plant_body" unique_id=1930569994]
+visible = false
+position = Vector2(-22.7, -11.75)
+texture = SubResource("AtlasTexture_dvrhf")
+
+[node name="163" type="Sprite2D" parent="plant_body" unique_id=738045789]
+visible = false
+position = Vector2(-12.99, -9.85)
+texture = SubResource("AtlasTexture_ib3a7")
+
+[node name="164" type="Sprite2D" parent="plant_body" unique_id=2005805733]
+visible = false
+position = Vector2(-25.11, -1.2)
+scale = Vector2(1.0448, 1.0448)
+texture = SubResource("AtlasTexture_8pcgq")
+
+[node name="165" type="Sprite2D" parent="plant_body" unique_id=338576964]
+visible = false
+position = Vector2(-34.06, -7.72)
+texture = SubResource("AtlasTexture_8jxpi")
+
+[node name="166" type="Sprite2D" parent="plant_body" unique_id=312651003]
+visible = false
+position = Vector2(-32.27, -10.56)
+texture = SubResource("AtlasTexture_vwiu1")
+
+[node name="167" type="Sprite2D" parent="plant_body" unique_id=2057878690]
+visible = false
+position = Vector2(-24.5, -9.07)
+scale = Vector2(1.2, 1.2)
+texture = SubResource("AtlasTexture_1erwg")
+
+[node name="168" type="Sprite2D" parent="plant_body" unique_id=879443379]
+visible = false
+position = Vector2(-24.11, 3.41)
+texture = SubResource("AtlasTexture_dtncc")
+
+[node name="169" type="Sprite2D" parent="plant_body" unique_id=1577702489]
+visible = false
+position = Vector2(-8.78, -11.22)
+texture = SubResource("AtlasTexture_6xpqr")
+
+[node name="170" type="Sprite2D" parent="plant_body" unique_id=1515635886]
+visible = false
+position = Vector2(-2.44, -9.76)
+scale = Vector2(1.02, 1.02)
+texture = SubResource("AtlasTexture_2ahrr")
+
+[node name="171" type="Sprite2D" parent="plant_body" unique_id=472759918]
+visible = false
+position = Vector2(-6.46, -10.43)
+texture = SubResource("AtlasTexture_tui2h")
+offset = Vector2(-1, 0)
+
+[node name="172" type="Sprite2D" parent="plant_body" unique_id=1652347720]
+visible = false
+position = Vector2(-20.98, -8.49)
+texture = SubResource("AtlasTexture_wxers")
+
+[node name="173" type="Sprite2D" parent="plant_body" unique_id=439793499]
+visible = false
+position = Vector2(-14.15, -9.36)
+texture = SubResource("AtlasTexture_6vdk4")
+
+[node name="174" type="Sprite2D" parent="plant_body" unique_id=1842858102]
+visible = false
+position = Vector2(-1.65, -0.94)
+scale = Vector2(1.0104, 1.0104)
+texture = SubResource("AtlasTexture_vo6fy")
+
+[node name="175" type="Sprite2D" parent="plant_body" unique_id=74229737]
+visible = false
+position = Vector2(-9.56, -6.17)
+scale = Vector2(0.9489, 0.9489)
+texture = SubResource("AtlasTexture_b4pul")
+
+[node name="176" type="Sprite2D" parent="plant_body" unique_id=702491667]
+visible = false
+position = Vector2(-24.88, -9.76)
+texture = SubResource("AtlasTexture_nfmck")
+
+[node name="177" type="Sprite2D" parent="plant_body" unique_id=741723374]
+visible = false
+position = Vector2(-20.49, -10.24)
+texture = SubResource("AtlasTexture_7r3x1")
+
+[node name="178" type="Sprite2D" parent="plant_body" unique_id=1572604506]
+visible = false
+position = Vector2(-5.6, -0.54)
+scale = Vector2(1.0177, 1.0177)
+texture = SubResource("AtlasTexture_wi2h6")
+
+[node name="179" type="Sprite2D" parent="plant_body" unique_id=767263057]
+visible = false
+position = Vector2(-9.76, -0.98)
+texture = SubResource("AtlasTexture_66ymc")
+
+[node name="180" type="Sprite2D" parent="plant_body" unique_id=1735946647]
+visible = false
+position = Vector2(-21.2, -0.69)
+texture = SubResource("AtlasTexture_t1sl5")
+
+[node name="181" type="Sprite2D" parent="plant_body" unique_id=177833957]
+visible = false
+position = Vector2(-28.69, -5.26)
+texture = SubResource("AtlasTexture_cmmk2")
+
+[node name="182" type="Sprite2D" parent="plant_body" unique_id=878820074]
+visible = false
+position = Vector2(-37.96, 0)
+texture = SubResource("AtlasTexture_oggop")
+
+[node name="183" type="Sprite2D" parent="plant_body" unique_id=765341341]
+visible = false
+position = Vector2(-28.71, -0.38)
+scale = Vector2(1.0937, 1.0937)
+texture = SubResource("AtlasTexture_6uua8")
+
+[node name="184" type="Sprite2D" parent="plant_body" unique_id=722934696]
+visible = false
+position = Vector2(-35.41, -5.74)
+scale = Vector2(1.052, 1.052)
+texture = SubResource("AtlasTexture_plfwq")
+offset = Vector2(2, 0)
+
+[node name="185" type="Sprite2D" parent="plant_body" unique_id=344991589]
+visible = false
+position = Vector2(-19.99, 0.01)
+texture = SubResource("AtlasTexture_yec0x")
+
+[node name="186" type="Sprite2D" parent="plant_body" unique_id=1387033198]
+visible = false
+position = Vector2(-14.63, -26.18)
+scale = Vector2(1.1959, 1.1959)
+texture = SubResource("AtlasTexture_u6a3e")
+
+[node name="187" type="Sprite2D" parent="plant_body" unique_id=1435924491]
+visible = false
+position = Vector2(-1.69, -17.37)
+texture = SubResource("AtlasTexture_ptewj")
+offset = Vector2(-0.5, 0.5)
+
+[node name="188" type="Sprite2D" parent="plant_body" unique_id=974674254]
+visible = false
+position = Vector2(-28.48, -19.48)
+scale = Vector2(0.888, 0.888)
+texture = SubResource("AtlasTexture_3hai2")
+offset = Vector2(-0.5, 2)
+
+[node name="189" type="Sprite2D" parent="plant_body" unique_id=268013717]
+visible = false
+position = Vector2(-18.9, -10.35)
+texture = SubResource("AtlasTexture_1vaq1")
+
+[node name="190" type="Sprite2D" parent="plant_body" unique_id=652844964]
+visible = false
+position = Vector2(-18.55, -13.01)
+texture = SubResource("AtlasTexture_b7cns")
+offset = Vector2(0, 1)
+
+[node name="191" type="Sprite2D" parent="plant_body" unique_id=1667843563]
+visible = false
+position = Vector2(-25.84, -7.36)
+texture = SubResource("AtlasTexture_rr5il")
+
+[node name="192" type="Sprite2D" parent="plant_body" unique_id=1064728859]
+visible = false
+position = Vector2(-16.08, -4.25)
+texture = SubResource("AtlasTexture_tlet2")
+
+[node name="193" type="Sprite2D" parent="plant_body" unique_id=1226230535]
+visible = false
+position = Vector2(-25.91, -4.68)
+texture = SubResource("AtlasTexture_ye7if")
+offset = Vector2(-6, 0)
+
+[node name="194" type="Sprite2D" parent="plant_body" unique_id=1225865874]
+visible = false
+position = Vector2(-31.96, -2.96)
+texture = SubResource("AtlasTexture_qogmm")
+
+[node name="195" type="Sprite2D" parent="plant_body" unique_id=131667782]
+visible = false
+position = Vector2(-23.9, -14.44)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_mwlsn")
+
+[node name="196" type="Sprite2D" parent="plant_body" unique_id=838742903]
+visible = false
+position = Vector2(-14.94, -9.64)
+scale = Vector2(0.8896, 0.8896)
+texture = SubResource("AtlasTexture_vhqj1")
+
+[node name="197" type="Sprite2D" parent="plant_body" unique_id=921500079]
+visible = false
+position = Vector2(-24.06, -14.8)
+texture = SubResource("AtlasTexture_qr48v")
+
+[node name="198" type="Sprite2D" parent="plant_body" unique_id=998535027]
+visible = false
+position = Vector2(-28.67, -8.2)
+scale = Vector2(0.9248, 0.9248)
+texture = SubResource("AtlasTexture_ais6d")
+
+[node name="199" type="Sprite2D" parent="plant_body" unique_id=1110281157]
+visible = false
+position = Vector2(-14.22, -21.72)
+texture = SubResource("AtlasTexture_ae0h1")
+offset = Vector2(-0.5, 0)
+
+[node name="200" type="Sprite2D" parent="plant_body" unique_id=107529212]
+visible = false
+position = Vector2(-36.01, -18.1)
+scale = Vector2(1.108, 1.108)
+texture = SubResource("AtlasTexture_bga0e")
+
+[node name="201" type="Sprite2D" parent="plant_body" unique_id=713557517]
+visible = false
+position = Vector2(-36.01, -18.1)
+scale = Vector2(1.108, 1.108)
+texture = SubResource("AtlasTexture_ppomi")
+
+[node name="202" type="Sprite2D" parent="plant_body" unique_id=307470998]
+visible = false
+position = Vector2(-36.01, -18.1)
+scale = Vector2(1.108, 1.108)
+texture = SubResource("AtlasTexture_safgu")
+
+[node name="203" type="Sprite2D" parent="plant_body" unique_id=1511759330]
+visible = false
+position = Vector2(-36.01, -18.1)
+scale = Vector2(1.108, 1.108)
+texture = SubResource("AtlasTexture_umji1")
+
+[node name="204" type="Sprite2D" parent="plant_body" unique_id=1381524417]
+visible = false
+position = Vector2(-36.01, -18.1)
+scale = Vector2(1.108, 1.108)
+texture = SubResource("AtlasTexture_bpa0t")
+
+[node name="205" type="Sprite2D" parent="plant_body" unique_id=1553999712]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_4bf8c")
+
+[node name="206" type="Sprite2D" parent="plant_body" unique_id=806191851]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_sx7fu")
+
+[node name="207" type="Sprite2D" parent="plant_body" unique_id=1380538564]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_viqc3")
+
+[node name="208" type="Sprite2D" parent="plant_body" unique_id=853248456]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_gmk3q")
+
+[node name="209" type="Sprite2D" parent="plant_body" unique_id=1881777593]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_dea15")
+
+[node name="210" type="Sprite2D" parent="plant_body" unique_id=1169778632]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_womb5")
+
+[node name="211" type="Sprite2D" parent="plant_body" unique_id=278489040]
+visible = false
+position = Vector2(-39.18, -10.04)
+texture = SubResource("AtlasTexture_n7scx")
+
+[node name="212" type="Sprite2D" parent="plant_body" unique_id=1150604440]
+visible = false
+position = Vector2(-30.15, -9.01)
+texture = SubResource("AtlasTexture_c04it")
+
+[node name="213" type="Sprite2D" parent="plant_body" unique_id=1049406428]
+visible = false
+position = Vector2(-25, -31.75)
+scale = Vector2(0.8436, 0.8436)
+texture = SubResource("AtlasTexture_mft76")
+
+[node name="214" type="Sprite2D" parent="plant_body" unique_id=616498315]
+visible = false
+position = Vector2(-33.21, 5)
+texture = SubResource("AtlasTexture_trbs8")
+
+[node name="215" type="Sprite2D" parent="plant_body" unique_id=480687832]
+visible = false
+position = Vector2(-40.36, 1.07)
+texture = SubResource("AtlasTexture_28ujc")
+
+[node name="216" type="Sprite2D" parent="plant_body" unique_id=1855654870]
+visible = false
+position = Vector2(36.3, -2.56)
+scale = Vector2(0.9659, 0.9659)
+texture = SubResource("AtlasTexture_gu3pi")
+
+[node name="217" type="Sprite2D" parent="plant_body" unique_id=696179431]
+visible = false
+position = Vector2(-25.2, -13.99)
+scale = Vector2(1.1105, 1.1105)
+texture = SubResource("AtlasTexture_3f2ec")
+
+[node name="218" type="Sprite2D" parent="plant_body" unique_id=823582287]
+visible = false
+position = Vector2(-13.03, -13.03)
+texture = SubResource("AtlasTexture_joi8d")
+
+[node name="219" type="Sprite2D" parent="plant_body" unique_id=1673702592]
+visible = false
+position = Vector2(-8, -6.33)
+texture = SubResource("AtlasTexture_vw0ls")
+
+[node name="220" type="Sprite2D" parent="plant_body" unique_id=1514978584]
+visible = false
+position = Vector2(-22.07, -9.75)
+scale = Vector2(1.2311, 1.2311)
+texture = SubResource("AtlasTexture_8nrlm")
+
+[node name="221" type="Sprite2D" parent="plant_body" unique_id=1406853522]
+visible = false
+position = Vector2(-26.95, -7.46)
+texture = SubResource("AtlasTexture_ohdv5")
+
+[node name="222" type="Sprite2D" parent="plant_body" unique_id=406813922]
+visible = false
+position = Vector2(-25.61, -16.65)
+texture = SubResource("AtlasTexture_ymhxw")
+
+[node name="223" type="Sprite2D" parent="plant_body" unique_id=1757481611]
+visible = false
+position = Vector2(-19.37, -1.07)
+scale = Vector2(1.0583, 1.0583)
+texture = SubResource("AtlasTexture_kerv5")
+offset = Vector2(-1.5, 0)
+
+[node name="224" type="Sprite2D" parent="plant_body" unique_id=854902200]
+visible = false
+position = Vector2(-17.1, -3.84)
+texture = SubResource("AtlasTexture_laskp")
+
+[node name="225" type="Sprite2D" parent="plant_body" unique_id=217200942]
+visible = false
+position = Vector2(-17.09, -0.83)
+scale = Vector2(0.9889, 0.9889)
+texture = SubResource("AtlasTexture_l1wwa")
+
+[node name="226" type="Sprite2D" parent="plant_body" unique_id=1817688097]
+visible = false
+position = Vector2(-17.04, -9.03)
+texture = SubResource("AtlasTexture_yolwv")
+offset = Vector2(0, 4)
+
+[node name="227" type="Sprite2D" parent="plant_body" unique_id=777271755]
+visible = false
+position = Vector2(-13.95, -0.62)
+scale = Vector2(0.9166, 0.9166)
+texture = SubResource("AtlasTexture_sbigt")
+
+[node name="228" type="Sprite2D" parent="plant_body" unique_id=1749546680]
+visible = false
+position = Vector2(-23.83, -10.45)
+texture = SubResource("AtlasTexture_lhb8u")
+
+[node name="229" type="Sprite2D" parent="plant_body" unique_id=457077695]
+visible = false
+position = Vector2(-36.98, -19.52)
+scale = Vector2(0.8604, 0.8604)
+texture = SubResource("AtlasTexture_7mby5")
+
+[node name="230" type="Sprite2D" parent="plant_body" unique_id=844011632]
+visible = false
+position = Vector2(-36.98, -19.52)
+scale = Vector2(0.8604, 0.8604)
+texture = SubResource("AtlasTexture_4a2gb")
+
+[node name="231" type="Sprite2D" parent="plant_body" unique_id=1273698690]
+visible = false
+position = Vector2(-31.36, -10.69)
+texture = SubResource("AtlasTexture_2ay4y")
+
+[node name="232" type="Sprite2D" parent="plant_body" unique_id=1861196074]
+visible = false
+position = Vector2(-8.37, -7.06)
+scale = Vector2(1.1532, 1.1532)
+texture = SubResource("AtlasTexture_671l8")
+
+[node name="233" type="Sprite2D" parent="plant_body" unique_id=2100714460]
+visible = false
+position = Vector2(-16.67, -6.67)
+texture = SubResource("AtlasTexture_e0omw")
+
+[node name="234" type="Sprite2D" parent="plant_body" unique_id=2085260063]
+visible = false
+position = Vector2(-16.83, -7.97)
+scale = Vector2(1.0615, 1.0615)
+texture = SubResource("AtlasTexture_winfy")
+offset = Vector2(-2, 2)
+
+[node name="235" type="Sprite2D" parent="plant_body" unique_id=2103020787]
+visible = false
+position = Vector2(-2.17, -16.3)
+texture = SubResource("AtlasTexture_238kt")
+
+[node name="236" type="Sprite2D" parent="plant_body" unique_id=818637796]
+visible = false
+position = Vector2(-11.01, -1.82)
+texture = SubResource("AtlasTexture_edags")
+
+[node name="237" type="Sprite2D" parent="plant_body" unique_id=1295805283]
+visible = false
+position = Vector2(-10.52, -5.44)
+texture = SubResource("AtlasTexture_5pcc0")
+
+[node name="238" type="Sprite2D" parent="plant_body" unique_id=703453818]
+visible = false
+position = Vector2(-18.3, -1.2)
+scale = Vector2(0.9073, 0.9073)
+texture = SubResource("AtlasTexture_nrjjh")
+
+[node name="239" type="Sprite2D" parent="plant_body" unique_id=376107595]
+visible = false
+position = Vector2(-24.63, -8.31)
+texture = SubResource("AtlasTexture_o1tb0")
+
+[node name="240" type="Sprite2D" parent="plant_body" unique_id=1142261306]
+visible = false
+position = Vector2(-31.6, -12.23)
+scale = Vector2(0.9652, 0.9652)
+texture = SubResource("AtlasTexture_13irf")
+
+[node name="241" type="Sprite2D" parent="plant_body" unique_id=2102893219]
+visible = false
+position = Vector2(-33.83, -3.28)
+texture = SubResource("AtlasTexture_gov26")
+offset = Vector2(-1.5, 2.5)
+
+[node name="242" type="Sprite2D" parent="plant_body" unique_id=1096827396]
+visible = false
+position = Vector2(-27.25, -18.08)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_hygyl")
+offset = Vector2(-0.5, 0.5)
+
+[node name="243" type="Sprite2D" parent="plant_body" unique_id=1627208540]
+visible = false
+position = Vector2(-29.14, -18.69)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_p4ki6")
+
+[node name="244" type="Sprite2D" parent="plant_body" unique_id=27255042]
+visible = false
+position = Vector2(-23.97, -27.31)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_l3tkh")
+offset = Vector2(-2.5, 2.5)
+
+[node name="245" type="Sprite2D" parent="plant_body" unique_id=1776191907]
+visible = false
+position = Vector2(-25.42, -23.53)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_1pkuu")
+
+[node name="246" type="Sprite2D" parent="plant_body" unique_id=1451068450]
+visible = false
+position = Vector2(-24.32, -18.56)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_sk2ou")
+
+[node name="247" type="Sprite2D" parent="plant_body" unique_id=142028268]
+visible = false
+position = Vector2(-14.66, -18.97)
+texture = SubResource("AtlasTexture_ivci2")
+
+[node name="248" type="Sprite2D" parent="plant_body" unique_id=1361422722]
+visible = false
+position = Vector2(-25.18, -12.53)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_ufqss")
+
+[node name="249" type="Sprite2D" parent="plant_body" unique_id=537207442]
+visible = false
+position = Vector2(-31.38, -21.34)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_bmmfq")
+
+[node name="250" type="Sprite2D" parent="plant_body" unique_id=1642231920]
+visible = false
+position = Vector2(-3.49, -16.44)
+texture = SubResource("AtlasTexture_sk31r")
+
+[node name="251" type="Sprite2D" parent="plant_body" unique_id=1986828237]
+visible = false
+position = Vector2(-17.82, -10.01)
+texture = SubResource("AtlasTexture_mis1d")
+offset = Vector2(0, 0.5)
+
+[node name="252" type="Sprite2D" parent="plant_body" unique_id=587883677]
+visible = false
+position = Vector2(-27.27, -15.81)
+texture = SubResource("AtlasTexture_w7kos")
+
+[node name="253" type="Sprite2D" parent="plant_body" unique_id=1796747067]
+visible = false
+position = Vector2(-29, -18.34)
+texture = SubResource("AtlasTexture_sht3h")
+
+[node name="254" type="Sprite2D" parent="plant_body" unique_id=2016031289]
+visible = false
+position = Vector2(-20.94, -21.75)
+texture = SubResource("AtlasTexture_88cbx")
+
+[node name="255" type="Sprite2D" parent="plant_body" unique_id=27357042]
+visible = false
+position = Vector2(-26.87, -16.15)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_ymbg8")
+
+[node name="256" type="Sprite2D" parent="plant_body" unique_id=126983916]
+visible = false
+position = Vector2(-17.63, -14.44)
+scale = Vector2(1.15, 1.15)
+texture = SubResource("AtlasTexture_2v827")
+
+[node name="257" type="Sprite2D" parent="plant_body" unique_id=835680875]
+position = Vector2(-1.66, -6.5)
+texture = SubResource("AtlasTexture_pjxm4")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1430165623]
+libraries/ = SubResource("AnimationLibrary_ho8yn")

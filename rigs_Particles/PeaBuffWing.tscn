@@ -1,0 +1,138 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_bibrk"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_p7tyi"]
+[ext_resource type="Texture2D" path="res://art/_textures/59ac1411-bb28-4c38-9e4a-f79b82316c65.png" id="3_qd2yv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bibrk"]
+atlas = ExtResource("3_qd2yv")
+region = Rect2(436, 968, 56, 50)
+
+[sub_resource type="Animation" id="Animation_p7tyi"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("w1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.783849, -43.3035), Vector2(0.8567531, -26.06008), Vector2(0.89221287, -7.677704), Vector2(0.8886788, 11.040222), Vector2(0.84630513, 29.275637), Vector2(0.7669438, 46.231567), Vector2(0.65406346, 61.166958), Vector2(0.5125973, 73.429054), Vector2(0.34872827, 82.48196), Vector2(0.16961813, 87.92999), Vector2(-0.016905189, 89.535065), Vector2(-0.20268968, 87.227036), Vector2(-0.37961563, 81.10676), Vector2(-0.5399505, 71.44173), Vector2(-0.676687, 58.65435), Vector2(-0.783849, 43.3035), Vector2(-0.8567531, 26.06008), Vector2(-0.89221287, 7.677704), Vector2(-0.8886788, -11.040222), Vector2(-0.84630513, -29.275637), Vector2(-0.7669438, -46.231567), Vector2(-0.65406346, -61.166958), Vector2(-0.5125973, -73.429054), Vector2(-0.34872827, -82.48196), Vector2(-0.16961813, -87.92999), Vector2(0.016905189, -89.535065), Vector2(0.20268968, -87.227036), Vector2(0.37961563, -81.10676), Vector2(0.5399505, -71.44173), Vector2(0.676687, -58.65435), Vector2(0.783849, -43.3035)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("w1:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("w1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.584, 0.584)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("w1:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("w:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.862507, 0), Vector2(0.84365916, 17.93253), Vector2(0.7879393, 35.08132), Vector2(0.6977829, 50.696888), Vector2(0.57712984, 64.09676), Vector2(0.4312535, 74.6953), Vector2(0.26652932, 82.0293), Vector2(0.09015654, 85.77821), Vector2(-0.09015654, 85.77821), Vector2(-0.26652932, 82.0293), Vector2(-0.4312535, 74.6953), Vector2(-0.57712984, 64.09676), Vector2(-0.6977829, 50.696888), Vector2(-0.7879393, 35.08132), Vector2(-0.84365916, 17.93253), Vector2(-0.862507, 1.0562665e-14), Vector2(-0.84365916, -17.93253), Vector2(-0.7879393, -35.08132), Vector2(-0.6977829, -50.696888), Vector2(-0.57712984, -64.09676), Vector2(-0.4312535, -74.6953), Vector2(-0.26652932, -82.0293), Vector2(-0.09015654, -85.77821), Vector2(0.09015654, -85.77821), Vector2(0.26652932, -82.0293), Vector2(0.4312535, -74.6953), Vector2(0.57712984, -64.09676), Vector2(0.6977829, -50.696888), Vector2(0.7879393, -35.08132), Vector2(0.84365916, -17.93253), Vector2(0.862507, -2.112533e-14)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("w:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("w:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("w:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qd2yv"]
+_data = {
+&"Idle": SubResource("Animation_p7tyi")
+}
+
+[node name="PeaBuffWing" type="Node2D" unique_id=855264598]
+script = ExtResource("1_bibrk")
+bounds = Rect2(-28.04, -68.3, 56.04, 93.3)
+
+[node name="w1" type="Node2D" parent="." unique_id=187744014]
+position = Vector2(0.783849, -43.3035)
+scale = Vector2(0.584, 0.584)
+script = ExtResource("2_p7tyi")
+
+[node name="0" type="Sprite2D" parent="w1" unique_id=1090998689]
+position = Vector2(-1.33, 0)
+scale = Vector2(0.3553, 0.7444)
+texture = SubResource("AtlasTexture_bibrk")
+
+[node name="w" type="Node2D" parent="." unique_id=1932728629]
+position = Vector2(0.862507, 0)
+script = ExtResource("2_p7tyi")
+
+[node name="0" type="Sprite2D" parent="w" unique_id=1958821117]
+position = Vector2(-0.9, 0)
+scale = Vector2(0.3553, 0.7444)
+texture = SubResource("AtlasTexture_bibrk")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=537655841]
+libraries/ = SubResource("AnimationLibrary_qd2yv")

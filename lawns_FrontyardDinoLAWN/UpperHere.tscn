@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_5p2w1"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ab63l"]
+[ext_resource type="Texture2D" path="res://art/_textures/e8cd05af-e3b6-4109-bc56-38db117fdc28.png" id="3_4qmog"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5p2w1"]
+atlas = ExtResource("3_4qmog")
+region = Rect2(1, 1539, 3254, 746)
+
+[sub_resource type="Animation" id="Animation_ab63l"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4qmog"]
+_data = {
+&"i": SubResource("Animation_ab63l")
+}
+
+[node name="UpperHere" type="Node2D" unique_id=2066248932]
+script = ExtResource("1_5p2w1")
+bounds = Rect2(-882.16, 22.19, 3254, 746)
+
+[node name="here" type="Node2D" parent="." unique_id=474252454]
+script = ExtResource("2_ab63l")
+
+[node name="0" type="Sprite2D" parent="here" unique_id=10548964]
+position = Vector2(744.84, 395.19)
+texture = SubResource("AtlasTexture_5p2w1")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=758815830]
+libraries/ = SubResource("AnimationLibrary_4qmog")

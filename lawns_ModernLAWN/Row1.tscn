@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_rbege"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_tcg4c"]
+[ext_resource type="Texture2D" path="res://art/_textures/4d737c62-4e44-42e6-a4ab-313fa745e20a.png" id="3_52ry3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rk5b2"]
+atlas = ExtResource("3_52ry3")
+region = Rect2(1799, 3622, 1481, 264)
+
+[sub_resource type="Animation" id="Animation_rbege"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tcg4c"]
+_data = {
+&"i": SubResource("Animation_rbege")
+}
+
+[node name="Row1" type="Node2D" unique_id=1107864005]
+script = ExtResource("1_rbege")
+bounds = Rect2(-3.1, -121.92, 1481, 264)
+
+[node name="row1" type="Node2D" parent="." unique_id=1855090944]
+script = ExtResource("2_tcg4c")
+
+[node name="0" type="Sprite2D" parent="row1" unique_id=1550864927]
+position = Vector2(737.4, 10.08)
+texture = SubResource("AtlasTexture_rk5b2")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1769530783]
+libraries/ = SubResource("AnimationLibrary_tcg4c")

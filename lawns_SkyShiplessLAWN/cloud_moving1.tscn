@@ -1,0 +1,5 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/cloud_moving1.tscn" id="1_base"]
+
+[node name="cloud_moving1" instance=ExtResource("1_base")]

@@ -1,0 +1,88 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7xxe7"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_7di6j"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_qhmly"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xxe7"]
+atlas = ExtResource("3_qhmly")
+region = Rect2(1738, 307, 235, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7di6j"]
+atlas = ExtResource("3_qhmly")
+region = Rect2(724, 460, 235, 152)
+
+[sub_resource type="Animation" id="Animation_qhmly"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_select:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_1f43t"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_select:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_ac1m3"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_select:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_afo56"]
+_data = {
+&"nope": SubResource("Animation_qhmly"),
+&"point": SubResource("Animation_1f43t"),
+&"select": SubResource("Animation_ac1m3")
+}
+
+[node name="selection" type="Node2D" unique_id=523112064]
+script = ExtResource("1_7xxe7")
+
+[node name="bk_select" type="Node2D" parent="." unique_id=1478243446]
+script = ExtResource("2_7di6j")
+display = -1
+
+[node name="0" type="Sprite2D" parent="bk_select" unique_id=2059153378]
+visible = false
+position = Vector2(-2.17, -0.54)
+texture = SubResource("AtlasTexture_7xxe7")
+
+[node name="1" type="Sprite2D" parent="bk_select" unique_id=1380588190]
+visible = false
+position = Vector2(-2.17, -0.54)
+texture = SubResource("AtlasTexture_7di6j")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=998323532]
+libraries/ = SubResource("AnimationLibrary_afo56")

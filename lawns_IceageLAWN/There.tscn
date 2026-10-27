@@ -1,0 +1,65 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ao1rp"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ikrib"]
+[ext_resource type="Texture2D" path="res://art/_textures/cfba9cd2-dde8-467d-888d-7c98479715c1.png" id="3_o85ll"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ao1rp"]
+atlas = ExtResource("3_o85ll")
+region = Rect2(1104, 2872, 168, 121)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikrib"]
+atlas = ExtResource("3_o85ll")
+region = Rect2(886, 2041, 701, 829)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o85ll"]
+atlas = ExtResource("3_o85ll")
+region = Rect2(886, 2872, 216, 185)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yro6"]
+atlas = ExtResource("3_o85ll")
+region = Rect2(1, 3727, 384, 289)
+
+[sub_resource type="Animation" id="Animation_0cl8s"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2a3mh"]
+_data = {
+&"idle": SubResource("Animation_0cl8s")
+}
+
+[node name="There" type="Node2D" unique_id=1857186627]
+script = ExtResource("1_ao1rp")
+bounds = Rect2(-420.63, -767.82, 2172.93, 1080.82)
+
+[node name="there0" type="Node2D" parent="." unique_id=315240740]
+script = ExtResource("2_ikrib")
+
+[node name="0" type="Sprite2D" parent="there0" unique_id=747837025]
+position = Vector2(-336.63, -456.34)
+texture = SubResource("AtlasTexture_ao1rp")
+
+[node name="there1" type="Node2D" parent="." unique_id=1514532973]
+script = ExtResource("2_ikrib")
+
+[node name="0" type="Sprite2D" parent="there1" unique_id=1398504377]
+position = Vector2(1401.8, -353.32)
+texture = SubResource("AtlasTexture_ikrib")
+
+[node name="there3" type="Node2D" parent="." unique_id=1024697841]
+script = ExtResource("2_ikrib")
+
+[node name="0" type="Sprite2D" parent="there3" unique_id=416668345]
+position = Vector2(1566.32, 220.51)
+texture = SubResource("AtlasTexture_o85ll")
+
+[node name="there2" type="Node2D" parent="." unique_id=316966225]
+script = ExtResource("2_ikrib")
+
+[node name="0" type="Sprite2D" parent="there2" unique_id=9987307]
+position = Vector2(302.48, -558.52)
+texture = SubResource("AtlasTexture_5yro6")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1453893632]
+libraries/ = SubResource("AnimationLibrary_2a3mh")

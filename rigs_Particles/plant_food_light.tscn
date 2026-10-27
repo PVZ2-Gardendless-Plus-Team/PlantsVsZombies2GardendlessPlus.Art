@@ -1,0 +1,357 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_5i722"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_2o441"]
+[ext_resource type="Texture2D" path="res://art/_textures/59ac1411-bb28-4c38-9e4a-f79b82316c65.png" id="3_fckot"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i722"]
+atlas = ExtResource("3_fckot")
+region = Rect2(1, 226, 200, 190)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o441"]
+atlas = ExtResource("3_fckot")
+region = Rect2(1, 1, 178, 223)
+
+[sub_resource type="Animation" id="Animation_fckot"]
+length = 0.3333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantfood_light_bottom:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantfood_light_bottom:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.67209905, 0.5726133, 0.48543546, 0.40808743, 0.33848312, 0.27490455, 0.21593955, 0.1604136, 0.1073284, 0.055807557, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("plantfood_light_bottom:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6911391, 0.8854724), Vector2(0.66610277, 0.76078993), Vector2(0.6305073, 0.640969), Vector2(0.583528, 0.52809906), Vector2(0.52515906, 0.42395854), Vector2(0.45603356, 0.32989737), Vector2(0.37728065, 0.24667902), Vector2(0.29041296, 0.17427148), Vector2(0.19723156, 0.11160371), Vector2(0.09974591, 0.056377627), Vector2(0.0001, 0.005116)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("plantfood_light_bottom:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.5809003, 0.61174524, 0.6228329, 0.61459625, 0.58667505, 0.5379983, 0.4671327, 0.3730682, 0.25660133, 0.12226093, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("plantfood_light:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1.25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("plantfood_light:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("plantfood_light:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.99399996, 1), Vector2(1.4, 0.01)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("plantfood_light:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "method"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath(".")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.33333334),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"die"],
+"method": &"_fire_event"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_rw6gf"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantfood_light_bottom:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantfood_light_bottom:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 1, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.108318314, -0.16472274, -0.22395797, -0.28720593, -0.35587364, -0.4316724, -0.51670086, -0.61351043, -0.7250919, -0.8546532, -1.0049635, -1.1770217, -1.3681734, -1.7734193, -1.9645709, -2.136629, -2.2869396, -2.4165008, -2.5280824, -2.6248918, -2.7099202, -2.785719, -2.8543868, -2.9176347, -2.9768698, -3.0332744, -3.1415927, 3.0332744, 2.9768698, 2.9176347, 2.8543868, 2.785719, 2.7099202, 2.6248918, 2.5280824, 2.4165008, 2.2869396, 2.136629, 1.9645709, 1.7734193, 1.3681734, 1.1770217, 1.0049635, 0.8546532, 0.7250919, 0.61351043, 0.51670086, 0.4316724, 0.35587364, 0.28720593, 0.22395797, 0.16472274, 0.108318314, 1.2530587e-16]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("plantfood_light_bottom:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0.5116), Vector2(0.9959586, 0.5194237), Vector2(0.9839141, 0.54189277), Vector2(0.9641068, 0.5763963), Vector2(0.93694466, 0.61957186), Vector2(0.90301365, 0.66805756), Vector2(0.86309654, 0.7188873), Vector2(0.8182005, 0.76959884), Vector2(0.76959884, 0.8182005), Vector2(0.7188873, 0.86309654), Vector2(0.66805756, 0.90301365), Vector2(0.61957186, 0.93694466), Vector2(0.5763963, 0.9641068), Vector2(0.54189277, 0.9839141), Vector2(0.5194237, 0.9959586), Vector2(0.5116, 1), Vector2(0.5194237, 0.9959586), Vector2(0.54189277, 0.9839141), Vector2(0.5763963, 0.9641068), Vector2(0.61957186, 0.93694466), Vector2(0.66805756, 0.90301365), Vector2(0.7188873, 0.86309654), Vector2(0.76959884, 0.8182005), Vector2(0.8182005, 0.76959884), Vector2(0.86309654, 0.7188873), Vector2(0.90301365, 0.66805756), Vector2(0.93694466, 0.61957186), Vector2(0.9641068, 0.5763963), Vector2(0.9839141, 0.54189277), Vector2(0.9959586, 0.5194237), Vector2(1, 0.5116), Vector2(0.9959586, 0.5194237), Vector2(0.9839141, 0.54189277), Vector2(0.9641068, 0.5763963), Vector2(0.93694466, 0.61957186), Vector2(0.90301365, 0.66805756), Vector2(0.86309654, 0.7188873), Vector2(0.8182005, 0.76959884), Vector2(0.76959884, 0.8182005), Vector2(0.7188873, 0.86309654), Vector2(0.66805756, 0.90301365), Vector2(0.61957186, 0.93694466), Vector2(0.5763963, 0.9641068), Vector2(0.54189277, 0.9839141), Vector2(0.5194237, 0.9959586), Vector2(0.5116, 1), Vector2(0.5194237, 0.9959586), Vector2(0.54189277, 0.9839141), Vector2(0.5763963, 0.9641068), Vector2(0.61957186, 0.93694466), Vector2(0.66805756, 0.90301365), Vector2(0.7188873, 0.86309654), Vector2(0.76959884, 0.8182005), Vector2(0.8182005, 0.76959884), Vector2(0.86309654, 0.7188873), Vector2(0.90301365, 0.66805756), Vector2(0.93694466, 0.61957186), Vector2(0.9641068, 0.5763963), Vector2(0.9839141, 0.54189277), Vector2(0.9959586, 0.5194237), Vector2(1, 0.5116)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("plantfood_light_bottom:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.14890337, -0.28545618, -0.40111005, -0.49218524, -0.5584985, -0.60141224, -0.6224231, -0.6224231, -0.60141224, -0.5584985, -0.49218524, -0.40111005, -0.28545618, -0.14890337, 0.14890325, 0.28545618, 0.40111005, 0.49218524, 0.5584985, 0.6014122, 0.62242305, 0.62242305, 0.6014122, 0.5584985, 0.49218524, 0.40111005, 0.28545618, 0.14890325, -0.14890337, -0.28545618, -0.40111005, -0.49218524, -0.5584985, -0.60141224, -0.6224231, -0.6224231, -0.60141224, -0.5584985, -0.49218524, -0.40111005, -0.28545618, -0.14890337, 0.14890325, 0.28545618, 0.40111005, 0.49218524, 0.5584985, 0.6014122, 0.62242305, 0.62242305, 0.6014122, 0.5584985, 0.49218524, 0.40111005, 0.28545618, 0.14890325, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("plantfood_light:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1.25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("plantfood_light:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("plantfood_light:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.5, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 1.0333333, 1.1, 1.1666666, 1.2333333, 1.3, 1.3666667, 1.4333333, 1.5666667, 1.6333333, 1.7, 1.7666667, 1.8333334, 1.9, 1.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.99399996, 1), Vector2(0.9947078, 0.99936795), Vector2(0.9970101, 0.9973123), Vector2(1.0012407, 0.993535), Vector2(1.0077053, 0.98776305), Vector2(1.0168335, 0.97961277), Vector2(1.0285558, 0.9691466), Vector2(1.049959, 0.9500366), Vector2(1.0714443, 0.9308534), Vector2(1.0831662, 0.92038715), Vector2(1.0922947, 0.9122369), Vector2(1.0987592, 0.906465), Vector2(1.1029898, 0.90268767), Vector2(1.1052921, 0.900632), Vector2(1.1058295, 0.90015227), Vector2(1.1043627, 0.90146184), Vector2(1.1011336, 0.9043451), Vector2(1.0958384, 0.9090729), Vector2(1.0880984, 0.91598356), Vector2(1.0776291, 0.9253312), Vector2(1.0646533, 0.9369167), Vector2(1.0353467, 0.96308327), Vector2(1.0223708, 0.9746688), Vector2(1.0119016, 0.9840164), Vector2(1.0041616, 0.9909271), Vector2(0.9988664, 0.9956549), Vector2(0.99563724, 0.99853814), Vector2(0.99417055, 0.9998477)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("plantfood_light:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_wmhml"]
+length = 0.3333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantfood_light_bottom:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantfood_light_bottom:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.05580757, 0.107328415, 0.16041358, 0.21593954, 0.27490455, 0.3384831, 0.40808737, 0.48543552, 0.5726133, 0.67209905]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("plantfood_light_bottom:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.0001, 0.005116), Vector2(0.09974587, 0.056377623), Vector2(0.19723158, 0.11160374), Vector2(0.29041296, 0.17427146), Vector2(0.3772807, 0.24667905), Vector2(0.45603356, 0.32989737), Vector2(0.5251591, 0.42395857), Vector2(0.583528, 0.52809906), Vector2(0.6305073, 0.64096904), Vector2(0.66610277, 0.76078993), Vector2(0.6911391, 0.8854724)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("plantfood_light_bottom:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.12226081, 0.2566012, 0.3730682, 0.46713293, 0.5379983, 0.5866753, 0.6145965, 0.62283266, 0.61174524, 0.5809003]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("plantfood_light:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1.25)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("plantfood_light:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("plantfood_light:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.4, 0.01), Vector2(0.99399996, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("plantfood_light:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yic7m"]
+_data = {
+&"End": SubResource("Animation_fckot"),
+&"Idle": SubResource("Animation_rw6gf"),
+&"Start": SubResource("Animation_wmhml")
+}
+
+[node name="plant_food_light" type="Node2D" unique_id=1504074873]
+script = ExtResource("1_5i722")
+bounds = Rect2(-105, -276.54, 210, 376.54)
+
+[node name="plantfood_light_bottom" type="Node2D" parent="." unique_id=1141209816]
+scale = Vector2(0.0001, 0.005116)
+script = ExtResource("2_2o441")
+
+[node name="0" type="Sprite2D" parent="plantfood_light_bottom" unique_id=2144098426]
+texture = SubResource("AtlasTexture_5i722")
+
+[node name="plantfood_light" type="Node2D" parent="." unique_id=1771326903]
+position = Vector2(0, -1.25)
+rotation = -1.5707964
+scale = Vector2(1.4, 0.01)
+script = ExtResource("2_2o441")
+
+[node name="0" type="Sprite2D" parent="plantfood_light" unique_id=1041520334]
+position = Vector2(105.21, 0)
+rotation = 1.5707964
+texture = SubResource("AtlasTexture_2o441")
+offset = Vector2(-0.5, 16.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1040967883]
+libraries/ = SubResource("AnimationLibrary_yic7m")

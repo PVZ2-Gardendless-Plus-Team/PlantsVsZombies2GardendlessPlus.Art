@@ -1,0 +1,2500 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1frev"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_jxdq2"]
+[ext_resource type="Texture2D" path="res://art/_textures/59ac1411-bb28-4c38-9e4a-f79b82316c65.png" id="3_25sld"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1frev"]
+atlas = ExtResource("3_25sld")
+region = Rect2(495, 193, 186, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxdq2"]
+atlas = ExtResource("3_25sld")
+region = Rect2(495, 266, 100, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25sld"]
+atlas = ExtResource("3_25sld")
+region = Rect2(166, 418, 136, 159)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_go4xk"]
+atlas = ExtResource("3_25sld")
+region = Rect2(878, 136, 122, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ig62"]
+atlas = ExtResource("3_25sld")
+region = Rect2(711, 962, 47, 59)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpm1o"]
+atlas = ExtResource("3_25sld")
+region = Rect2(798, 938, 45, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_br0fb"]
+atlas = ExtResource("3_25sld")
+region = Rect2(304, 402, 40, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oh066"]
+atlas = ExtResource("3_25sld")
+region = Rect2(396, 781, 38, 229)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx7p4"]
+atlas = ExtResource("3_25sld")
+region = Rect2(671, 91, 201, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf1n5"]
+atlas = ExtResource("3_25sld")
+region = Rect2(601, 963, 47, 59)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd3dk"]
+atlas = ExtResource("3_25sld")
+region = Rect2(954, 416, 40, 63)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6hem"]
+atlas = ExtResource("3_25sld")
+region = Rect2(435, 313, 45, 67)
+
+[sub_resource type="Animation" id="Animation_cjgpb"]
+length = 0.6666666666666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("power_fire_tile_mainLight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("power_fire_tile_mainLight:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("power_fire_tile_mainLight:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.23333333, 0.36666667, 0.46666667, 0.5, 0.53333336, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.0086942, 2.5127223), Vector2(1.0086942, 3.16603), Vector2(1.0086942, 2.5127223), Vector2(1.0086942, -2.643384), Vector2(1.0086942, -3.16603), Vector2(1.0086942, -2.7740452), Vector2(1.0086942, 2.643384), Vector2(1.0086942, 2.5127223), Vector2(1.0086942, 3.16603), Vector2(1.0086942, 2.5127223)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("power_fire_tile_mainLight:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("power_fire_tile_par1Light:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-105.041595, -95.343704), Vector2(-101.551445, -290.79007), Vector2(-101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(-101.551445, -290.79007)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("power_fire_tile_par1Light:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("power_fire_tile_par1Light:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("power_fire_tile_par1Light:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("power_fire_tile_par2Light:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-84.59088, -163.66063), Vector2(-63.64995, -323.33334), Vector2(-63.64995, -323.33334), Vector2(63.64995, -323.33334)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("power_fire_tile_par2Light:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("power_fire_tile_par2Light:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("power_fire_tile_par2Light:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("power_fire_tile_par3Light:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -75.00154), Vector2(-3.1823852, -301.9975), Vector2(4.4552994, -339.83014), Vector2(4.4552994, -339.83014), Vector2(-4.4552994, -339.83014)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("power_fire_tile_par3Light:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("power_fire_tile_par3Light:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2.6442182, 2.519882), Vector2(2.6442182, 2.519882), Vector2(0, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("power_fire_tile_par3Light:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("power_fire_tile_par3Light1:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.36666667, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-41.436752, -66.84187), Vector2(-41.436752, -66.84187), Vector2(-43.98258, -142.5072), Vector2(45.255493, -180.33986), Vector2(50.34715, -331.6705), Vector2(50.34715, -331.6705), Vector2(-50.34715, -331.6705)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("power_fire_tile_par3Light1:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("power_fire_tile_par3Light1:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.3, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.6498737, 1.8404598), Vector2(1.6498737, 1.8404598), Vector2(1.6498737, -1.8404598), Vector2(1.6498737, -1.8404598), Vector2(0, 0)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("power_fire_tile_par3Light1:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("power_fire_tile_par3Light2:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(10.52637, -75.00154), Vector2(10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-2.8888865, -301.9975), Vector2(1.6159723, -339.83014)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("power_fire_tile_par3Light2:rotation")
+tracks/21/interp = 3
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("power_fire_tile_par3Light2:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.43333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.7581232, 2.6248853), Vector2(2.7581232, 2.6248853), Vector2(2.7581232, -2.6248853), Vector2(2.7581232, -2.6248853), Vector2(0, 0)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("power_fire_tile_par3Light2:skew")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("power_fire_tile_par3Light3:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(70.44555, -75.00154), Vector2(70.44555, -75.00154), Vector2(54.360542, -188.49953), Vector2(-48.99887, -226.3322), Vector2(-32.91387, -339.83014), Vector2(-32.91387, -339.83014), Vector2(32.91387, -339.83014)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("power_fire_tile_par3Light3:rotation")
+tracks/25/interp = 3
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-3.1415927, -3.1415927, 0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("power_fire_tile_par3Light3:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1800976, -2.0748675), Vector2(2.1800976, -2.0748675), Vector2(2.1800976, 2.0748675), Vector2(2.1800976, 2.0748675), Vector2(0, 0)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("power_fire_tile_par3Light3:skew")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("power_fire_tile_par3Light4:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.4, 0.46666667, 0.5, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-72.77685, -99.02902), Vector2(-72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(57.22187, -174.69435), Vector2(-49.444378, -212.52701), Vector2(-18.33442, -363.85767)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("power_fire_tile_par3Light4:rotation")
+tracks/29/interp = 3
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("power_fire_tile_par3Light4:scale")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(0, 0)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("power_fire_tile_par3Light4:skew")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("power_fire_tile_par3Light5:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(54.53844, -357.37994)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("power_fire_tile_par3Light5:rotation")
+tracks/33/interp = 3
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.41488472, -0.41488472, -2.726708, -2.726708, -0.41488472, -0.41488472, 0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("power_fire_tile_par3Light5:scale")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(0, 0)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("power_fire_tile_par3Light5:skew")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-9.059906e-06]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("power_fire_tile_par1Light1:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(88.58926, -95.343704), Vector2(88.58926, -95.343704), Vector2(73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(73.668594, -290.79007)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("power_fire_tile_par1Light1:rotation")
+tracks/37/interp = 3
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("power_fire_tile_par1Light1:scale")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("power_fire_tile_par1Light1:skew")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("power_fire_tile_par2Light1:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(63.64995, -323.33334)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("power_fire_tile_par2Light1:rotation")
+tracks/41/interp = 3
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("power_fire_tile_par2Light1:scale")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("power_fire_tile_par2Light1:skew")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("power_fire_tile_par3Light6:position")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -88.807495), Vector2(4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(2.9700325, -132.9456), Vector2(-4.4552994, -353.6361)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("power_fire_tile_par3Light6:rotation")
+tracks/45/interp = 3
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-3.1415927, -3.1415927, 0.0, 0.0, -3.1415927, -3.1415927, 0.0]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("power_fire_tile_par3Light6:scale")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(0, 0)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("power_fire_tile_par3Light6:skew")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("power_fire_tile_par36:position")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -88.807495), Vector2(4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(2.9700325, -132.9456), Vector2(-4.4552994, -353.6361)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("power_fire_tile_par36:rotation")
+tracks/49/interp = 3
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-3.1415927, -3.1415927, 0.0, 0.0, -3.1415927, -3.1415927, 0.0]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("power_fire_tile_par36:scale")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(0, 0)]
+}
+tracks/51/type = "value"
+tracks/51/imported = false
+tracks/51/enabled = true
+tracks/51/path = NodePath("power_fire_tile_par36:skew")
+tracks/51/interp = 1
+tracks/51/loop_wrap = true
+tracks/51/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/52/type = "value"
+tracks/52/imported = false
+tracks/52/enabled = true
+tracks/52/path = NodePath("power_fire_tile_par21:position")
+tracks/52/interp = 1
+tracks/52/loop_wrap = true
+tracks/52/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(63.64995, -323.33334)]
+}
+tracks/53/type = "value"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("power_fire_tile_par21:rotation")
+tracks/53/interp = 3
+tracks/53/loop_wrap = true
+tracks/53/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/54/type = "value"
+tracks/54/imported = false
+tracks/54/enabled = true
+tracks/54/path = NodePath("power_fire_tile_par21:scale")
+tracks/54/interp = 1
+tracks/54/loop_wrap = true
+tracks/54/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/55/type = "value"
+tracks/55/imported = false
+tracks/55/enabled = true
+tracks/55/path = NodePath("power_fire_tile_par21:skew")
+tracks/55/interp = 1
+tracks/55/loop_wrap = true
+tracks/55/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/56/type = "value"
+tracks/56/imported = false
+tracks/56/enabled = true
+tracks/56/path = NodePath("power_fire_tile_par11:position")
+tracks/56/interp = 1
+tracks/56/loop_wrap = true
+tracks/56/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(88.58926, -95.343704), Vector2(88.58926, -95.343704), Vector2(73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(73.668594, -290.79007)]
+}
+tracks/57/type = "value"
+tracks/57/imported = false
+tracks/57/enabled = true
+tracks/57/path = NodePath("power_fire_tile_par11:rotation")
+tracks/57/interp = 3
+tracks/57/loop_wrap = true
+tracks/57/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/58/type = "value"
+tracks/58/imported = false
+tracks/58/enabled = true
+tracks/58/path = NodePath("power_fire_tile_par11:scale")
+tracks/58/interp = 1
+tracks/58/loop_wrap = true
+tracks/58/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/59/type = "value"
+tracks/59/imported = false
+tracks/59/enabled = true
+tracks/59/path = NodePath("power_fire_tile_par11:skew")
+tracks/59/interp = 1
+tracks/59/loop_wrap = true
+tracks/59/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/60/type = "value"
+tracks/60/imported = false
+tracks/60/enabled = true
+tracks/60/path = NodePath("power_fire_tile_par35:position")
+tracks/60/interp = 1
+tracks/60/loop_wrap = true
+tracks/60/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(54.53844, -357.37994)]
+}
+tracks/61/type = "value"
+tracks/61/imported = false
+tracks/61/enabled = true
+tracks/61/path = NodePath("power_fire_tile_par35:rotation")
+tracks/61/interp = 3
+tracks/61/loop_wrap = true
+tracks/61/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.41488472, -0.41488472, -2.726708, -2.726708, -0.41488472, -0.41488472, 0.0]
+}
+tracks/62/type = "value"
+tracks/62/imported = false
+tracks/62/enabled = true
+tracks/62/path = NodePath("power_fire_tile_par35:scale")
+tracks/62/interp = 1
+tracks/62/loop_wrap = true
+tracks/62/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(0, 0)]
+}
+tracks/63/type = "value"
+tracks/63/imported = false
+tracks/63/enabled = true
+tracks/63/path = NodePath("power_fire_tile_par35:skew")
+tracks/63/interp = 1
+tracks/63/loop_wrap = true
+tracks/63/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-9.059906e-06]
+}
+tracks/64/type = "value"
+tracks/64/imported = false
+tracks/64/enabled = true
+tracks/64/path = NodePath("power_fire_tile_par34:position")
+tracks/64/interp = 1
+tracks/64/loop_wrap = true
+tracks/64/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.4, 0.46666667, 0.5, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-72.77685, -99.02902), Vector2(-72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(57.22187, -174.69435), Vector2(-49.444378, -212.52701), Vector2(-18.33442, -363.85767)]
+}
+tracks/65/type = "value"
+tracks/65/imported = false
+tracks/65/enabled = true
+tracks/65/path = NodePath("power_fire_tile_par34:rotation")
+tracks/65/interp = 3
+tracks/65/loop_wrap = true
+tracks/65/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/66/type = "value"
+tracks/66/imported = false
+tracks/66/enabled = true
+tracks/66/path = NodePath("power_fire_tile_par34:scale")
+tracks/66/interp = 1
+tracks/66/loop_wrap = true
+tracks/66/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(0, 0)]
+}
+tracks/67/type = "value"
+tracks/67/imported = false
+tracks/67/enabled = true
+tracks/67/path = NodePath("power_fire_tile_par34:skew")
+tracks/67/interp = 1
+tracks/67/loop_wrap = true
+tracks/67/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/68/type = "value"
+tracks/68/imported = false
+tracks/68/enabled = true
+tracks/68/path = NodePath("power_fire_tile_par33:position")
+tracks/68/interp = 1
+tracks/68/loop_wrap = true
+tracks/68/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(70.44555, -75.00154), Vector2(70.44555, -75.00154), Vector2(54.360542, -188.49953), Vector2(-48.99887, -226.3322), Vector2(-32.91387, -339.83014), Vector2(-32.91387, -339.83014), Vector2(32.91387, -339.83014)]
+}
+tracks/69/type = "value"
+tracks/69/imported = false
+tracks/69/enabled = true
+tracks/69/path = NodePath("power_fire_tile_par33:rotation")
+tracks/69/interp = 3
+tracks/69/loop_wrap = true
+tracks/69/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-3.1415927, -3.1415927, 0.0]
+}
+tracks/70/type = "value"
+tracks/70/imported = false
+tracks/70/enabled = true
+tracks/70/path = NodePath("power_fire_tile_par33:scale")
+tracks/70/interp = 1
+tracks/70/loop_wrap = true
+tracks/70/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1800976, -2.0748675), Vector2(2.1800976, -2.0748675), Vector2(2.1800976, 2.0748675), Vector2(2.1800976, 2.0748675), Vector2(0, 0)]
+}
+tracks/71/type = "value"
+tracks/71/imported = false
+tracks/71/enabled = true
+tracks/71/path = NodePath("power_fire_tile_par33:skew")
+tracks/71/interp = 1
+tracks/71/loop_wrap = true
+tracks/71/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/72/type = "value"
+tracks/72/imported = false
+tracks/72/enabled = true
+tracks/72/path = NodePath("power_fire_tile_par32:position")
+tracks/72/interp = 1
+tracks/72/loop_wrap = true
+tracks/72/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(10.52637, -75.00154), Vector2(10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-2.8888865, -301.9975), Vector2(1.6159723, -339.83014)]
+}
+tracks/73/type = "value"
+tracks/73/imported = false
+tracks/73/enabled = true
+tracks/73/path = NodePath("power_fire_tile_par32:rotation")
+tracks/73/interp = 3
+tracks/73/loop_wrap = true
+tracks/73/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/74/type = "value"
+tracks/74/imported = false
+tracks/74/enabled = true
+tracks/74/path = NodePath("power_fire_tile_par32:scale")
+tracks/74/interp = 1
+tracks/74/loop_wrap = true
+tracks/74/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.43333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.7581232, 2.6248853), Vector2(2.7581232, 2.6248853), Vector2(2.7581232, -2.6248853), Vector2(2.7581232, -2.6248853), Vector2(0, 0)]
+}
+tracks/75/type = "value"
+tracks/75/imported = false
+tracks/75/enabled = true
+tracks/75/path = NodePath("power_fire_tile_par32:skew")
+tracks/75/interp = 1
+tracks/75/loop_wrap = true
+tracks/75/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/76/type = "value"
+tracks/76/imported = false
+tracks/76/enabled = true
+tracks/76/path = NodePath("power_fire_tile_par1:position")
+tracks/76/interp = 1
+tracks/76/loop_wrap = true
+tracks/76/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-105.041595, -95.343704), Vector2(-101.551445, -290.79007), Vector2(-101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(-101.551445, -290.79007)]
+}
+tracks/77/type = "value"
+tracks/77/imported = false
+tracks/77/enabled = true
+tracks/77/path = NodePath("power_fire_tile_par1:rotation")
+tracks/77/interp = 3
+tracks/77/loop_wrap = true
+tracks/77/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/78/type = "value"
+tracks/78/imported = false
+tracks/78/enabled = true
+tracks/78/path = NodePath("power_fire_tile_par1:scale")
+tracks/78/interp = 1
+tracks/78/loop_wrap = true
+tracks/78/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/79/type = "value"
+tracks/79/imported = false
+tracks/79/enabled = true
+tracks/79/path = NodePath("power_fire_tile_par1:skew")
+tracks/79/interp = 1
+tracks/79/loop_wrap = true
+tracks/79/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/80/type = "value"
+tracks/80/imported = false
+tracks/80/enabled = true
+tracks/80/path = NodePath("power_fire_tile_par2:position")
+tracks/80/interp = 1
+tracks/80/loop_wrap = true
+tracks/80/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-84.59088, -163.66063), Vector2(-63.64995, -323.33334), Vector2(-63.64995, -323.33334), Vector2(63.64995, -323.33334)]
+}
+tracks/81/type = "value"
+tracks/81/imported = false
+tracks/81/enabled = true
+tracks/81/path = NodePath("power_fire_tile_par2:rotation")
+tracks/81/interp = 3
+tracks/81/loop_wrap = true
+tracks/81/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/82/type = "value"
+tracks/82/imported = false
+tracks/82/enabled = true
+tracks/82/path = NodePath("power_fire_tile_par2:scale")
+tracks/82/interp = 1
+tracks/82/loop_wrap = true
+tracks/82/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/83/type = "value"
+tracks/83/imported = false
+tracks/83/enabled = true
+tracks/83/path = NodePath("power_fire_tile_par2:skew")
+tracks/83/interp = 1
+tracks/83/loop_wrap = true
+tracks/83/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/84/type = "value"
+tracks/84/imported = false
+tracks/84/enabled = true
+tracks/84/path = NodePath("power_fire_tile_par3:position")
+tracks/84/interp = 1
+tracks/84/loop_wrap = true
+tracks/84/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -75.00154), Vector2(-3.1823852, -301.9975), Vector2(4.4552994, -339.83014), Vector2(4.4552994, -339.83014), Vector2(-4.4552994, -339.83014)]
+}
+tracks/85/type = "value"
+tracks/85/imported = false
+tracks/85/enabled = true
+tracks/85/path = NodePath("power_fire_tile_par3:rotation")
+tracks/85/interp = 3
+tracks/85/loop_wrap = true
+tracks/85/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/86/type = "value"
+tracks/86/imported = false
+tracks/86/enabled = true
+tracks/86/path = NodePath("power_fire_tile_par3:scale")
+tracks/86/interp = 1
+tracks/86/loop_wrap = true
+tracks/86/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2.6442182, 2.519882), Vector2(2.6442182, 2.519882), Vector2(0, 0)]
+}
+tracks/87/type = "value"
+tracks/87/imported = false
+tracks/87/enabled = true
+tracks/87/path = NodePath("power_fire_tile_par3:skew")
+tracks/87/interp = 1
+tracks/87/loop_wrap = true
+tracks/87/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/88/type = "value"
+tracks/88/imported = false
+tracks/88/enabled = true
+tracks/88/path = NodePath("power_fire_tile_par31:position")
+tracks/88/interp = 1
+tracks/88/loop_wrap = true
+tracks/88/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.36666667, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-41.436752, -66.84187), Vector2(-41.436752, -66.84187), Vector2(-43.98258, -142.5072), Vector2(45.255493, -180.33986), Vector2(50.34715, -331.6705), Vector2(50.34715, -331.6705), Vector2(-50.34715, -331.6705)]
+}
+tracks/89/type = "value"
+tracks/89/imported = false
+tracks/89/enabled = true
+tracks/89/path = NodePath("power_fire_tile_par31:rotation")
+tracks/89/interp = 3
+tracks/89/loop_wrap = true
+tracks/89/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/90/type = "value"
+tracks/90/imported = false
+tracks/90/enabled = true
+tracks/90/path = NodePath("power_fire_tile_par31:scale")
+tracks/90/interp = 1
+tracks/90/loop_wrap = true
+tracks/90/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.3, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.6498737, 1.8404598), Vector2(1.6498737, 1.8404598), Vector2(1.6498737, -1.8404598), Vector2(1.6498737, -1.8404598), Vector2(0, 0)]
+}
+tracks/91/type = "value"
+tracks/91/imported = false
+tracks/91/enabled = true
+tracks/91/path = NodePath("power_fire_tile_par31:skew")
+tracks/91/interp = 1
+tracks/91/loop_wrap = true
+tracks/91/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/92/type = "value"
+tracks/92/imported = false
+tracks/92/enabled = true
+tracks/92/path = NodePath("power_fire_tile_main:position")
+tracks/92/interp = 1
+tracks/92/loop_wrap = true
+tracks/92/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/93/type = "value"
+tracks/93/imported = false
+tracks/93/enabled = true
+tracks/93/path = NodePath("power_fire_tile_main:rotation")
+tracks/93/interp = 3
+tracks/93/loop_wrap = true
+tracks/93/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/94/type = "value"
+tracks/94/imported = false
+tracks/94/enabled = true
+tracks/94/path = NodePath("power_fire_tile_main:scale")
+tracks/94/interp = 1
+tracks/94/loop_wrap = true
+tracks/94/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.23333333, 0.36666667, 0.46666667, 0.5, 0.53333336, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.0086942, 2.5127223), Vector2(1.0086942, 3.16603), Vector2(1.0086942, 2.5127223), Vector2(1.0086942, -2.643384), Vector2(1.0086942, -3.16603), Vector2(1.0086942, -2.7740452), Vector2(1.0086942, 2.643384), Vector2(1.0086942, 2.5127223), Vector2(1.0086942, 3.16603), Vector2(1.0086942, 2.5127223)]
+}
+tracks/95/type = "value"
+tracks/95/imported = false
+tracks/95/enabled = true
+tracks/95/path = NodePath("power_fire_tile_main:skew")
+tracks/95/interp = 1
+tracks/95/loop_wrap = true
+tracks/95/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/96/type = "value"
+tracks/96/imported = false
+tracks/96/enabled = true
+tracks/96/path = NodePath("power_fire_tile_par3Reflash3:position")
+tracks/96/interp = 1
+tracks/96/loop_wrap = true
+tracks/96/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(70.44555, -75.00154), Vector2(70.44555, -75.00154), Vector2(54.360542, -188.49953), Vector2(-48.99887, -226.3322), Vector2(-32.91387, -339.83014), Vector2(-32.91387, -339.83014), Vector2(32.91387, -339.83014)]
+}
+tracks/97/type = "value"
+tracks/97/imported = false
+tracks/97/enabled = true
+tracks/97/path = NodePath("power_fire_tile_par3Reflash3:rotation")
+tracks/97/interp = 3
+tracks/97/loop_wrap = true
+tracks/97/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [3.1415927, 3.1415927, 0.0]
+}
+tracks/98/type = "value"
+tracks/98/imported = false
+tracks/98/enabled = true
+tracks/98/path = NodePath("power_fire_tile_par3Reflash3:scale")
+tracks/98/interp = 1
+tracks/98/loop_wrap = true
+tracks/98/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1800976, -2.0748675), Vector2(2.1800976, -2.0748675), Vector2(2.1800976, 2.0748675), Vector2(2.1800976, 2.0748675), Vector2(0, 0)]
+}
+tracks/99/type = "value"
+tracks/99/imported = false
+tracks/99/enabled = true
+tracks/99/path = NodePath("power_fire_tile_par3Reflash3:skew")
+tracks/99/interp = 1
+tracks/99/loop_wrap = true
+tracks/99/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/100/type = "value"
+tracks/100/imported = false
+tracks/100/enabled = true
+tracks/100/path = NodePath("power_fire_tile_par3Reflash4:position")
+tracks/100/interp = 1
+tracks/100/loop_wrap = true
+tracks/100/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.4, 0.46666667, 0.5, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-72.77685, -99.02902), Vector2(-72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(72.77685, -99.02902), Vector2(57.22187, -174.69435), Vector2(-49.444378, -212.52701), Vector2(-18.33442, -363.85767)]
+}
+tracks/101/type = "value"
+tracks/101/imported = false
+tracks/101/enabled = true
+tracks/101/path = NodePath("power_fire_tile_par3Reflash4:rotation")
+tracks/101/interp = 3
+tracks/101/loop_wrap = true
+tracks/101/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/102/type = "value"
+tracks/102/imported = false
+tracks/102/enabled = true
+tracks/102/path = NodePath("power_fire_tile_par3Reflash4:scale")
+tracks/102/interp = 1
+tracks/102/loop_wrap = true
+tracks/102/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, -2.0748675), Vector2(2.1771972, 2.0748675), Vector2(2.1771972, 2.0748675), Vector2(0, 0)]
+}
+tracks/103/type = "value"
+tracks/103/imported = false
+tracks/103/enabled = true
+tracks/103/path = NodePath("power_fire_tile_par3Reflash4:skew")
+tracks/103/interp = 1
+tracks/103/loop_wrap = true
+tracks/103/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/104/type = "value"
+tracks/104/imported = false
+tracks/104/enabled = true
+tracks/104/path = NodePath("power_fire_tile_par1Reflash:position")
+tracks/104/interp = 1
+tracks/104/loop_wrap = true
+tracks/104/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-105.041595, -95.343704), Vector2(-101.551445, -290.79007), Vector2(-101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(101.551445, -290.79007), Vector2(-101.551445, -290.79007)]
+}
+tracks/105/type = "value"
+tracks/105/imported = false
+tracks/105/enabled = true
+tracks/105/path = NodePath("power_fire_tile_par1Reflash:rotation")
+tracks/105/interp = 3
+tracks/105/loop_wrap = true
+tracks/105/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/106/type = "value"
+tracks/106/imported = false
+tracks/106/enabled = true
+tracks/106/path = NodePath("power_fire_tile_par1Reflash:scale")
+tracks/106/interp = 1
+tracks/106/loop_wrap = true
+tracks/106/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/107/type = "value"
+tracks/107/imported = false
+tracks/107/enabled = true
+tracks/107/path = NodePath("power_fire_tile_par1Reflash:skew")
+tracks/107/interp = 1
+tracks/107/loop_wrap = true
+tracks/107/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/108/type = "value"
+tracks/108/imported = false
+tracks/108/enabled = true
+tracks/108/path = NodePath("power_fire_tile_par2Reflash:position")
+tracks/108/interp = 1
+tracks/108/loop_wrap = true
+tracks/108/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-84.59088, -163.66063), Vector2(-63.64995, -323.33334), Vector2(-63.64995, -323.33334), Vector2(63.64995, -323.33334)]
+}
+tracks/109/type = "value"
+tracks/109/imported = false
+tracks/109/enabled = true
+tracks/109/path = NodePath("power_fire_tile_par2Reflash:rotation")
+tracks/109/interp = 3
+tracks/109/loop_wrap = true
+tracks/109/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/110/type = "value"
+tracks/110/imported = false
+tracks/110/enabled = true
+tracks/110/path = NodePath("power_fire_tile_par2Reflash:scale")
+tracks/110/interp = 1
+tracks/110/loop_wrap = true
+tracks/110/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.33333334, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, -0.009913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/111/type = "value"
+tracks/111/imported = false
+tracks/111/enabled = true
+tracks/111/path = NodePath("power_fire_tile_par2Reflash:skew")
+tracks/111/interp = 1
+tracks/111/loop_wrap = true
+tracks/111/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/112/type = "value"
+tracks/112/imported = false
+tracks/112/enabled = true
+tracks/112/path = NodePath("power_fire_tile_par3Reflash:position")
+tracks/112/interp = 1
+tracks/112/loop_wrap = true
+tracks/112/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -75.00154), Vector2(-3.1823852, -301.9975), Vector2(4.4552994, -339.83014), Vector2(4.4552994, -339.83014), Vector2(-4.4552994, -339.83014)]
+}
+tracks/113/type = "value"
+tracks/113/imported = false
+tracks/113/enabled = true
+tracks/113/path = NodePath("power_fire_tile_par3Reflash:rotation")
+tracks/113/interp = 3
+tracks/113/loop_wrap = true
+tracks/113/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/114/type = "value"
+tracks/114/imported = false
+tracks/114/enabled = true
+tracks/114/path = NodePath("power_fire_tile_par3Reflash:scale")
+tracks/114/interp = 1
+tracks/114/loop_wrap = true
+tracks/114/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2.6442182, 2.519882), Vector2(2.6442182, 2.519882), Vector2(0, 0)]
+}
+tracks/115/type = "value"
+tracks/115/imported = false
+tracks/115/enabled = true
+tracks/115/path = NodePath("power_fire_tile_par3Reflash:skew")
+tracks/115/interp = 1
+tracks/115/loop_wrap = true
+tracks/115/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/116/type = "value"
+tracks/116/imported = false
+tracks/116/enabled = true
+tracks/116/path = NodePath("power_fire_tile_par3Reflash1:position")
+tracks/116/interp = 1
+tracks/116/loop_wrap = true
+tracks/116/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.36666667, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-41.436752, -66.84187), Vector2(-41.436752, -66.84187), Vector2(-43.98258, -142.5072), Vector2(45.255493, -180.33986), Vector2(50.34715, -331.6705), Vector2(50.34715, -331.6705), Vector2(-50.34715, -331.6705)]
+}
+tracks/117/type = "value"
+tracks/117/imported = false
+tracks/117/enabled = true
+tracks/117/path = NodePath("power_fire_tile_par3Reflash1:rotation")
+tracks/117/interp = 3
+tracks/117/loop_wrap = true
+tracks/117/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.33333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/118/type = "value"
+tracks/118/imported = false
+tracks/118/enabled = true
+tracks/118/path = NodePath("power_fire_tile_par3Reflash1:scale")
+tracks/118/interp = 1
+tracks/118/loop_wrap = true
+tracks/118/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.3, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.6498737, 1.8404598), Vector2(1.6498737, 1.8404598), Vector2(1.6498737, -1.8404598), Vector2(1.6498737, -1.8404598), Vector2(0, 0)]
+}
+tracks/119/type = "value"
+tracks/119/imported = false
+tracks/119/enabled = true
+tracks/119/path = NodePath("power_fire_tile_par3Reflash1:skew")
+tracks/119/interp = 1
+tracks/119/loop_wrap = true
+tracks/119/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/120/type = "value"
+tracks/120/imported = false
+tracks/120/enabled = true
+tracks/120/path = NodePath("power_fire_tile_par1Reflash1:position")
+tracks/120/interp = 1
+tracks/120/loop_wrap = true
+tracks/120/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(88.58926, -95.343704), Vector2(88.58926, -95.343704), Vector2(73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(-73.668594, -290.79007), Vector2(73.668594, -290.79007)]
+}
+tracks/121/type = "value"
+tracks/121/imported = false
+tracks/121/enabled = true
+tracks/121/path = NodePath("power_fire_tile_par1Reflash1:rotation")
+tracks/121/interp = 3
+tracks/121/loop_wrap = true
+tracks/121/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/122/type = "value"
+tracks/122/imported = false
+tracks/122/enabled = true
+tracks/122/path = NodePath("power_fire_tile_par1Reflash1:scale")
+tracks/122/interp = 1
+tracks/122/loop_wrap = true
+tracks/122/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1147498, 1.6448535), Vector2(1.1147498, 1.6448535), Vector2(0.011147497, 0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, -0.016448533), Vector2(0.011147497, 0.016448533)]
+}
+tracks/123/type = "value"
+tracks/123/imported = false
+tracks/123/enabled = true
+tracks/123/path = NodePath("power_fire_tile_par1Reflash1:skew")
+tracks/123/interp = 1
+tracks/123/loop_wrap = true
+tracks/123/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/124/type = "value"
+tracks/124/imported = false
+tracks/124/enabled = true
+tracks/124/path = NodePath("power_fire_tile_par3Reflash5:position")
+tracks/124/interp = 1
+tracks/124/loop_wrap = true
+tracks/124/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(-93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(93.15017, -92.551315), Vector2(54.53844, -357.37994)]
+}
+tracks/125/type = "value"
+tracks/125/imported = false
+tracks/125/enabled = true
+tracks/125/path = NodePath("power_fire_tile_par3Reflash5:rotation")
+tracks/125/interp = 3
+tracks/125/loop_wrap = true
+tracks/125/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.41488472, -0.41488472, -2.726708, -2.726708, -0.41488472, -0.41488472, 0.0]
+}
+tracks/126/type = "value"
+tracks/126/imported = false
+tracks/126/enabled = true
+tracks/126/path = NodePath("power_fire_tile_par3Reflash5:scale")
+tracks/126/interp = 1
+tracks/126/loop_wrap = true
+tracks/126/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, -2.0748715), Vector2(2.177193, 2.0748715), Vector2(2.177193, 2.0748715), Vector2(0, 0)]
+}
+tracks/127/type = "value"
+tracks/127/imported = false
+tracks/127/enabled = true
+tracks/127/path = NodePath("power_fire_tile_par3Reflash5:skew")
+tracks/127/interp = 1
+tracks/127/loop_wrap = true
+tracks/127/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-9.059906e-06]
+}
+tracks/128/type = "value"
+tracks/128/imported = false
+tracks/128/enabled = true
+tracks/128/path = NodePath("power_fire_tile_par2Reflash1:position")
+tracks/128/interp = 1
+tracks/128/loop_wrap = true
+tracks/128/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(-91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(91.5712, -110.43639), Vector2(63.64995, -323.33334)]
+}
+tracks/129/type = "value"
+tracks/129/imported = false
+tracks/129/enabled = true
+tracks/129/path = NodePath("power_fire_tile_par2Reflash1:rotation")
+tracks/129/interp = 3
+tracks/129/loop_wrap = true
+tracks/129/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.27808008, -0.27808008, -2.8635125, -2.8635125, -0.27808008]
+}
+tracks/130/type = "value"
+tracks/130/imported = false
+tracks/130/enabled = true
+tracks/130/path = NodePath("power_fire_tile_par2Reflash1:scale")
+tracks/130/interp = 1
+tracks/130/loop_wrap = true
+tracks/130/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, -0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.6719294, 0.9913331), Vector2(0.006719294, 0.009913331)]
+}
+tracks/131/type = "value"
+tracks/131/imported = false
+tracks/131/enabled = true
+tracks/131/path = NodePath("power_fire_tile_par2Reflash1:skew")
+tracks/131/interp = 1
+tracks/131/loop_wrap = true
+tracks/131/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.4373016e-06]
+}
+tracks/132/type = "value"
+tracks/132/imported = false
+tracks/132/enabled = true
+tracks/132/path = NodePath("power_fire_tile_par3Reflash2:position")
+tracks/132/interp = 1
+tracks/132/loop_wrap = true
+tracks/132/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(10.52637, -75.00154), Vector2(10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-10.52637, -75.00154), Vector2(-2.8888865, -301.9975), Vector2(1.6159723, -339.83014)]
+}
+tracks/133/type = "value"
+tracks/133/imported = false
+tracks/133/enabled = true
+tracks/133/path = NodePath("power_fire_tile_par3Reflash2:rotation")
+tracks/133/interp = 3
+tracks/133/loop_wrap = true
+tracks/133/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/134/type = "value"
+tracks/134/imported = false
+tracks/134/enabled = true
+tracks/134/path = NodePath("power_fire_tile_par3Reflash2:scale")
+tracks/134/interp = 1
+tracks/134/loop_wrap = true
+tracks/134/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.43333334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(2.7581232, 2.6248853), Vector2(2.7581232, 2.6248853), Vector2(2.7581232, -2.6248853), Vector2(2.7581232, -2.6248853), Vector2(0, 0)]
+}
+tracks/135/type = "value"
+tracks/135/imported = false
+tracks/135/enabled = true
+tracks/135/path = NodePath("power_fire_tile_par3Reflash2:skew")
+tracks/135/interp = 1
+tracks/135/loop_wrap = true
+tracks/135/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/136/type = "value"
+tracks/136/imported = false
+tracks/136/enabled = true
+tracks/136/path = NodePath("power_fire_tile_par3Reflash6:position")
+tracks/136/interp = 1
+tracks/136/loop_wrap = true
+tracks/136/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4.455099, -88.807495), Vector2(4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(-4.455099, -88.807495), Vector2(2.9700325, -132.9456), Vector2(-4.4552994, -353.6361)]
+}
+tracks/137/type = "value"
+tracks/137/imported = false
+tracks/137/enabled = true
+tracks/137/path = NodePath("power_fire_tile_par3Reflash6:rotation")
+tracks/137/interp = 3
+tracks/137/loop_wrap = true
+tracks/137/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6333333, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [3.1415927, 3.1415927, 0.0, 0.0, 3.1415927, 3.1415927, 0.0]
+}
+tracks/138/type = "value"
+tracks/138/imported = false
+tracks/138/enabled = true
+tracks/138/path = NodePath("power_fire_tile_par3Reflash6:scale")
+tracks/138/interp = 1
+tracks/138/loop_wrap = true
+tracks/138/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.46666667, 0.5, 0.6, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, 2.9929974), Vector2(3.1448407, -2.9929974), Vector2(3.1448407, -2.9929974), Vector2(0, 0)]
+}
+tracks/139/type = "value"
+tracks/139/imported = false
+tracks/139/enabled = true
+tracks/139/path = NodePath("power_fire_tile_par3Reflash6:skew")
+tracks/139/interp = 1
+tracks/139/loop_wrap = true
+tracks/139/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/140/type = "value"
+tracks/140/imported = false
+tracks/140/enabled = true
+tracks/140/path = NodePath("power_fire_tile_par1Light:display")
+tracks/140/interp = 1
+tracks/140/loop_wrap = true
+tracks/140/keys = {
+"times": PackedFloat32Array(0, 0.13333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/141/type = "value"
+tracks/141/imported = false
+tracks/141/enabled = true
+tracks/141/path = NodePath("power_fire_tile_par2Light:display")
+tracks/141/interp = 1
+tracks/141/loop_wrap = true
+tracks/141/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/142/type = "value"
+tracks/142/imported = false
+tracks/142/enabled = true
+tracks/142/path = NodePath("power_fire_tile_par3Light:display")
+tracks/142/interp = 1
+tracks/142/loop_wrap = true
+tracks/142/keys = {
+"times": PackedFloat32Array(0, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/143/type = "value"
+tracks/143/imported = false
+tracks/143/enabled = true
+tracks/143/path = NodePath("power_fire_tile_par3Light1:display")
+tracks/143/interp = 1
+tracks/143/loop_wrap = true
+tracks/143/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/144/type = "value"
+tracks/144/imported = false
+tracks/144/enabled = true
+tracks/144/path = NodePath("power_fire_tile_par3Light2:display")
+tracks/144/interp = 1
+tracks/144/loop_wrap = true
+tracks/144/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/145/type = "value"
+tracks/145/imported = false
+tracks/145/enabled = true
+tracks/145/path = NodePath("power_fire_tile_par3Light3:display")
+tracks/145/interp = 1
+tracks/145/loop_wrap = true
+tracks/145/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/146/type = "value"
+tracks/146/imported = false
+tracks/146/enabled = true
+tracks/146/path = NodePath("power_fire_tile_par3Light4:display")
+tracks/146/interp = 1
+tracks/146/loop_wrap = true
+tracks/146/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/147/type = "value"
+tracks/147/imported = false
+tracks/147/enabled = true
+tracks/147/path = NodePath("power_fire_tile_par3Light5:display")
+tracks/147/interp = 1
+tracks/147/loop_wrap = true
+tracks/147/keys = {
+"times": PackedFloat32Array(0, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/148/type = "value"
+tracks/148/imported = false
+tracks/148/enabled = true
+tracks/148/path = NodePath("power_fire_tile_par1Light1:display")
+tracks/148/interp = 1
+tracks/148/loop_wrap = true
+tracks/148/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/149/type = "value"
+tracks/149/imported = false
+tracks/149/enabled = true
+tracks/149/path = NodePath("power_fire_tile_par2Light1:display")
+tracks/149/interp = 1
+tracks/149/loop_wrap = true
+tracks/149/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/150/type = "value"
+tracks/150/imported = false
+tracks/150/enabled = true
+tracks/150/path = NodePath("power_fire_tile_par3Light6:display")
+tracks/150/interp = 1
+tracks/150/loop_wrap = true
+tracks/150/keys = {
+"times": PackedFloat32Array(0, 0.46666667, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/151/type = "value"
+tracks/151/imported = false
+tracks/151/enabled = true
+tracks/151/path = NodePath("power_fire_tile_par36:display")
+tracks/151/interp = 1
+tracks/151/loop_wrap = true
+tracks/151/keys = {
+"times": PackedFloat32Array(0, 0.46666667, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/152/type = "value"
+tracks/152/imported = false
+tracks/152/enabled = true
+tracks/152/path = NodePath("power_fire_tile_par21:display")
+tracks/152/interp = 1
+tracks/152/loop_wrap = true
+tracks/152/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/153/type = "value"
+tracks/153/imported = false
+tracks/153/enabled = true
+tracks/153/path = NodePath("power_fire_tile_par11:display")
+tracks/153/interp = 1
+tracks/153/loop_wrap = true
+tracks/153/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/154/type = "value"
+tracks/154/imported = false
+tracks/154/enabled = true
+tracks/154/path = NodePath("power_fire_tile_par35:display")
+tracks/154/interp = 1
+tracks/154/loop_wrap = true
+tracks/154/keys = {
+"times": PackedFloat32Array(0, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/155/type = "value"
+tracks/155/imported = false
+tracks/155/enabled = true
+tracks/155/path = NodePath("power_fire_tile_par34:display")
+tracks/155/interp = 1
+tracks/155/loop_wrap = true
+tracks/155/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/156/type = "value"
+tracks/156/imported = false
+tracks/156/enabled = true
+tracks/156/path = NodePath("power_fire_tile_par33:display")
+tracks/156/interp = 1
+tracks/156/loop_wrap = true
+tracks/156/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/157/type = "value"
+tracks/157/imported = false
+tracks/157/enabled = true
+tracks/157/path = NodePath("power_fire_tile_par32:display")
+tracks/157/interp = 1
+tracks/157/loop_wrap = true
+tracks/157/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/158/type = "value"
+tracks/158/imported = false
+tracks/158/enabled = true
+tracks/158/path = NodePath("power_fire_tile_par1:display")
+tracks/158/interp = 1
+tracks/158/loop_wrap = true
+tracks/158/keys = {
+"times": PackedFloat32Array(0, 0.13333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/159/type = "value"
+tracks/159/imported = false
+tracks/159/enabled = true
+tracks/159/path = NodePath("power_fire_tile_par2:display")
+tracks/159/interp = 1
+tracks/159/loop_wrap = true
+tracks/159/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/160/type = "value"
+tracks/160/imported = false
+tracks/160/enabled = true
+tracks/160/path = NodePath("power_fire_tile_par3:display")
+tracks/160/interp = 1
+tracks/160/loop_wrap = true
+tracks/160/keys = {
+"times": PackedFloat32Array(0, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/161/type = "value"
+tracks/161/imported = false
+tracks/161/enabled = true
+tracks/161/path = NodePath("power_fire_tile_par31:display")
+tracks/161/interp = 1
+tracks/161/loop_wrap = true
+tracks/161/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/162/type = "value"
+tracks/162/imported = false
+tracks/162/enabled = true
+tracks/162/path = NodePath("power_fire_tile_par3Reflash3:display")
+tracks/162/interp = 1
+tracks/162/loop_wrap = true
+tracks/162/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/163/type = "value"
+tracks/163/imported = false
+tracks/163/enabled = true
+tracks/163/path = NodePath("power_fire_tile_par3Reflash4:display")
+tracks/163/interp = 1
+tracks/163/loop_wrap = true
+tracks/163/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/164/type = "value"
+tracks/164/imported = false
+tracks/164/enabled = true
+tracks/164/path = NodePath("power_fire_tile_par1Reflash:display")
+tracks/164/interp = 1
+tracks/164/loop_wrap = true
+tracks/164/keys = {
+"times": PackedFloat32Array(0, 0.13333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/165/type = "value"
+tracks/165/imported = false
+tracks/165/enabled = true
+tracks/165/path = NodePath("power_fire_tile_par2Reflash:display")
+tracks/165/interp = 1
+tracks/165/loop_wrap = true
+tracks/165/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/166/type = "value"
+tracks/166/imported = false
+tracks/166/enabled = true
+tracks/166/path = NodePath("power_fire_tile_par3Reflash:display")
+tracks/166/interp = 1
+tracks/166/loop_wrap = true
+tracks/166/keys = {
+"times": PackedFloat32Array(0, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/167/type = "value"
+tracks/167/imported = false
+tracks/167/enabled = true
+tracks/167/path = NodePath("power_fire_tile_par3Reflash1:display")
+tracks/167/interp = 1
+tracks/167/loop_wrap = true
+tracks/167/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/168/type = "value"
+tracks/168/imported = false
+tracks/168/enabled = true
+tracks/168/path = NodePath("power_fire_tile_par1Reflash1:display")
+tracks/168/interp = 1
+tracks/168/loop_wrap = true
+tracks/168/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/169/type = "value"
+tracks/169/imported = false
+tracks/169/enabled = true
+tracks/169/path = NodePath("power_fire_tile_par3Reflash5:display")
+tracks/169/interp = 1
+tracks/169/loop_wrap = true
+tracks/169/keys = {
+"times": PackedFloat32Array(0, 0.53333336, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/170/type = "value"
+tracks/170/imported = false
+tracks/170/enabled = true
+tracks/170/path = NodePath("power_fire_tile_par2Reflash1:display")
+tracks/170/interp = 1
+tracks/170/loop_wrap = true
+tracks/170/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/171/type = "value"
+tracks/171/imported = false
+tracks/171/enabled = true
+tracks/171/path = NodePath("power_fire_tile_par3Reflash2:display")
+tracks/171/interp = 1
+tracks/171/loop_wrap = true
+tracks/171/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+tracks/172/type = "value"
+tracks/172/imported = false
+tracks/172/enabled = true
+tracks/172/path = NodePath("power_fire_tile_par3Reflash6:display")
+tracks/172/interp = 1
+tracks/172/loop_wrap = true
+tracks/172/keys = {
+"times": PackedFloat32Array(0, 0.46666667, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hok7u"]
+_data = {
+&"Idle": SubResource("Animation_cjgpb")
+}
+
+[node name="groundFire" type="Node2D" unique_id=1147222008]
+script = ExtResource("1_1frev")
+bounds = Rect2(-155.04, -205.93, 325.6, 287.93)
+
+[node name="power_fire_tile_mainLight" type="Node2D" parent="." unique_id=1454029201]
+scale = Vector2(1.0086942, 2.5127223)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_mainLight" unique_id=951596147]
+position = Vector2(1.48, -30.45)
+scale = Vector2(1.92, 2)
+texture = SubResource("AtlasTexture_1frev")
+
+[node name="power_fire_tile_par1Light" type="Node2D" parent="." unique_id=320792602]
+position = Vector2(-105.041595, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par1Light" unique_id=894672951]
+texture = SubResource("AtlasTexture_jxdq2")
+
+[node name="power_fire_tile_par2Light" type="Node2D" parent="." unique_id=1749506646]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par2Light" unique_id=2023644666]
+texture = SubResource("AtlasTexture_25sld")
+offset = Vector2(0, -1)
+
+[node name="power_fire_tile_par3Light" type="Node2D" parent="." unique_id=1720181399]
+position = Vector2(4.455099, -75.00154)
+scale = Vector2(2.6442182, 2.519882)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light" unique_id=1160248741]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par3Light1" type="Node2D" parent="." unique_id=232856414]
+position = Vector2(-41.436752, -66.84187)
+scale = Vector2(1.6498737, 1.8404598)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light1" unique_id=1753776879]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par3Light2" type="Node2D" parent="." unique_id=252207472]
+position = Vector2(10.52637, -75.00154)
+scale = Vector2(2.7581232, 2.6248853)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light2" unique_id=1756831377]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par3Light3" type="Node2D" parent="." unique_id=1321911395]
+position = Vector2(70.44555, -75.00154)
+rotation = -3.1415927
+scale = Vector2(2.1800976, -2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light3" unique_id=930127176]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par3Light4" type="Node2D" parent="." unique_id=711386859]
+position = Vector2(-72.77685, -99.02902)
+scale = Vector2(2.1771972, 2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light4" unique_id=695550694]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par3Light5" type="Node2D" parent="." unique_id=191267494]
+position = Vector2(93.15017, -92.551315)
+rotation = -0.41488472
+scale = Vector2(2.177193, 2.0748715)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light5" unique_id=377055256]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par1Light1" type="Node2D" parent="." unique_id=1097363490]
+position = Vector2(88.58926, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par1Light1" unique_id=1628797616]
+texture = SubResource("AtlasTexture_jxdq2")
+
+[node name="power_fire_tile_par2Light1" type="Node2D" parent="." unique_id=1416432393]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par2Light1" unique_id=1444304720]
+texture = SubResource("AtlasTexture_25sld")
+offset = Vector2(0, -1)
+
+[node name="power_fire_tile_par3Light6" type="Node2D" parent="." unique_id=1769969209]
+position = Vector2(4.455099, -88.807495)
+rotation = -3.1415927
+scale = Vector2(3.1448407, -2.9929974)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Light6" unique_id=517830836]
+position = Vector2(-1.02, 0.69)
+texture = SubResource("AtlasTexture_go4xk")
+offset = Vector2(1, -4)
+
+[node name="power_fire_tile_par36" type="Node2D" parent="." unique_id=156768090]
+position = Vector2(4.455099, -88.807495)
+rotation = -3.1415927
+scale = Vector2(3.1448407, -2.9929974)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par36" unique_id=1142748878]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par21" type="Node2D" parent="." unique_id=1953841445]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par21" unique_id=2141382289]
+scale = Vector2(1.5262, 1.5262)
+texture = SubResource("AtlasTexture_xpm1o")
+
+[node name="power_fire_tile_par11" type="Node2D" parent="." unique_id=1436558654]
+position = Vector2(88.58926, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par11" unique_id=1266393909]
+position = Vector2(-2.99, 3.49)
+scale = Vector2(0.9072, 0.9072)
+texture = SubResource("AtlasTexture_br0fb")
+
+[node name="power_fire_tile_par35" type="Node2D" parent="." unique_id=607950986]
+position = Vector2(93.15017, -92.551315)
+rotation = -0.41488472
+scale = Vector2(2.177193, 2.0748715)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par35" unique_id=55097554]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par34" type="Node2D" parent="." unique_id=1679665183]
+position = Vector2(-72.77685, -99.02902)
+scale = Vector2(2.1771972, 2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par34" unique_id=662544315]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par33" type="Node2D" parent="." unique_id=1299141242]
+position = Vector2(70.44555, -75.00154)
+rotation = -3.1415927
+scale = Vector2(2.1800976, -2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par33" unique_id=1200051459]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par32" type="Node2D" parent="." unique_id=1368019184]
+position = Vector2(10.52637, -75.00154)
+scale = Vector2(2.7581232, 2.6248853)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par32" unique_id=1407057215]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par1" type="Node2D" parent="." unique_id=2039327634]
+position = Vector2(-105.041595, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par1" unique_id=789543740]
+position = Vector2(-2.99, 3.49)
+scale = Vector2(0.9072, 0.9072)
+texture = SubResource("AtlasTexture_br0fb")
+
+[node name="power_fire_tile_par2" type="Node2D" parent="." unique_id=1381869624]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par2" unique_id=427241263]
+scale = Vector2(1.5262, 1.5262)
+texture = SubResource("AtlasTexture_xpm1o")
+
+[node name="power_fire_tile_par3" type="Node2D" parent="." unique_id=2027062237]
+position = Vector2(4.455099, -75.00154)
+scale = Vector2(2.6442182, 2.519882)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3" unique_id=605340720]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_par31" type="Node2D" parent="." unique_id=2074404859]
+position = Vector2(-41.436752, -66.84187)
+scale = Vector2(1.6498737, 1.8404598)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par31" unique_id=1270738335]
+scale = Vector2(1.2125, 1.2125)
+texture = SubResource("AtlasTexture_3ig62")
+
+[node name="power_fire_tile_mainSide" type="Node2D" parent="." unique_id=629277277]
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_mainSide" unique_id=674928630]
+position = Vector2(0, -35)
+rotation = 1.5707964
+scale = Vector2(2.0512, 1.2751)
+texture = SubResource("AtlasTexture_oh066")
+offset = Vector2(0, -0.5)
+
+[node name="power_fire_tile_main" type="Node2D" parent="." unique_id=1234823007]
+scale = Vector2(1.0086942, 2.5127223)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_main" unique_id=493272634]
+position = Vector2(1.48, -27.29)
+scale = Vector2(1.7669, 1.3696)
+texture = SubResource("AtlasTexture_fx7p4")
+
+[node name="power_fire_tile_par3Reflash3" type="Node2D" parent="." unique_id=551273294]
+position = Vector2(70.44555, -75.00154)
+rotation = 3.1415927
+scale = Vector2(2.1800976, -2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash3" unique_id=250886182]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par3Reflash4" type="Node2D" parent="." unique_id=1517174725]
+position = Vector2(-72.77685, -99.02902)
+scale = Vector2(2.1771972, 2.0748675)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash4" unique_id=1553172798]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par1Reflash" type="Node2D" parent="." unique_id=407598750]
+position = Vector2(-105.041595, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par1Reflash" unique_id=690723381]
+position = Vector2(-1, -2.99)
+scale = Vector2(0.5757, 0.5757)
+texture = SubResource("AtlasTexture_fd3dk")
+
+[node name="power_fire_tile_par2Reflash" type="Node2D" parent="." unique_id=706496788]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par2Reflash" unique_id=883771332]
+position = Vector2(5.18, -1.95)
+texture = SubResource("AtlasTexture_f6hem")
+
+[node name="power_fire_tile_par3Reflash" type="Node2D" parent="." unique_id=1292301989]
+position = Vector2(4.455099, -75.00154)
+scale = Vector2(2.6442182, 2.519882)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash" unique_id=913180024]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par3Reflash1" type="Node2D" parent="." unique_id=1562920688]
+position = Vector2(-41.436752, -66.84187)
+scale = Vector2(1.6498737, 1.8404598)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash1" unique_id=1225041231]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par1Reflash1" type="Node2D" parent="." unique_id=2098195762]
+position = Vector2(88.58926, -95.343704)
+scale = Vector2(1.1147498, 1.6448535)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par1Reflash1" unique_id=864110405]
+position = Vector2(-1, -2.99)
+scale = Vector2(0.5757, 0.5757)
+texture = SubResource("AtlasTexture_fd3dk")
+
+[node name="power_fire_tile_par3Reflash5" type="Node2D" parent="." unique_id=1599122338]
+position = Vector2(93.15017, -92.551315)
+rotation = -0.41488472
+scale = Vector2(2.177193, 2.0748715)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash5" unique_id=1137041543]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par2Reflash1" type="Node2D" parent="." unique_id=597139225]
+position = Vector2(91.5712, -110.43639)
+rotation = -0.27808008
+scale = Vector2(0.6719294, 0.9913331)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par2Reflash1" unique_id=1457555275]
+position = Vector2(5.18, -1.95)
+texture = SubResource("AtlasTexture_f6hem")
+
+[node name="power_fire_tile_par3Reflash2" type="Node2D" parent="." unique_id=1235594520]
+position = Vector2(10.52637, -75.00154)
+scale = Vector2(2.7581232, 2.6248853)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash2" unique_id=910422547]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="power_fire_tile_par3Reflash6" type="Node2D" parent="." unique_id=338850884]
+position = Vector2(4.455099, -88.807495)
+rotation = 3.1415927
+scale = Vector2(3.1448407, -2.9929974)
+script = ExtResource("2_jxdq2")
+
+[node name="0" type="Sprite2D" parent="power_fire_tile_par3Reflash6" unique_id=1180318400]
+position = Vector2(1.02, -6.92)
+scale = Vector2(0.7116, 0.7116)
+texture = SubResource("AtlasTexture_rf1n5")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=171946105]
+libraries/ = SubResource("AnimationLibrary_hok7u")

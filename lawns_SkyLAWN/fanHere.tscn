@@ -1,0 +1,150 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7a73m"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_mxcwi"]
+[ext_resource type="Texture2D" path="res://art/_textures/447233d7-4623-4ba9-945a-fd6e00263cb9.png" id="3_fl24v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_da8a7"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(893, 3157, 962, 774)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y830a"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(1, 3157, 890, 899)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5vbl"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(3195, 673, 471, 510)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwknq"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(2057, 2765, 1034, 998)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7a73m"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(2242, 1071, 387, 332)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrd5m"]
+atlas = ExtResource("3_fl24v")
+region = Rect2(2242, 1, 1069, 670)
+
+[sub_resource type="Animation" id="Animation_mxcwi"]
+length = 0.06666666666666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fan:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(10.6054, -116.659)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("fan:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.60991794, -0.9107695, -1.2416253]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("fan:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.9398641, 0.9108604), Vector2(0.8940031, 0.95591307), Vector2(0.8573535, 0.9889167)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("fan:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.16541219, -0.15457535, -0.090259075]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("eff:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fl24v"]
+_data = {
+&"Idle": SubResource("Animation_mxcwi")
+}
+
+[node name="fanHere" type="Node2D" unique_id=1861910766]
+script = ExtResource("1_7a73m")
+bounds = Rect2(-1524.44, -556.11, 2041.44, 1055.11)
+
+[node name="hole_withAxle" type="Node2D" parent="." unique_id=1283015663]
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="hole_withAxle" unique_id=1541608744]
+position = Vector2(-15.86, -83.48)
+texture = SubResource("AtlasTexture_da8a7")
+
+[node name="fan" type="Node2D" parent="." unique_id=60300519]
+position = Vector2(10.6054, -116.659)
+scale = Vector2(1, 0.8444)
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="fan" unique_id=1416255012]
+position = Vector2(-30.79, 11.9)
+texture = SubResource("AtlasTexture_y830a")
+
+[node name="eff" type="Node2D" parent="." unique_id=551736402]
+position = Vector2(10.6054, -116.659)
+scale = Vector2(1, 0.8444)
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="eff" unique_id=66129261]
+scale = Vector2(1.7497, 1.6659)
+texture = SubResource("AtlasTexture_j5vbl")
+
+[node name="fan_side" type="Node2D" parent="." unique_id=204649748]
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="fan_side" unique_id=1320130604]
+texture = SubResource("AtlasTexture_jwknq")
+
+[node name="axieBig" type="Node2D" parent="." unique_id=1327747272]
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="axieBig" unique_id=2146026564]
+position = Vector2(0, -115.2)
+texture = SubResource("AtlasTexture_7a73m")
+
+[node name="fan_engine" type="Node2D" parent="." unique_id=344174734]
+script = ExtResource("2_mxcwi")
+
+[node name="0" type="Sprite2D" parent="fan_engine" unique_id=786808385]
+position = Vector2(-989.94, 32.91)
+scale = Vector2(1.4153, 1.4587)
+texture = SubResource("AtlasTexture_wrd5m")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=916226680]
+libraries/ = SubResource("AnimationLibrary_fl24v")

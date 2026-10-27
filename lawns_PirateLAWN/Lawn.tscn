@@ -1,0 +1,157 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1cwfl"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_oe25y"]
+[ext_resource type="Texture2D" path="res://art/_textures/fbb61222-8332-4eb4-8a5d-6ee603b3481a.png" id="3_6oowl"]
+[ext_resource type="PackedScene" path="res://art/lawns_PirateLAWN/idleWater.tscn" id="4_kl4fl"]
+[ext_resource type="PackedScene" path="res://art/lawns_PirateLAWN/idleWaves.tscn" id="5_gt5nm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1cwfl"]
+atlas = ExtResource("3_6oowl")
+region = Rect2(1, 1, 3948, 1536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oe25y"]
+atlas = ExtResource("3_6oowl")
+region = Rect2(1, 3911, 362, 125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6y54"]
+atlas = ExtResource("3_6oowl")
+region = Rect2(743, 3597, 736, 313)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5sno4"]
+atlas = ExtResource("3_6oowl")
+region = Rect2(1, 3597, 740, 312)
+
+[sub_resource type="Animation" id="Animation_6oowl"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kl4fl"]
+_data = {
+&"Idle": SubResource("Animation_6oowl")
+}
+
+[node name="Lawn" type="Node2D" unique_id=57335331]
+script = ExtResource("1_1cwfl")
+bounds = Rect2(-1579.29, -910.26, 3949, 2047.6)
+
+[node name="Lawn" type="Node2D" parent="." unique_id=1083614856]
+script = ExtResource("2_oe25y")
+
+[node name="0" type="Sprite2D" parent="Lawn" unique_id=787793272]
+position = Vector2(395.21, 0)
+texture = SubResource("AtlasTexture_1cwfl")
+offset = Vector2(-0.5, 0)
+
+[node name="idleWater" type="Node2D" parent="." unique_id=510838494]
+modulate = Color(0.33, 1, 0.85, 0.71)
+script = ExtResource("2_oe25y")
+
+[node name="0" parent="idleWater" unique_id=672144760 instance=ExtResource("4_kl4fl")]
+position = Vector2(578.63, 113.54)
+autoplay = &"Idle"
+
+[node name="idleWaves" type="Node2D" parent="." unique_id=632314682]
+script = ExtResource("2_oe25y")
+
+[node name="0" parent="idleWaves" unique_id=586038180 instance=ExtResource("5_gt5nm")]
+position = Vector2(600, -33.07)
+autoplay = &"Idle"
+
+[node name="DECKSHADE0" type="Node2D" parent="." unique_id=1012572605]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECKSHADE0" unique_id=915066228]
+visible = false
+position = Vector2(548.51, -332.24)
+scale = Vector2(1.4384, 1.4384)
+texture = SubResource("AtlasTexture_oe25y")
+
+[node name="DECKSHADE1" type="Node2D" parent="." unique_id=9188855]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECKSHADE1" unique_id=1800628691]
+visible = false
+position = Vector2(548.51, -162.04)
+scale = Vector2(1.4384, 1.4384)
+texture = SubResource("AtlasTexture_oe25y")
+
+[node name="DECKSHADE2" type="Node2D" parent="." unique_id=174417499]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECKSHADE2" unique_id=1468084446]
+visible = false
+position = Vector2(548.51, 40.36)
+scale = Vector2(1.4384, 1.4384)
+texture = SubResource("AtlasTexture_oe25y")
+
+[node name="DECKSHADE3" type="Node2D" parent="." unique_id=489092560]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECKSHADE3" unique_id=1069060792]
+visible = false
+position = Vector2(548.51, 242.8)
+scale = Vector2(1.4384, 1.4384)
+texture = SubResource("AtlasTexture_oe25y")
+
+[node name="DECKSHADE4" type="Node2D" parent="." unique_id=986363004]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECKSHADE4" unique_id=1121274788]
+visible = false
+position = Vector2(548.51, 436.5)
+scale = Vector2(1.4384, 1.4384)
+texture = SubResource("AtlasTexture_oe25y")
+
+[node name="DECK0" type="Node2D" parent="." unique_id=191377964]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECK0" unique_id=1433070473]
+visible = false
+position = Vector2(623.48, -219.36)
+texture = SubResource("AtlasTexture_p6y54")
+
+[node name="DECK1" type="Node2D" parent="." unique_id=1369346868]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECK1" unique_id=1812454427]
+visible = false
+position = Vector2(622.61, -20.39)
+texture = SubResource("AtlasTexture_5sno4")
+
+[node name="DECK2" type="Node2D" parent="." unique_id=529246328]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECK2" unique_id=936848279]
+visible = false
+position = Vector2(627.25, 179.03)
+texture = SubResource("AtlasTexture_p6y54")
+
+[node name="DECK3" type="Node2D" parent="." unique_id=88343368]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECK3" unique_id=663415550]
+visible = false
+position = Vector2(628.79, 376.76)
+texture = SubResource("AtlasTexture_5sno4")
+
+[node name="DECK4" type="Node2D" parent="." unique_id=76374768]
+script = ExtResource("2_oe25y")
+display = -1
+
+[node name="0" type="Sprite2D" parent="DECK4" unique_id=935207629]
+visible = false
+position = Vector2(631.89, 575.94)
+texture = SubResource("AtlasTexture_p6y54")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1194025017]
+libraries/ = SubResource("AnimationLibrary_kl4fl")

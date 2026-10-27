@@ -1,0 +1,117 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_0jawa"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_78py1"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_fvter"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jawa"]
+atlas = ExtResource("3_fvter")
+region = Rect2(739, 1189, 65, 65)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78py1"]
+atlas = ExtResource("3_fvter")
+region = Rect2(1935, 649, 109, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvter"]
+atlas = ExtResource("3_fvter")
+region = Rect2(287, 3870, 109, 144)
+
+[sub_resource type="Animation" id="Animation_0vt7o"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_disallowed:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lrirn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_disallowed:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_qi12h"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_disallowed:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_7kk68"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bk_disallowed:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oyhra"]
+_data = {
+&"disallow": SubResource("Animation_0vt7o"),
+&"lock_golden": SubResource("Animation_lrirn"),
+&"lock_medium": SubResource("Animation_qi12h"),
+&"nope": SubResource("Animation_7kk68")
+}
+
+[node name="disallow" type="Node2D" unique_id=1906138453]
+script = ExtResource("1_0jawa")
+
+[node name="bk_disallowed" type="Node2D" parent="." unique_id=1237499680]
+script = ExtResource("2_78py1")
+display = -1
+
+[node name="0" type="Sprite2D" parent="bk_disallowed" unique_id=2088059204]
+visible = false
+position = Vector2(70.86, 30.28)
+texture = SubResource("AtlasTexture_0jawa")
+
+[node name="1" type="Sprite2D" parent="bk_disallowed" unique_id=1769938440]
+visible = false
+position = Vector2(72.32, 25.41)
+scale = Vector2(0.507, 0.507)
+texture = SubResource("AtlasTexture_78py1")
+
+[node name="2" type="Sprite2D" parent="bk_disallowed" unique_id=918369784]
+visible = false
+position = Vector2(72.32, 25.41)
+scale = Vector2(0.507, 0.507)
+texture = SubResource("AtlasTexture_fvter")
+offset = Vector2(0, -1)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1749455948]
+libraries/ = SubResource("AnimationLibrary_oyhra")

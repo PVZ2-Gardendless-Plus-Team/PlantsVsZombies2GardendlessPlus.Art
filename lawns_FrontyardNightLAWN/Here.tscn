@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_axcah"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_afsft"]
+[ext_resource type="Texture2D" path="res://art/_textures/75bf58ef-bf6a-4fc0-b819-58a5b0de108a.png" id="3_b71gu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axcah"]
+atlas = ExtResource("3_b71gu")
+region = Rect2(1, 1539, 2785, 482)
+
+[sub_resource type="Animation" id="Animation_afsft"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b71gu"]
+_data = {
+&"i": SubResource("Animation_afsft")
+}
+
+[node name="Here" type="Node2D" unique_id=555345529]
+script = ExtResource("1_axcah")
+bounds = Rect2(-882.27, 285.94, 2785, 482)
+
+[node name="Upper" type="Node2D" parent="." unique_id=2003111462]
+script = ExtResource("2_afsft")
+
+[node name="0" type="Sprite2D" parent="Upper" unique_id=911071354]
+position = Vector2(510.23, 526.94)
+texture = SubResource("AtlasTexture_axcah")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1985557508]
+libraries/ = SubResource("AnimationLibrary_b71gu")

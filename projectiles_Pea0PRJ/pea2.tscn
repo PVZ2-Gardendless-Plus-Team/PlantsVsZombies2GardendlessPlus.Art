@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_de2kt"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_b50g7"]
+[ext_resource type="Texture2D" path="res://art/_textures/74e13133-a9d5-410c-a555-3ddb8a88947c.png" id="3_ajk4s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de2kt"]
+atlas = ExtResource("3_ajk4s")
+region = Rect2(132, 315, 276, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b50g7"]
+atlas = ExtResource("3_ajk4s")
+region = Rect2(207, 1, 213, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajk4s"]
+atlas = ExtResource("3_ajk4s")
+region = Rect2(465, 200, 46, 42)
+
+[sub_resource type="Animation" id="Animation_5h2tw"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i0mve"]
+_data = {
+&"Idle": SubResource("Animation_5h2tw")
+}
+
+[node name="pea2" type="Node2D" unique_id=2059101360]
+script = ExtResource("1_de2kt")
+bounds = Rect2(-244.86, -28.82, 314.28, 55)
+
+[node name="pea2_tail1" type="Node2D" parent="." unique_id=1964323324]
+modulate = Color(1, 1, 1, 0.56)
+script = ExtResource("2_b50g7")
+
+[node name="0" type="Sprite2D" parent="pea2_tail1" unique_id=784525005]
+position = Vector2(-68.58, -1.1)
+scale = Vector2(0.5451, 1.3307)
+texture = SubResource("AtlasTexture_de2kt")
+
+[node name="pea2_tail0" type="Node2D" parent="." unique_id=152387664]
+script = ExtResource("2_b50g7")
+
+[node name="0" type="Sprite2D" parent="pea2_tail0" unique_id=1803866692]
+position = Vector2(-110.86, -1.32)
+scale = Vector2(1, 1.22)
+texture = SubResource("AtlasTexture_b50g7")
+offset = Vector2(24.5, 0)
+
+[node name="pea" type="Node2D" parent="." unique_id=1380207787]
+script = ExtResource("2_b50g7")
+
+[node name="0" type="Sprite2D" parent="pea" unique_id=567543005]
+scale = Vector2(1.4724, 1.1977)
+texture = SubResource("AtlasTexture_ajk4s")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=809875975]
+libraries/ = SubResource("AnimationLibrary_i0mve")

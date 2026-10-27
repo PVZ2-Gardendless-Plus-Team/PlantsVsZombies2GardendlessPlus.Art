@@ -1,0 +1,72 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_hvvbd"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_dnujj"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/fanThere.tscn" id="3_c6uiv"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/fanHere.tscn" id="4_82nod"]
+[ext_resource type="Texture2D" path="res://art/_textures/447233d7-4623-4ba9-945a-fd6e00263cb9.png" id="5_k67c8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvvbd"]
+atlas = ExtResource("5_k67c8")
+region = Rect2(1, 1, 2239, 1616)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnujj"]
+atlas = ExtResource("5_k67c8")
+region = Rect2(3093, 2765, 851, 1110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6uiv"]
+atlas = ExtResource("5_k67c8")
+region = Rect2(2057, 1619, 1142, 1144)
+
+[sub_resource type="Animation" id="Animation_82nod"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k67c8"]
+_data = {
+&"Idle": SubResource("Animation_82nod")
+}
+
+[node name="Lawn" type="Node2D" unique_id=147167492]
+script = ExtResource("1_hvvbd")
+bounds = Rect2(-1992.19, -964.74, 3004.16, 2529.09)
+
+[node name="fanThere" type="Node2D" parent="." unique_id=831153497]
+script = ExtResource("2_dnujj")
+
+[node name="0" parent="fanThere" unique_id=1896034180 instance=ExtResource("3_c6uiv")]
+position = Vector2(-118.76, -518.49)
+scale = Vector2(0.9262, 0.9262)
+autoplay = &"Idle"
+
+[node name="fanHere" type="Node2D" parent="." unique_id=1912432821]
+script = ExtResource("2_dnujj")
+
+[node name="0" parent="fanHere" unique_id=1861910766 instance=ExtResource("4_82nod")]
+position = Vector2(-173.17, 991.41)
+rotation = 0.03996804
+scale = Vector2(0.87, 0.7878)
+autoplay = &"Idle"
+
+[node name="left" type="Node2D" parent="." unique_id=607929753]
+script = ExtResource("2_dnujj")
+
+[node name="0" type="Sprite2D" parent="left" unique_id=1170499596]
+position = Vector2(-872.69, -37.44)
+texture = SubResource("AtlasTexture_hvvbd")
+
+[node name="BP" type="Node2D" parent="." unique_id=2056838898]
+script = ExtResource("2_dnujj")
+display = -1
+
+[node name="0" type="Sprite2D" parent="BP" unique_id=1901698250]
+visible = false
+position = Vector2(-301.68, 180.44)
+texture = SubResource("AtlasTexture_dnujj")
+
+[node name="1" type="Sprite2D" parent="BP" unique_id=1358367835]
+visible = false
+position = Vector2(-446.88, 197.71)
+texture = SubResource("AtlasTexture_c6uiv")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1803077270]
+libraries/ = SubResource("AnimationLibrary_k67c8")

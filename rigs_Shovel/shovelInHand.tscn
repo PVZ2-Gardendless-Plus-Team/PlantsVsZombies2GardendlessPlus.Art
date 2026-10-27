@@ -1,0 +1,36 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_dy1op"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_l13cm"]
+[ext_resource type="Texture2D" path="res://art/_textures/0649eedc-60e0-488b-85c3-5ccbdc17da2d.png" id="3_c7o2v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy1op"]
+atlas = ExtResource("3_c7o2v")
+region = Rect2(1, 1, 260, 137)
+
+[sub_resource type="Animation" id="Animation_l13cm"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c7o2v"]
+_data = {
+&"ShovelInHand": SubResource("Animation_l13cm")
+}
+
+[node name="shovelInHand" type="Node2D" unique_id=1855978463]
+script = ExtResource("1_dy1op")
+bounds = Rect2(-30.04, -83.08, 265, 151)
+
+[node name="shovel_in_hand" type="Node2D" parent="." unique_id=829270556]
+position = Vector2(-18.8039, 2.2681)
+rotation = -0.13416694
+script = ExtResource("2_l13cm")
+
+[node name="0" type="Sprite2D" parent="shovel_in_hand" unique_id=1488397829]
+position = Vector2(121.49, 6.46)
+rotation = 0.13421582
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_dy1op")
+offset = Vector2(-1.5, 3)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1285297512]
+libraries/ = SubResource("AnimationLibrary_c7o2v")

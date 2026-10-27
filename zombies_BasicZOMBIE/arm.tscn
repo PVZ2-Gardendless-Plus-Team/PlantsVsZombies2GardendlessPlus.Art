@@ -1,0 +1,52 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_i18fr"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_hnf7t"]
+[ext_resource type="Texture2D" path="res://art/_textures/e5e6e663-06a3-4ff8-a2ae-b5a35e821ed5.png" id="3_863ws"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etlyq"]
+atlas = ExtResource("3_863ws")
+region = Rect2(185, 447, 41, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_016xk"]
+atlas = ExtResource("3_863ws")
+region = Rect2(553, 278, 26, 48)
+
+[sub_resource type="Animation" id="Animation_i18fr"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hnf7t"]
+_data = {
+&"idle": SubResource("Animation_i18fr")
+}
+
+[node name="arm" type="Node2D" unique_id=863652758]
+script = ExtResource("1_i18fr")
+bounds = Rect2(-19.74, -30.43, 46, 85.28)
+
+[node name="hand_here" type="Node2D" parent="." unique_id=331134621]
+position = Vector2(0.057545424, 10.651466)
+rotation = 1.4847289
+script = ExtResource("2_hnf7t")
+
+[node name="0" type="Sprite2D" parent="hand_here" unique_id=141570354]
+position = Vector2(19.41, -1.54)
+rotation = -1.7339846
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_etlyq")
+offset = Vector2(-0.5, 0)
+
+[node name="armhand_here" type="Node2D" parent="." unique_id=536093147]
+position = Vector2(1.149, -39.597)
+rotation = 1.5501857
+script = ExtResource("2_hnf7t")
+
+[node name="0" type="Sprite2D" parent="armhand_here" unique_id=860045447]
+position = Vector2(35.69, -0.42)
+rotation = -1.5613716
+texture = SubResource("AtlasTexture_016xk")
+offset = Vector2(0, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2081126132]
+libraries/ = SubResource("AnimationLibrary_hnf7t")

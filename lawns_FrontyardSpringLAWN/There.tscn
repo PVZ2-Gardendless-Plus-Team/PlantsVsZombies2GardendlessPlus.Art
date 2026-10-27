@@ -1,0 +1,65 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_dhngi"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_utnd4"]
+[ext_resource type="Texture2D" path="res://art/_textures/fabce6a6-b6cc-4331-98fa-c9d941a71c11.png" id="3_rtcoc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhngi"]
+atlas = ExtResource("3_rtcoc")
+region = Rect2(1, 2023, 1798, 532)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utnd4"]
+atlas = ExtResource("3_rtcoc")
+region = Rect2(2790, 1539, 550, 1436)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtcoc"]
+atlas = ExtResource("3_rtcoc")
+region = Rect2(3703, 2023, 169, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8k1vo"]
+atlas = ExtResource("3_rtcoc")
+region = Rect2(3342, 2023, 359, 709)
+
+[sub_resource type="Animation" id="Animation_tj8wr"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5b00q"]
+_data = {
+&"i": SubResource("Animation_tj8wr")
+}
+
+[node name="There" type="Node2D" unique_id=1738180269]
+script = ExtResource("1_dhngi")
+bounds = Rect2(-797.97, -767.87, 3164.84, 1535.43)
+
+[node name="UpperThereFence" type="Node2D" parent="." unique_id=715699774]
+script = ExtResource("2_utnd4")
+
+[node name="0" type="Sprite2D" parent="UpperThereFence" unique_id=655767415]
+position = Vector2(101.03, -501.87)
+texture = SubResource("AtlasTexture_dhngi")
+
+[node name="UpperThereCars" type="Node2D" parent="." unique_id=1155191594]
+script = ExtResource("2_utnd4")
+
+[node name="0" type="Sprite2D" parent="UpperThereCars" unique_id=1310025197]
+position = Vector2(2091.87, 49.57)
+texture = SubResource("AtlasTexture_utnd4")
+
+[node name="UpperThereLDL" type="Node2D" parent="." unique_id=1366251122]
+script = ExtResource("2_utnd4")
+
+[node name="0" type="Sprite2D" parent="UpperThereLDL" unique_id=848236000]
+position = Vector2(-462.86, 279.72)
+texture = SubResource("AtlasTexture_rtcoc")
+
+[node name="UpperThereLDR" type="Node2D" parent="." unique_id=47681886]
+script = ExtResource("2_utnd4")
+
+[node name="0" type="Sprite2D" parent="UpperThereLDR" unique_id=1041958607]
+position = Vector2(994.75, 226.49)
+texture = SubResource("AtlasTexture_8k1vo")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2046083847]
+libraries/ = SubResource("AnimationLibrary_5b00q")

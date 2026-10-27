@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_g2pvp"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_amhgy"]
+[ext_resource type="Texture2D" path="res://art/_textures/d9f6475d-6fd2-4843-b94a-38aba4786a16.png" id="3_3rymc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2pvp"]
+atlas = ExtResource("3_3rymc")
+region = Rect2(1, 2172, 2775, 489)
+
+[sub_resource type="Animation" id="Animation_amhgy"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3rymc"]
+_data = {
+&"Idle": SubResource("Animation_amhgy")
+}
+
+[node name="UpperThere_Night" type="Node2D" unique_id=192215621]
+script = ExtResource("1_g2pvp")
+bounds = Rect2(-958.08, -768.43, 2775, 489)
+
+[node name="UpperThere" type="Node2D" parent="." unique_id=1151832691]
+script = ExtResource("2_amhgy")
+
+[node name="0" type="Sprite2D" parent="UpperThere" unique_id=1121790006]
+position = Vector2(429.42, -523.93)
+texture = SubResource("AtlasTexture_g2pvp")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=427288283]
+libraries/ = SubResource("AnimationLibrary_3rymc")

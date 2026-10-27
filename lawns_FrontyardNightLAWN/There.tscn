@@ -1,0 +1,43 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_td1f5"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_6h1pr"]
+[ext_resource type="Texture2D" path="res://art/_textures/75bf58ef-bf6a-4fc0-b819-58a5b0de108a.png" id="3_uykcw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td1f5"]
+atlas = ExtResource("3_uykcw")
+region = Rect2(1, 2977, 1796, 399)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6h1pr"]
+atlas = ExtResource("3_uykcw")
+region = Rect2(2788, 1539, 550, 1436)
+
+[sub_resource type="Animation" id="Animation_uykcw"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dwy6y"]
+_data = {
+&"i": SubResource("Animation_uykcw")
+}
+
+[node name="There" type="Node2D" unique_id=487699317]
+script = ExtResource("1_td1f5")
+bounds = Rect2(-796.04, -762.6, 3162.9, 1530.16)
+
+[node name="UpperThereFence" type="Node2D" parent="." unique_id=382399179]
+script = ExtResource("2_6h1pr")
+
+[node name="0" type="Sprite2D" parent="UpperThereFence" unique_id=1818278568]
+position = Vector2(101.96, -563.1)
+texture = SubResource("AtlasTexture_td1f5")
+
+[node name="UpperThereCars" type="Node2D" parent="." unique_id=992467617]
+script = ExtResource("2_6h1pr")
+
+[node name="0" type="Sprite2D" parent="UpperThereCars" unique_id=743030704]
+position = Vector2(2091.87, 49.57)
+texture = SubResource("AtlasTexture_6h1pr")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=125600080]
+libraries/ = SubResource("AnimationLibrary_dwy6y")

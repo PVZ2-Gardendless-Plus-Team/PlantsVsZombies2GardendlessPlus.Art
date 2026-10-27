@@ -1,0 +1,69 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ha5mb"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_8s3of"]
+[ext_resource type="Texture2D" path="res://art/_textures/5e33b9d1-b95b-4c59-a384-b768e1c9c3ea.png" id="3_x1xqs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvddt"]
+atlas = ExtResource("3_x1xqs")
+region = Rect2(3180, 2033, 29, 230)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha5mb"]
+atlas = ExtResource("3_x1xqs")
+region = Rect2(2789, 2033, 389, 291)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8s3of"]
+atlas = ExtResource("3_x1xqs")
+region = Rect2(1, 1539, 2786, 504)
+
+[sub_resource type="Animation" id="Animation_x1xqs"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7oosn"]
+_data = {
+&"Idle": SubResource("Animation_x1xqs")
+}
+
+[node name="UpperHere" type="Node2D" unique_id=430515859]
+script = ExtResource("1_ha5mb")
+bounds = Rect2(-880.71, -767.59, 3249.23, 1534.79)
+
+[node name="light" type="Node2D" parent="." unique_id=76481413]
+script = ExtResource("2_8s3of")
+
+[node name="0" type="Sprite2D" parent="light" unique_id=573656360]
+position = Vector2(992.18, 562.95)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light1" type="Node2D" parent="." unique_id=373016884]
+script = ExtResource("2_8s3of")
+
+[node name="0" type="Sprite2D" parent="light1" unique_id=2035542333]
+position = Vector2(1354.96, 549.68)
+scale = Vector2(1.1219, 1.1219)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light2" type="Node2D" parent="." unique_id=1445265536]
+script = ExtResource("2_8s3of")
+
+[node name="0" type="Sprite2D" parent="light2" unique_id=821596085]
+position = Vector2(-539.55, 552.97)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="z_home" type="Node2D" parent="." unique_id=546758477]
+script = ExtResource("2_8s3of")
+
+[node name="0" type="Sprite2D" parent="z_home" unique_id=1247188654]
+position = Vector2(2174.03, -622.09)
+texture = SubResource("AtlasTexture_ha5mb")
+
+[node name="sign" type="Node2D" parent="." unique_id=1772361035]
+script = ExtResource("2_8s3of")
+
+[node name="0" type="Sprite2D" parent="sign" unique_id=1508260570]
+position = Vector2(512.29, 515.2)
+texture = SubResource("AtlasTexture_8s3of")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=55579267]
+libraries/ = SubResource("AnimationLibrary_7oosn")

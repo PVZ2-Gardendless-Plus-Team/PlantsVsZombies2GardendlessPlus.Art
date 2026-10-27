@@ -1,0 +1,103 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_0pwhw"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_vvvdg"]
+[ext_resource type="Texture2D" path="res://art/_textures/618695df-2a0b-4247-b54e-c2c8051a2331.png" id="3_mi0k4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pwhw"]
+atlas = ExtResource("3_mi0k4")
+region = Rect2(148, 402, 12, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvvdg"]
+atlas = ExtResource("3_mi0k4")
+region = Rect2(200, 338, 46, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi0k4"]
+atlas = ExtResource("3_mi0k4")
+region = Rect2(1, 328, 8, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj7t8"]
+atlas = ExtResource("3_mi0k4")
+region = Rect2(86, 379, 9, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xpb2"]
+atlas = ExtResource("3_mi0k4")
+region = Rect2(116, 390, 30, 12)
+
+[sub_resource type="Animation" id="Animation_cnvvo"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ax1d2"]
+_data = {
+&"i": SubResource("Animation_cnvvo")
+}
+
+[node name="cos3" type="Node2D" unique_id=1201861828]
+script = ExtResource("1_0pwhw")
+bounds = Rect2(-56.97, -14.78, 112.85, 45)
+
+[node name="body_useless2" type="Node2D" parent="." unique_id=1944778153]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="body_useless2" unique_id=1134518425]
+position = Vector2(-48.97, 8.87)
+texture = SubResource("AtlasTexture_0pwhw")
+
+[node name="body_useless21" type="Node2D" parent="." unique_id=521961978]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="body_useless21" unique_id=423946327]
+position = Vector2(47.88, 8.87)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_0pwhw")
+
+[node name="cos_redglass" type="Node2D" parent="." unique_id=886025268]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="cos_redglass" unique_id=641154681]
+position = Vector2(-24.47, 7.72)
+texture = SubResource("AtlasTexture_vvvdg")
+
+[node name="cos_redglass_mid1" type="Node2D" parent="." unique_id=1068858162]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="cos_redglass_mid1" unique_id=756956996]
+position = Vector2(0.68, -0.71)
+texture = SubResource("AtlasTexture_mi0k4")
+offset = Vector2(-0.5, -0.5)
+
+[node name="cos_redglass_mid2" type="Node2D" parent="." unique_id=2112354890]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="cos_redglass_mid2" unique_id=986484344]
+position = Vector2(0.63, -0.71)
+texture = SubResource("AtlasTexture_tj7t8")
+offset = Vector2(-0.5, -0.5)
+
+[node name="cos_redglass1" type="Node2D" parent="." unique_id=1180982217]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="cos_redglass1" unique_id=1365241588]
+position = Vector2(24.11, 7.72)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_vvvdg")
+
+[node name="food_flame1" type="Node2D" parent="." unique_id=1656922079]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="food_flame1" unique_id=1190829683]
+position = Vector2(-23.67, 0.62)
+texture = SubResource("AtlasTexture_0xpb2")
+
+[node name="food_flame11" type="Node2D" parent="." unique_id=1225481858]
+script = ExtResource("2_vvvdg")
+
+[node name="0" type="Sprite2D" parent="food_flame11" unique_id=1452979793]
+position = Vector2(23.18, 0.37)
+texture = SubResource("AtlasTexture_0xpb2")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1714154989]
+libraries/ = SubResource("AnimationLibrary_ax1d2")

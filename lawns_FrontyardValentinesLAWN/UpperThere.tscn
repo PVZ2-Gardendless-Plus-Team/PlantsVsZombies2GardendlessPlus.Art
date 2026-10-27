@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_rh7ob"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_cudfb"]
+[ext_resource type="Texture2D" path="res://art/_textures/387b798e-134f-4030-8c64-ca7b75ee40d6.png" id="3_vemtn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh7ob"]
+atlas = ExtResource("3_vemtn")
+region = Rect2(2788, 1539, 550, 1436)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cudfb"]
+atlas = ExtResource("3_vemtn")
+region = Rect2(1, 3204, 1796, 407)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vemtn"]
+atlas = ExtResource("3_vemtn")
+region = Rect2(1, 1539, 2223, 1179)
+
+[sub_resource type="Animation" id="Animation_uqhur"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ln6p"]
+_data = {
+&"i": SubResource("Animation_uqhur")
+}
+
+[node name="UpperThere" type="Node2D" unique_id=1313093057]
+script = ExtResource("1_rh7ob")
+bounds = Rect2(-863.93, -764.12, 3231.12, 1532.25)
+
+[node name="ThereCars" type="Node2D" parent="." unique_id=24764689]
+script = ExtResource("2_cudfb")
+
+[node name="0" type="Sprite2D" parent="ThereCars" unique_id=255441605]
+position = Vector2(2092.19, 50.13)
+texture = SubResource("AtlasTexture_rh7ob")
+
+[node name="ThereFence" type="Node2D" parent="." unique_id=2100916662]
+script = ExtResource("2_cudfb")
+
+[node name="0" type="Sprite2D" parent="ThereFence" unique_id=43053306]
+position = Vector2(101.92, -560.62)
+texture = SubResource("AtlasTexture_cudfb")
+
+[node name="Flower" type="Node2D" parent="." unique_id=579084810]
+script = ExtResource("2_cudfb")
+
+[node name="0" type="Sprite2D" parent="Flower" unique_id=1508033183]
+position = Vector2(247.57, 137.03)
+texture = SubResource("AtlasTexture_vemtn")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1161929495]
+libraries/ = SubResource("AnimationLibrary_7ln6p")
