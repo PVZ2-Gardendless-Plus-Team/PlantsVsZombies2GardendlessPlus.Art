@@ -1,0 +1,149 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_kfs1k"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_m4iua"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/cloud_moving3.tscn" id="3_m23sn"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/cloud_moving1.tscn" id="4_uli5c"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/cloud_moving0.tscn" id="5_gg3u6"]
+[ext_resource type="PackedScene" path="res://art/lawns_SkyLAWN/cloud_moving2.tscn" id="6_jqdph"]
+
+[sub_resource type="Animation" id="Animation_kfs1k"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cloud_moving3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.14, 0.14, 0.14, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cloud_moving1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.14, 0.14, 0.14, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cloud_moving0:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.14, 0.14, 0.14, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cloud_moving2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.14, 0.14, 0.14, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_m4iua"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cloud_moving3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cloud_moving1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cloud_moving0:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cloud_moving2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m23sn"]
+_data = {
+&"Dark": SubResource("Animation_kfs1k"),
+&"Idle": SubResource("Animation_m4iua")
+}
+
+[node name="Clouds" type="Node2D" unique_id=98656917]
+script = ExtResource("1_kfs1k")
+bounds = Rect2(-1021.53, -486.59, 2043.07, 1106.74)
+
+[node name="cloud_moving3" type="Node2D" parent="." unique_id=1795476372]
+script = ExtResource("2_m4iua")
+
+[node name="0" parent="cloud_moving3" unique_id=968288912 instance=ExtResource("3_m23sn")]
+autoplay = &"Moving"
+
+[node name="cloud_moving1" type="Node2D" parent="." unique_id=1970494026]
+script = ExtResource("2_m4iua")
+
+[node name="0" parent="cloud_moving1" unique_id=1712690489 instance=ExtResource("4_uli5c")]
+position = Vector2(0, 362.75)
+autoplay = &"Moving"
+
+[node name="cloud_moving0" type="Node2D" parent="." unique_id=1664262084]
+script = ExtResource("2_m4iua")
+
+[node name="0" parent="cloud_moving0" unique_id=295374081 instance=ExtResource("5_gg3u6")]
+autoplay = &"Moving"
+
+[node name="cloud_moving2" type="Node2D" parent="." unique_id=1463167559]
+script = ExtResource("2_m4iua")
+
+[node name="0" parent="cloud_moving2" unique_id=685885323 instance=ExtResource("6_jqdph")]
+position = Vector2(0, 307.75)
+autoplay = &"Moving"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1251751169]
+libraries/ = SubResource("AnimationLibrary_m23sn")

@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_vhvtf"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_cc5jm"]
+[ext_resource type="Texture2D" path="res://art/_textures/665044ef-022d-4ce9-ad21-a65efc1fdbad.png" id="3_1gvup"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhvtf"]
+atlas = ExtResource("3_1gvup")
+region = Rect2(1, 1539, 2997, 603)
+
+[sub_resource type="Animation" id="Animation_cc5jm"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1gvup"]
+_data = {
+&"Idle": SubResource("Animation_cc5jm")
+}
+
+[node name="rockThere" type="Node2D" unique_id=2034664351]
+script = ExtResource("1_vhvtf")
+bounds = Rect2(-628.18, -753.57, 2997, 603)
+
+[node name="rockThere" type="Node2D" parent="." unique_id=1821896863]
+script = ExtResource("2_cc5jm")
+
+[node name="0" type="Sprite2D" parent="rockThere" unique_id=553779920]
+position = Vector2(870.32, -452.07)
+texture = SubResource("AtlasTexture_vhvtf")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1457273844]
+libraries/ = SubResource("AnimationLibrary_1gvup")

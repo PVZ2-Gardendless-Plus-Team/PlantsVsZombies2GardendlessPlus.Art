@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_2qgxs"]
+
+[sub_resource type="Animation" id="Animation_2qgxs"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_31er0"]
+_data = {
+&"newAnimation": SubResource("Animation_2qgxs")
+}
+
+[node name="display" type="Node2D" unique_id=2090745860]
+script = ExtResource("1_2qgxs")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1742596349]
+libraries/ = SubResource("AnimationLibrary_31er0")

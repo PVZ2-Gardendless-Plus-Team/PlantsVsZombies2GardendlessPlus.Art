@@ -1,0 +1,61 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_5sno4"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_cwsrv"]
+[ext_resource type="Texture2D" path="res://art/_textures/fbb61222-8332-4eb4-8a5d-6ee603b3481a.png" id="3_y1op2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5sno4"]
+atlas = ExtResource("3_y1op2")
+region = Rect2(1, 3597, 740, 312)
+
+[sub_resource type="Animation" id="Animation_cwsrv"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DECK1:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_y1op2"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DECK1:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_121jy"]
+_data = {
+&"Off": SubResource("Animation_cwsrv"),
+&"On": SubResource("Animation_y1op2")
+}
+
+[node name="Deck1" type="Node2D" unique_id=1470476294]
+script = ExtResource("1_5sno4")
+bounds = Rect2(252.61, -176.39, 740, 312)
+
+[node name="DECK1" type="Node2D" parent="." unique_id=521942693]
+script = ExtResource("2_cwsrv")
+
+[node name="0" type="Sprite2D" parent="DECK1" unique_id=132849810]
+position = Vector2(622.61, -20.39)
+texture = SubResource("AtlasTexture_5sno4")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=50294892]
+libraries/ = SubResource("AnimationLibrary_121jy")

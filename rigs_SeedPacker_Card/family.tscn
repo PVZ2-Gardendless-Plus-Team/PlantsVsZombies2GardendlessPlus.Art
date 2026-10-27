@@ -1,0 +1,839 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_t7sqm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_vrqly"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_287b5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7sqm"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1057, 1945, 143, 148)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrqly"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1930, 1808, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_287b5"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1547, 2873, 111, 106)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shvog"]
+atlas = ExtResource("3_287b5")
+region = Rect2(183, 2485, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lr6mo"]
+atlas = ExtResource("3_287b5")
+region = Rect2(992, 3912, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5el2"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1007, 3262, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjcqf"]
+atlas = ExtResource("3_287b5")
+region = Rect2(883, 3803, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrg65"]
+atlas = ExtResource("3_287b5")
+region = Rect2(673, 3477, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1j5n"]
+atlas = ExtResource("3_287b5")
+region = Rect2(809, 3585, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7b7r"]
+atlas = ExtResource("3_287b5")
+region = Rect2(770, 3806, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ieccn"]
+atlas = ExtResource("3_287b5")
+region = Rect2(212, 1798, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2fdu"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1723, 2790, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xba7"]
+atlas = ExtResource("3_287b5")
+region = Rect2(1403, 919, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8sgi"]
+atlas = ExtResource("3_287b5")
+region = Rect2(879, 3915, 111, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlanl"]
+atlas = ExtResource("3_287b5")
+region = Rect2(809, 3694, 110, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcfs3"]
+atlas = ExtResource("3_287b5")
+region = Rect2(900, 3373, 110, 107)
+
+[sub_resource type="Animation" id="Animation_k27gl"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.22, 0.41, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_d108y"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [11]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.56, 0.37, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6i5ho"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.89, 0.67, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8low6"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0.46, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6otmq"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0.16, 0.16, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fhhbm"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.45, 0.28, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_e7xla"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0, 0.38, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v3dq5"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [14]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.03, 0.48, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_baj06"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_y5wag"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.03, 0.79, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8o2uo"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.19, 0, 0.56, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_prgqf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [5]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.22, 0.15, 0.22, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rjho4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.15, 0.15, 0.15, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_phcnx"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.46, 0.46, 0.46, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_io7xa"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0.86, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xxo2b"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mintfam_banner:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("mintfam_cold:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("mintfam_banner:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.02, 0.37, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bq1am"]
+_data = {
+&"Cold": SubResource("Animation_k27gl"),
+&"Defence": SubResource("Animation_d108y"),
+&"Electricity": SubResource("Animation_6i5ho"),
+&"Explosive": SubResource("Animation_8low6"),
+&"Fire": SubResource("Animation_6otmq"),
+&"Lobber": SubResource("Animation_fhhbm"),
+&"Magic": SubResource("Animation_e7xla"),
+&"Melee": SubResource("Animation_v3dq5"),
+&"Nope": SubResource("Animation_baj06"),
+&"Peashooter": SubResource("Animation_y5wag"),
+&"Poison": SubResource("Animation_8o2uo"),
+&"Shadow": SubResource("Animation_prgqf"),
+&"Sharp": SubResource("Animation_rjho4"),
+&"Slow": SubResource("Animation_phcnx"),
+&"Sun": SubResource("Animation_io7xa"),
+&"Trap": SubResource("Animation_xxo2b")
+}
+
+[node name="family" type="Node2D" unique_id=101427405]
+script = ExtResource("1_t7sqm")
+
+[node name="mintfam_banner" type="Node2D" parent="." unique_id=1602869908]
+position = Vector2(-104.7785, -61.2551)
+script = ExtResource("2_vrqly")
+display = -1
+
+[node name="0" type="Sprite2D" parent="mintfam_banner" unique_id=492953497]
+visible = false
+scale = Vector2(0.4535, 0.4535)
+texture = SubResource("AtlasTexture_t7sqm")
+
+[node name="mintfam_cold" type="Node2D" parent="." unique_id=16565369]
+position = Vector2(-104.7785, -61.2551)
+script = ExtResource("2_vrqly")
+display = -1
+
+[node name="0" type="Sprite2D" parent="mintfam_cold" unique_id=1224337633]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_vrqly")
+offset = Vector2(0, 0.5)
+
+[node name="1" type="Sprite2D" parent="mintfam_cold" unique_id=933880989]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_287b5")
+offset = Vector2(0, 1)
+
+[node name="2" type="Sprite2D" parent="mintfam_cold" unique_id=2058779077]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_shvog")
+offset = Vector2(0, 0.5)
+
+[node name="3" type="Sprite2D" parent="mintfam_cold" unique_id=194975771]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_lr6mo")
+offset = Vector2(0.5, 0.5)
+
+[node name="4" type="Sprite2D" parent="mintfam_cold" unique_id=267626344]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_v5el2")
+offset = Vector2(0.5, 0.5)
+
+[node name="5" type="Sprite2D" parent="mintfam_cold" unique_id=738201097]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_sjcqf")
+offset = Vector2(0.5, 0.5)
+
+[node name="6" type="Sprite2D" parent="mintfam_cold" unique_id=1012602495]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_yrg65")
+offset = Vector2(0, 0.5)
+
+[node name="7" type="Sprite2D" parent="mintfam_cold" unique_id=486858390]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_g1j5n")
+offset = Vector2(0.5, 0.5)
+
+[node name="8" type="Sprite2D" parent="mintfam_cold" unique_id=1363210705]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_q7b7r")
+offset = Vector2(0, 0.5)
+
+[node name="9" type="Sprite2D" parent="mintfam_cold" unique_id=281654866]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_ieccn")
+offset = Vector2(0, 0.5)
+
+[node name="10" type="Sprite2D" parent="mintfam_cold" unique_id=476650909]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_f2fdu")
+offset = Vector2(0.5, 0.5)
+
+[node name="11" type="Sprite2D" parent="mintfam_cold" unique_id=1896559342]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_0xba7")
+
+[node name="12" type="Sprite2D" parent="mintfam_cold" unique_id=1185720358]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_o8sgi")
+offset = Vector2(0, 0.5)
+
+[node name="13" type="Sprite2D" parent="mintfam_cold" unique_id=2061634286]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_nlanl")
+offset = Vector2(0.5, 0.5)
+
+[node name="14" type="Sprite2D" parent="mintfam_cold" unique_id=202494719]
+visible = false
+scale = Vector2(0.4855, 0.4855)
+texture = SubResource("AtlasTexture_hcfs3")
+offset = Vector2(0.5, 0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2039028116]
+libraries/ = SubResource("AnimationLibrary_bq1am")

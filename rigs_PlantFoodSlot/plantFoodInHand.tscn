@@ -1,0 +1,81 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_o6213"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_tyha8"]
+[ext_resource type="Texture2D" path="res://art/_textures/31903480-6140-4ddc-9b4a-a80cf92a977c.png" id="3_m2us1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6213"]
+atlas = ExtResource("3_m2us1")
+region = Rect2(139, 131, 105, 110)
+
+[sub_resource type="Animation" id="Animation_tyha8"]
+length = 1.6666666666666667
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantFoodIcon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantFoodIcon:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("plantFoodIcon:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333, 0.875, 0.9166667, 0.9583333, 1, 1.0416666, 1.0833334, 1.125, 1.1666666, 1.2083334, 1.2916666, 1.3333334, 1.375, 1.4166666, 1.4583334, 1.5, 1.5416666, 1.5833334, 1.625, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.0005211, 1.0005211), Vector2(1.0021929, 1.0021929), Vector2(1.0051851, 1.0051851), Vector2(1.0096976, 1.0096976), Vector2(1.0158752, 1.0158752), Vector2(1.0239754, 1.0239754), Vector2(1.034178, 1.034178), Vector2(1.04628, 1.04628), Vector2(1.0602005, 1.0602005), Vector2(1.0897995, 1.0897995), Vector2(1.10372, 1.10372), Vector2(1.115822, 1.115822), Vector2(1.1260246, 1.1260246), Vector2(1.1341248, 1.1341248), Vector2(1.1403024, 1.1403024), Vector2(1.1448148, 1.1448148), Vector2(1.1478071, 1.1478071), Vector2(1.1494789, 1.1494789), Vector2(1.15, 1.15), Vector2(1.1494789, 1.1494789), Vector2(1.1478071, 1.1478071), Vector2(1.1448148, 1.1448148), Vector2(1.1403024, 1.1403024), Vector2(1.1341248, 1.1341248), Vector2(1.1260246, 1.1260246), Vector2(1.115822, 1.115822), Vector2(1.10372, 1.10372), Vector2(1.0897995, 1.0897995), Vector2(1.0602005, 1.0602005), Vector2(1.04628, 1.04628), Vector2(1.034178, 1.034178), Vector2(1.0239754, 1.0239754), Vector2(1.0158752, 1.0158752), Vector2(1.0096976, 1.0096976), Vector2(1.0051851, 1.0051851), Vector2(1.0021929, 1.0021929), Vector2(1.000521, 1.000521), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("plantFoodIcon:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m2us1"]
+_data = {
+&"Idle": SubResource("Animation_tyha8")
+}
+
+[node name="plantFoodInHand" type="Node2D" unique_id=1353943222]
+script = ExtResource("1_o6213")
+bounds = Rect2(-52.5, -55.5, 105, 111)
+
+[node name="plantFoodIcon" type="Node2D" parent="." unique_id=2066658613]
+script = ExtResource("2_tyha8")
+
+[node name="0" type="Sprite2D" parent="plantFoodIcon" unique_id=939767263]
+scale = Vector2(1.1406, 1.1406)
+texture = SubResource("AtlasTexture_o6213")
+offset = Vector2(0, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1908370399]
+libraries/ = SubResource("AnimationLibrary_m2us1")

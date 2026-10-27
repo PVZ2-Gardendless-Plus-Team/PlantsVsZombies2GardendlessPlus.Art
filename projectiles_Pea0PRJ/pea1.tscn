@@ -1,0 +1,47 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_cpq2y"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_4enw7"]
+[ext_resource type="Texture2D" path="res://art/_textures/74e13133-a9d5-410c-a555-3ddb8a88947c.png" id="3_hgt5v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_de2kt"]
+atlas = ExtResource("3_hgt5v")
+region = Rect2(132, 315, 276, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpq2y"]
+atlas = ExtResource("3_hgt5v")
+region = Rect2(1, 462, 156, 49)
+
+[sub_resource type="Animation" id="Animation_4enw7"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hgt5v"]
+_data = {
+&"Idle": SubResource("Animation_4enw7")
+}
+
+[node name="pea1" type="Node2D" unique_id=1090392823]
+script = ExtResource("1_cpq2y")
+bounds = Rect2(-213.54, -27, 276, 54)
+
+[node name="pea2_tail1" type="Node2D" parent="." unique_id=1828482624]
+modulate = Color(1, 1, 1, 0.62)
+script = ExtResource("2_4enw7")
+
+[node name="0" type="Sprite2D" parent="pea2_tail1" unique_id=915749574]
+position = Vector2(-75.54, -1.01)
+scale = Vector2(0.453, 0.8464)
+texture = SubResource("AtlasTexture_de2kt")
+
+[node name="pea" type="Node2D" parent="." unique_id=1001541767]
+script = ExtResource("2_4enw7")
+
+[node name="0" type="Sprite2D" parent="pea" unique_id=1615340783]
+position = Vector2(-46.55, 0)
+scale = Vector2(0.9, 1)
+texture = SubResource("AtlasTexture_cpq2y")
+offset = Vector2(11, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1258216364]
+libraries/ = SubResource("AnimationLibrary_hgt5v")

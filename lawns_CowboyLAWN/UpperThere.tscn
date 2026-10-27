@@ -1,0 +1,33 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_j3fkk"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_fjy0u"]
+[ext_resource type="Texture2D" path="res://art/_textures/76151ddc-679f-4428-8c54-043d650e1258.png" id="3_uwfhr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3fkk"]
+atlas = ExtResource("3_uwfhr")
+region = Rect2(1, 2181, 2200, 473)
+
+[sub_resource type="Animation" id="Animation_fjy0u"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uwfhr"]
+_data = {
+&"Idle": SubResource("Animation_fjy0u")
+}
+
+[node name="UpperThere" type="Node2D" unique_id=510214707]
+script = ExtResource("1_j3fkk")
+bounds = Rect2(-611.63, -771.91, 2200, 473)
+
+[node name="UpperThere" type="Node2D" parent="." unique_id=1598931403]
+position = Vector2(5.56, 0)
+script = ExtResource("2_fjy0u")
+
+[node name="0" type="Sprite2D" parent="UpperThere" unique_id=115759387]
+position = Vector2(482.81, -535.41)
+texture = SubResource("AtlasTexture_j3fkk")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1771240656]
+libraries/ = SubResource("AnimationLibrary_uwfhr")

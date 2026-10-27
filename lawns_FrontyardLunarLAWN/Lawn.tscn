@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_xywt0"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_qsrgg"]
+[ext_resource type="Texture2D" path="res://art/_textures/0f69e983-00fa-4f2c-8ca6-753b029d44a0.png" id="3_t5o72"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xywt0"]
+atlas = ExtResource("3_t5o72")
+region = Rect2(1, 1, 3948, 1536)
+
+[sub_resource type="Animation" id="Animation_qsrgg"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t5o72"]
+_data = {
+&"Idle": SubResource("Animation_qsrgg")
+}
+
+[node name="Lawn" type="Node2D" unique_id=572771615]
+script = ExtResource("1_xywt0")
+bounds = Rect2(-1578.79, -768, 3948, 1536)
+
+[node name="Lawn" type="Node2D" parent="." unique_id=1629555090]
+script = ExtResource("2_qsrgg")
+
+[node name="0" type="Sprite2D" parent="Lawn" unique_id=2113744750]
+position = Vector2(395.21, 0)
+texture = SubResource("AtlasTexture_xywt0")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=630582834]
+libraries/ = SubResource("AnimationLibrary_t5o72")

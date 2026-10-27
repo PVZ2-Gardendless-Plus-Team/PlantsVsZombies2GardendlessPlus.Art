@@ -1,0 +1,109 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1igar"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ysc3b"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_1vph1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1igar"]
+atlas = ExtResource("3_1vph1")
+region = Rect2(872, 1879, 2, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysc3b"]
+atlas = ExtResource("3_1vph1")
+region = Rect2(382, 4078, 209, 5)
+
+[sub_resource type="Animation" id="Animation_1vph1"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bsgde"]
+_data = {
+&"newAnimation": SubResource("Animation_1vph1")
+}
+
+[node name="dots_lower" type="Node2D" unique_id=806450543]
+script = ExtResource("1_1igar")
+bounds = Rect2(-108.21, -63.36, 210.65, 96)
+
+[node name="bk_dots_left" type="Node2D" parent="." unique_id=1928387454]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left" unique_id=1702847398]
+position = Vector2(-105.65, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left1" type="Node2D" parent="." unique_id=496242532]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left1" unique_id=1858624610]
+position = Vector2(-105.65, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_bottom" type="Node2D" parent="." unique_id=1623021931]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_bottom" unique_id=1470167736]
+position = Vector2(-3.71, -60.12)
+scale = Vector2(0.9826, -1)
+texture = SubResource("AtlasTexture_ysc3b")
+
+[node name="bk_dots_bottom1" type="Node2D" parent="." unique_id=24063984]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_bottom1" unique_id=1162132519]
+position = Vector2(-3.71, -60.12)
+scale = Vector2(0.9825, -1)
+texture = SubResource("AtlasTexture_ysc3b")
+
+[node name="bk_dots_left2" type="Node2D" parent="." unique_id=571991295]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left2" unique_id=1889570129]
+position = Vector2(101.43, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left21" type="Node2D" parent="." unique_id=376016891]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left21" unique_id=1512961381]
+position = Vector2(101.43, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left22" type="Node2D" parent="." unique_id=1962810118]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left22" unique_id=539612454]
+position = Vector2(101.43, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left3" type="Node2D" parent="." unique_id=1282387373]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left3" unique_id=1720189025]
+position = Vector2(-105.65, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left31" type="Node2D" parent="." unique_id=230910022]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left31" unique_id=949381828]
+position = Vector2(-105.65, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_left23" type="Node2D" parent="." unique_id=821204122]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_left23" unique_id=1033421318]
+position = Vector2(101.43, -15.36)
+texture = SubResource("AtlasTexture_1igar")
+
+[node name="bk_dots_bottom2" type="Node2D" parent="." unique_id=1169226874]
+script = ExtResource("2_ysc3b")
+
+[node name="0" type="Sprite2D" parent="bk_dots_bottom2" unique_id=1568450050]
+position = Vector2(-3.71, -60.12)
+scale = Vector2(0.9826, -1)
+texture = SubResource("AtlasTexture_ysc3b")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1351361541]
+libraries/ = SubResource("AnimationLibrary_bsgde")

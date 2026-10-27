@@ -1,0 +1,260 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_pspwk"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_e3aps"]
+[ext_resource type="Texture2D" path="res://art/_textures/3a39d6e5-730c-49f7-8195-9a4e2a3c0ca8.png" id="3_vgqqq"]
+
+[sub_resource type="Animation" id="Animation_pspwk"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("c_:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("c_1:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("c_2:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("c_3:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("c_/0:polygon")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("c_1/0:polygon")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("c_2/0:polygon")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("c_3/0:polygon")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_e3aps"]
+length = 2.6666666666666665
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("c_:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.6666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("c_1:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("c_2:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.3333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("c_3:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.6666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("c_/0:polygon")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2, 2.2666667, 2.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(0, -74, 117, -74, 0, 0, 117.05, -73.95), PackedVector2Array(0, -74, 0, -74, 0, 0, 0.05000305, -73.95)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("c_1/0:polygon")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.3333334, 1.7333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(117.15, -74, 117, -74, 0, 0, 117.05, 0), PackedVector2Array(117.15, 0, 117, 0.05000305, 0, 0, 117.05, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("c_2/0:polygon")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.6666667, 0.93333334, 1.3333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(0, -74, 117, -74, 0, 0, 117.05, -73.95), PackedVector2Array(0, -74, 0, -74, 0, 0, 0.05000305, -73.95)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("c_3/0:polygon")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(117, -74, 117, -74, 0, 0, 117, 0), PackedVector2Array(117, 0, 117, 0.05000305, 0, 0, 117, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vgqqq"]
+_data = {
+&"N": SubResource("Animation_pspwk"),
+&"P": SubResource("Animation_e3aps")
+}
+
+[node name="cooldown" type="Node2D" unique_id=252223912]
+script = ExtResource("1_pspwk")
+bounds = Rect2(-117, -74, 234, 148)
+
+[node name="c_" type="Node2D" parent="." unique_id=2076087534]
+modulate = Color(1, 1, 1, 0.4)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_e3aps")
+
+[node name="0" type="Polygon2D" parent="c_" unique_id=321010297]
+texture = ExtResource("3_vgqqq")
+polygon = PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)
+uv = PackedVector2Array(179, 4016, 296, 4016, 179, 4090, 296, 4090)
+polygons = [PackedInt32Array(1, 0, 3), PackedInt32Array(0, 2, 3)]
+
+[node name="c_1" type="Node2D" parent="." unique_id=897572115]
+modulate = Color(1, 1, 1, 0.4)
+rotation = -3.1415927
+script = ExtResource("2_e3aps")
+
+[node name="0" type="Polygon2D" parent="c_1" unique_id=100279566]
+texture = ExtResource("3_vgqqq")
+polygon = PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)
+uv = PackedVector2Array(179, 4016, 296, 4016, 179, 4090, 296, 4090)
+polygons = [PackedInt32Array(1, 0, 3), PackedInt32Array(0, 2, 3)]
+
+[node name="c_2" type="Node2D" parent="." unique_id=2117565579]
+modulate = Color(1, 1, 1, 0.4)
+scale = Vector2(1, -1)
+script = ExtResource("2_e3aps")
+
+[node name="0" type="Polygon2D" parent="c_2" unique_id=859944175]
+texture = ExtResource("3_vgqqq")
+polygon = PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)
+uv = PackedVector2Array(179, 4016, 296, 4016, 179, 4090, 296, 4090)
+polygons = [PackedInt32Array(1, 0, 3), PackedInt32Array(0, 2, 3)]
+
+[node name="c_3" type="Node2D" parent="." unique_id=92954072]
+modulate = Color(1, 1, 1, 0.4)
+script = ExtResource("2_e3aps")
+
+[node name="0" type="Polygon2D" parent="c_3" unique_id=67904385]
+texture = ExtResource("3_vgqqq")
+polygon = PackedVector2Array(0, -74, 117, -74, 0, 0, 117, 0)
+uv = PackedVector2Array(179, 4016, 296, 4016, 179, 4090, 296, 4090)
+polygons = [PackedInt32Array(1, 0, 3), PackedInt32Array(0, 2, 3)]
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1387850338]
+libraries/ = SubResource("AnimationLibrary_vgqqq")

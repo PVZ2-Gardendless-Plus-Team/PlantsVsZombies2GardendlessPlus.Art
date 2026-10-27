@@ -1,0 +1,61 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_oswfn"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_1d8im"]
+[ext_resource type="Texture2D" path="res://art/_textures/81007ff5-005c-4468-8a68-2804f580351a.png" id="3_fa74u"]
+[ext_resource type="PackedScene" path="res://art/lawns_DarkLAWN/Sparkles.tscn" id="4_xk178"]
+[ext_resource type="PackedScene" path="res://art/lawns_DarkLAWN/fire.tscn" id="5_2kxpi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oswfn"]
+atlas = ExtResource("3_fa74u")
+region = Rect2(1, 1539, 2516, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d8im"]
+atlas = ExtResource("3_fa74u")
+region = Rect2(4035, 1539, 55, 140)
+
+[sub_resource type="Animation" id="Animation_fa74u"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xk178"]
+_data = {
+&"Idle": SubResource("Animation_fa74u")
+}
+
+[node name="LawnUpper" type="Node2D" unique_id=74632584]
+script = ExtResource("1_oswfn")
+bounds = Rect2(-930.53, 528.34, 2516, 357.81)
+
+[node name="Upper" type="Node2D" parent="." unique_id=599055120]
+script = ExtResource("2_1d8im")
+
+[node name="0" type="Sprite2D" parent="Upper" unique_id=486959532]
+position = Vector2(327.47, 648.34)
+texture = SubResource("AtlasTexture_oswfn")
+
+[node name="Sparkles" type="Node2D" parent="." unique_id=1655225920]
+script = ExtResource("2_1d8im")
+
+[node name="0" parent="Sparkles" unique_id=1633175927 instance=ExtResource("4_xk178")]
+position = Vector2(966.65, 546.18)
+autoplay = &"Idle"
+
+[node name="fire" type="Node2D" parent="." unique_id=1714524225]
+script = ExtResource("2_1d8im")
+
+[node name="0" parent="fire" unique_id=1544081336 instance=ExtResource("5_2kxpi")]
+position = Vector2(980.03, 737.79)
+rotation = 1.5707964
+scale = Vector2(0.5697, 0.7004)
+autoplay = &"fire"
+
+[node name="cage" type="Node2D" parent="." unique_id=1442413731]
+script = ExtResource("2_1d8im")
+
+[node name="0" type="Sprite2D" parent="cage" unique_id=1330321386]
+position = Vector2(974.45, 816.15)
+texture = SubResource("AtlasTexture_1d8im")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1345083671]
+libraries/ = SubResource("AnimationLibrary_xk178")

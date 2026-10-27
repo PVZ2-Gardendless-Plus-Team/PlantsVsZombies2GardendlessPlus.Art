@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_gqxwe"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_7vvr2"]
+[ext_resource type="PackedScene" path="res://art/rigs_Particles/prizeLight.tscn" id="3_1j83a"]
+
+[sub_resource type="Animation" id="Animation_gqxwe"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7vvr2"]
+_data = {
+&"Idle": SubResource("Animation_gqxwe")
+}
+
+[node name="trophyLight" type="Node2D" unique_id=923101389]
+script = ExtResource("1_gqxwe")
+bounds = Rect2(-572.85, -572.85, 1145.7, 1145.7)
+
+[node name="prizeLight" type="Node2D" parent="." unique_id=1063407854]
+script = ExtResource("2_7vvr2")
+
+[node name="0" parent="prizeLight" unique_id=911405402 instance=ExtResource("3_1j83a")]
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1937771319]
+libraries/ = SubResource("AnimationLibrary_7vvr2")

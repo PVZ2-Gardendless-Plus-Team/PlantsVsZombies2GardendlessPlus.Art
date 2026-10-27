@@ -1,0 +1,33 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_8mrjv"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_3n1uk"]
+[ext_resource type="Texture2D" path="res://art/_textures/59ac1411-bb28-4c38-9e4a-f79b82316c65.png" id="3_sxn84"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mrjv"]
+atlas = ExtResource("3_sxn84")
+region = Rect2(711, 873, 85, 87)
+
+[sub_resource type="Animation" id="Animation_3n1uk"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sxn84"]
+_data = {
+&"idle": SubResource("Animation_3n1uk")
+}
+
+[node name="butter" type="Node2D" unique_id=1228861348]
+script = ExtResource("1_8mrjv")
+bounds = Rect2(-60.5, -53.27, 90, 91)
+
+[node name="butter" type="Node2D" parent="." unique_id=374313311]
+script = ExtResource("2_3n1uk")
+
+[node name="0" type="Sprite2D" parent="butter" unique_id=1985089322]
+position = Vector2(-15.5, -7.77)
+texture = SubResource("AtlasTexture_8mrjv")
+offset = Vector2(-0.5, 0)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=644326610]
+libraries/ = SubResource("AnimationLibrary_sxn84")

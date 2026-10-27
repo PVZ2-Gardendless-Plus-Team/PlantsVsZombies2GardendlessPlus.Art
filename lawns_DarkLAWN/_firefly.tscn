@@ -1,0 +1,230 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_o8kmv"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_xc6ru"]
+[ext_resource type="Texture2D" path="res://art/_textures/81007ff5-005c-4468-8a68-2804f580351a.png" id="3_fri8u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8kmv"]
+atlas = ExtResource("3_fri8u")
+region = Rect2(3951, 113, 82, 82)
+
+[sub_resource type="Animation" id="Animation_xc6ru"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("firefly:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-84.89084, 44.18235), Vector2(-74.91508, 52.61229), Vector2(-61.66516, 58.742832), Vector2(-45.720177, 62.30602), Vector2(-27.777016, 63.146137), Vector2(-8.619855, 61.22647), Vector2(10.914027, 56.63091), Vector2(29.970917, 49.56031), Vector2(47.717937, 40.323677), Vector2(63.379456, 29.324713), Vector2(76.27097, 17.044119), Vector2(85.8291, 4.018616), Vector2(91.63608, -9.182527), Vector2(93.43812, -21.982344), Vector2(91.15646, -33.821426), Vector2(84.89084, -44.18235), Vector2(74.91508, -52.61229), Vector2(61.66516, -58.742832), Vector2(45.720177, -62.30602), Vector2(27.777016, -63.146137), Vector2(8.619855, -61.22647), Vector2(-10.914027, -56.63091), Vector2(-29.970917, -49.56031), Vector2(-47.717937, -40.323677), Vector2(-63.379456, -29.324713), Vector2(-76.27097, -17.044119), Vector2(-85.8291, -4.018616), Vector2(-91.63608, 9.182527), Vector2(-93.43812, 21.982344), Vector2(-91.15646, 33.821426), Vector2(-84.89084, 44.18235)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("firefly:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("firefly:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("firefly:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("firefly1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-51.863632, -62.443), Vector2(-51.097908, -71.040924), Vector2(-47.41827, -78.80893), Vector2(-40.985542, -85.40752), Vector2(-32.08086, -90.54831), Vector2(-21.093418, -94.00661), Vector2(-8.503399, -95.63129), Vector2(5.1389446, -95.351326), Vector2(19.237375, -93.17898), Vector2(33.175724, -89.20917), Vector2(46.344822, -83.61541), Vector2(58.16911, -76.642166), Vector2(68.131805, -68.5942), Vector2(75.79752, -59.823257), Vector2(80.83119, -50.712666), Vector2(83.01283, -41.6606), Vector2(82.24711, -33.062675), Vector2(78.567474, -25.294672), Vector2(72.13474, -18.69608), Vector2(63.23006, -13.555294), Vector2(52.24262, -10.0969925), Vector2(39.6526, -8.472317), Vector2(26.010256, -8.752274), Vector2(11.911826, -10.924622), Vector2(-2.0265236, -14.894432), Vector2(-15.1956215, -20.488192), Vector2(-27.019909, -27.461435), Vector2(-36.98261, -35.5094), Vector2(-44.648323, -44.280342), Vector2(-49.68199, -53.390934), Vector2(-51.863632, -62.443)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("firefly1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("firefly1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("firefly1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("firefly2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(55.01985, 81.715004), Vector2(72.362236, 71.8386), Vector2(87.14193, 59.062458), Vector2(98.713005, 43.944965), Vector2(106.56973, 27.146828), Vector2(110.36874, 9.402195), Vector2(109.94401, -8.513401), Vector2(105.31408, -25.816963), Vector2(96.68131, -41.75225), Vector2(84.423004, -55.6228), Vector2(69.0749, -66.8224), Vector2(51.307777, -74.861595), Vector2(31.89815, -79.38903), Vector2(11.694316, -80.20682), Vector2(-8.420725, -77.27922), Vector2(-27.56785, -70.7342), Vector2(-44.910233, -60.8578), Vector2(-59.689934, -48.08166), Vector2(-71.26101, -32.96417), Vector2(-79.11774, -16.166027), Vector2(-82.91674, 1.5786052), Vector2(-82.49201, 19.4942), Vector2(-77.86208, 36.797764), Vector2(-69.22932, 52.733047), Vector2(-56.97101, 66.6036), Vector2(-41.622902, 77.80321), Vector2(-23.85578, 85.8424), Vector2(-4.44615, 90.369835), Vector2(15.757684, 91.18762), Vector2(35.872726, 88.260025), Vector2(55.01985, 81.715004)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("firefly2:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("firefly2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("firefly2:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("firefly:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("firefly1:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.36666667, 0.6666667, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("firefly2:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fri8u"]
+_data = {
+&"idle": SubResource("Animation_xc6ru")
+}
+
+[node name="_firefly" type="Node2D" unique_id=336127228]
+script = ExtResource("1_o8kmv")
+bounds = Rect2(-141.68, -118.97, 253.91, 259.16)
+
+[node name="firefly" type="Node2D" parent="." unique_id=1656230531]
+position = Vector2(-84.89084, 44.18235)
+script = ExtResource("2_xc6ru")
+
+[node name="0" type="Sprite2D" parent="firefly" unique_id=339283040]
+position = Vector2(0.21, 0.97)
+texture = SubResource("AtlasTexture_o8kmv")
+offset = Vector2(0, -0.5)
+
+[node name="firefly1" type="Node2D" parent="." unique_id=1826024917]
+position = Vector2(-51.863632, -62.443)
+script = ExtResource("2_xc6ru")
+
+[node name="0" type="Sprite2D" parent="firefly1" unique_id=1909923947]
+position = Vector2(0.21, 0.97)
+texture = SubResource("AtlasTexture_o8kmv")
+offset = Vector2(0, -0.5)
+
+[node name="firefly2" type="Node2D" parent="." unique_id=186874512]
+position = Vector2(55.01985, 81.715004)
+script = ExtResource("2_xc6ru")
+
+[node name="0" type="Sprite2D" parent="firefly2" unique_id=1831537339]
+position = Vector2(0.21, 0.97)
+texture = SubResource("AtlasTexture_o8kmv")
+offset = Vector2(0, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2042129663]
+libraries/ = SubResource("AnimationLibrary_fri8u")

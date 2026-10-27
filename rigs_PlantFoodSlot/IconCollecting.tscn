@@ -1,0 +1,86 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_wx2oo"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_kvlcl"]
+[ext_resource type="Texture2D" path="res://art/_textures/31903480-6140-4ddc-9b4a-a80cf92a977c.png" id="3_jedwf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wx2oo"]
+atlas = ExtResource("3_jedwf")
+region = Rect2(1, 1, 136, 137)
+
+[sub_resource type="Animation" id="Animation_kvlcl"]
+length = 1.0833333333333333
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantFoodIconCollecting:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.0833334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, -1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantFoodIconCollecting:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.75, 0.7916667, 0.8333333, 0.875, 0.9583333, 1, 1.0416666, 1.0833334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.023367858), Color(1, 1, 1, 0.10583464), Color(1, 1, 1, 0.26699626), Color(1, 1, 1, 0.73300374), Color(1, 1, 1, 0.89416534), Color(1, 1, 1, 0.9766321), Color(1, 1, 1, 1), Color(1, 1, 1, 0.9999998), Color(1, 1, 1, 0.9766321), Color(1, 1, 1, 0.89416534), Color(1, 1, 1, 0.73300374), Color(1, 1, 1, 0.26699626), Color(1, 1, 1, 0.10583466), Color(1, 1, 1, 0.023367882), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jedwf"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plantFoodIconCollecting:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("plantFoodIconCollecting:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ro15"]
+_data = {
+&"IconCollecting": SubResource("Animation_kvlcl"),
+&"Idle": SubResource("Animation_jedwf")
+}
+
+[node name="IconCollecting" type="Node2D" unique_id=666024155]
+script = ExtResource("1_wx2oo")
+
+[node name="plantFoodIconCollecting" type="Node2D" parent="." unique_id=1776270940]
+script = ExtResource("2_kvlcl")
+display = -1
+
+[node name="0" type="Sprite2D" parent="plantFoodIconCollecting" unique_id=673801554]
+visible = false
+texture = SubResource("AtlasTexture_wx2oo")
+offset = Vector2(0, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1538382758]
+libraries/ = SubResource("AnimationLibrary_4ro15")

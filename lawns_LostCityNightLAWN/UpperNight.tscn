@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_y2hgl"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_g3go8"]
+[ext_resource type="Texture2D" path="res://art/_textures/252aed17-680a-4a57-8f34-5305212a4a47.png" id="3_tjbg4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2hgl"]
+atlas = ExtResource("3_tjbg4")
+region = Rect2(1, 3077, 1295, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3go8"]
+atlas = ExtResource("3_tjbg4")
+region = Rect2(1, 1539, 1277, 1536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjbg4"]
+atlas = ExtResource("3_tjbg4")
+region = Rect2(1280, 1539, 516, 768)
+
+[sub_resource type="Animation" id="Animation_i8yef"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g4f88"]
+_data = {
+&"Idle": SubResource("Animation_i8yef")
+}
+
+[node name="UpperNight" type="Node2D" unique_id=2021937307]
+script = ExtResource("1_y2hgl")
+bounds = Rect2(-1581.97, -768.51, 3948.62, 1536.51)
+
+[node name="upperLeft" type="Node2D" parent="." unique_id=58922476]
+script = ExtResource("2_g3go8")
+
+[node name="0" type="Sprite2D" parent="upperLeft" unique_id=931163211]
+position = Vector2(-934.34, 384)
+texture = SubResource("AtlasTexture_y2hgl")
+
+[node name="upperRight" type="Node2D" parent="." unique_id=2091079845]
+script = ExtResource("2_g3go8")
+
+[node name="0" type="Sprite2D" parent="upperRight" unique_id=236604610]
+position = Vector2(1728.15, 0)
+texture = SubResource("AtlasTexture_g3go8")
+
+[node name="upperLeftDayUp" type="Node2D" parent="." unique_id=1688717591]
+script = ExtResource("2_g3go8")
+
+[node name="0" type="Sprite2D" parent="upperLeftDayUp" unique_id=835843913]
+position = Vector2(-1323.97, -384.51)
+texture = SubResource("AtlasTexture_tjbg4")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=454208623]
+libraries/ = SubResource("AnimationLibrary_g4f88")

@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_0nww3"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_xhor4"]
+[ext_resource type="Texture2D" path="res://art/_textures/07b5e25b-973c-4fbc-894b-8a9c8fb3bb10.png" id="3_jfguw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nww3"]
+atlas = ExtResource("3_jfguw")
+region = Rect2(1, 3288, 1859, 264)
+
+[sub_resource type="Animation" id="Animation_xhor4"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jfguw"]
+_data = {
+&"Idle": SubResource("Animation_xhor4")
+}
+
+[node name="Upper" type="Node2D" unique_id=1855642157]
+script = ExtResource("1_0nww3")
+bounds = Rect2(-720.47, 503.55, 1859, 264)
+
+[node name="Upper" type="Node2D" parent="." unique_id=1104962836]
+script = ExtResource("2_xhor4")
+
+[node name="0" type="Sprite2D" parent="Upper" unique_id=1736550253]
+position = Vector2(209.03, 635.55)
+texture = SubResource("AtlasTexture_0nww3")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1360400228]
+libraries/ = SubResource("AnimationLibrary_jfguw")

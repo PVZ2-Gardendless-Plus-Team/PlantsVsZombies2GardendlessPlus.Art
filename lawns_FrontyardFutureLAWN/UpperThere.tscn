@@ -1,0 +1,245 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_dmdhd"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_wvddt"]
+[ext_resource type="Texture2D" path="res://art/_textures/5e33b9d1-b95b-4c59-a384-b768e1c9c3ea.png" id="3_1knox"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmdhd"]
+atlas = ExtResource("3_1knox")
+region = Rect2(3216, 1539, 374, 528)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvddt"]
+atlas = ExtResource("3_1knox")
+region = Rect2(3180, 2033, 29, 230)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1knox"]
+atlas = ExtResource("3_1knox")
+region = Rect2(1, 2045, 1555, 321)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ydjj"]
+atlas = ExtResource("3_1knox")
+region = Rect2(2789, 1539, 425, 492)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uaf3j"]
+atlas = ExtResource("3_1knox")
+region = Rect2(3951, 1, 109, 377)
+
+[sub_resource type="Animation" id="Animation_etgs5"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s514f"]
+_data = {
+&"Idle": SubResource("Animation_etgs5")
+}
+
+[node name="UpperThere" type="Node2D" unique_id=1592112595]
+script = ExtResource("1_dmdhd")
+bounds = Rect2(-554.92, -764.67, 2933.39, 1617.56)
+
+[node name="z_stairs" type="Node2D" parent="." unique_id=1818824301]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="z_stairs" unique_id=1823382799]
+position = Vector2(2181.67, -280.42)
+texture = SubResource("AtlasTexture_dmdhd")
+
+[node name="light91" type="Node2D" parent="." unique_id=198892140]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light91" unique_id=2078731698]
+position = Vector2(996.73, -585.24)
+scale = Vector2(0.7775, 0.7775)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light101" type="Node2D" parent="." unique_id=794610062]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light101" unique_id=1811615441]
+position = Vector2(1208.05, -597.65)
+scale = Vector2(0.7857, 0.7857)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="there_L" type="Node2D" parent="." unique_id=806080736]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="there_L" unique_id=1816469338]
+position = Vector2(253.3, -604.17)
+texture = SubResource("AtlasTexture_1knox")
+
+[node name="light" type="Node2D" parent="." unique_id=400636489]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light" unique_id=564061015]
+position = Vector2(18.84, -447.37)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light1" type="Node2D" parent="." unique_id=1206389835]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light1" unique_id=9621479]
+position = Vector2(252.41, -448.31)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light2" type="Node2D" parent="." unique_id=1574482703]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light2" unique_id=1988088201]
+position = Vector2(508.59, -448.31)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light3" type="Node2D" parent="." unique_id=2063971234]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light3" unique_id=1786846602]
+position = Vector2(745.93, -450.2)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light4" type="Node2D" parent="." unique_id=992443275]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light4" unique_id=2137921326]
+position = Vector2(944.66, -448.31)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light5" type="Node2D" parent="." unique_id=2138155371]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light5" unique_id=1993265998]
+position = Vector2(-245.26, -444.93)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light6" type="Node2D" parent="." unique_id=2052941241]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light6" unique_id=1879111979]
+position = Vector2(-531.36, -442.48)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light7" type="Node2D" parent="." unique_id=904504422]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light7" unique_id=1612713354]
+position = Vector2(-534.45, -268.12)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light51" type="Node2D" parent="." unique_id=1536177829]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light51" unique_id=336867417]
+position = Vector2(-534.44, -73.28)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light52" type="Node2D" parent="." unique_id=964235531]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light52" unique_id=164920365]
+position = Vector2(-539.22, 110.75)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light8" type="Node2D" parent="." unique_id=112031954]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light8" unique_id=2083123532]
+position = Vector2(-540.42, 306.67)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light9" type="Node2D" parent="." unique_id=125560878]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light9" unique_id=253820460]
+position = Vector2(989.46, -387.73)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light10" type="Node2D" parent="." unique_id=1067001032]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light10" unique_id=1019990637]
+position = Vector2(1261.07, -388.7)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light11" type="Node2D" parent="." unique_id=1606589379]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light11" unique_id=231876766]
+position = Vector2(992.03, -103.91)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light12" type="Node2D" parent="." unique_id=1525914001]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light12" unique_id=893581860]
+position = Vector2(1303.85, -102.29)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light13" type="Node2D" parent="." unique_id=502120046]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light13" unique_id=1209666661]
+position = Vector2(1907.7, -289.83)
+scale = Vector2(0.8203, 0.8203)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light131" type="Node2D" parent="." unique_id=616829887]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light131" unique_id=2133322871]
+position = Vector2(2177.77, 295.31)
+scale = Vector2(0.8203, 0.8203)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light132" type="Node2D" parent="." unique_id=421878286]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light132" unique_id=1399976173]
+position = Vector2(1825.71, -437.73)
+scale = Vector2(0.714, 0.714)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light133" type="Node2D" parent="." unique_id=1907799056]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light133" unique_id=1511969996]
+position = Vector2(1739.11, -570.03)
+scale = Vector2(0.6059, 0.6059)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light1311" type="Node2D" parent="." unique_id=392771217]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light1311" unique_id=2116999694]
+position = Vector2(2363.97, 737.9)
+scale = Vector2(1.3543, 1.3543)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="car" type="Node2D" parent="." unique_id=1692831854]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="car" unique_id=1552617669]
+position = Vector2(2055.02, 447.92)
+texture = SubResource("AtlasTexture_0ydjj")
+
+[node name="road_line_light" type="Node2D" parent="." unique_id=41971988]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="road_line_light" unique_id=820939244]
+position = Vector2(1672.45, -4.3)
+scale = Vector2(4, 4)
+texture = SubResource("AtlasTexture_uaf3j")
+
+[node name="light14" type="Node2D" parent="." unique_id=1441804245]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light14" unique_id=39186410]
+position = Vector2(999.1, 209.59)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="light15" type="Node2D" parent="." unique_id=815692262]
+script = ExtResource("2_wvddt")
+
+[node name="0" type="Sprite2D" parent="light15" unique_id=1646468138]
+position = Vector2(1334.5, 200.95)
+texture = SubResource("AtlasTexture_wvddt")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1872597932]
+libraries/ = SubResource("AnimationLibrary_s514f")

@@ -1,0 +1,83 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ts07a"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_pyc66"]
+[ext_resource type="Texture2D" path="res://art/_textures/447233d7-4623-4ba9-945a-fd6e00263cb9.png" id="3_qcexm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts07a"]
+atlas = ExtResource("3_qcexm")
+region = Rect2(2242, 1405, 672, 161)
+
+[sub_resource type="Animation" id="Animation_pyc66"]
+length = 10.0
+step = 0.06666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cloud0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3640, -5), Vector2(-3465, -5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("cloud0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cloud0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("cloud0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qcexm"]
+_data = {
+&"Moving": SubResource("Animation_pyc66")
+}
+
+[node name="cloud_moving0" type="Node2D" unique_id=295374081]
+script = ExtResource("1_ts07a")
+bounds = Rect2(-331, -108.5, 672, 162)
+
+[node name="cloud0" type="Node2D" parent="." unique_id=544346210]
+position = Vector2(55, -5)
+script = ExtResource("2_pyc66")
+
+[node name="0" type="Sprite2D" parent="cloud0" unique_id=1756597892]
+position = Vector2(-50, -22.5)
+scale = Vector2(1.4, 1.4)
+texture = SubResource("AtlasTexture_ts07a")
+offset = Vector2(0, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1387789984]
+libraries/ = SubResource("AnimationLibrary_qcexm")
