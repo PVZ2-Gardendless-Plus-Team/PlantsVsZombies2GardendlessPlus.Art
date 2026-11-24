@@ -1,0 +1,132 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_8ymut"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_vrs6o"]
+[ext_resource type="PackedScene" path="res://art/rigs_WorldmapAnimate_WorldmapBG/rotate.tscn" id="3_0nmbn"]
+[ext_resource type="Texture2D" path="res://art/_textures/201c8e38-0573-4744-a79c-fac86dc60efd.png" id="4_r50po"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_8ymut"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrs6o"]
+atlas = ExtResource("4_r50po")
+region = Rect2(371, 1, 328, 199)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nmbn"]
+atlas = ExtResource("4_r50po")
+region = Rect2(1, 371, 164, 90)
+
+[sub_resource type="Animation" id="Animation_r50po"]
+length = 0.08333333333333333
+step = 0.083333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("rotate2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 1, 0.92, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("rotate11:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 1, 0.92, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_n5tct"]
+length = 0.08333333333333333
+step = 0.083333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("rotate2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.28, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("rotate11:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0.28, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0t1he"]
+_data = {
+&"IdleDay": SubResource("Animation_r50po"),
+&"IdleNight": SubResource("Animation_n5tct")
+}
+
+[node name="WorldmapBG" type="Node2D" unique_id=729638388]
+script = ExtResource("1_8ymut")
+bounds = Rect2(-990.22, -990.22, 1980.44, 1980.44)
+
+[node name="rotate2" type="Node2D" parent="." unique_id=159987507]
+modulate = Color(0, 1, 0.92, 1)
+script = ExtResource("2_vrs6o")
+
+[node name="0" parent="rotate2" unique_id=1920205166 instance=ExtResource("3_0nmbn")]
+scale = Vector2(0.951, 0.951)
+autoplay = &"IdleDay"
+
+[node name="rotate11" type="Node2D" parent="." unique_id=1173673852]
+modulate = Color(0, 1, 0.92, 1)
+script = ExtResource("2_vrs6o")
+
+[node name="0" parent="rotate11" unique_id=812131087 instance=ExtResource("3_0nmbn")]
+scale = Vector2(0.951, 0.951)
+autoplay = &"IdleDay"
+
+[node name="dust" type="Node2D" parent="." unique_id=1346427676]
+script = ExtResource("2_vrs6o")
+
+[node name="0" type="Sprite2D" parent="dust" unique_id=100625578]
+material = SubResource("CanvasItemMaterial_8ymut")
+position = Vector2(5.4, -0.76)
+scale = Vector2(3.8828, 3.8828)
+texture = SubResource("AtlasTexture_vrs6o")
+
+[node name="bgSideUp" type="Node2D" parent="." unique_id=1559252247]
+modulate = Color(0, 0, 0, 1)
+script = ExtResource("2_vrs6o")
+
+[node name="0" type="Sprite2D" parent="bgSideUp" unique_id=683265054]
+position = Vector2(0, -42)
+scale = Vector2(7.5348, 4.7841)
+texture = SubResource("AtlasTexture_0nmbn")
+offset = Vector2(0, -37)
+
+[node name="bgSideDown" type="Node2D" parent="." unique_id=1919379064]
+modulate = Color(0, 0, 0, 1)
+script = ExtResource("2_vrs6o")
+
+[node name="0" type="Sprite2D" parent="bgSideDown" unique_id=539277475]
+position = Vector2(0, 42)
+rotation = 3.1415927
+scale = Vector2(7.5348, 4.7841)
+texture = SubResource("AtlasTexture_0nmbn")
+offset = Vector2(0, -37)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2074520440]
+libraries/ = SubResource("AnimationLibrary_0t1he")
