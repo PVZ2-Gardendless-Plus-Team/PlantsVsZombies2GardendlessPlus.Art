@@ -1,0 +1,1145 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_c17b8"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_q0x3n"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_gjrte"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgu0t"]
+atlas = ExtResource("3_gjrte")
+region = Rect2(1451, 709, 18, 19)
+
+[sub_resource type="Animation" id="Animation_il7vy"]
+length = 0.3333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("l25:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("l24:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("l23:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("l22:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("l21:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("l20:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("l19:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("l18:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("l17:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("l16:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("l15:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("l14:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("l13:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("l12:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("l11:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("l10:modulate")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("l09:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("l08:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("l07:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("l06:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("l05:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("l04:modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("l03:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("l02:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("l01:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("r25:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("r24:modulate")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("r23:modulate")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("r22:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("r21:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("r20:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("r19:modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("r18:modulate")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("r17:modulate")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("r16:modulate")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("r15:modulate")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("r14:modulate")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("r13:modulate")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("r12:modulate")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("r11:modulate")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("r10:modulate")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("r09:modulate")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/42/type = "value"
+tracks/42/imported = false
+tracks/42/enabled = true
+tracks/42/path = NodePath("r08:modulate")
+tracks/42/interp = 1
+tracks/42/loop_wrap = true
+tracks/42/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/43/type = "value"
+tracks/43/imported = false
+tracks/43/enabled = true
+tracks/43/path = NodePath("r07:modulate")
+tracks/43/interp = 1
+tracks/43/loop_wrap = true
+tracks/43/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/44/type = "value"
+tracks/44/imported = false
+tracks/44/enabled = true
+tracks/44/path = NodePath("r06:modulate")
+tracks/44/interp = 1
+tracks/44/loop_wrap = true
+tracks/44/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/45/type = "value"
+tracks/45/imported = false
+tracks/45/enabled = true
+tracks/45/path = NodePath("r05:modulate")
+tracks/45/interp = 1
+tracks/45/loop_wrap = true
+tracks/45/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/46/type = "value"
+tracks/46/imported = false
+tracks/46/enabled = true
+tracks/46/path = NodePath("r04:modulate")
+tracks/46/interp = 1
+tracks/46/loop_wrap = true
+tracks/46/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.8), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/47/type = "value"
+tracks/47/imported = false
+tracks/47/enabled = true
+tracks/47/path = NodePath("r03:modulate")
+tracks/47/interp = 1
+tracks/47/loop_wrap = true
+tracks/47/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.6), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.6)]
+}
+tracks/48/type = "value"
+tracks/48/imported = false
+tracks/48/enabled = true
+tracks/48/path = NodePath("r02:modulate")
+tracks/48/interp = 1
+tracks/48/loop_wrap = true
+tracks/48/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.4)]
+}
+tracks/49/type = "value"
+tracks/49/imported = false
+tracks/49/enabled = true
+tracks/49/path = NodePath("r01:modulate")
+tracks/49/interp = 1
+tracks/49/loop_wrap = true
+tracks/49/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.19), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.19)]
+}
+tracks/50/type = "value"
+tracks/50/imported = false
+tracks/50/enabled = true
+tracks/50/path = NodePath("m:modulate")
+tracks/50/interp = 1
+tracks/50/loop_wrap = true
+tracks/50/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8ehlm"]
+_data = {
+&"Idle": SubResource("Animation_il7vy")
+}
+
+[node name="_pop_lights" type="Node2D" unique_id=2147127557]
+script = ExtResource("1_c17b8")
+bounds = Rect2(-385.14, -98.35, 770.28, 130.46)
+
+[node name="l25" type="Node2D" parent="." unique_id=951202572]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l25" unique_id=2035294995]
+position = Vector2(-375.89, -89.1)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l24" type="Node2D" parent="." unique_id=1847995607]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l24" unique_id=901968451]
+position = Vector2(-358.81, -85.04)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l23" type="Node2D" parent="." unique_id=849150701]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l23" unique_id=725619273]
+position = Vector2(-341.32, -81.51)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l22" type="Node2D" parent="." unique_id=758814617]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l22" unique_id=1298638058]
+position = Vector2(-322.18, -78.17)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l21" type="Node2D" parent="." unique_id=1771199409]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l21" unique_id=1339331495]
+position = Vector2(-303.49, -74.45)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l20" type="Node2D" parent="." unique_id=1647891488]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l20" unique_id=1117255259]
+position = Vector2(-284.72, -71.43)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l19" type="Node2D" parent="." unique_id=1562796922]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l19" unique_id=2127063152]
+position = Vector2(-265.95, -67.91)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l18" type="Node2D" parent="." unique_id=1731036610]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l18" unique_id=1971405692]
+position = Vector2(-246.16, -64.16)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l17" type="Node2D" parent="." unique_id=2112167824]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l17" unique_id=1407517131]
+position = Vector2(-294.31, -42.52)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l16" type="Node2D" parent="." unique_id=167562863]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l16" unique_id=1746128574]
+position = Vector2(-275.53, -38.33)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l15" type="Node2D" parent="." unique_id=578216876]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l15" unique_id=1395669606]
+position = Vector2(-256.03, -34.44)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l14" type="Node2D" parent="." unique_id=1918929614]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l14" unique_id=1611589075]
+position = Vector2(-236.15, -31.68)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l13" type="Node2D" parent="." unique_id=780103104]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l13" unique_id=1255070611]
+position = Vector2(-216.63, -28.5)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l12" type="Node2D" parent="." unique_id=1692982040]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l12" unique_id=1515508219]
+position = Vector2(-197.3, -25.67)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l11" type="Node2D" parent="." unique_id=239919148]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l11" unique_id=264454452]
+position = Vector2(-177.14, -23.7)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l10" type="Node2D" parent="." unique_id=2107067376]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l10" unique_id=1893842532]
+position = Vector2(-214.32, 2.61)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l09" type="Node2D" parent="." unique_id=1537630936]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l09" unique_id=1570043671]
+position = Vector2(-194.44, 7.53)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l08" type="Node2D" parent="." unique_id=1511623862]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l08" unique_id=361449999]
+position = Vector2(-173.82, 11.28)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l07" type="Node2D" parent="." unique_id=645317021]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l07" unique_id=1835358596]
+position = Vector2(-151.99, 14.59)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l06" type="Node2D" parent="." unique_id=153148974]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l06" unique_id=1371089775]
+position = Vector2(-130.72, 16.84)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l05" type="Node2D" parent="." unique_id=30719857]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l05" unique_id=1343958208]
+position = Vector2(-108.45, 18.51)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l04" type="Node2D" parent="." unique_id=1783726201]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l04" unique_id=396928615]
+position = Vector2(-86.89, 19.88)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l03" type="Node2D" parent="." unique_id=468526570]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l03" unique_id=1042639483]
+position = Vector2(-65.15, 21.4)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l02" type="Node2D" parent="." unique_id=126495030]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l02" unique_id=1718796980]
+position = Vector2(-43.33, 22.28)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="l01" type="Node2D" parent="." unique_id=2090308217]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="l01" unique_id=2117339966]
+position = Vector2(-21.5, 22.86)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r25" type="Node2D" parent="." unique_id=891254716]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r25" unique_id=1872791300]
+position = Vector2(-375.89, -89.1)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r24" type="Node2D" parent="." unique_id=641620814]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r24" unique_id=670085016]
+position = Vector2(-358.81, -85.04)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r23" type="Node2D" parent="." unique_id=2011574553]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r23" unique_id=1149385677]
+position = Vector2(-341.32, -81.51)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r22" type="Node2D" parent="." unique_id=142589290]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r22" unique_id=23282753]
+position = Vector2(-322.18, -78.17)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r21" type="Node2D" parent="." unique_id=1818725714]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r21" unique_id=906156111]
+position = Vector2(-303.49, -74.45)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r20" type="Node2D" parent="." unique_id=126258780]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r20" unique_id=620649062]
+position = Vector2(-284.72, -71.43)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r19" type="Node2D" parent="." unique_id=309030051]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r19" unique_id=172367652]
+position = Vector2(-265.95, -67.91)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r18" type="Node2D" parent="." unique_id=708462197]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r18" unique_id=168271490]
+position = Vector2(-246.16, -64.16)
+scale = Vector2(0.6609, 0.6609)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r17" type="Node2D" parent="." unique_id=1720271628]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r17" unique_id=158823016]
+position = Vector2(-294.31, -42.52)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r16" type="Node2D" parent="." unique_id=977185962]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r16" unique_id=266235333]
+position = Vector2(-275.53, -38.33)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r15" type="Node2D" parent="." unique_id=10579454]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r15" unique_id=828714323]
+position = Vector2(-256.03, -34.44)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r14" type="Node2D" parent="." unique_id=1700880835]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r14" unique_id=1352894763]
+position = Vector2(-236.15, -31.68)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r13" type="Node2D" parent="." unique_id=742804712]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r13" unique_id=1871430750]
+position = Vector2(-216.63, -28.5)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r12" type="Node2D" parent="." unique_id=1393820546]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r12" unique_id=832412602]
+position = Vector2(-197.3, -25.67)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r11" type="Node2D" parent="." unique_id=795125223]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r11" unique_id=759443410]
+position = Vector2(-177.14, -23.7)
+scale = Vector2(0.7423, 0.7423)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r10" type="Node2D" parent="." unique_id=1138504257]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r10" unique_id=1868573551]
+position = Vector2(-214.32, 2.61)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r09" type="Node2D" parent="." unique_id=707603534]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r09" unique_id=1209053062]
+position = Vector2(-194.44, 7.53)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r08" type="Node2D" parent="." unique_id=1941510935]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r08" unique_id=1348282129]
+position = Vector2(-173.82, 11.28)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r07" type="Node2D" parent="." unique_id=1212617450]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r07" unique_id=411728412]
+position = Vector2(-151.99, 14.59)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r06" type="Node2D" parent="." unique_id=773153915]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r06" unique_id=2051080141]
+position = Vector2(-130.72, 16.84)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r05" type="Node2D" parent="." unique_id=1102714291]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r05" unique_id=855053327]
+position = Vector2(-108.45, 18.51)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r04" type="Node2D" parent="." unique_id=1261297029]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r04" unique_id=641697396]
+position = Vector2(-86.89, 19.88)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r03" type="Node2D" parent="." unique_id=155672627]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r03" unique_id=1204837617]
+position = Vector2(-65.15, 21.4)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r02" type="Node2D" parent="." unique_id=1185503286]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r02" unique_id=2029742492]
+position = Vector2(-43.33, 22.28)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="r01" type="Node2D" parent="." unique_id=328082633]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="r01" unique_id=1333688186]
+position = Vector2(-21.5, 22.86)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="m" type="Node2D" parent="." unique_id=1845859324]
+script = ExtResource("2_q0x3n")
+
+[node name="0" type="Sprite2D" parent="m" unique_id=793292383]
+position = Vector2(0, 22.86)
+scale = Vector2(0.8317, 0.8317)
+texture = SubResource("AtlasTexture_jgu0t")
+offset = Vector2(-0.5, 0)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1271511959]
+libraries/ = SubResource("AnimationLibrary_8ehlm")

@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7ei15"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_3mye1"]
+[ext_resource type="Texture2D" path="res://art/_textures/f9a69143-d312-4931-855e-06042ec2be76.png" id="3_165u8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjkxb"]
+atlas = ExtResource("3_165u8")
+region = Rect2(3415, 1, 570, 1128)
+
+[sub_resource type="Animation" id="Animation_a4fto"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f24cv"]
+_data = {
+&"Idle": SubResource("Animation_a4fto")
+}
+
+[node name="FarTotal" type="Node2D" unique_id=1041923379]
+script = ExtResource("1_7ei15")
+bounds = Rect2(-285, -564, 570, 1128)
+
+[node name="farTotal" type="Node2D" parent="." unique_id=1278234050]
+script = ExtResource("2_3mye1")
+
+[node name="0" type="Sprite2D" parent="farTotal" unique_id=1564939167]
+texture = SubResource("AtlasTexture_wjkxb")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=820322035]
+libraries/ = SubResource("AnimationLibrary_f24cv")

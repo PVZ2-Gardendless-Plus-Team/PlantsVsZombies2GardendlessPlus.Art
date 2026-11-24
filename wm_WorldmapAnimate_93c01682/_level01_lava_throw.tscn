@@ -1,0 +1,299 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_p4s2r"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_eq803"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_v08u8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2q5i"]
+atlas = ExtResource("3_v08u8")
+region = Rect2(1115, 296, 5, 5)
+
+[sub_resource type="Animation" id="Animation_ueovw"]
+length = 2.6666666666666665
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("p:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(6.8454, -2.53535), Vector2(9.9634, -13.519034), Vector2(13.0814, -22.394646), Vector2(16.1994, -29.239004), Vector2(19.3174, -33.899265), Vector2(22.4354, -35.920345), Vector2(25.5534, -34.91327), Vector2(28.6714, -31.267006), Vector2(31.7894, -25.436646), Vector2(34.907402, -17.575035), Vector2(38.0254, -7.6053505), Vector2(38.0254, -7.6053505), Vector2(6.8454, -2.5353556), Vector2(7.6703997, -11.829035), Vector2(8.495399, -19.014645), Vector2(9.3204, -24.169003), Vector2(10.1454, -27.139265), Vector2(10.9704, -27.470345), Vector2(11.795401, -24.773266), Vector2(12.620399, -19.437004), Vector2(13.4454, -11.916645), Vector2(14.270399, -2.365035), Vector2(15.0954, 9.29465)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("p:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("p:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.36666667, 0.4, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.63, 1.63), Vector2(0.76, 0.76), Vector2(0.76, 0.76), Vector2(1.63, 1.63), Vector2(0.76, 0.76)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("p:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("p1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-5.83125, 0), Vector2(-5.83125, -5.515512e-06), Vector2(-7.6312504, -11.896685), Vector2(-9.431251, -21.685295), Vector2(-11.231251, -29.442654), Vector2(-13.03125, -35.015915), Vector2(-14.83125, -37.949993), Vector2(-16.63125, -37.85592), Vector2(-18.43125, -35.122654), Vector2(-20.23125, -30.205296), Vector2(-22.03125, -23.256683), Vector2(-23.83125, -14.2), Vector2(-23.83125, -14.2), Vector2(-5.83125, -5.515512e-06), Vector2(-6.2432504, -9.784684), Vector2(-6.65525, -17.461294), Vector2(-7.0672503, -23.106653), Vector2(-7.47925, -26.567915), Vector2(-7.89125, -27.389996), Vector2(-8.30325, -25.183916), Vector2(-8.71525, -20.338655), Vector2(-9.127251, -13.309295), Vector2(-9.539249, -4.248685), Vector2(-9.95125, 6.92)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("p1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("p1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.4, 0.43333334, 0.46666667, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.63, 1.63), Vector2(0.76, 0.76), Vector2(0.76, 0.76), Vector2(1.63, 1.63), Vector2(0.76, 0.76)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("p1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("p2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.01415, 2.78885), Vector2(1.01415, 2.7888446), Vector2(1.85115, -6.4708347), Vector2(2.68815, -13.622445), Vector2(3.5251503, -18.742804), Vector2(4.36215, -21.679066), Vector2(5.19915, -21.976145), Vector2(6.0361505, -19.245066), Vector2(6.87315, -13.874805), Vector2(7.7101502, -6.320445), Vector2(8.54715, 3.2651653), Vector2(9.38415, 14.95885), Vector2(9.38415, 14.95885), Vector2(1.01415, 2.7888446), Vector2(4.56615, -8.341835), Vector2(8.11815, -17.364445), Vector2(11.67015, -24.355803), Vector2(15.22215, -29.163065), Vector2(18.77415, -31.331144), Vector2(22.32615, -30.471066), Vector2(25.87815, -26.971806), Vector2(29.430151, -21.288445), Vector2(32.98215, -13.573834), Vector2(36.53415, -3.75115)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("p2:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("p2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.13333334, 0.46666667, 0.5, 0.53333336, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.63, 1.63), Vector2(0.76, 0.76), Vector2(0.76, 0.76), Vector2(1.63, 1.63), Vector2(0.76, 0.76)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("p2:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("p3:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-0.7606, -1.77475), Vector2(-0.7606, -1.7747586), Vector2(0.2534001, -19.460281), Vector2(1.2674001, -33.847374), Vector2(2.2814002, -45.056236), Vector2(3.2954001, -52.84771), Vector2(4.3094, -56.509743), Vector2(5.3234005, -55.433712), Vector2(6.3374, -50.228237), Vector2(7.3514004, -41.605377), Vector2(8.3654, -29.80428), Vector2(9.3794, -14.70475), Vector2(9.3794, -14.70475), Vector2(-0.7606, -1.7747586), Vector2(-2.7635999, -19.27928), Vector2(-4.7666, -33.485374), Vector2(-6.7696004, -44.513237), Vector2(-8.7726, -52.12371), Vector2(-10.7756, -55.604744), Vector2(-12.778601, -54.347713), Vector2(-14.7816, -48.96124), Vector2(-16.7846, -40.157375), Vector2(-18.7876, -28.17528), Vector2(-20.7906, -12.89475)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("p3:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("p3:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.2, 0.53333336, 0.56666666, 0.6, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1.63, 1.63), Vector2(0.76, 0.76), Vector2(0.76, 0.76), Vector2(1.63, 1.63), Vector2(0.76, 0.76)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("p3:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("p:display")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.4, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, -1, 0, -1]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("p1:display")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.4, 0.46666667, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1, 0, -1]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("p2:display")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.46666667, 0.53333336, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1, 0, -1]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("p3:display")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.53333336, 0.6, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [-1, 0, -1, 0, -1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qj0ym"]
+_data = {
+&"i": SubResource("Animation_ueovw")
+}
+
+[node name="_level01_lava_throw" type="Node2D" unique_id=128086473]
+script = ExtResource("1_p4s2r")
+
+[node name="p" type="Node2D" parent="." unique_id=1079924268]
+position = Vector2(6.8454, -2.53535)
+script = ExtResource("2_eq803")
+display = -1
+
+[node name="0" type="Sprite2D" parent="p" unique_id=16177532]
+visible = false
+texture = SubResource("AtlasTexture_y2q5i")
+
+[node name="p1" type="Node2D" parent="." unique_id=1139828447]
+position = Vector2(-5.83125, 0)
+script = ExtResource("2_eq803")
+display = -1
+
+[node name="0" type="Sprite2D" parent="p1" unique_id=18603988]
+visible = false
+texture = SubResource("AtlasTexture_y2q5i")
+
+[node name="p2" type="Node2D" parent="." unique_id=1756602261]
+position = Vector2(1.01415, 2.78885)
+script = ExtResource("2_eq803")
+display = -1
+
+[node name="0" type="Sprite2D" parent="p2" unique_id=38218173]
+visible = false
+texture = SubResource("AtlasTexture_y2q5i")
+
+[node name="p3" type="Node2D" parent="." unique_id=2079358401]
+position = Vector2(-0.7606, -1.77475)
+script = ExtResource("2_eq803")
+display = -1
+
+[node name="0" type="Sprite2D" parent="p3" unique_id=344757219]
+visible = false
+texture = SubResource("AtlasTexture_y2q5i")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1629041393]
+libraries/ = SubResource("AnimationLibrary_qj0ym")

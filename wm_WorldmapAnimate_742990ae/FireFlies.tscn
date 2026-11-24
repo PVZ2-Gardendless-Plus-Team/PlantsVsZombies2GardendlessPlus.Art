@@ -1,0 +1,380 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1cidb"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_t20hw"]
+[ext_resource type="Texture2D" path="res://art/_textures/497c66af-aa08-4237-b558-317c5dc0eee1.png" id="3_5m8r5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nogde"]
+atlas = ExtResource("3_5m8r5")
+region = Rect2(826, 1995, 49, 49)
+
+[sub_resource type="Animation" id="Animation_5llme"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("firefly:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-95.962204, -46.838074), Vector2(-94.75723, -50.893944), Vector2(-93.27227, -54.85589), Vector2(-91.51456, -58.70459), Vector2(-89.492645, -62.421307), Vector2(-87.21641, -65.98792), Vector2(-84.696915, -69.38708), Vector2(-81.94644, -72.602196), Vector2(-78.97839, -75.617615), Vector2(-75.807236, -78.418655), Vector2(-72.44841, -80.99166), Vector2(-68.91828, -83.324104), Vector2(-65.23405, -85.4046), Vector2(-61.413662, -87.223045), Vector2(-57.47573, -88.77056), Vector2(-53.439445, -90.039604), Vector2(-49.32447, -91.02401), Vector2(-45.15085, -91.71896), Vector2(-40.93892, -92.121086), Vector2(-36.709194, -92.228424), Vector2(-32.48229, -92.04045), Vector2(-28.278791, -91.558075), Vector2(-24.119183, -90.78366), Vector2(-20.023726, -89.72097), Vector2(-16.012375, -88.37518), Vector2(-12.104675, -86.75285), Vector2(-8.319658, -84.86189), Vector2(-4.67577, -82.71151), Vector2(-1.1907616, -80.31217), Vector2(2.1183891, -77.67558), Vector2(5.2355576, -74.81458), Vector2(8.145565, -71.74311), Vector2(10.834225, -68.47613), Vector2(13.288437, -65.02955), Vector2(15.496254, -61.420174), Vector2(17.446915, -57.665573), Vector2(19.13092, -53.784054), Vector2(20.540058, -49.794518), Vector2(21.667473, -45.7164), Vector2(22.50766, -41.569576), Vector2(23.056534, -37.374245), Vector2(23.31142, -33.150845), Vector2(23.271072, -28.919952), Vector2(22.9357, -24.702179), Vector2(22.306915, -20.518078), Vector2(21.387806, -16.388027), Vector2(20.18283, -12.332155), Vector2(18.697868, -8.370214), Vector2(16.940155, -4.521513), Vector2(14.918247, -0.8047943), Vector2(12.642006, 2.7618237), Vector2(10.122513, 6.1609745), Vector2(7.37204, 9.376093), Vector2(4.4039917, 12.391516), Vector2(1.2328339, 15.192553), Vector2(-2.1259956, 17.765558), Vector2(-5.656122, 20.098001), Vector2(-9.340355, 22.178503), Vector2(-13.16074, 23.996943), Vector2(-17.09867, 25.544462), Vector2(-21.134954, 26.813505), Vector2(-25.24993, 27.797907), Vector2(-29.423552, 28.49286), Vector2(-33.635483, 28.894987), Vector2(-37.865208, 29.002325), Vector2(-42.092113, 28.814348), Vector2(-46.29561, 28.331976), Vector2(-50.45522, 27.557558), Vector2(-54.550674, 26.494867), Vector2(-58.562027, 25.14908), Vector2(-62.469727, 23.526754), Vector2(-66.254745, 21.63579), Vector2(-69.898636, 19.485407), Vector2(-73.38364, 17.086073), Vector2(-76.692795, 14.449484), Vector2(-79.80996, 11.588484), Vector2(-82.71997, 8.517008), Vector2(-85.40863, 5.250025), Vector2(-87.86284, 1.8034496), Vector2(-90.070656, -1.8059292), Vector2(-92.02132, -5.560526), Vector2(-93.70532, -9.442047), Vector2(-95.114456, -13.431585), Vector2(-96.241875, -17.5097), Vector2(-97.08206, -21.656525), Vector2(-97.630936, -25.851856), Vector2(-97.88582, -30.075256), Vector2(-97.845474, -34.30615), Vector2(-97.5101, -38.523922), Vector2(-96.88132, -42.708023), Vector2(-95.962204, -46.838074)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("firefly:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("firefly:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("firefly:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("firefly1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(64.49512, 1.342022), Vector2(62.551155, 5.0609455), Vector2(60.349785, 8.530968), Vector2(57.901722, 11.699455), Vector2(55.218895, 14.515858), Vector2(52.314377, 16.932796), Vector2(49.202316, 18.907108), Vector2(45.897877, 20.400917), Vector2(42.417152, 21.347755), Vector2(38.777107, 21.70586), Vector2(34.995472, 21.534756), Vector2(31.090672, 20.687778), Vector2(27.081728, 19.250519), Vector2(22.988174, 17.174835), Vector2(18.829954, 14.472675), Vector2(14.627323, 11.170559), Vector2(10.400759, 7.387142), Vector2(6.1708508, 3.1095982), Vector2(1.9582081, -1.5909653), Vector2(-2.2166462, -6.628395), Vector2(-6.333372, -11.8186), Vector2(-10.371914, -17.050503), Vector2(-14.312599, -22.127089), Vector2(-18.136223, -27.017597), Vector2(-21.824162, -31.457655), Vector2(-25.358444, -35.43409), Vector2(-28.721855, -38.797092), Vector2(-31.898014, -41.492027), Vector2(-34.871433, -43.426895), Vector2(-37.627636, -44.599384), Vector2(-40.153194, -45.02426), Vector2(-42.4358, -44.7666), Vector2(-44.464333, -43.821426), Vector2(-46.228912, -42.24263), Vector2(-47.72094, -40.09264), Vector2(-48.93315, -37.45299), Vector2(-49.85963, -34.365753), Vector2(-50.495872, -30.932636), Vector2(-50.83878, -27.205399), Vector2(-50.88667, -23.259985), Vector2(-50.63932, -19.166416), Vector2(-50.09793, -14.989319), Vector2(-49.26514, -10.7916155), Vector2(-48.145008, -6.6335087), Vector2(-46.74299, -2.571579), Vector2(-45.065918, 1.3420124), Vector2(-43.121956, 5.0609455), Vector2(-40.920586, 8.530968), Vector2(-38.472523, 11.699455), Vector2(-35.789696, 14.515858), Vector2(-32.885178, 16.932796), Vector2(-29.773117, 18.907108), Vector2(-26.468678, 20.400917), Vector2(-22.987953, 21.347755), Vector2(-19.34791, 21.70586), Vector2(-15.566273, 21.534756), Vector2(-11.661472, 20.687778), Vector2(-7.652529, 19.250519), Vector2(-3.5589752, 17.174835), Vector2(0.5992451, 14.472675), Vector2(4.801876, 11.170559), Vector2(9.02844, 7.387142), Vector2(13.258348, 3.1095982), Vector2(17.470991, -1.5909653), Vector2(21.645845, -6.628395), Vector2(25.762571, -11.8186), Vector2(29.801113, -17.050503), Vector2(33.7418, -22.127089), Vector2(37.565422, -27.017597), Vector2(41.25336, -31.457655), Vector2(44.787643, -35.43409), Vector2(48.151054, -38.797092), Vector2(51.327213, -41.492027), Vector2(54.300632, -43.426895), Vector2(57.056835, -44.599384), Vector2(59.582394, -45.02426), Vector2(61.864998, -44.7666), Vector2(63.89353, -43.821426), Vector2(65.65811, -42.24263), Vector2(67.15014, -40.09264), Vector2(68.36235, -37.45299), Vector2(69.28883, -34.365753), Vector2(69.92507, -30.932636), Vector2(70.267975, -27.205399), Vector2(70.31587, -23.259985), Vector2(70.06852, -19.166416), Vector2(69.52713, -14.989319), Vector2(68.694336, -10.7916155), Vector2(67.5742, -6.6335087), Vector2(66.17219, -2.571579), Vector2(64.49512, 1.342022)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("firefly1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("firefly1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("firefly1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("firefly2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(24.129766, -37.120377), Vector2(20.143785, -39.124905), Vector2(16.212088, -40.814766), Vector2(12.338966, -42.185665), Vector2(8.531406, -43.234062), Vector2(4.7971067, -43.95771), Vector2(1.1430836, -44.35604), Vector2(-2.4223197, -44.429626), Vector2(-5.8960004, -44.18187), Vector2(-9.270048, -43.616356), Vector2(-12.54241, -42.73966), Vector2(-15.712537, -41.560104), Vector2(-18.77045, -40.084896), Vector2(-21.720646, -38.326344), Vector2(-24.558336, -36.295544), Vector2(-27.28946, -34.007618), Vector2(-29.904583, -31.47475), Vector2(-32.41024, -28.71436), Vector2(-34.80746, -25.743397), Vector2(-37.093575, -22.578724), Vector2(-39.273163, -19.239902), Vector2(-41.344093, -15.74546), Vector2(-43.30768, -12.115422), Vector2(-45.143867, -8.364711), Vector2(-46.829063, -4.507718), Vector2(-48.35856, -0.56416607), Vector2(-49.727295, 3.4461002), Vector2(-50.92975, 7.5032444), Vector2(-51.959846, 11.587551), Vector2(-52.81092, 15.679568), Vector2(-53.48526, 19.757645), Vector2(-53.97763, 23.80244), Vector2(-54.258568, 27.801395), Vector2(-54.35209, 31.728325), Vector2(-54.225792, 35.572536), Vector2(-53.880806, 39.315166), Vector2(-53.30551, 42.941498), Vector2(-52.487144, 46.437984), Vector2(-51.39946, 49.795578), Vector2(-50.041817, 52.999493), Vector2(-48.40055, 56.03949), Vector2(-46.46247, 58.906338), Vector2(-44.206116, 61.59426), Vector2(-41.6249, 64.0948), Vector2(-38.70878, 66.401764), Vector2(-35.468124, 68.50493), Vector2(-31.900408, 70.39887), Vector2(-28.027027, 72.07331), Vector2(-23.866465, 73.52021), Vector2(-19.447132, 74.73035), Vector2(-14.803305, 75.69446), Vector2(-9.974507, 76.40339), Vector2(-5.0022764, 76.848915), Vector2(0.075712204, 77.02531), Vector2(5.212799, 76.92592), Vector2(10.365632, 76.54639), Vector2(15.491793, 75.88398), Vector2(20.557194, 74.93952), Vector2(25.509207, 73.71022), Vector2(30.331247, 72.204056), Vector2(34.974754, 70.42174), Vector2(39.407913, 68.36952), Vector2(43.60721, 66.05691), Vector2(47.544975, 63.49324), Vector2(51.196144, 60.689472), Vector2(54.53853, 57.658073), Vector2(57.552773, 54.413033), Vector2(60.22251, 50.969692), Vector2(62.518044, 47.34042), Vector2(64.41273, 43.538815), Vector2(65.8965, 39.58317), Vector2(66.96779, 35.494267), Vector2(67.62751, 31.293633), Vector2(67.87386, 27.002113), Vector2(67.71221, 22.642353), Vector2(67.15916, 18.239769), Vector2(66.212776, 13.814588), Vector2(64.90398, 9.395327), Vector2(63.235146, 5.0024605), Vector2(61.227005, 0.66071796), Vector2(58.911667, -3.6028452), Vector2(56.298416, -7.7679796), Vector2(53.424072, -11.808036), Vector2(50.303825, -15.70301), Vector2(46.965202, -19.430668), Vector2(43.451614, -22.965672), Vector2(39.773308, -26.292614), Vector2(35.973656, -29.388561), Vector2(32.082275, -32.235497), Vector2(28.123285, -34.818172), Vector2(24.129766, -37.120377)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("firefly2:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("firefly2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("firefly2:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("firefly3:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-38.282692, 21.486456), Vector2(-42.656883, 17.324228), Vector2(-46.81808, 13.108046), Vector2(-50.74602, 8.85845), Vector2(-54.421562, 4.5961413), Vector2(-57.826805, 0.34189224), Vector2(-60.945152, -3.8835797), Vector2(-63.761402, -8.059679), Vector2(-66.261856, -12.166067), Vector2(-68.43431, -16.18274), Vector2(-70.268196, -20.09012), Vector2(-71.75458, -23.869175), Vector2(-72.8862, -27.501492), Vector2(-73.65756, -30.96938), Vector2(-74.06491, -34.255943), Vector2(-74.10624, -37.34517), Vector2(-73.78137, -40.222), Vector2(-73.09189, -42.872433), Vector2(-72.04113, -45.28354), Vector2(-70.634224, -47.44359), Vector2(-68.87802, -49.342045), Vector2(-66.78109, -50.969666), Vector2(-64.353645, -52.318523), Vector2(-61.607494, -53.38204), Vector2(-58.55604, -54.155037), Vector2(-55.214134, -54.63375), Vector2(-51.59807, -54.815845), Vector2(-47.725445, -54.70044), Vector2(-43.61514, -54.288086), Vector2(-39.287186, -53.580803), Vector2(-34.762653, -52.582024), Vector2(-30.063593, -51.29663), Vector2(-25.212896, -49.730877), Vector2(-20.2342, -47.89239), Vector2(-15.151754, -45.790127), Vector2(-9.990317, -43.434334), Vector2(-4.7750454, -40.836487), Vector2(0.46866065, -38.009243), Vector2(5.715253, -34.966373), Vector2(10.939168, -31.722698), Vector2(16.114958, -28.294033), Vector2(21.217403, -24.697071), Vector2(26.221651, -20.94934), Vector2(31.10332, -17.0691), Vector2(35.838623, -13.075254), Vector2(40.404495, -8.987255), Vector2(44.778687, -4.825028), Vector2(48.939884, -0.60884523), Vector2(52.867825, 3.6407504), Vector2(56.543365, 7.9030585), Vector2(59.94861, 12.157308), Vector2(63.066956, 16.38278), Vector2(65.8832, 20.558878), Vector2(68.38365, 24.665266), Vector2(70.55611, 28.681938), Vector2(72.38999, 32.58932), Vector2(73.87637, 36.368374), Vector2(75.007996, 40.00069), Vector2(75.77936, 43.46858), Vector2(76.18671, 46.755142), Vector2(76.228035, 49.844368), Vector2(75.90317, 52.7212), Vector2(75.213684, 55.37163), Vector2(74.162926, 57.782738), Vector2(72.75602, 59.942787), Vector2(70.99982, 61.841244), Vector2(68.902885, 63.468864), Vector2(66.47544, 64.817726), Vector2(63.729298, 65.88124), Vector2(60.677845, 66.654236), Vector2(57.335938, 67.13295), Vector2(53.71987, 67.31505), Vector2(49.847248, 67.19964), Vector2(45.736942, 66.787285), Vector2(41.40899, 66.08), Vector2(36.884457, 65.08122), Vector2(32.185394, 63.79583), Vector2(27.334696, 62.230076), Vector2(22.355999, 60.39159), Vector2(17.273554, 58.289326), Vector2(12.112117, 55.933533), Vector2(6.896845, 53.335686), Vector2(1.6531394, 50.508442), Vector2(-3.5934532, 47.465572), Vector2(-8.8173685, 44.221897), Vector2(-13.993157, 40.793232), Vector2(-19.095604, 37.19627), Vector2(-24.099852, 33.44854), Vector2(-28.98152, 29.568298), Vector2(-33.71682, 25.574453), Vector2(-38.282692, 21.486456)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("firefly3:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("firefly3:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("firefly3:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("firefly4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-38.23145, -36.727783), Vector2(-34.50461, -31.09141), Vector2(-30.192108, -25.827625), Vector2(-25.288666, -20.983936), Vector2(-19.777557, -16.617714), Vector2(-13.662926, -12.7691), Vector2(-6.96616, -9.463829), Vector2(0.27225685, -6.7114716), Vector2(8.035811, -4.541027), Vector2(16.252888, -2.9349823), Vector2(24.876286, -1.8951912), Vector2(33.681625, -1.2751045), Vector2(42.567127, -1.0287971), Vector2(51.360443, -1.0501633), Vector2(59.82028, -1.1741066), Vector2(67.609055, -1.1536255), Vector2(74.61409, -0.92669296), Vector2(80.61178, -0.33687592), Vector2(85.446106, 0.7183647), Vector2(89.06901, 2.254261), Vector2(91.51379, 4.220978), Vector2(92.8617, 6.5314674), Vector2(93.15711, 9.1321335), Vector2(92.52428, 11.9058075), Vector2(91.07258, 14.750595), Vector2(88.9164, 17.563423), Vector2(86.15873, 20.2537), Vector2(82.90065, 22.735428), Vector2(79.23811, 24.929955), Vector2(75.258, 26.769188), Vector2(71.042114, 28.192314), Vector2(66.63113, 29.175598), Vector2(62.03843, 29.721016), Vector2(57.30287, 29.812225), Vector2(52.464943, 29.434273), Vector2(47.557507, 28.581291), Vector2(42.626022, 27.23951), Vector2(37.711807, 25.401108), Vector2(32.8378, 23.075851), Vector2(28.054482, 20.252861), Vector2(23.399061, 16.93431), Vector2(18.878145, 13.14975), Vector2(14.576697, 8.865265), Vector2(10.462934, 4.1456146), Vector2(6.5898113, -1.0135918), Vector2(2.9776096, -6.5884056), Vector2(-0.35813522, -12.549931), Vector2(-3.4070568, -18.86425), Vector2(-6.16416, -25.492384), Vector2(-8.630077, -32.390358), Vector2(-10.755131, -39.555885), Vector2(-12.661709, -46.843685), Vector2(-14.31332, -54.240868), Vector2(-15.732731, -61.68579), Vector2(-16.947521, -69.113495), Vector2(-17.930897, -76.50514), Vector2(-18.89455, -83.644745), Vector2(-19.700863, -90.60805), Vector2(-20.502792, -97.23066), Vector2(-21.33374, -103.449326), Vector2(-22.224152, -109.20505), Vector2(-23.156528, -114.48074), Vector2(-24.245983, -119.15123), Vector2(-25.462292, -123.21448), Vector2(-26.817844, -126.63544), Vector2(-28.373379, -129.34146), Vector2(-30.034607, -131.39145), Vector2(-31.86322, -132.71744), Vector2(-33.8075, -133.34851), Vector2(-35.83805, -133.29819), Vector2(-37.921677, -132.58606), Vector2(-40.021618, -131.23776), Vector2(-42.104134, -129.27936), Vector2(-44.12497, -126.748764), Vector2(-46.043907, -123.68357), Vector2(-47.820984, -120.124176), Vector2(-49.417328, -116.11301), Vector2(-50.795845, -111.69401), Vector2(-51.921837, -106.91196), Vector2(-52.78077, -101.79768), Vector2(-53.310295, -96.42445), Vector2(-53.51973, -90.80855), Vector2(-53.370476, -85.00858), Vector2(-52.845642, -79.06745), Vector2(-51.947243, -73.01457), Vector2(-50.650215, -66.90387), Vector2(-48.95108, -60.773308), Vector2(-46.859352, -54.651684), Vector2(-44.36799, -48.58317), Vector2(-41.48713, -42.599), Vector2(-38.23145, -36.727783)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("firefly4:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("firefly4:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("firefly4:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("firefly5:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-7.3256865, -68.60415), Vector2(0.9123287, -69.665146), Vector2(8.736764, -70.39668), Vector2(16.15075, -70.83887), Vector2(23.115707, -70.937325), Vector2(29.632, -70.739555), Vector2(35.65932, -70.18093), Vector2(41.168835, -69.210236), Vector2(46.167778, -67.89627), Vector2(50.621887, -66.14228), Vector2(54.540108, -64.01324), Vector2(57.915115, -61.494606), Vector2(60.745888, -58.564137), Vector2(63.044533, -55.276463), Vector2(64.82127, -51.645493), Vector2(66.09241, -47.695522), Vector2(66.87951, -43.460926), Vector2(67.20873, -38.98551), Vector2(67.10842, -34.325695), Vector2(66.6137, -29.533527), Vector2(65.76027, -24.677113), Vector2(64.55466, -19.862373), Vector2(62.981796, -15.172932), Vector2(61.05509, -10.63839), Vector2(58.789627, -6.2889366), Vector2(56.197548, -2.1557808), Vector2(53.29901, 1.7322464), Vector2(50.112846, 5.3453865), Vector2(46.650646, 8.656105), Vector2(42.93838, 11.636734), Vector2(38.996742, 14.260632), Vector2(34.834816, 16.508575), Vector2(30.495934, 18.347122), Vector2(25.976017, 19.769188), Vector2(21.307255, 20.750664), Vector2(16.50948, 21.276299), Vector2(11.601747, 21.334084), Vector2(6.602275, 20.915558), Vector2(1.5282812, 20.016167), Vector2(-3.6040573, 18.635513), Vector2(-8.76098, 16.752327), Vector2(-13.965759, 14.423809), Vector2(-19.186954, 11.640354), Vector2(-24.412552, 8.420391), Vector2(-29.631351, 4.7871895), Vector2(-34.816017, 0.73451614), Vector2(-40.00695, -3.6014671), Vector2(-45.1439, -8.286598), Vector2(-50.2474, -13.207756), Vector2(-55.30311, -18.318678), Vector2(-60.295418, -23.571735), Vector2(-65.19842, -28.955307), Vector2(-70.01328, -34.34646), Vector2(-74.709656, -39.734226), Vector2(-79.266365, -45.071423), Vector2(-83.665115, -50.24815), Vector2(-87.87101, -55.32285), Vector2(-91.860985, -60.164837), Vector2(-95.603485, -64.776054), Vector2(-99.06923, -69.130295), Vector2(-102.22956, -73.20537), Vector2(-105.063324, -77.00232), Vector2(-107.5324, -80.46579), Vector2(-109.617645, -83.60662), Vector2(-111.29678, -86.417496), Vector2(-112.54995, -88.894165), Vector2(-113.359955, -91.035355), Vector2(-113.71255, -92.8423), Vector2(-113.596596, -94.31856), Vector2(-113.01357, -95.47243), Vector2(-111.939964, -96.30433), Vector2(-110.392746, -96.82736), Vector2(-108.36461, -97.049225), Vector2(-105.86113, -96.98125), Vector2(-102.89754, -96.63341), Vector2(-99.478096, -96.01954), Vector2(-95.61822, -95.15288), Vector2(-91.33975, -94.04473), Vector2(-86.65878, -92.711075), Vector2(-81.59957, -91.16542), Vector2(-76.18899, -89.42081), Vector2(-70.365326, -87.50922), Vector2(-64.10435, -85.47778), Vector2(-57.483578, -83.36318), Vector2(-50.581425, -81.19699), Vector2(-43.47372, -79.007256), Vector2(-36.234123, -76.81918), Vector2(-28.930176, -74.65994), Vector2(-21.63098, -72.55486), Vector2(-14.411883, -70.51958), Vector2(-7.3256865, -68.60415)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("firefly5:rotation")
+tracks/21/interp = 3
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8839383]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("firefly5:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("firefly5:skew")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1v7px"]
+_data = {
+&"Idle": SubResource("Animation_5llme")
+}
+
+[node name="FireFlies" type="Node2D" unique_id=121234665]
+script = ExtResource("1_1cidb")
+bounds = Rect2(-126.71, -99.61, 221.96, 152.09)
+
+[node name="firefly" type="Node2D" parent="." unique_id=1659852435]
+position = Vector2(-95.962204, -46.838074)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly" unique_id=2035126344]
+scale = Vector2(0.7248, 0.7248)
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="firefly1" type="Node2D" parent="." unique_id=291364634]
+position = Vector2(64.49512, 1.342022)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly1" unique_id=715486619]
+rotation = 2.2111578
+scale = Vector2(1.1082, 1.1082)
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="firefly2" type="Node2D" parent="." unique_id=1074229915]
+position = Vector2(24.129766, -37.120377)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly2" unique_id=1770894644]
+rotation = 0.92170835
+scale = Vector2(1.4479, 1.4479)
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="firefly3" type="Node2D" parent="." unique_id=1087797611]
+position = Vector2(-38.282692, 21.486456)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly3" unique_id=1509160906]
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="firefly4" type="Node2D" parent="." unique_id=1482467722]
+position = Vector2(-38.23145, -36.727783)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly4" unique_id=714366179]
+rotation = 1.7748253
+scale = Vector2(0.9752, 0.9752)
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="firefly5" type="Node2D" parent="." unique_id=457855968]
+position = Vector2(-7.3256865, -68.60415)
+rotation = 2.8839383
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_t20hw")
+
+[node name="0" type="Sprite2D" parent="firefly5" unique_id=1583925099]
+scale = Vector2(0.7248, 0.7248)
+texture = SubResource("AtlasTexture_nogde")
+offset = Vector2(-0.5, -0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2111378152]
+libraries/ = SubResource("AnimationLibrary_1v7px")

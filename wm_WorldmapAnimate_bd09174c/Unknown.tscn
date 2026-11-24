@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_rxnho"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_vahuy"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbed6ff7-a994-4040-97b1-7b8f5ffc4e57.png" id="3_0rduq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mu7h0"]
+atlas = ExtResource("3_0rduq")
+region = Rect2(3485, 1124, 462, 1133)
+
+[sub_resource type="Animation" id="Animation_vkolw"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kd4py"]
+_data = {
+&"Idle": SubResource("Animation_vkolw")
+}
+
+[node name="Unknown" type="Node2D" unique_id=1246672288]
+script = ExtResource("1_rxnho")
+bounds = Rect2(-222.98, -566.5, 462, 1133)
+
+[node name="unknown" type="Node2D" parent="." unique_id=1697619107]
+script = ExtResource("2_vahuy")
+
+[node name="0" type="Sprite2D" parent="unknown" unique_id=1359329177]
+position = Vector2(8.02, 0)
+texture = SubResource("AtlasTexture_mu7h0")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1021449171]
+libraries/ = SubResource("AnimationLibrary_kd4py")

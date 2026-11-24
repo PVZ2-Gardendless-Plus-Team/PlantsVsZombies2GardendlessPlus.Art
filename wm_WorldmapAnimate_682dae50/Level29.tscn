@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_fljem"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_uc4eh"]
+[ext_resource type="Texture2D" path="res://art/_textures/b00e59fd-0097-4ecf-8c4b-9148422133df.png" id="3_dwox3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tamd3"]
+atlas = ExtResource("3_dwox3")
+region = Rect2(1279, 846, 196, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfv3k"]
+atlas = ExtResource("3_dwox3")
+region = Rect2(1628, 601, 203, 107)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnqtw"]
+atlas = ExtResource("3_dwox3")
+region = Rect2(1708, 361, 103, 54)
+
+[sub_resource type="Animation" id="Animation_miv2j"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0cwao"]
+_data = {
+&"i": SubResource("Animation_miv2j")
+}
+
+[node name="Level29" type="Node2D" unique_id=1265378746]
+script = ExtResource("1_fljem")
+bounds = Rect2(-104.61, -67.25, 221.83, 192.68)
+
+[node name="base2" type="Node2D" parent="." unique_id=1320998022]
+script = ExtResource("2_uc4eh")
+
+[node name="0" type="Sprite2D" parent="base2" unique_id=1765836978]
+position = Vector2(15.16, 53.69)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_tamd3")
+
+[node name="top3" type="Node2D" parent="." unique_id=1727409494]
+script = ExtResource("2_uc4eh")
+
+[node name="0" type="Sprite2D" parent="top3" unique_id=1527435450]
+position = Vector2(15.97, 18.06)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_tfv3k")
+
+[node name="tomb1" type="Node2D" parent="." unique_id=2108068861]
+script = ExtResource("2_uc4eh")
+
+[node name="0" type="Sprite2D" parent="tomb1" unique_id=1495803033]
+position = Vector2(-53.11, -40.25)
+texture = SubResource("AtlasTexture_qnqtw")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=38125871]
+libraries/ = SubResource("AnimationLibrary_0cwao")

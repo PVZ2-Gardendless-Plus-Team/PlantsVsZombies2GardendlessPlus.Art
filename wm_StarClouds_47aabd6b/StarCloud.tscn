@@ -1,0 +1,548 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_mgf8u"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_0utur"]
+[ext_resource type="Texture2D" path="res://art/_textures/edc1479c-07e5-4085-9cee-4246aed8d668.png" id="3_ydqa4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbywe"]
+atlas = ExtResource("3_ydqa4")
+region = Rect2(1, 1, 733, 792)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx36m"]
+atlas = ExtResource("3_ydqa4")
+region = Rect2(1, 795, 843, 620)
+
+[sub_resource type="Animation" id="Animation_bt3ef"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_10017"]
+_data = {
+&"Idle": SubResource("Animation_bt3ef")
+}
+
+[node name="StarCloud" type="Node2D" unique_id=1612836530]
+script = ExtResource("1_mgf8u")
+bounds = Rect2(-9411.25, -641, 19252.5, 1156.75)
+
+[node name="stars03" type="Node2D" parent="." unique_id=628381546]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars03" unique_id=1883427445]
+position = Vector2(2075, -80)
+rotation = -1.45543
+scale = Vector2(2.0632, 2.0632)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars02" type="Node2D" parent="." unique_id=1701714626]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars02" unique_id=566407698]
+position = Vector2(-894.93, -102.92)
+rotation = -1.6177456
+scale = Vector2(1.7401, 1.7401)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars1" type="Node2D" parent="." unique_id=2122097956]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars1" unique_id=1596156765]
+position = Vector2(486.88, 192.23)
+scale = Vector2(1.3, 1.3)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars0" type="Node2D" parent="." unique_id=657418450]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars0" unique_id=904386531]
+position = Vector2(-100, 112.5)
+scale = Vector2(1.2885, 1.2885)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars01" type="Node2D" parent="." unique_id=1964721585]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars01" unique_id=1868931616]
+position = Vector2(920.75, 65.32)
+rotation = -2.1032963
+scale = Vector2(1.2885001, 1.2885001)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars11" type="Node2D" parent="." unique_id=1957578091]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars11" unique_id=1954417165]
+position = Vector2(-488.95, -30.37)
+rotation = -2.0195203
+scale = Vector2(1.8899, 1.8899)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars12" type="Node2D" parent="." unique_id=1106887283]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars12" unique_id=804525635]
+position = Vector2(1361.25, -331.25)
+rotation = 3.089582
+scale = Vector2(1.6765, 1.6765)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars13" type="Node2D" parent="." unique_id=1172084707]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars13" unique_id=911913505]
+position = Vector2(1411.88, 37.23)
+rotation = 1.5760323
+scale = Vector2(1.9635, 1.9635)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars14" type="Node2D" parent="." unique_id=729743641]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars14" unique_id=1496189113]
+position = Vector2(411.88, -105.27)
+scale = Vector2(2.2943, 2.2943)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars04" type="Node2D" parent="." unique_id=158612850]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars04" unique_id=17626540]
+position = Vector2(-1645, 120)
+rotation = 2.387785
+scale = Vector2(1.42, 1.42)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars15" type="Node2D" parent="." unique_id=42352465]
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars15" unique_id=642880845]
+position = Vector2(-1243.12, 167.23)
+scale = Vector2(1.6314, 1.6314)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars031" type="Node2D" parent="." unique_id=54813253]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars031" unique_id=1915473725]
+position = Vector2(2075, -80)
+rotation = -1.45543
+scale = Vector2(2.0632, 2.0632)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars021" type="Node2D" parent="." unique_id=1121245983]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars021" unique_id=2136611074]
+position = Vector2(-894.93, -102.92)
+rotation = -1.6177456
+scale = Vector2(1.7401, 1.7401)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars16" type="Node2D" parent="." unique_id=2005840197]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars16" unique_id=575023623]
+position = Vector2(486.88, 192.23)
+scale = Vector2(1.3, 1.3)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars05" type="Node2D" parent="." unique_id=70231894]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars05" unique_id=601551266]
+position = Vector2(-100, 112.5)
+scale = Vector2(1.2885, 1.2885)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars011" type="Node2D" parent="." unique_id=1648866570]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars011" unique_id=1172971651]
+position = Vector2(920.75, 65.32)
+rotation = -2.1032963
+scale = Vector2(1.2885001, 1.2885001)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars111" type="Node2D" parent="." unique_id=168862442]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars111" unique_id=857029040]
+position = Vector2(-488.95, -30.37)
+rotation = -2.0195203
+scale = Vector2(1.8899, 1.8899)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars121" type="Node2D" parent="." unique_id=1944532478]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars121" unique_id=985695116]
+position = Vector2(1361.25, -331.25)
+rotation = 3.089582
+scale = Vector2(1.6765, 1.6765)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars131" type="Node2D" parent="." unique_id=950024499]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars131" unique_id=749880039]
+position = Vector2(1411.88, 37.23)
+rotation = 1.5760323
+scale = Vector2(1.9635, 1.9635)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars141" type="Node2D" parent="." unique_id=592425569]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars141" unique_id=869833046]
+position = Vector2(411.88, -105.27)
+scale = Vector2(2.2943, 2.2943)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars041" type="Node2D" parent="." unique_id=1231650436]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars041" unique_id=1666385545]
+position = Vector2(-1645, 120)
+rotation = 2.387785
+scale = Vector2(1.42, 1.42)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars151" type="Node2D" parent="." unique_id=455370135]
+position = Vector2(-3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars151" unique_id=816642785]
+position = Vector2(-1243.12, 167.23)
+scale = Vector2(1.6314, 1.6314)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars032" type="Node2D" parent="." unique_id=738520208]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars032" unique_id=926478583]
+position = Vector2(2075, -80)
+rotation = -1.45543
+scale = Vector2(2.0632, 2.0632)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars022" type="Node2D" parent="." unique_id=2078950760]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars022" unique_id=1437551151]
+position = Vector2(-894.93, -102.92)
+rotation = -1.6177456
+scale = Vector2(1.7401, 1.7401)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars17" type="Node2D" parent="." unique_id=1988130810]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars17" unique_id=1823343054]
+position = Vector2(486.88, 192.23)
+scale = Vector2(1.3, 1.3)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars06" type="Node2D" parent="." unique_id=868851626]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars06" unique_id=1984089347]
+position = Vector2(-100, 112.5)
+scale = Vector2(1.2885, 1.2885)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars012" type="Node2D" parent="." unique_id=371442872]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars012" unique_id=432921944]
+position = Vector2(920.75, 65.32)
+rotation = -2.1032963
+scale = Vector2(1.2885001, 1.2885001)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars112" type="Node2D" parent="." unique_id=1905465143]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars112" unique_id=1662906089]
+position = Vector2(-488.95, -30.37)
+rotation = -2.0195203
+scale = Vector2(1.8899, 1.8899)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars122" type="Node2D" parent="." unique_id=748725779]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars122" unique_id=952125167]
+position = Vector2(1361.25, -331.25)
+rotation = 3.089582
+scale = Vector2(1.6765, 1.6765)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars132" type="Node2D" parent="." unique_id=1787786770]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars132" unique_id=1217283409]
+position = Vector2(1411.88, 37.23)
+rotation = 1.5760323
+scale = Vector2(1.9635, 1.9635)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars142" type="Node2D" parent="." unique_id=1921818365]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars142" unique_id=356045371]
+position = Vector2(411.88, -105.27)
+scale = Vector2(2.2943, 2.2943)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars042" type="Node2D" parent="." unique_id=270231383]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars042" unique_id=1704372088]
+position = Vector2(-1645, 120)
+rotation = 2.387785
+scale = Vector2(1.42, 1.42)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars152" type="Node2D" parent="." unique_id=555442709]
+position = Vector2(3700, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars152" unique_id=455803026]
+position = Vector2(-1243.12, 167.23)
+scale = Vector2(1.6314, 1.6314)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars033" type="Node2D" parent="." unique_id=713759245]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars033" unique_id=1683545515]
+position = Vector2(2075, -80)
+rotation = -1.45543
+scale = Vector2(2.0632, 2.0632)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars023" type="Node2D" parent="." unique_id=1894477154]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars023" unique_id=186208982]
+position = Vector2(-894.93, -102.92)
+rotation = -1.6177456
+scale = Vector2(1.7401, 1.7401)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars18" type="Node2D" parent="." unique_id=2112538604]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars18" unique_id=1556119108]
+position = Vector2(486.88, 192.23)
+scale = Vector2(1.3, 1.3)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars07" type="Node2D" parent="." unique_id=2105730551]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars07" unique_id=2093358623]
+position = Vector2(-100, 112.5)
+scale = Vector2(1.2885, 1.2885)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars013" type="Node2D" parent="." unique_id=322110663]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars013" unique_id=41168467]
+position = Vector2(920.75, 65.32)
+rotation = -2.1032963
+scale = Vector2(1.2885001, 1.2885001)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars113" type="Node2D" parent="." unique_id=1984240650]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars113" unique_id=83965462]
+position = Vector2(-488.95, -30.37)
+rotation = -2.0195203
+scale = Vector2(1.8899, 1.8899)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars123" type="Node2D" parent="." unique_id=156275479]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars123" unique_id=2101483050]
+position = Vector2(1361.25, -331.25)
+rotation = 3.089582
+scale = Vector2(1.6765, 1.6765)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars133" type="Node2D" parent="." unique_id=841533959]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars133" unique_id=551168150]
+position = Vector2(1411.88, 37.23)
+rotation = 1.5760323
+scale = Vector2(1.9635, 1.9635)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars143" type="Node2D" parent="." unique_id=1807597283]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars143" unique_id=805024021]
+position = Vector2(411.88, -105.27)
+scale = Vector2(2.2943, 2.2943)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars043" type="Node2D" parent="." unique_id=407574887]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars043" unique_id=1305266412]
+position = Vector2(-1645, 120)
+rotation = 2.387785
+scale = Vector2(1.42, 1.42)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars153" type="Node2D" parent="." unique_id=1580408858]
+position = Vector2(-7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars153" unique_id=1794766474]
+position = Vector2(-1243.12, 167.23)
+scale = Vector2(1.6314, 1.6314)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars034" type="Node2D" parent="." unique_id=287879994]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars034" unique_id=1584926872]
+position = Vector2(2075, -80)
+rotation = -1.45543
+scale = Vector2(2.0632, 2.0632)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars024" type="Node2D" parent="." unique_id=337715303]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars024" unique_id=1789696315]
+position = Vector2(-894.93, -102.92)
+rotation = -1.6177456
+scale = Vector2(1.7401, 1.7401)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars19" type="Node2D" parent="." unique_id=1831298798]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars19" unique_id=1898282836]
+position = Vector2(486.88, 192.23)
+scale = Vector2(1.3, 1.3)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars08" type="Node2D" parent="." unique_id=115777348]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars08" unique_id=1326414704]
+position = Vector2(-100, 112.5)
+scale = Vector2(1.2885, 1.2885)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars014" type="Node2D" parent="." unique_id=112541219]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars014" unique_id=1399038526]
+position = Vector2(920.75, 65.32)
+rotation = -2.1032963
+scale = Vector2(1.2885001, 1.2885001)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars114" type="Node2D" parent="." unique_id=1640917007]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars114" unique_id=924928387]
+position = Vector2(-488.95, -30.37)
+rotation = -2.0195203
+scale = Vector2(1.8899, 1.8899)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars124" type="Node2D" parent="." unique_id=1838088342]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars124" unique_id=366611207]
+position = Vector2(1361.25, -331.25)
+rotation = 3.089582
+scale = Vector2(1.6765, 1.6765)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars134" type="Node2D" parent="." unique_id=1974620096]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars134" unique_id=180389155]
+position = Vector2(1411.88, 37.23)
+rotation = 1.5760323
+scale = Vector2(1.9635, 1.9635)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars144" type="Node2D" parent="." unique_id=57891177]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars144" unique_id=626323471]
+position = Vector2(411.88, -105.27)
+scale = Vector2(2.2943, 2.2943)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="stars044" type="Node2D" parent="." unique_id=343925814]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars044" unique_id=1388367609]
+position = Vector2(-1645, 120)
+rotation = 2.387785
+scale = Vector2(1.42, 1.42)
+texture = SubResource("AtlasTexture_hbywe")
+
+[node name="stars154" type="Node2D" parent="." unique_id=795473960]
+position = Vector2(7400, 0)
+script = ExtResource("2_0utur")
+
+[node name="0" type="Sprite2D" parent="stars154" unique_id=1132037050]
+position = Vector2(-1243.12, 167.23)
+scale = Vector2(1.6314, 1.6314)
+texture = SubResource("AtlasTexture_nx36m")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1538431578]
+libraries/ = SubResource("AnimationLibrary_10017")

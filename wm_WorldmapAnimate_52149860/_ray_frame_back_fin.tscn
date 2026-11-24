@@ -1,0 +1,329 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_w6ey2"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_h3nfp"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_c8x7m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnmaa"]
+atlas = ExtResource("3_c8x7m")
+region = Rect2(1852, 783, 9, 98)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw4q4"]
+atlas = ExtResource("3_c8x7m")
+region = Rect2(1834, 736, 35, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb45w"]
+atlas = ExtResource("3_c8x7m")
+region = Rect2(1356, 1769, 46, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdqok"]
+atlas = ExtResource("3_c8x7m")
+region = Rect2(1812, 691, 46, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57udr"]
+atlas = ExtResource("3_c8x7m")
+region = Rect2(1412, 688, 37, 40)
+
+[sub_resource type="Animation" id="Animation_a2bl5"]
+length = 6.666666666666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("wire:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(78.38925, -398.8239)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("wire:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56666666, 0.8, 1.0333333, 1.2666667, 1.5333333, 1.9666667, 2.2, 2.4333334, 2.7, 2.9666667, 3.2666667, 3.6, 3.8666666, 4.133333, 4.366667, 4.6, 4.866667, 5.3, 5.5333333, 5.766667, 6.0333333, 6.3, 6.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.8599, 2.8614757, 2.865989, 2.8729448, 2.883161, 2.897037, 2.9167492, 2.9508958, 2.9662156, 2.977982, 2.9872158, 2.992572, 2.994916, 2.993748, 2.9896305, 2.9819436, 2.9717276, 2.9578516, 2.9381392, 2.903993, 2.8886728, 2.8769064, 2.8676727, 2.8623164, 2.8599725]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("wire:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, -1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("wire:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("torchMain211:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(78.38925, -398.8239)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("torchMain211:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56666666, 0.8, 1.0333333, 1.2666667, 1.5333333, 1.9666667, 2.2, 2.4333334, 2.7, 2.9666667, 3.2666667, 3.6, 3.8666666, 4.133333, 4.366667, 4.6, 4.866667, 5.3, 5.5333333, 5.766667, 6.0333333, 6.3, 6.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.8599, 2.8614757, 2.865989, 2.8729448, 2.883161, 2.897037, 2.9167492, 2.9508958, 2.9662156, 2.977982, 2.9872158, 2.992572, 2.994916, 2.993748, 2.9896305, 2.9819436, 2.9717276, 2.9578516, 2.9381392, 2.903993, 2.8886728, 2.8769064, 2.8676727, 2.8623164, 2.8599725]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("torchMain211:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, -1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("torchMain211:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("torchLightBlue211:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(78.38925, -398.8239)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("torchLightBlue211:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56666666, 0.8, 1.0333333, 1.2666667, 1.5333333, 1.9666667, 2.2, 2.4333334, 2.7, 2.9666667, 3.2666667, 3.6, 3.8666666, 4.133333, 4.366667, 4.6, 4.866667, 5.3, 5.5333333, 5.766667, 6.0333333, 6.3, 6.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.8599, 2.8614757, 2.865989, 2.8729448, 2.883161, 2.897037, 2.9167492, 2.9508958, 2.9662156, 2.977982, 2.9872158, 2.992572, 2.994916, 2.993748, 2.9896305, 2.9819436, 2.9717276, 2.9578516, 2.9381392, 2.903993, 2.8886728, 2.8769064, 2.8676727, 2.8623164, 2.8599725]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("torchLightBlue211:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, -1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("torchLightBlue211:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ovce7"]
+_data = {
+&"Idle": SubResource("Animation_a2bl5")
+}
+
+[node name="_ray_frame_back_fin" type="Node2D" unique_id=1663608859]
+script = ExtResource("1_w6ey2")
+bounds = Rect2(-237.69, -445.97, 475.37, 187.95)
+
+[node name="wire" type="Node2D" parent="." unique_id=689028867]
+position = Vector2(78.38925, -398.8239)
+rotation = 2.8599
+scale = Vector2(1, -1)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="wire" unique_id=1630418134]
+position = Vector2(9.63, 44.95)
+rotation = 2.9534461
+texture = SubResource("AtlasTexture_gnmaa")
+
+[node name="torchMain" type="Node2D" parent="." unique_id=64217718]
+position = Vector2(213.51685, -361.33514)
+rotation = 3.1274276
+scale = Vector2(1, -1)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchMain" unique_id=592138626]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue" type="Node2D" parent="." unique_id=96184399]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(213.51685, -361.33514)
+rotation = 3.1274276
+scale = Vector2(1, -1)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue" unique_id=1824420656]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_vb45w")
+offset = Vector2(-0.5, 0)
+
+[node name="torchMain21" type="Node2D" parent="." unique_id=349544960]
+position = Vector2(-78.38925, -398.8239)
+rotation = 0.24137728
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchMain21" unique_id=1290096275]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue21" type="Node2D" parent="." unique_id=1716847608]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-78.38925, -398.8239)
+rotation = 0.24137728
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue21" unique_id=344574875]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_tdqok")
+offset = Vector2(-0.5, 0)
+
+[node name="starMain1" type="Node2D" parent="." unique_id=15966274]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(163.91245, -403.92215)
+scale = Vector2(0.3774, 0.3774)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="starMain1" unique_id=2134910164]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain2" type="Node2D" parent="." unique_id=875661525]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(87.39405, -417.6528)
+scale = Vector2(0.3774, 0.3774)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="starMain2" unique_id=1483178712]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="torchMain1" type="Node2D" parent="." unique_id=157248539]
+position = Vector2(-213.51685, -361.33514)
+rotation = 0.014165092
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchMain1" unique_id=1751053865]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue1" type="Node2D" parent="." unique_id=1267254479]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-213.51685, -361.33514)
+rotation = 0.014165092
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue1" unique_id=395232872]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_vb45w")
+offset = Vector2(-0.5, 0)
+
+[node name="torchMain211" type="Node2D" parent="." unique_id=1498724157]
+position = Vector2(78.38925, -398.8239)
+rotation = 2.8599
+scale = Vector2(1, -1)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchMain211" unique_id=783422936]
+position = Vector2(20.16, 99.73)
+rotation = 0.4865978
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue211" type="Node2D" parent="." unique_id=1892147557]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(78.38925, -398.8239)
+rotation = 2.8599
+scale = Vector2(1, -1)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue211" unique_id=1076486254]
+position = Vector2(19.77, 113.53)
+rotation = 0.4865978
+texture = SubResource("AtlasTexture_tdqok")
+offset = Vector2(-0.5, 0)
+
+[node name="starMain3" type="Node2D" parent="." unique_id=1844773268]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-0.3087, -425.2233)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="starMain3" unique_id=664591639]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain11" type="Node2D" parent="." unique_id=472631535]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-163.91245, -403.92215)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="starMain11" unique_id=1984981811]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain21" type="Node2D" parent="." unique_id=161672512]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-87.39405, -417.6528)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_h3nfp")
+
+[node name="0" type="Sprite2D" parent="starMain21" unique_id=970960661]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1132749405]
+libraries/ = SubResource("AnimationLibrary_ovce7")

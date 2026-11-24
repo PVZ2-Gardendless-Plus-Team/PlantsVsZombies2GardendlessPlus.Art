@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7l1p0"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_pblgn"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbed6ff7-a994-4040-97b1-7b8f5ffc4e57.png" id="3_m3wmi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gf6y5"]
+atlas = ExtResource("3_m3wmi")
+region = Rect2(1475, 1, 677, 1117)
+
+[sub_resource type="Animation" id="Animation_6kcf1"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yworu"]
+_data = {
+&"Idle": SubResource("Animation_6kcf1")
+}
+
+[node name="Dino" type="Node2D" unique_id=1986496491]
+script = ExtResource("1_7l1p0")
+bounds = Rect2(-338.5, -558.5, 677, 1117)
+
+[node name="dino" type="Node2D" parent="." unique_id=1636515213]
+script = ExtResource("2_pblgn")
+
+[node name="0" type="Sprite2D" parent="dino" unique_id=696348088]
+texture = SubResource("AtlasTexture_gf6y5")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1707819178]
+libraries/ = SubResource("AnimationLibrary_yworu")

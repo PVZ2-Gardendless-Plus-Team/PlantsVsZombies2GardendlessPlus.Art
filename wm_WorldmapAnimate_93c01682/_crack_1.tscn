@@ -1,0 +1,135 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_62yq8"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_qxb4m"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_k0uh1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0egyt"]
+atlas = ExtResource("3_k0uh1")
+region = Rect2(1659, 62, 9, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwlhu"]
+atlas = ExtResource("3_k0uh1")
+region = Rect2(1644, 62, 13, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5446"]
+atlas = ExtResource("3_k0uh1")
+region = Rect2(1284, 2034, 37, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jepcm"]
+atlas = ExtResource("3_k0uh1")
+region = Rect2(1407, 523, 13, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8igi"]
+atlas = ExtResource("3_k0uh1")
+region = Rect2(1191, 190, 29, 9)
+
+[sub_resource type="Animation" id="Animation_4hr4y"]
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("crack0:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.36666667, 0.46666667, 0.56666666, 0.6666667, 0.76666665, 0.9, 1.1333333, 1.2333333, 1.3333334, 1.4333333, 1.5333333, 1.6333333, 1.7333333, 1.8666667, 2, 2.1333334, 2.2666667, 2.3666666, 2.4666667, 2.5666666, 2.6666667, 2.7666667, 2.9, 3.1333334, 3.2333333, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7333333, 3.8666666, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.5986639), Color(1, 1, 1, 0.3691671), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.14036238), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.0532344), Color(1, 1, 1, 0.026876807), Color(1, 1, 1, 0.006320536), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.0063205194), Color(1, 1, 1, 0.02687681), Color(1, 1, 1, 0.053234424), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.14036237), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.40133607), Color(1, 1, 1, 0.6308329), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("crack1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.36666667, 0.46666667, 0.56666666, 0.6666667, 0.76666665, 0.9, 1.1333333, 1.2333333, 1.3333334, 1.4333333, 1.5333333, 1.6333333, 1.7333333, 1.8666667, 2, 2.1333334, 2.2666667, 2.3666666, 2.4666667, 2.5666666, 2.6666667, 2.7666667, 2.9, 3.1333334, 3.2333333, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7333333, 3.8666666, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.5986639), Color(1, 1, 1, 0.3691671), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.14036238), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.0532344), Color(1, 1, 1, 0.026876807), Color(1, 1, 1, 0.006320536), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.0063205194), Color(1, 1, 1, 0.02687681), Color(1, 1, 1, 0.053234424), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.14036237), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.40133607), Color(1, 1, 1, 0.6308329), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("crack3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.36666667, 0.46666667, 0.56666666, 0.6666667, 0.76666665, 0.9, 1.1333333, 1.2333333, 1.3333334, 1.4333333, 1.5333333, 1.6333333, 1.7333333, 1.8666667, 2, 2.1333334, 2.2666667, 2.3666666, 2.4666667, 2.5666666, 2.6666667, 2.7666667, 2.9, 3.1333334, 3.2333333, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7333333, 3.8666666, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.5986639), Color(1, 1, 1, 0.3691671), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.14036238), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.0532344), Color(1, 1, 1, 0.026876807), Color(1, 1, 1, 0.006320536), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.0063205194), Color(1, 1, 1, 0.02687681), Color(1, 1, 1, 0.053234424), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.14036237), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.40133607), Color(1, 1, 1, 0.6308329), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("crack4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.36666667, 0.46666667, 0.56666666, 0.6666667, 0.76666665, 0.9, 1.1333333, 1.2333333, 1.3333334, 1.4333333, 1.5333333, 1.6333333, 1.7333333, 1.8666667, 2, 2.1333334, 2.2666667, 2.3666666, 2.4666667, 2.5666666, 2.6666667, 2.7666667, 2.9, 3.1333334, 3.2333333, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7333333, 3.8666666, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.5986639), Color(1, 1, 1, 0.3691671), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.14036238), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.0532344), Color(1, 1, 1, 0.026876807), Color(1, 1, 1, 0.006320536), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.0063205194), Color(1, 1, 1, 0.02687681), Color(1, 1, 1, 0.053234424), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.14036237), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.40133607), Color(1, 1, 1, 0.6308329), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("crack5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.36666667, 0.46666667, 0.56666666, 0.6666667, 0.76666665, 0.9, 1.1333333, 1.2333333, 1.3333334, 1.4333333, 1.5333333, 1.6333333, 1.7333333, 1.8666667, 2, 2.1333334, 2.2666667, 2.3666666, 2.4666667, 2.5666666, 2.6666667, 2.7666667, 2.9, 3.1333334, 3.2333333, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7333333, 3.8666666, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.5986639), Color(1, 1, 1, 0.3691671), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.14036238), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.0532344), Color(1, 1, 1, 0.026876807), Color(1, 1, 1, 0.006320536), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.0063205194), Color(1, 1, 1, 0.02687681), Color(1, 1, 1, 0.053234424), Color(1, 1, 1, 0.09072852), Color(1, 1, 1, 0.14036237), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.28021818), Color(1, 1, 1, 0.40133607), Color(1, 1, 1, 0.6308329), Color(1, 1, 1, 0.7197818), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.8596376), Color(1, 1, 1, 0.9092715), Color(1, 1, 1, 0.9467656), Color(1, 1, 1, 0.9731232), Color(1, 1, 1, 0.99367946), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u12ha"]
+_data = {
+&"i": SubResource("Animation_4hr4y")
+}
+
+[node name="_crack_1" type="Node2D" unique_id=1802803560]
+script = ExtResource("1_62yq8")
+bounds = Rect2(-50.45, -36.22, 95.78, 79.29)
+
+[node name="crack0" type="Node2D" parent="." unique_id=1695071890]
+script = ExtResource("2_qxb4m")
+
+[node name="0" type="Sprite2D" parent="crack0" unique_id=1450516985]
+position = Vector2(40.09, -0.94)
+texture = SubResource("AtlasTexture_0egyt")
+
+[node name="crack1" type="Node2D" parent="." unique_id=579640058]
+script = ExtResource("2_qxb4m")
+
+[node name="0" type="Sprite2D" parent="crack1" unique_id=1023503622]
+position = Vector2(15.53, 39.07)
+texture = SubResource("AtlasTexture_qwlhu")
+
+[node name="crack3" type="Node2D" parent="." unique_id=973618009]
+script = ExtResource("2_qxb4m")
+
+[node name="0" type="Sprite2D" parent="crack3" unique_id=1236659697]
+position = Vector2(-30.95, -31.97)
+texture = SubResource("AtlasTexture_b5446")
+
+[node name="crack4" type="Node2D" parent="." unique_id=1962392241]
+script = ExtResource("2_qxb4m")
+
+[node name="0" type="Sprite2D" parent="crack4" unique_id=810967440]
+position = Vector2(-15.32, 39.27)
+texture = SubResource("AtlasTexture_jepcm")
+
+[node name="crack5" type="Node2D" parent="." unique_id=151566770]
+script = ExtResource("2_qxb4m")
+
+[node name="0" type="Sprite2D" parent="crack5" unique_id=178704855]
+position = Vector2(-21.82, 10.05)
+texture = SubResource("AtlasTexture_s8igi")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1873085139]
+libraries/ = SubResource("AnimationLibrary_u12ha")

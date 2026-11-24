@@ -1,0 +1,590 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_au7au"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ov8x6"]
+[ext_resource type="Texture2D" path="res://art/_textures/2b11b6c5-afc2-4e17-bb03-2e4df4bb70f0.png" id="3_p6pv4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ms7dr"]
+atlas = ExtResource("3_p6pv4")
+region = Rect2(3322, 1839, 120, 83)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ujqh5"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7o4v8"]
+atlas = ExtResource("3_p6pv4")
+region = Rect2(43, 2011, 38, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3b35u"]
+atlas = ExtResource("3_p6pv4")
+region = Rect2(601, 1161, 123, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4150"]
+atlas = ExtResource("3_p6pv4")
+region = Rect2(726, 1161, 93, 49)
+
+[sub_resource type="Animation" id="Animation_3h7qc"]
+length = 0.8333333333333334
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bubble:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(30.6402, 14.2837), Vector2(23.7802, -18.6963)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bubble:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bubble:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5693, 0.5693)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bubble:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("bubble1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-34.4353, 3.5877), Vector2(-29.8853, -9.1323)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("bubble1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("bubble1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.4271, 0.4271)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("bubble1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("bubble2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5833333, 0.625, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-3.0514, 7.4264), Vector2(-1.6414, -11.9436), Vector2(-3.5214, 13.8864), Vector2(-3.0514, 7.4264)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("bubble2:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("bubble2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.3665, 0.3665)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("bubble2:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("bubble3:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.29166666, 0.33333334, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(9.9874, -16.195501), Vector2(7.2373996, -29.3855), Vector2(14.0974, 3.5945), Vector2(9.9874, -16.195501)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("bubble3:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("bubble3:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.3696, 0.3696)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("bubble3:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("bubble4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-13.586401, -9.088301), Vector2(-10.9564, -16.1283), Vector2(-21.4764, 12.0317), Vector2(-13.586401, -9.088301)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("bubble4:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("bubble4:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2145, 0.2145)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("bubble4:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("bubble7:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.375, 0.41666666, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-23.8089, -20.6141), Vector2(-21.238901, -30.524101), Vector2(-26.9589, -8.5041), Vector2(-24.0989, -19.5141)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("bubble7:rotation")
+tracks/21/interp = 3
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("bubble7:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5693, 0.5693)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("bubble7:skew")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("bubble8:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.29166666, 0.33333334, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(9.2934, -23.5961), Vector2(3.5733995, -32.5261), Vector2(17.8734, -10.1861), Vector2(9.2934, -23.5961)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("bubble8:rotation")
+tracks/25/interp = 3
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("bubble8:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5693, 0.5693)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("bubble8:skew")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("bubble6:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.56), Color(1, 1, 1, 0.36982358), Color(1, 1, 1, 0.2179136), Color(1, 1, 1, 0.10287565), Color(1, 1, 1, 0.027484179), Color(1, 1, 1, 0), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.99999994), Color(1, 1, 1, 0.9766361), Color(1, 1, 1, 0.9137507), Color(1, 1, 1, 0.8182146), Color(1, 1, 1, 0.69)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("bubble:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9999998), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.6914662), Color(1, 1, 1, 0.30853385), Color(1, 1, 1, 0.15983558), Color(1, 1, 1, 0.0646503), Color(1, 1, 1, 0.014618933), Color(1, 1, 1, 0)]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("bubble1:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9999998), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.6914662), Color(1, 1, 1, 0.30853385), Color(1, 1, 1, 0.15983558), Color(1, 1, 1, 0.0646503), Color(1, 1, 1, 0.014618933), Color(1, 1, 1, 0)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("bubble2:modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.5), Color(1, 1, 1, 0.7067977), Color(1, 1, 1, 0.86088824), Color(1, 1, 1, 0.9623163), Color(1, 1, 1, 0.9999998), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.6914662), Color(1, 1, 1, 0.30853385), Color(1, 1, 1, 0.15983558), Color(1, 1, 1, 0.0646503), Color(1, 1, 1, 0.014618933), Color(1, 1, 1, 0), Color(1, 1, 1, 8.9392415e-08), Color(1, 1, 1, 0.024539456), Color(1, 1, 1, 0.09185325), Color(1, 1, 1, 0.19456571), Color(1, 1, 1, 0.3301996), Color(1, 1, 1, 0.5)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("bubble3:modulate")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.93), Color(1, 1, 1, 0.6968219), Color(1, 1, 1, 0.49869078), Color(1, 1, 1, 0.33082938), Color(1, 1, 1, 0.19410926), Color(1, 1, 1, 0.090229094), Color(1, 1, 1, 0.023805678), Color(1, 1, 1, 0), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.012734665), Color(1, 1, 1, 0.04907891), Color(1, 1, 1, 0.106780514), Color(1, 1, 1, 0.1837065), Color(1, 1, 1, 0.2782236), Color(1, 1, 1, 0.38913143), Color(1, 1, 1, 0.51647687), Color(1, 1, 1, 0.6603992), Color(1, 1, 1, 0.81977594), Color(1, 1, 1, 1), Color(1, 1, 1, 0.98052436), Color(1, 1, 1, 0.93)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("bubble4:modulate")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.49), Color(1, 1, 1, 0.28733826), Color(1, 1, 1, 0.13632956), Color(1, 1, 1, 0.036930025), Color(1, 1, 1, 0), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9999999), Color(1, 1, 1, 0.97496974), Color(1, 1, 1, 0.90630966), Color(1, 1, 1, 0.801543), Color(1, 1, 1, 0.66319644), Color(1, 1, 1, 0.49)]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("bubble5:modulate")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9999998), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.6914662), Color(1, 1, 1, 0.30853385), Color(1, 1, 1, 0.15983558), Color(1, 1, 1, 0.0646503), Color(1, 1, 1, 0.014618933), Color(1, 1, 1, 0)]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("bubble7:modulate")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.9816814), Color(1, 1, 1, 0.9188014), Color(1, 1, 1, 0.79612803), Color(1, 1, 1, 0.6094358), Color(1, 1, 1, 0.3905642), Color(1, 1, 1, 0.20387197), Color(1, 1, 1, 0.08119857), Color(1, 1, 1, 0.018318594), Color(1, 1, 1, 0), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 1)]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("bubble8:modulate")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.93), Color(1, 1, 1, 0.6968219), Color(1, 1, 1, 0.49869078), Color(1, 1, 1, 0.33082938), Color(1, 1, 1, 0.19410926), Color(1, 1, 1, 0.090229094), Color(1, 1, 1, 0.023805678), Color(1, 1, 1, 0), Color(1, 1, 1, 1.7878483e-07), Color(1, 1, 1, 0.014618927), Color(1, 1, 1, 0.064650275), Color(1, 1, 1, 0.1598356), Color(1, 1, 1, 0.30853382), Color(1, 1, 1, 0.69146615), Color(1, 1, 1, 0.8401644), Color(1, 1, 1, 0.9353497), Color(1, 1, 1, 0.98538107), Color(1, 1, 1, 1), Color(1, 1, 1, 0.98052436), Color(1, 1, 1, 0.93)]
+}
+metadata/ground_speed = 8.232
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dvlka"]
+_data = {
+&"Idle": SubResource("Animation_3h7qc")
+}
+
+[node name="_body" type="Node2D" unique_id=1176805399]
+script = ExtResource("1_au7au")
+bounds = Rect2(-66.5, -49.58, 133, 95.08)
+
+[node name="body" type="Node2D" parent="." unique_id=1068898754]
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="body" unique_id=870298995]
+texture = SubResource("AtlasTexture_ms7dr")
+offset = Vector2(0, -2)
+
+[node name="bubble6" type="Node2D" parent="." unique_id=1484316745]
+position = Vector2(-33.94, -15.3306)
+scale = Vector2(0.5693, 0.5693)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble6" unique_id=458838561]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble" type="Node2D" parent="." unique_id=1441703193]
+position = Vector2(30.6402, 14.2837)
+scale = Vector2(0.5693, 0.5693)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble" unique_id=1514044441]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble1" type="Node2D" parent="." unique_id=1856279994]
+position = Vector2(-34.4353, 3.5877)
+scale = Vector2(0.4271, 0.4271)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble1" unique_id=954279658]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble2" type="Node2D" parent="." unique_id=1323034384]
+position = Vector2(-3.5214, 13.8864)
+scale = Vector2(0.3665, 0.3665)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble2" unique_id=313305557]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble3" type="Node2D" parent="." unique_id=771475368]
+position = Vector2(14.0974, 3.5945)
+scale = Vector2(0.3696, 0.3696)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble3" unique_id=400660857]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble4" type="Node2D" parent="." unique_id=713885944]
+position = Vector2(-21.4764, 12.0317)
+scale = Vector2(0.2145, 0.2145)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble4" unique_id=614325788]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble5" type="Node2D" parent="." unique_id=1160700398]
+position = Vector2(1.2554, -2.265)
+scale = Vector2(0.4066, 0.4066)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble5" unique_id=265168549]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble7" type="Node2D" parent="." unique_id=244833564]
+position = Vector2(-26.9589, -8.5041)
+scale = Vector2(0.5693, 0.5693)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble7" unique_id=1730156911]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="bubble8" type="Node2D" parent="." unique_id=664134726]
+position = Vector2(17.8734, -10.1861)
+scale = Vector2(0.5693, 0.5693)
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="bubble8" unique_id=1556740498]
+material = SubResource("CanvasItemMaterial_ujqh5")
+texture = SubResource("AtlasTexture_7o4v8")
+
+[node name="shade" type="Node2D" parent="." unique_id=243657778]
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="shade" unique_id=993219638]
+position = Vector2(0, -3.58)
+scale = Vector2(0.951, 0.951)
+texture = SubResource("AtlasTexture_3b35u")
+offset = Vector2(0, -0.5)
+
+[node name="light" type="Node2D" parent="." unique_id=1170673274]
+script = ExtResource("2_ov8x6")
+
+[node name="0" type="Sprite2D" parent="light" unique_id=756485935]
+position = Vector2(-10.37, -9.25)
+texture = SubResource("AtlasTexture_j4150")
+offset = Vector2(-2, -7.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=210821567]
+libraries/ = SubResource("AnimationLibrary_dvlka")

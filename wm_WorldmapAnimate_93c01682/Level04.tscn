@@ -1,0 +1,301 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_epovs"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_do3ha"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_aunq1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbtah"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1246, 350, 147, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3r3es"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1203, 1, 32, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rujkn"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1059, 676, 185, 117)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knjqd"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1059, 795, 208, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a80bj"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1245, 1993, 79, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogvyd"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1394, 1993, 48, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku741"]
+atlas = ExtResource("3_aunq1")
+region = Rect2(1525, 1, 117, 69)
+
+[sub_resource type="Animation" id="Animation_1xq3y"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("flower_dried_bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-55.795845, -24.735102)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("flower_dried_bg:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0012907798, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("flower_dried_bg:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.3333334, 2.8, 3.6, 4.233333, 4.9333334, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.8498, 0.82685536), Vector2(0.8497911, 0.8277611), Vector2(0.8497146, 0.83558846), Vector2(0.84971005, 0.83604735), Vector2(0.84974205, 0.83278537), Vector2(0.8497911, 0.8277611), Vector2(0.8498, 0.82685536)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("flower_dried_bg:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.56666666, 0.8, 1.0333333, 1.2666667, 1.5, 1.9666667, 2.2, 2.4, 2.6333334, 2.8666666, 3.1333334, 3.4333334, 3.6666667, 3.8666666, 4.0333333, 4.2, 4.366667, 4.5666666, 4.866667, 5.0666666, 5.233333, 5.4, 5.6, 5.8, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0017615557, -0.0068073273, -0.014582872, -0.025999308, -0.041494012, -0.06053686, -0.10137594, -0.118293166, -0.12963736, -0.13926995, -0.14547169, -0.1491214, -0.14958584, -0.14642107, -0.14031601, -0.13235235, -0.12142885, -0.107176185, -0.08659208, -0.053353906, -0.03439808, -0.021916628, -0.012648344, -0.0052205324, -0.0012047291, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("flower_dried_heart:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-55.843136, -33.8368)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("flower_dried_heart:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 4.1666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.00045939576]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("flower_dried_heart:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1.4, 2.6, 4, 5.366667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.121736, 1.1208861), Vector2(1.1217262, 1.1218773), Vector2(1.1217034, 1.1241529), Vector2(1.1217203, 1.1224519), Vector2(1.1217359, 1.1208969)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("flower_dried_heart:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.6, 0.8666667, 1.1333333, 1.6333333, 1.8666667, 2.1333334, 2.4333334, 2.8, 3.2, 3.5333333, 3.8333333, 4.1666665, 4.7, 5, 5.3333335, 5.7, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0017778873, 0.0063723326, 0.01460135, 0.026898503, 0.054151773, 0.0638355, 0.07104421, 0.07509303, 0.075766444, 0.07293522, 0.06719828, 0.058680177, 0.045517445, 0.022182226, 0.01216054, 0.0049188137, 0.00088739395, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("flower_dried1:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-58.832603, -40.18689)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("flower_dried1:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.7333333, 3.4666667, 4.633333, 5.766667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0016925433, 0.0038485073, 0.0026355174, 5.8062047e-05]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("flower_dried1:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.96666664, 1.3333334, 1.6333333, 1.9333333, 2.6, 2.9333334, 3.2666667, 3.6333334, 3.8666666, 4.0666666, 4.266667, 4.4666667, 4.866667, 5.0333333, 5.233333, 5.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.8498, 0.837053), Vector2(0.8497911, 0.837953), Vector2(0.8497615, 0.8409552), Vector2(0.8497039, 0.8467526), Vector2(0.8496073, 0.8563931), Vector2(0.84933835, 0.8826617), Vector2(0.8492385, 0.89222103), Vector2(0.8491773, 0.89802885), Vector2(0.8491517, 0.9004404), Vector2(0.84916097, 0.8995723), Vector2(0.8492012, 0.89575964), Vector2(0.84927744, 0.8885081), Vector2(0.8493887, 0.8778019), Vector2(0.84964687, 0.8524515), Vector2(0.8497227, 0.8448659), Vector2(0.84977305, 0.8397866), Vector2(0.8497961, 0.8374479)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("flower_dried1:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.56666666, 0.73333335, 0.8666667, 1, 1.1333333, 1.3, 1.4666667, 1.6666666, 2.0333333, 2.2, 2.3333333, 2.4666667, 2.6, 2.7666667, 2.9333334, 3.1333334, 3.3333333, 3.5333333, 3.7333333, 3.8666666, 3.9666667, 4.0666666, 4.1666665, 4.266667, 4.366667, 4.4333334, 4.5333333, 4.633333, 4.733333, 5.0333333, 5.133333, 5.2, 5.266667, 5.366667, 5.4666667, 5.5666666, 5.6666665, 5.766667, 5.866667, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0016114712, 0.0068109035, 0.0142252445, 0.02491641, 0.036155224, 0.049860835, 0.06609535, 0.090449095, 0.11882007, 0.15739691, 0.23174834, 0.26285744, 0.28487813, 0.30435598, 0.3212434, 0.33827972, 0.3517009, 0.36334038, 0.37075114, 0.37471175, 0.3755821, 0.37310147, 0.36889017, 0.3621974, 0.35279047, 0.34026015, 0.32432663, 0.31157148, 0.28909123, 0.2626046, 0.23255455, 0.13543522, 0.10604417, 0.08849001, 0.07240009, 0.05187154, 0.035282373, 0.02228272, 0.012632847, 0.0059262514, 0.0018703938, 0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("flower_dried0:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-56.11486, -32.70971)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("flower_dried0:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 2.5333333, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0021336572, 0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("flower_dried0:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.76666665, 1.1, 1.7333333, 2.1, 2.7, 3.3, 4.3333335, 4.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.8498, 0.837053), Vector2(0.8497911, 0.8379538), Vector2(0.8497557, 0.84153897), Vector2(0.84963506, 0.8536313), Vector2(0.84960276, 0.85683715), Vector2(0.8496077, 0.8563514), Vector2(0.8496495, 0.85219604), Vector2(0.8497689, 0.84020567), Vector2(0.8497959, 0.83746874)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("flower_dried0:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.3, 0.43333334, 0.56666666, 0.7, 0.8333333, 0.96666664, 1.3, 1.4333333, 1.5666667, 1.7, 1.8333334, 1.9666667, 2.1333334, 2.3333333, 2.6, 2.8666666, 3.1, 3.3, 3.5, 3.7, 3.9333334, 4.4333334, 4.633333, 4.8333335, 5.0333333, 5.233333, 5.4666667, 5.7, 5.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0016862154, -0.0057821274, -0.0127801895, -0.023209572, -0.037500978, -0.055786133, -0.078018546, -0.14021456, -0.1620326, -0.17981756, -0.19361973, -0.2036382, -0.2103355, -0.21483934, -0.21576488, -0.21345043, -0.2074809, -0.19863534, -0.18786907, -0.17374063, -0.15627396, -0.13209772, -0.07526231, -0.055361748, -0.038500547, -0.025102258, -0.015031815, -0.0068352222, -0.0020486116, -2.4437904e-05]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0k26h"]
+_data = {
+&"idle": SubResource("Animation_1xq3y")
+}
+
+[node name="Level04" type="Node2D" unique_id=1287791547]
+script = ExtResource("1_epovs")
+bounds = Rect2(-145.57, -128.74, 229.32, 257.52)
+
+[node name="flower_dried_bg" type="Node2D" parent="." unique_id=1511014880]
+position = Vector2(-55.795845, -24.735102)
+scale = Vector2(0.8498, 0.82685536)
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="flower_dried_bg" unique_id=1585191150]
+position = Vector2(1.38, -17.05)
+texture = SubResource("AtlasTexture_sbtah")
+
+[node name="flower_dried_heart" type="Node2D" parent="." unique_id=1286394871]
+position = Vector2(-55.843136, -33.8368)
+scale = Vector2(1.121736, 1.1208861)
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="flower_dried_heart" unique_id=1129286366]
+position = Vector2(0.45, -39.61)
+texture = SubResource("AtlasTexture_3r3es")
+offset = Vector2(0, -0.5)
+
+[node name="island" type="Node2D" parent="." unique_id=1266059653]
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=1907477187]
+position = Vector2(-20.25, 70.53)
+scale = Vector2(1, 0.7073)
+texture = SubResource("AtlasTexture_rujkn")
+
+[node name="top0" type="Node2D" parent="." unique_id=882207104]
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="top0" unique_id=1616122700]
+position = Vector2(-20.25, 12.58)
+texture = SubResource("AtlasTexture_knjqd")
+
+[node name="flower_dried1" type="Node2D" parent="." unique_id=1980685623]
+position = Vector2(-58.832603, -40.18689)
+scale = Vector2(0.8498, 0.837053)
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="flower_dried1" unique_id=388307973]
+position = Vector2(-26.11, -3.93)
+texture = SubResource("AtlasTexture_a80bj")
+
+[node name="flower_dried0" type="Node2D" parent="." unique_id=1369756033]
+position = Vector2(-56.11486, -32.70971)
+scale = Vector2(0.8498, 0.837053)
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="flower_dried0" unique_id=338533300]
+position = Vector2(-0.37, 8.05)
+texture = SubResource("AtlasTexture_ogvyd")
+
+[node name="lilies" type="Node2D" parent="." unique_id=1491063158]
+script = ExtResource("2_do3ha")
+
+[node name="0" type="Sprite2D" parent="lilies" unique_id=2034631106]
+position = Vector2(-87.07, -1.5)
+rotation = -0.35761794
+scale = Vector2(0.83000004, 0.8258)
+texture = SubResource("AtlasTexture_ku741")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1946601419]
+libraries/ = SubResource("AnimationLibrary_0k26h")

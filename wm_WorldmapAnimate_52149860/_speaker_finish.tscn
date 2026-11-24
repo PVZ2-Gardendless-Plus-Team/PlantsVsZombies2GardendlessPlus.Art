@@ -1,0 +1,116 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_by72h"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_yy2yg"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_bodoo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3julv"]
+atlas = ExtResource("3_bodoo")
+region = Rect2(2010, 1357, 36, 62)
+
+[sub_resource type="Animation" id="Animation_bvvhf"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qlncg"]
+_data = {
+&"i": SubResource("Animation_bvvhf")
+}
+
+[node name="_speaker_finish" type="Node2D" unique_id=905326304]
+script = ExtResource("1_by72h")
+bounds = Rect2(-441.86, -322.64, 866, 262.33)
+
+[node name="speaker_mouth_shade" type="Node2D" parent="." unique_id=10891314]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(-44.80995, -154.1193)
+rotation = 0.17537417
+scale = Vector2(1.2495, 1.2495)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade" unique_id=1142674550]
+position = Vector2(-279.66, 14.78)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth_shade1" type="Node2D" parent="." unique_id=597627736]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(44.80995, -154.1193)
+rotation = 2.9662185
+scale = Vector2(1.2495, -1.2495)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade1" unique_id=520554734]
+position = Vector2(-278.27, 12.9)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth_shade2" type="Node2D" parent="." unique_id=1973499356]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(51.7695, -56.05255)
+rotation = 3.0761812
+scale = Vector2(1.7001, -1.7001)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade2" unique_id=920513406]
+position = Vector2(-203.82, -12.65)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth1" type="Node2D" parent="." unique_id=1818499390]
+position = Vector2(-44.80995, -154.1193)
+rotation = 0.17537417
+scale = Vector2(1.2495, 1.2495)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth1" unique_id=773963089]
+position = Vector2(-286.32, 11.4)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth2" type="Node2D" parent="." unique_id=2131998558]
+position = Vector2(-51.7695, -56.05255)
+rotation = 0.06541145
+scale = Vector2(1.7001, 1.7001)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth2" unique_id=1364195106]
+position = Vector2(-219.9, -6.38)
+rotation = -0.14940019
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth11" type="Node2D" parent="." unique_id=527550336]
+position = Vector2(44.80995, -154.1193)
+rotation = 2.9662185
+scale = Vector2(1.2495, -1.2495)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth11" unique_id=2024144326]
+position = Vector2(-286.32, 11.4)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth21" type="Node2D" parent="." unique_id=927655654]
+position = Vector2(51.7695, -56.05255)
+rotation = 3.0761812
+scale = Vector2(1.7001, -1.7001)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth21" unique_id=1129424128]
+position = Vector2(-209.97, -14.27)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth111" type="Node2D" parent="." unique_id=222692117]
+position = Vector2(209.96875, -14.26915)
+rotation = 2.8854883
+scale = Vector2(1, -1)
+script = ExtResource("2_yy2yg")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth111" unique_id=965008811]
+position = Vector2(-255.22, -219.89)
+rotation = -0.25516716
+scale = Vector2(1.6661, 1.6661)
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2000737661]
+libraries/ = SubResource("AnimationLibrary_qlncg")

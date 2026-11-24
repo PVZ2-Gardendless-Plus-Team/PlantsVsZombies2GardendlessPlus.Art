@@ -1,0 +1,64 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_jc15w"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_rgxik"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_nldr6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15k1u"]
+atlas = ExtResource("3_nldr6")
+region = Rect2(1711, 626, 99, 102)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6cmr"]
+atlas = ExtResource("3_nldr6")
+region = Rect2(975, 2875, 89, 107)
+
+[sub_resource type="Animation" id="Animation_rir3q"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q34lv"]
+_data = {
+&"Idle": SubResource("Animation_rir3q")
+}
+
+[node name="_ray_here_fin" type="Node2D" unique_id=777458938]
+script = ExtResource("1_jc15w")
+bounds = Rect2(-383.84, -6.58, 767.68, 154.76)
+
+[node name="l0" type="Node2D" parent="." unique_id=383993617]
+script = ExtResource("2_rgxik")
+
+[node name="0" type="Sprite2D" parent="l0" unique_id=983093476]
+position = Vector2(-334.34, 44.42)
+scale = Vector2(0.7369, 0.7369)
+texture = SubResource("AtlasTexture_15k1u")
+
+[node name="l1" type="Node2D" parent="." unique_id=1164507435]
+script = ExtResource("2_rgxik")
+
+[node name="0" type="Sprite2D" parent="l1" unique_id=2034291360]
+position = Vector2(-144.24, 94.93)
+scale = Vector2(0.7369, 0.7369)
+texture = SubResource("AtlasTexture_l6cmr")
+
+[node name="l01" type="Node2D" parent="." unique_id=2029699692]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_rgxik")
+
+[node name="0" type="Sprite2D" parent="l01" unique_id=444814600]
+position = Vector2(-334.34, 44.42)
+scale = Vector2(0.7369, 0.7369)
+texture = SubResource("AtlasTexture_15k1u")
+
+[node name="l11" type="Node2D" parent="." unique_id=901157387]
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_rgxik")
+
+[node name="0" type="Sprite2D" parent="l11" unique_id=1910798210]
+position = Vector2(-144.24, 94.93)
+scale = Vector2(0.7369, 0.7369)
+texture = SubResource("AtlasTexture_l6cmr")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1895133729]
+libraries/ = SubResource("AnimationLibrary_q34lv")

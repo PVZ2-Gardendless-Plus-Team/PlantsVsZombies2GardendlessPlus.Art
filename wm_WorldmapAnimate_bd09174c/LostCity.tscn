@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_y3o2h"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_0gb68"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbed6ff7-a994-4040-97b1-7b8f5ffc4e57.png" id="3_hwv8m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5w40s"]
+atlas = ExtResource("3_hwv8m")
+region = Rect2(1, 2212, 626, 1226)
+
+[sub_resource type="Animation" id="Animation_dq58x"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yjqyb"]
+_data = {
+&"Idle": SubResource("Animation_dq58x")
+}
+
+[node name="LostCity" type="Node2D" unique_id=1734339133]
+script = ExtResource("1_y3o2h")
+bounds = Rect2(-306.47, -613, 626, 1226)
+
+[node name="lost" type="Node2D" parent="." unique_id=406964774]
+script = ExtResource("2_0gb68")
+
+[node name="0" type="Sprite2D" parent="lost" unique_id=509244605]
+position = Vector2(6.53, 0)
+texture = SubResource("AtlasTexture_5w40s")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1713718700]
+libraries/ = SubResource("AnimationLibrary_yjqyb")

@@ -1,0 +1,145 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ng5wd"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_rjq58"]
+[ext_resource type="Texture2D" path="res://art/_textures/ac3a9595-fcf4-4669-9db6-ad6252e64739.png" id="3_hlhrd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrhoj"]
+atlas = ExtResource("3_hlhrd")
+region = Rect2(1222, 64, 40, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s31cw"]
+atlas = ExtResource("3_hlhrd")
+region = Rect2(1040, 1638, 32, 32)
+
+[sub_resource type="Animation" id="Animation_u45k3"]
+length = 0.13333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("fireBGBlueFood:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1852752e-16, 0.9678506), Vector2(1.1260113e-16, 0.91945803), Vector2(1.1852752e-16, 0.9678506)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("fireBGBlueFood:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415927]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("fireBGBlueFood:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5820701, 1.5523008), Vector2(0.57612884, 1.5589274), Vector2(0.56996304, 1.5631667), Vector2(0.57612884, 1.5589274), Vector2(0.5820701, 1.5523008)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("fireBGBlueFood:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("fireBlue:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("fireBlue:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.1415927]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("fireBlue:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.5118, 1.3649), Vector2(0.52203596, 1.2966549), Vector2(0.5118, 1.3649)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("fireBlue:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n57tt"]
+_data = {
+&"Idle": SubResource("Animation_u45k3")
+}
+
+[node name="_fire" type="Node2D" unique_id=2079638346]
+script = ExtResource("1_ng5wd")
+bounds = Rect2(-21.25, -3.47, 42.5, 46.21)
+
+[node name="fireBGBlueFood" type="Node2D" parent="." unique_id=1567576572]
+position = Vector2(1.1852752e-16, 0.9678506)
+rotation = 3.1415927
+scale = Vector2(0.5820701, 1.5523008)
+script = ExtResource("2_rjq58")
+
+[node name="0" type="Sprite2D" parent="fireBGBlueFood" unique_id=1967832938]
+position = Vector2(0, -13.71)
+texture = SubResource("AtlasTexture_lrhoj")
+offset = Vector2(-0.5, 0)
+
+[node name="fireBlue" type="Node2D" parent="." unique_id=1537674680]
+rotation = 3.1415927
+scale = Vector2(0.5118, 1.3649)
+script = ExtResource("2_rjq58")
+
+[node name="0" type="Sprite2D" parent="fireBlue" unique_id=1824646673]
+position = Vector2(0, -10.1)
+texture = SubResource("AtlasTexture_s31cw")
+offset = Vector2(0, 0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1685283825]
+libraries/ = SubResource("AnimationLibrary_n57tt")

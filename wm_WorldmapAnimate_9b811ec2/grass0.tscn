@@ -1,0 +1,82 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_2wojm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_n070x"]
+[ext_resource type="Texture2D" path="res://art/_textures/37aeaa3f-8ac6-4844-b0ed-5c07ed8d4ea2.png" id="3_3lyru"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0l43"]
+atlas = ExtResource("3_3lyru")
+region = Rect2(1614, 1925, 127, 155)
+
+[sub_resource type="Animation" id="Animation_81egs"]
+length = 7.833333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pins:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pins:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4.266667, 7.8333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [3.1415927, -3.1398175, 3.1415927]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pins:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5, 3.1, 4.1666665, 5.233333, 6.266667, 7.8333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.98, -1.211), Vector2(0.9799888, -1.2119074), Vector2(0.9799015, -1.2189443), Vector2(0.9798983, -1.2192005), Vector2(0.9799432, -1.215592), Vector2(0.9799924, -1.2116185), Vector2(0.98, -1.211)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pins:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.7, 1, 1.2666667, 1.5666667, 2.2, 2.5, 2.7666667, 3.0666666, 3.4, 3.8, 4.2, 4.5666666, 4.866667, 5.1666665, 5.5, 6.1666665, 6.5, 6.8, 7.133333, 7.5, 7.8333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0017281771, 0.006888628, 0.015242219, 0.026120901, 0.042278886, 0.08155882, 0.096264124, 0.10579836, 0.11281419, 0.11677849, 0.11749518, 0.11479056, 0.108721256, 0.10064709, 0.08924472, 0.07292926, 0.036458492, 0.021921277, 0.012288809, 0.0052131414, 0.0010855198, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yl7hu"]
+_data = {
+&"idle": SubResource("Animation_81egs")
+}
+
+[node name="grass0" type="Node2D" unique_id=1769266166]
+script = ExtResource("1_2wojm")
+bounds = Rect2(-84.05, -107.96, 127, 155)
+
+[node name="pins" type="Node2D" parent="." unique_id=919322236]
+rotation = 3.1415927
+scale = Vector2(0.98, -1.211)
+script = ExtResource("2_n070x")
+
+[node name="0" type="Sprite2D" parent="pins" unique_id=652334685]
+position = Vector2(20.97, -25.16)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_y0l43")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1644240567]
+libraries/ = SubResource("AnimationLibrary_yl7hu")

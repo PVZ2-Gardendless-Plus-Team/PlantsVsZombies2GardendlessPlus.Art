@@ -1,0 +1,172 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_2p45h"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_vkkby"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_53b58"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw4q4"]
+atlas = ExtResource("3_53b58")
+region = Rect2(1834, 736, 35, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb45w"]
+atlas = ExtResource("3_53b58")
+region = Rect2(1356, 1769, 46, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdqok"]
+atlas = ExtResource("3_53b58")
+region = Rect2(1812, 691, 46, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57udr"]
+atlas = ExtResource("3_53b58")
+region = Rect2(1412, 688, 37, 40)
+
+[sub_resource type="Animation" id="Animation_mx4fp"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_niu3e"]
+_data = {
+&"Idle": SubResource("Animation_mx4fp")
+}
+
+[node name="_ray_frame_back_lock" type="Node2D" unique_id=1998266742]
+script = ExtResource("1_2p45h")
+bounds = Rect2(-237.69, -445.97, 475.37, 138.44)
+
+[node name="torchMain" type="Node2D" parent="." unique_id=625378349]
+modulate = Color(0.32, 0.44, 0.6, 1)
+position = Vector2(213.51685, -361.33514)
+rotation = 3.1274276
+scale = Vector2(1, -1)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchMain" unique_id=653222266]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue" type="Node2D" parent="." unique_id=123624287]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(213.51685, -361.33514)
+rotation = 3.1274276
+scale = Vector2(1, -1)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue" unique_id=683411737]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_vb45w")
+offset = Vector2(-0.5, 0)
+
+[node name="torchMain21" type="Node2D" parent="." unique_id=1740574286]
+modulate = Color(0.32, 0.44, 0.6, 1)
+position = Vector2(-78.38925, -398.8239)
+rotation = 0.24137728
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchMain21" unique_id=1234241700]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue21" type="Node2D" parent="." unique_id=1774135807]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-78.38925, -398.8239)
+rotation = 0.24137728
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue21" unique_id=596206912]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_tdqok")
+offset = Vector2(-0.5, 0)
+
+[node name="starMain1" type="Node2D" parent="." unique_id=401780406]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(163.91245, -403.92215)
+scale = Vector2(0.3774, 0.3774)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="starMain1" unique_id=1925157533]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain2" type="Node2D" parent="." unique_id=1611957350]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(87.39405, -417.6528)
+scale = Vector2(0.3774, 0.3774)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="starMain2" unique_id=1277177725]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="torchMain1" type="Node2D" parent="." unique_id=1574547805]
+modulate = Color(0.32, 0.44, 0.6, 1)
+position = Vector2(-213.51685, -361.33514)
+rotation = 0.014165092
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchMain1" unique_id=650859311]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue1" type="Node2D" parent="." unique_id=255625229]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-213.51685, -361.33514)
+rotation = 0.014165092
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue1" unique_id=640716191]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_vb45w")
+offset = Vector2(-0.5, 0)
+
+[node name="torchMain211" type="Node2D" parent="." unique_id=1956204837]
+modulate = Color(0.32, 0.44, 0.6, 1)
+position = Vector2(78.38925, -398.8239)
+rotation = 2.9002154
+scale = Vector2(1, -1)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchMain211" unique_id=1138832177]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue211" type="Node2D" parent="." unique_id=1605275145]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(78.38925, -398.8239)
+rotation = 2.9002154
+scale = Vector2(1, -1)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue211" unique_id=416067748]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_tdqok")
+offset = Vector2(-0.5, 0)
+
+[node name="starMain3" type="Node2D" parent="." unique_id=1226279038]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-0.3087, -425.2233)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="starMain3" unique_id=47127280]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain11" type="Node2D" parent="." unique_id=77012928]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-163.91245, -403.92215)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="starMain11" unique_id=1660971347]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="starMain21" type="Node2D" parent="." unique_id=490654431]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-87.39405, -417.6528)
+rotation = 3.1415927
+scale = Vector2(0.3774, -0.3774)
+script = ExtResource("2_vkkby")
+
+[node name="0" type="Sprite2D" parent="starMain21" unique_id=523350405]
+texture = SubResource("AtlasTexture_57udr")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=46813137]
+libraries/ = SubResource("AnimationLibrary_niu3e")

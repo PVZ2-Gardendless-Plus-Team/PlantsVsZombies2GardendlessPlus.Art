@@ -1,0 +1,318 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7fbt6"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_a3bbh"]
+[ext_resource type="Texture2D" path="res://art/_textures/8101fdd9-c8c4-47fe-9cc8-257b4e1297f9.png" id="3_ih311"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07ged"]
+atlas = ExtResource("3_ih311")
+region = Rect2(804, 788, 68, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipnx7"]
+atlas = ExtResource("3_ih311")
+region = Rect2(701, 788, 101, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_331nb"]
+atlas = ExtResource("3_ih311")
+region = Rect2(854, 587, 104, 89)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yyrl"]
+atlas = ExtResource("3_ih311")
+region = Rect2(701, 540, 151, 119)
+
+[sub_resource type="Animation" id="Animation_4um87"]
+length = 0.4666666666666667
+step = 0.06666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("effect_idle1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.26666668, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-47.462402, 16.009998), Vector2(-88.92239, 45.96), Vector2(-16.3624, -6.45), Vector2(-47.462402, 16.009998)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("effect_idle1:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("effect_idle1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("effect_idle1:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("effect_idle2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(68.022896, -123.29425), Vector2(81.65287, -138.29182), Vector2(33.944668, -85.81017), Vector2(68.022896, -123.29425)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("effect_idle2:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("effect_idle2:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.6575, 0.6575)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("effect_idle2:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("effect_idle3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.4, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(42.29, 49.989998), Vector2(110.01, 85.93), Vector2(31, 44), Vector2(42.29, 49.989998)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("effect_idle3:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("effect_idle3:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("effect_idle3:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("effect_idle4:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-18.073307, -79.15713), Vector2(-76.45813, -123.599625)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("effect_idle4:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.6018928]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("effect_idle4:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5404, 0.5404)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("effect_idle4:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("effect_idle1:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.26666668, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.56), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.56)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("effect_idle2:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.28), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.28)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("effect_idle3:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.4, 0.46666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.85), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.85)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("effect_idle4:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+metadata/ground_speed = 231.51428571428573
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ih645"]
+_data = {
+&"Idle": SubResource("Animation_4um87")
+}
+
+[node name="_lighningIdle" type="Node2D" unique_id=1839006938]
+script = ExtResource("1_7fbt6")
+bounds = Rect2(-96.47, -138.09, 185.47, 246.09)
+
+[node name="effect_idle1" type="Node2D" parent="." unique_id=895159851]
+position = Vector2(-16.3624, -6.45)
+script = ExtResource("2_a3bbh")
+
+[node name="0" type="Sprite2D" parent="effect_idle1" unique_id=723525788]
+position = Vector2(-1, 1.5)
+texture = SubResource("AtlasTexture_07ged")
+offset = Vector2(-1, -2)
+
+[node name="effect_idle2" type="Node2D" parent="." unique_id=1223988255]
+position = Vector2(33.944668, -85.81017)
+scale = Vector2(0.6575, 0.6575)
+script = ExtResource("2_a3bbh")
+
+[node name="0" type="Sprite2D" parent="effect_idle2" unique_id=1043817262]
+position = Vector2(-8, 2.5)
+texture = SubResource("AtlasTexture_ipnx7")
+offset = Vector2(0, 1.5)
+
+[node name="effect_idle3" type="Node2D" parent="." unique_id=1946267996]
+position = Vector2(31, 44)
+script = ExtResource("2_a3bbh")
+
+[node name="0" type="Sprite2D" parent="effect_idle3" unique_id=2060212973]
+position = Vector2(-5, 11.5)
+rotation = -1.8010052
+texture = SubResource("AtlasTexture_331nb")
+offset = Vector2(6, 0)
+
+[node name="effect_idle4" type="Node2D" parent="." unique_id=948811924]
+position = Vector2(-18.073307, -79.15713)
+rotation = 1.6018928
+scale = Vector2(0.5404, 0.5404)
+script = ExtResource("2_a3bbh")
+
+[node name="0" type="Sprite2D" parent="effect_idle4" unique_id=1423177881]
+position = Vector2(24, -6.5)
+texture = SubResource("AtlasTexture_0yyrl")
+offset = Vector2(0, -4.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=73501181]
+libraries/ = SubResource("AnimationLibrary_ih645")

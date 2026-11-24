@@ -1,0 +1,322 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_0lajp"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_w3ycy"]
+[ext_resource type="Texture2D" path="res://art/_textures/c205302e-ce99-4acf-9d41-0a882480ca81.png" id="3_bauys"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey8nu"]
+atlas = ExtResource("3_bauys")
+region = Rect2(165, 759, 106, 246)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lci78"]
+atlas = ExtResource("3_bauys")
+region = Rect2(310, 350, 35, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1s1a"]
+atlas = ExtResource("3_bauys")
+region = Rect2(72, 1, 132, 253)
+
+[sub_resource type="Animation" id="Animation_uoomq"]
+length = 0.6666666666666666
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lightBall:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -84.8722)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("lightBall:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("lightBall:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.0195955, 1.006783), Vector2(1.0723381, 1.0250401), Vector2(1.1524652, 1.0527765), Vector2(1.26, 1.09), Vector2(1.1524652, 1.0527765), Vector2(1.0723381, 1.0250401), Vector2(1.0195955, 1.006783), Vector2(1, 1), Vector2(1.0195955, 1.006783), Vector2(1.0723381, 1.0250401), Vector2(1.1524652, 1.0527765), Vector2(1.26, 1.09), Vector2(1.1524652, 1.0527765), Vector2(1.0723381, 1.0250401), Vector2(1.0195955, 1.006783), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("lightBall:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("lightCenter:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("lightCenter:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("lightCenter:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5416667, 0.5833333, 0.625, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.2896, 1), Vector2(1.2889973, 0.99813056), Vector2(1.2868704, 0.9915332), Vector2(1.2827137, 0.9786403), Vector2(1.2706944, 0.9413597), Vector2(1.2665377, 0.9284668), Vector2(1.2644107, 0.92186946), Vector2(1.263808, 0.92), Vector2(1.2644107, 0.92186946), Vector2(1.2665377, 0.9284668), Vector2(1.2706944, 0.9413597), Vector2(1.2827137, 0.9786403), Vector2(1.2868704, 0.9915332), Vector2(1.2889973, 0.99813056), Vector2(1.2896, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("lightCenter:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("lightColume:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("lightColume:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("lightColume:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5416667, 0.5833333, 0.625, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.2896, 1), Vector2(1.2889973, 0.99813056), Vector2(1.2868704, 0.9915332), Vector2(1.2827137, 0.9786403), Vector2(1.2706944, 0.9413597), Vector2(1.2665377, 0.9284668), Vector2(1.2644107, 0.92186946), Vector2(1.263808, 0.92), Vector2(1.2644107, 0.92186946), Vector2(1.2665377, 0.9284668), Vector2(1.2706944, 0.9413597), Vector2(1.2827137, 0.9786403), Vector2(1.2868704, 0.9915332), Vector2(1.2889973, 0.99813056), Vector2(1.2896, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("lightColume:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("lightColume1:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("lightColume1:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("lightColume1:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5416667, 0.5833333, 0.625, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.2896, 1), Vector2(1.2889973, 0.99813056), Vector2(1.2868704, 0.9915332), Vector2(1.2827137, 0.9786403), Vector2(1.2706944, 0.9413597), Vector2(1.2665377, 0.9284668), Vector2(1.2644107, 0.92186946), Vector2(1.263808, 0.92), Vector2(1.2644107, 0.92186946), Vector2(1.2665377, 0.9284668), Vector2(1.2706944, 0.9413597), Vector2(1.2827137, 0.9786403), Vector2(1.2868704, 0.9915332), Vector2(1.2889973, 0.99813056), Vector2(1.2896, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("lightColume1:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("lightBall:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667, 0.20833333, 0.25, 0.29166666, 0.33333334, 0.375, 0.41666666, 0.45833334, 0.5, 0.5416667, 0.5833333, 0.625, 0.6666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.52), Color(1, 1, 1, 0.5094485), Color(1, 1, 1, 0.48104867), Color(1, 1, 1, 0.43790334), Color(1, 1, 1, 0.38000003), Color(1, 1, 1, 0.43790334), Color(1, 1, 1, 0.48104867), Color(1, 1, 1, 0.5094485), Color(1, 1, 1, 0.52), Color(1, 1, 1, 0.5094485), Color(1, 1, 1, 0.48104867), Color(1, 1, 1, 0.43790334), Color(1, 1, 1, 0.38000003), Color(1, 1, 1, 0.43790334), Color(1, 1, 1, 0.48104867), Color(1, 1, 1, 0.5094485), Color(1, 1, 1, 0.52)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("lightCenter:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.29166666, 0.33333334, 0.375, 0.45833334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0.39999998), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.27000004), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.4)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("lightColume:modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.29166666, 0.33333334, 0.375, 0.45833334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0.39999998), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.27000004), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.4)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("lightColume1:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.20833333, 0.29166666, 0.33333334, 0.375, 0.45833334, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.4), Color(1, 1, 1, 0.39999998), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.27000004), Color(1, 1, 1, 0.28375852), Color(1, 1, 1, 0.3862415), Color(1, 1, 1, 0.4)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c88fq"]
+_data = {
+&"Idle": SubResource("Animation_uoomq")
+}
+
+[node name="ray_red" type="Node2D" unique_id=316279288]
+script = ExtResource("1_0lajp")
+bounds = Rect2(-130, -304.66, 260, 380.46)
+
+[node name="lightBall" type="Node2D" parent="." unique_id=1913326931]
+modulate = Color(1, 1, 1, 0.52)
+position = Vector2(0, -84.8722)
+script = ExtResource("2_w3ycy")
+
+[node name="0" type="Sprite2D" parent="lightBall" unique_id=1526534141]
+scale = Vector2(1.8991, 1.394)
+texture = SubResource("AtlasTexture_ey8nu")
+offset = Vector2(1, 0)
+
+[node name="lightCenter" type="Node2D" parent="." unique_id=1005330468]
+modulate = Color(1, 1, 1, 0.4)
+rotation = -1.5707964
+scale = Vector2(1.2896, 1)
+script = ExtResource("2_w3ycy")
+
+[node name="0" type="Sprite2D" parent="lightCenter" unique_id=290903312]
+position = Vector2(51.34, 0)
+rotation = 1.5707964
+scale = Vector2(1.6894, 0.4782)
+texture = SubResource("AtlasTexture_lci78")
+offset = Vector2(-0.5, 0)
+
+[node name="lightColume" type="Node2D" parent="." unique_id=869763663]
+modulate = Color(1, 1, 1, 0.4)
+rotation = -1.5707964
+scale = Vector2(1.2896, 1)
+script = ExtResource("2_w3ycy")
+
+[node name="0" type="Sprite2D" parent="lightColume" unique_id=440627309]
+position = Vector2(123.03, 0)
+rotation = 1.5707964
+scale = Vector2(0.7144, 1)
+texture = SubResource("AtlasTexture_r1s1a")
+offset = Vector2(0, 17.5)
+
+[node name="lightColume1" type="Node2D" parent="." unique_id=1029981048]
+modulate = Color(1, 1, 1, 0.4)
+rotation = -1.5707964
+scale = Vector2(1.2896, 1)
+script = ExtResource("2_w3ycy")
+
+[node name="0" type="Sprite2D" parent="lightColume1" unique_id=1485811047]
+position = Vector2(108, 0)
+rotation = 1.5707964
+scale = Vector2(0.4585, 0.9108)
+texture = SubResource("AtlasTexture_r1s1a")
+offset = Vector2(0, 17.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1775961739]
+libraries/ = SubResource("AnimationLibrary_c88fq")

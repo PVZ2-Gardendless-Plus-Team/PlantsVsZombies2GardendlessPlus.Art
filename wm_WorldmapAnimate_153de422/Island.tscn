@@ -1,0 +1,291 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_gt2cm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_uoujr"]
+[ext_resource type="Texture2D" path="res://art/_textures/dc4dfb0c-ecc6-4293-9864-1ce6c1ad5930.png" id="3_tukok"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_153de422/_WaterFall.tscn" id="4_gx2dc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm414"]
+atlas = ExtResource("3_tukok")
+region = Rect2(3424, 447, 309, 306)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvvq0"]
+atlas = ExtResource("3_tukok")
+region = Rect2(3107, 469, 315, 311)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_844tc"]
+atlas = ExtResource("3_tukok")
+region = Rect2(3175, 1730, 218, 232)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npse4"]
+atlas = ExtResource("3_tukok")
+region = Rect2(3107, 1, 220, 466)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck35b"]
+atlas = ExtResource("3_tukok")
+region = Rect2(3329, 1, 218, 444)
+
+[sub_resource type="Animation" id="Animation_autec"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WaterFall:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WaterFall1:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_ut046"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WaterFall:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WaterFall1:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_65sk4"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WaterFall:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WaterFall1:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_4ncnw"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WaterFall:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WaterFall1:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_5ak41"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WaterFall:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("WaterFall1:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5ldwd"]
+_data = {
+&"i0": SubResource("Animation_autec"),
+&"i1": SubResource("Animation_ut046"),
+&"i3": SubResource("Animation_65sk4"),
+&"i4": SubResource("Animation_4ncnw"),
+&"i5": SubResource("Animation_5ak41")
+}
+
+[node name="Island" type="Node2D" unique_id=2065605184]
+script = ExtResource("1_gt2cm")
+bounds = Rect2(-104.13, -49.89, 219.5, 466)
+
+[node name="island0" type="Node2D" parent="." unique_id=246143727]
+script = ExtResource("2_uoujr")
+display = 3
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=1974651109]
+visible = false
+position = Vector2(2.52, 72.94)
+texture = SubResource("AtlasTexture_bm414")
+
+[node name="1" type="Sprite2D" parent="island0" unique_id=1920019061]
+visible = false
+position = Vector2(-3.64, 75.05)
+texture = SubResource("AtlasTexture_lvvq0")
+
+[node name="2" type="Sprite2D" parent="island0" unique_id=1802816863]
+visible = false
+position = Vector2(-10.65, 71.92)
+texture = SubResource("AtlasTexture_844tc")
+
+[node name="3" type="Sprite2D" parent="island0" unique_id=1934393002]
+position = Vector2(5.62, 183.11)
+texture = SubResource("AtlasTexture_npse4")
+
+[node name="4" type="Sprite2D" parent="island0" unique_id=231486482]
+visible = false
+position = Vector2(-13.76, 171)
+texture = SubResource("AtlasTexture_ck35b")
+
+[node name="WaterFall" type="Node2D" parent="." unique_id=1037633672]
+script = ExtResource("2_uoujr")
+display = -1
+
+[node name="0" parent="WaterFall" unique_id=243029327 instance=ExtResource("4_gx2dc")]
+visible = false
+position = Vector2(65.26, 143.9)
+rotation = -3.1415927
+scale = Vector2(0.5238, -0.7589)
+autoplay = &"Idle"
+
+[node name="WaterFall1" type="Node2D" parent="." unique_id=739924056]
+script = ExtResource("2_uoujr")
+display = -1
+
+[node name="0" parent="WaterFall1" unique_id=280631168 instance=ExtResource("4_gx2dc")]
+visible = false
+position = Vector2(-68.43, 142.6)
+scale = Vector2(0.5131, 0.8533)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1619150572]
+libraries/ = SubResource("AnimationLibrary_5ldwd")

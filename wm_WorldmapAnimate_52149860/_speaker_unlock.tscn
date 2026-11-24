@@ -1,0 +1,439 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_om46l"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_mwr77"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_b8s2c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41p6j"]
+atlas = ExtResource("3_b8s2c")
+region = Rect2(1835, 1911, 185, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3julv"]
+atlas = ExtResource("3_b8s2c")
+region = Rect2(2010, 1357, 36, 62)
+
+[sub_resource type="Animation" id="Animation_ajfrj"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("speakerL:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("speakerL:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("speakerL:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.13, 0.94), Vector2(1.1129714, 0.94785935), Vector2(1.0974052, 0.95504373), Vector2(1.083021, 0.96168256), Vector2(1.0697094, 0.9678264), Vector2(1.0574456, 0.97348666), Vector2(1.046245, 0.9786562), Vector2(1.036169, 0.9833066), Vector2(1.0271336, 0.9874768), Vector2(1.0192869, 0.99109834), Vector2(1.0126127, 0.9941788), Vector2(1.0072913, 0.9966348), Vector2(1.0033277, 0.99846417), Vector2(1.0008559, 0.999605), Vector2(1, 1), Vector2(1.13, 0.94), Vector2(1.1129714, 0.94785935), Vector2(1.0974052, 0.95504373), Vector2(1.083021, 0.96168256), Vector2(1.0697094, 0.9678264), Vector2(1.0574456, 0.97348666), Vector2(1.046245, 0.9786562), Vector2(1.036169, 0.9833066), Vector2(1.0271336, 0.9874768), Vector2(1.0192869, 0.99109834), Vector2(1.0126127, 0.9941788), Vector2(1.0072913, 0.9966348), Vector2(1.0033277, 0.99846417), Vector2(1.0008559, 0.999605), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("speakerL:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("speaker_mouth_shade:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-27.72735, -247.75725), Vector2(-31.331905, -232.89182), Vector2(-30.859749, -234.83902), Vector2(-30.428139, -236.619), Vector2(-30.029305, -238.26382), Vector2(-29.660208, -239.78601), Vector2(-29.320166, -241.18837), Vector2(-29.009602, -242.46916), Vector2(-28.730223, -243.62134), Vector2(-28.479692, -244.65454), Vector2(-28.262123, -245.5518), Vector2(-28.077066, -246.315), Vector2(-27.92952, -246.9235), Vector2(-27.81962, -247.37674), Vector2(-27.751083, -247.65938), Vector2(-27.72735, -247.75725), Vector2(-31.331905, -232.89182), Vector2(-30.859749, -234.83902), Vector2(-30.428139, -236.619), Vector2(-30.029305, -238.26382), Vector2(-29.660208, -239.78601), Vector2(-29.320166, -241.18837), Vector2(-29.009602, -242.46916), Vector2(-28.730223, -243.62134), Vector2(-28.479692, -244.65454), Vector2(-28.262123, -245.5518), Vector2(-28.077066, -246.315), Vector2(-27.92952, -246.9235), Vector2(-27.81962, -247.37674), Vector2(-27.751083, -247.65938), Vector2(-27.72735, -247.75725)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("speaker_mouth_shade:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.13333334, 0.23333333, 0.33333334, 0.43333334, 0.5, 0.53333336, 0.6333333, 0.73333335, 0.8333333, 0.93333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.25268874, 0.2115778, 0.2253836, 0.23698868, 0.24598283, 0.25151497, 0.25268877, 0.2115778, 0.22538361, 0.2369887, 0.24598283, 0.251515, 0.25268877]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("speaker_mouth_shade:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.9211129, 1.9211129), Vector2(2.0744255, 1.7665557), Vector2(1.97956, 1.7205598), Vector2(1.8952395, 1.6785858), Vector2(1.8210006, 1.6413677), Vector2(1.756211, 1.6090593), Vector2(1.7004598, 1.5817814), Vector2(1.6539208, 1.5600766), Vector2(1.61702, 1.5446173), Vector2(1.5901846, 1.5363388), Vector2(1.5742391, 1.5360813), Vector2(1.9431487, 1.9121624), Vector2(1.8588996, 1.8416808), Vector2(1.78683, 1.779249), Vector2(1.7251745, 1.7232877), Vector2(1.6735873, 1.6735873), Vector2(1.8248441, 1.5540153), Vector2(1.7606562, 1.5302969), Vector2(1.7093505, 1.5139465), Vector2(1.6706994, 1.5058929), Vector2(1.6455282, 1.5076505), Vector2(2.021768, 1.8806647), Vector2(1.9244936, 1.8152971), Vector2(1.8401302, 1.7577378), Vector2(1.7664123, 1.7065991), Vector2(1.7029551, 1.6616776), Vector2(1.649384, 1.6230822), Vector2(1.6062773, 1.5913985), Vector2(1.5743229, 1.5676436), Vector2(1.5541363, 1.5524366), Vector2(1.5470911, 1.5470911)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("speaker_mouth_shade:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.1, 0.16666667, 0.23333333, 0.3, 0.36666667, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.08939183, 0.067383766, 0.04849994, 0.03234458, 0.019065142, 0.008894801, 0.0023524761, 0.000605464, 0.0, 0.08939171, 0.067383766, 0.04849994, 0.03234458, 0.019065142, 0.008894801, 0.0023524761, 0.000605464, 0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("speaker_mouth_shade1:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-44.80995, -154.1193), Vector2(-50.635246, -144.87213), Vector2(-49.872196, -146.08342), Vector2(-49.174675, -147.19066), Vector2(-48.53012, -148.21384), Vector2(-47.933628, -149.16072), Vector2(-47.384087, -150.03308), Vector2(-46.882187, -150.8298), Vector2(-46.430687, -151.54651), Vector2(-46.025806, -152.18922), Vector2(-45.674194, -152.74738), Vector2(-45.375126, -153.22212), Vector2(-45.136677, -153.60065), Vector2(-44.95907, -153.8826), Vector2(-44.848305, -154.05841), Vector2(-44.80995, -154.1193), Vector2(-50.635246, -144.87213), Vector2(-49.872196, -146.08342), Vector2(-49.174675, -147.19066), Vector2(-48.53012, -148.21384), Vector2(-47.933628, -149.16072), Vector2(-47.384087, -150.03308), Vector2(-46.882187, -150.8298), Vector2(-46.430687, -151.54651), Vector2(-46.025806, -152.18922), Vector2(-45.674194, -152.74738), Vector2(-45.375126, -153.22212), Vector2(-45.136677, -153.60065), Vector2(-44.95907, -153.8826), Vector2(-44.848305, -154.05841), Vector2(-44.80995, -154.1193)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("speaker_mouth_shade1:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.16666667, 0.3, 0.4, 0.5, 0.53333336, 0.6666667, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.17537418, 0.14634691, 0.15896519, 0.16873339, 0.17355607, 0.17537417, 0.14634693, 0.1589652, 0.16873339, 0.17355606, 0.17537418]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("speaker_mouth_shade1:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.4119351, 1.4119351), Vector2(1.53227, 1.289297), Vector2(1.4613954, 1.2570148), Vector2(1.3984094, 1.227461), Vector2(1.3429481, 1.2012211), Vector2(1.2945305, 1.1784376), Vector2(1.2528454, 1.1592203), Vector2(1.2180133, 1.1439825), Vector2(1.1903446, 1.1332297), Vector2(1.1701416, 1.127666), Vector2(1.1580124, 1.1279125), Vector2(1.4289582, 1.4045154), Vector2(1.3666725, 1.3530899), Vector2(1.3134465, 1.3074665), Vector2(1.2679795, 1.266491), Vector2(1.2300144, 1.2300144), Vector2(1.3479172, 1.1341772), Vector2(1.2997913, 1.1180115), Vector2(1.2612505, 1.1070691), Vector2(1.2321041, 1.1020751), Vector2(1.2129444, 1.1041682), Vector2(1.4895751, 1.3782592), Vector2(1.4172741, 1.3311324), Vector2(1.3545837, 1.2895882), Vector2(1.2998192, 1.2526364), Vector2(1.2526963, 1.2201353), Vector2(1.2129285, 1.1921811), Vector2(1.1809433, 1.1692065), Vector2(1.1572388, 1.1519699), Vector2(1.1422688, 1.140928), Vector2(1.1370449, 1.1370449)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("speaker_mouth_shade1:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.1, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.5, 0.53333336, 0.6, 0.7, 0.76666665, 0.8333333, 0.9, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.06352675, 0.04785931, 0.028449893, 0.017998695, 0.009637117, 0.00365448, 0.00042963028, 0.0, 0.06352675, 0.04785931, 0.028449893, 0.017998815, 0.009637117, 0.00365448, 0.00042963028]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("speaker_mouth_shade2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-51.7695, -56.05255), Vector2(-58.499535, -52.6894), Vector2(-57.617973, -53.129936), Vector2(-56.81212, -53.53264), Vector2(-56.06746, -53.904762), Vector2(-55.378323, -54.24914), Vector2(-54.743435, -54.56641), Vector2(-54.16358, -54.856174), Vector2(-53.641956, -55.116844), Vector2(-53.174194, -55.350594), Vector2(-52.76797, -55.55359), Vector2(-52.422455, -55.726257), Vector2(-52.14697, -55.863922), Vector2(-51.941776, -55.966465), Vector2(-51.813812, -56.03041), Vector2(-51.7695, -56.05255), Vector2(-58.499535, -52.6894), Vector2(-57.617973, -53.129936), Vector2(-56.81212, -53.53264), Vector2(-56.06746, -53.904762), Vector2(-55.378323, -54.24914), Vector2(-54.743435, -54.56641), Vector2(-54.16358, -54.856174), Vector2(-53.641956, -55.116844), Vector2(-53.174194, -55.350594), Vector2(-52.76797, -55.55359), Vector2(-52.422455, -55.726257), Vector2(-52.14697, -55.863922), Vector2(-51.941776, -55.966465), Vector2(-51.813812, -56.03041), Vector2(-51.7695, -56.05255)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("speaker_mouth_shade2:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.26666668, 0.43333334, 0.5, 0.53333336, 0.76666665, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.06541145, 0.054436967, 0.062083133, 0.06509526, 0.06541145, 0.054436967, 0.062083136, 0.06509527]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("speaker_mouth_shade2:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.9211129, 1.9211129), Vector2(2.0933082, 1.7441391), Vector2(1.9956042, 1.7019249), Vector2(1.9087853, 1.6631658), Vector2(1.8323305, 1.6287099), Vector2(1.7655687, 1.5987855), Vector2(1.7080654, 1.5735656), Vector2(1.6599777, 1.55363), Vector2(1.6217239, 1.539678), Vector2(1.5937035, 1.532688), Vector2(1.5767459, 1.5335083), Vector2(1.9451934, 1.9100823), Vector2(1.8600401, 1.8405292), Vector2(1.7873334, 1.7787431), Vector2(1.7253001, 1.723162), Vector2(1.6735874, 1.6735874), Vector2(1.841455, 1.5342956), Vector2(1.7749262, 1.5137225), Vector2(1.7215676, 1.5000392), Vector2(1.681094, 1.4942799), Vector2(1.6542964, 1.4980242), Vector2(2.0308106, 1.8708965), Vector2(1.9315417, 1.8077959), Vector2(1.8454831, 1.7521168), Vector2(1.7703211, 1.7025439), Vector2(1.7056669, 1.6588941), Vector2(1.6511196, 1.6213167), Vector2(1.6072626, 1.5904034), Vector2(1.5747664, 1.567198), Vector2(1.5542493, 1.5523233), Vector2(1.547091, 1.547091)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("speaker_mouth_shade2:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.16666667, 0.3, 0.43333334, 0.5, 0.53333336, 0.6666667, 0.8, 0.93333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.02414608, 0.013077736, 0.0051375628, 0.0006338358, 0.0, 0.02414608, 0.013077736, 0.0051375628, 0.0006338358, 0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("speaker_mouth:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-27.72735, -247.75725), Vector2(-31.331905, -232.89182), Vector2(-30.859749, -234.83902), Vector2(-30.428139, -236.619), Vector2(-30.029305, -238.26382), Vector2(-29.660208, -239.78601), Vector2(-29.320166, -241.18837), Vector2(-29.009602, -242.46916), Vector2(-28.730223, -243.62134), Vector2(-28.479692, -244.65454), Vector2(-28.262123, -245.5518), Vector2(-28.077066, -246.315), Vector2(-27.92952, -246.9235), Vector2(-27.81962, -247.37674), Vector2(-27.751083, -247.65938), Vector2(-27.72735, -247.75725), Vector2(-31.331905, -232.89182), Vector2(-30.859749, -234.83902), Vector2(-30.428139, -236.619), Vector2(-30.029305, -238.26382), Vector2(-29.660208, -239.78601), Vector2(-29.320166, -241.18837), Vector2(-29.009602, -242.46916), Vector2(-28.730223, -243.62134), Vector2(-28.479692, -244.65454), Vector2(-28.262123, -245.5518), Vector2(-28.077066, -246.315), Vector2(-27.92952, -246.9235), Vector2(-27.81962, -247.37674), Vector2(-27.751083, -247.65938), Vector2(-27.72735, -247.75725)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("speaker_mouth:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.13333334, 0.23333333, 0.33333334, 0.43333334, 0.5, 0.53333336, 0.6333333, 0.73333335, 0.8333333, 0.93333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.25268874, 0.2115778, 0.2253836, 0.23698868, 0.24598283, 0.25151497, 0.25268877, 0.2115778, 0.22538361, 0.2369887, 0.24598283, 0.251515, 0.25268877]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("speaker_mouth:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.9211129, 1.9211129), Vector2(2.0744255, 1.7665557), Vector2(1.97956, 1.7205598), Vector2(1.8952395, 1.6785858), Vector2(1.8210006, 1.6413677), Vector2(1.756211, 1.6090593), Vector2(1.7004598, 1.5817814), Vector2(1.6539208, 1.5600766), Vector2(1.61702, 1.5446173), Vector2(1.5901846, 1.5363388), Vector2(1.5742391, 1.5360813), Vector2(1.9431487, 1.9121624), Vector2(1.8588996, 1.8416808), Vector2(1.78683, 1.779249), Vector2(1.7251745, 1.7232877), Vector2(1.6735873, 1.6735873), Vector2(1.8248441, 1.5540153), Vector2(1.7606562, 1.5302969), Vector2(1.7093505, 1.5139465), Vector2(1.6706994, 1.5058929), Vector2(1.6455282, 1.5076505), Vector2(2.021768, 1.8806647), Vector2(1.9244936, 1.8152971), Vector2(1.8401302, 1.7577378), Vector2(1.7664123, 1.7065991), Vector2(1.7029551, 1.6616776), Vector2(1.649384, 1.6230822), Vector2(1.6062773, 1.5913985), Vector2(1.5743229, 1.5676436), Vector2(1.5541363, 1.5524366), Vector2(1.5470911, 1.5470911)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("speaker_mouth:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.1, 0.16666667, 0.23333333, 0.3, 0.36666667, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.08939183, 0.067383766, 0.04849994, 0.03234458, 0.019065142, 0.008894801, 0.0023524761, 0.000605464, 0.0, 0.08939171, 0.067383766, 0.04849994, 0.03234458, 0.019065142, 0.008894801, 0.0023524761, 0.000605464, 0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("speaker_mouth1:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-44.80995, -154.1193), Vector2(-50.635246, -144.87213), Vector2(-49.872196, -146.08342), Vector2(-49.174675, -147.19066), Vector2(-48.53012, -148.21384), Vector2(-47.933628, -149.16072), Vector2(-47.384087, -150.03308), Vector2(-46.882187, -150.8298), Vector2(-46.430687, -151.54651), Vector2(-46.025806, -152.18922), Vector2(-45.674194, -152.74738), Vector2(-45.375126, -153.22212), Vector2(-45.136677, -153.60065), Vector2(-44.95907, -153.8826), Vector2(-44.848305, -154.05841), Vector2(-44.80995, -154.1193), Vector2(-50.635246, -144.87213), Vector2(-49.872196, -146.08342), Vector2(-49.174675, -147.19066), Vector2(-48.53012, -148.21384), Vector2(-47.933628, -149.16072), Vector2(-47.384087, -150.03308), Vector2(-46.882187, -150.8298), Vector2(-46.430687, -151.54651), Vector2(-46.025806, -152.18922), Vector2(-45.674194, -152.74738), Vector2(-45.375126, -153.22212), Vector2(-45.136677, -153.60065), Vector2(-44.95907, -153.8826), Vector2(-44.848305, -154.05841), Vector2(-44.80995, -154.1193)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("speaker_mouth1:rotation")
+tracks/21/interp = 3
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.16666667, 0.3, 0.4, 0.5, 0.53333336, 0.6666667, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.17537418, 0.14634691, 0.15896519, 0.16873339, 0.17355607, 0.17537417, 0.14634693, 0.1589652, 0.16873339, 0.17355606, 0.17537418]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("speaker_mouth1:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.4119351, 1.4119351), Vector2(1.53227, 1.289297), Vector2(1.4613954, 1.2570148), Vector2(1.3984094, 1.227461), Vector2(1.3429481, 1.2012211), Vector2(1.2945305, 1.1784376), Vector2(1.2528454, 1.1592203), Vector2(1.2180133, 1.1439825), Vector2(1.1903446, 1.1332297), Vector2(1.1701416, 1.127666), Vector2(1.1580124, 1.1279125), Vector2(1.4289582, 1.4045154), Vector2(1.3666725, 1.3530899), Vector2(1.3134465, 1.3074665), Vector2(1.2679795, 1.266491), Vector2(1.2300144, 1.2300144), Vector2(1.3479172, 1.1341772), Vector2(1.2997913, 1.1180115), Vector2(1.2612505, 1.1070691), Vector2(1.2321041, 1.1020751), Vector2(1.2129444, 1.1041682), Vector2(1.4895751, 1.3782592), Vector2(1.4172741, 1.3311324), Vector2(1.3545837, 1.2895882), Vector2(1.2998192, 1.2526364), Vector2(1.2526963, 1.2201353), Vector2(1.2129285, 1.1921811), Vector2(1.1809433, 1.1692065), Vector2(1.1572388, 1.1519699), Vector2(1.1422688, 1.140928), Vector2(1.1370449, 1.1370449)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("speaker_mouth1:skew")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.1, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.5, 0.53333336, 0.6, 0.7, 0.76666665, 0.8333333, 0.9, 0.96666664),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.06352675, 0.04785931, 0.028449893, 0.017998695, 0.009637117, 0.00365448, 0.00042963028, 0.0, 0.06352675, 0.04785931, 0.028449893, 0.017998815, 0.009637117, 0.00365448, 0.00042963028]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("speaker_mouth2:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-51.7695, -56.05255), Vector2(-58.499535, -52.6894), Vector2(-57.617973, -53.129936), Vector2(-56.81212, -53.53264), Vector2(-56.06746, -53.904762), Vector2(-55.378323, -54.24914), Vector2(-54.743435, -54.56641), Vector2(-54.16358, -54.856174), Vector2(-53.641956, -55.116844), Vector2(-53.174194, -55.350594), Vector2(-52.76797, -55.55359), Vector2(-52.422455, -55.726257), Vector2(-52.14697, -55.863922), Vector2(-51.941776, -55.966465), Vector2(-51.813812, -56.03041), Vector2(-51.7695, -56.05255), Vector2(-58.499535, -52.6894), Vector2(-57.617973, -53.129936), Vector2(-56.81212, -53.53264), Vector2(-56.06746, -53.904762), Vector2(-55.378323, -54.24914), Vector2(-54.743435, -54.56641), Vector2(-54.16358, -54.856174), Vector2(-53.641956, -55.116844), Vector2(-53.174194, -55.350594), Vector2(-52.76797, -55.55359), Vector2(-52.422455, -55.726257), Vector2(-52.14697, -55.863922), Vector2(-51.941776, -55.966465), Vector2(-51.813812, -56.03041), Vector2(-51.7695, -56.05255)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("speaker_mouth2:rotation")
+tracks/25/interp = 3
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.26666668, 0.43333334, 0.5, 0.53333336, 0.76666665, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.06541145, 0.054436967, 0.062083133, 0.06509526, 0.06541145, 0.054436967, 0.062083136, 0.06509527]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("speaker_mouth2:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.9211129, 1.9211129), Vector2(2.0933082, 1.7441391), Vector2(1.9956042, 1.7019249), Vector2(1.9087853, 1.6631658), Vector2(1.8323305, 1.6287099), Vector2(1.7655687, 1.5987855), Vector2(1.7080654, 1.5735656), Vector2(1.6599777, 1.55363), Vector2(1.6217239, 1.539678), Vector2(1.5937035, 1.532688), Vector2(1.5767459, 1.5335083), Vector2(1.9451934, 1.9100823), Vector2(1.8600401, 1.8405292), Vector2(1.7873334, 1.7787431), Vector2(1.7253001, 1.723162), Vector2(1.6735874, 1.6735874), Vector2(1.841455, 1.5342956), Vector2(1.7749262, 1.5137225), Vector2(1.7215676, 1.5000392), Vector2(1.681094, 1.4942799), Vector2(1.6542964, 1.4980242), Vector2(2.0308106, 1.8708965), Vector2(1.9315417, 1.8077959), Vector2(1.8454831, 1.7521168), Vector2(1.7703211, 1.7025439), Vector2(1.7056669, 1.6588941), Vector2(1.6511196, 1.6213167), Vector2(1.6072626, 1.5904034), Vector2(1.5747664, 1.567198), Vector2(1.5542493, 1.5523233), Vector2(1.547091, 1.547091)]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("speaker_mouth2:skew")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.16666667, 0.3, 0.43333334, 0.5, 0.53333336, 0.6666667, 0.8, 0.93333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.02414608, 0.013077736, 0.0051375628, 0.0006338358, 0.0, 0.02414608, 0.013077736, 0.0051375628, 0.0006338358, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g0kn4"]
+_data = {
+&"i": SubResource("Animation_ajfrj")
+}
+
+[node name="_speaker_unlock" type="Node2D" unique_id=364180601]
+script = ExtResource("1_om46l")
+bounds = Rect2(-92.25, -322.55, 184.5, 337.5)
+
+[node name="speakerL" type="Node2D" parent="." unique_id=449870815]
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speakerL" unique_id=903016142]
+position = Vector2(0, -153.8)
+texture = SubResource("AtlasTexture_41p6j")
+
+[node name="speaker_mouth_shade" type="Node2D" parent="." unique_id=153665447]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(-27.72735, -247.75725)
+rotation = 0.25268874
+scale = Vector2(1.7001, 1.7001)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade" unique_id=1295132115]
+position = Vector2(3.27, 2.19)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth_shade1" type="Node2D" parent="." unique_id=90090528]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(-44.80995, -154.1193)
+rotation = 0.17537417
+scale = Vector2(1.2495, 1.2495)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade1" unique_id=1389317170]
+position = Vector2(3.27, 2.19)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth_shade2" type="Node2D" parent="." unique_id=27535512]
+modulate = Color(0, 0, 0, 0.44)
+position = Vector2(-51.7695, -56.05255)
+rotation = 0.06541145
+scale = Vector2(1.7001, 1.7001)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth_shade2" unique_id=492228297]
+position = Vector2(3.27, 2.19)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth" type="Node2D" parent="." unique_id=401466481]
+position = Vector2(-27.72735, -247.75725)
+rotation = 0.25268874
+scale = Vector2(1.7001, 1.7001)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth" unique_id=835084682]
+position = Vector2(-1.3, -1.3)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth1" type="Node2D" parent="." unique_id=2007248964]
+position = Vector2(-44.80995, -154.1193)
+rotation = 0.17537417
+scale = Vector2(1.2495, 1.2495)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth1" unique_id=2111140526]
+position = Vector2(-1.3, -1.3)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="speaker_mouth2" type="Node2D" parent="." unique_id=2075949111]
+position = Vector2(-51.7695, -56.05255)
+rotation = 0.06541145
+scale = Vector2(1.7001, 1.7001)
+script = ExtResource("2_mwr77")
+
+[node name="0" type="Sprite2D" parent="speaker_mouth2" unique_id=892970229]
+position = Vector2(-1.3, -1.3)
+rotation = 0.2560398
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1959280424]
+libraries/ = SubResource("AnimationLibrary_g0kn4")

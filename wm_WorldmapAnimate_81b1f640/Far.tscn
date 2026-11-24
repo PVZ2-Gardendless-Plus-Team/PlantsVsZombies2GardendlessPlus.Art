@@ -1,0 +1,97 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_s3vsa"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_2qe5f"]
+[ext_resource type="Texture2D" path="res://art/_textures/cb4474b6-08bb-4ce9-a3c9-29d54c51436e.png" id="3_qdf1t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15uvl"]
+atlas = ExtResource("3_qdf1t")
+region = Rect2(1496, 886, 159, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmhi5"]
+atlas = ExtResource("3_qdf1t")
+region = Rect2(1598, 1, 212, 243)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7y18"]
+atlas = ExtResource("3_qdf1t")
+region = Rect2(1323, 1099, 160, 122)
+
+[sub_resource type="Animation" id="Animation_ri28r"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("far0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_t5oan"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("far0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_cfssp"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("far0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_svemy"]
+_data = {
+&"i0": SubResource("Animation_ri28r"),
+&"i1": SubResource("Animation_t5oan"),
+&"i2": SubResource("Animation_cfssp")
+}
+
+[node name="Far" type="Node2D" unique_id=1041722052]
+script = ExtResource("1_s3vsa")
+bounds = Rect2(-79.34, -70.81, 159.5, 122)
+
+[node name="far0" type="Node2D" parent="." unique_id=512475634]
+script = ExtResource("2_2qe5f")
+display = 2
+
+[node name="0" type="Sprite2D" parent="far0" unique_id=2033743968]
+visible = false
+position = Vector2(2.45, -3.68)
+texture = SubResource("AtlasTexture_15uvl")
+
+[node name="1" type="Sprite2D" parent="far0" unique_id=1804877045]
+visible = false
+position = Vector2(0.82, -38.82)
+texture = SubResource("AtlasTexture_xmhi5")
+
+[node name="2" type="Sprite2D" parent="far0" unique_id=342379542]
+position = Vector2(0.41, -9.81)
+texture = SubResource("AtlasTexture_v7y18")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1376000648]
+libraries/ = SubResource("AnimationLibrary_svemy")

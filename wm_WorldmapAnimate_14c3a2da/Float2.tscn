@@ -1,0 +1,133 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_nowv0"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_bkmte"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_ti8c3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u773j"]
+atlas = ExtResource("3_ti8c3")
+region = Rect2(2619, 1958, 88, 86)
+
+[sub_resource type="Animation" id="Animation_wuo1k"]
+length = 5.0
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667, 0.25, 0.33333334, 0.41666666, 0.45833334, 0.5416667, 0.5833333, 0.625, 0.6666667, 0.7083333, 0.75, 0.7916667, 0.875, 0.9166667, 0.9583333, 1, 1.0833334, 1.25, 1.375, 1.4166666, 1.5, 1.5416666, 1.5833334, 1.625, 1.7083334, 1.75, 1.7916666, 1.8333334, 1.875, 1.9166666, 2, 2.0416667, 2.125, 2.2083333, 2.2916667, 2.375, 2.4583333, 2.5416667, 2.625, 2.7083333, 2.7916667, 2.875, 2.9583333, 3.0416667, 3.0833333, 3.125, 3.1666667, 3.2083333, 3.25, 3.2916667, 3.375, 3.4166667, 3.4583333, 3.5, 3.5833333, 3.75, 3.875, 3.9166667, 4, 4.0416665, 4.0833335, 4.125, 4.2083335, 4.25, 4.2916665, 4.3333335, 4.375, 4.4166665, 4.5, 4.5416665, 4.625, 4.7083335, 4.7916665, 4.875, 4.9583335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0.022177093), Vector2(0, 0.09202676), Vector2(0, 0.21285158), Vector2(0, 0.39132634), Vector2(0, 0.6326409), Vector2(0, 0.77509326), Vector2(0, 1.1213326), Vector2(0, 1.3210073), Vector2(0, 1.5409524), Vector2(0, 1.7816985), Vector2(0, 2.0436761), Vector2(0, 2.3272066), Vector2(0, 2.6324892), Vector2(0, 3.3175504), Vector2(0, 3.6882172), Vector2(0, 4.079977), Vector2(0, 4.4922523), Vector2(0, 5.3750725), Vector2(0, 7.274668), Vector2(0, 8.716547), Vector2(0, 9.184927), Vector2(0, 10.067747), Vector2(0, 10.480023), Vector2(0, 10.871784), Vector2(0, 11.24245), Vector2(0, 11.927511), Vector2(0, 12.232795), Vector2(0, 12.516324), Vector2(0, 12.778302), Vector2(0, 13.019048), Vector2(0, 13.238993), Vector2(0, 13.618692), Vector2(0, 13.784907), Vector2(0, 14.056701), Vector2(0, 14.264216), Vector2(0, 14.414717), Vector2(0, 14.509428), Vector2(0, 14.554294), Vector2(0, 14.554294), Vector2(0, 14.509427), Vector2(0, 14.414716), Vector2(0, 14.264217), Vector2(0, 14.0567), Vector2(0, 13.784907), Vector2(0, 13.438667), Vector2(0, 13.238993), Vector2(0, 13.019048), Vector2(0, 12.778302), Vector2(0, 12.516324), Vector2(0, 12.232794), Vector2(0, 11.927511), Vector2(0, 11.24245), Vector2(0, 10.871783), Vector2(0, 10.480023), Vector2(0, 10.067748), Vector2(0, 9.184928), Vector2(0, 7.285332), Vector2(0, 5.8434534), Vector2(0, 5.3750734), Vector2(0, 4.4922533), Vector2(0, 4.079977), Vector2(0, 3.6882162), Vector2(0, 3.3175507), Vector2(0, 2.6324892), Vector2(0, 2.3272057), Vector2(0, 2.0436764), Vector2(0, 1.7816982), Vector2(0, 1.5409527), Vector2(0, 1.3210077), Vector2(0, 0.941308), Vector2(0, 0.7750931), Vector2(0, 0.5032997), Vector2(0, 0.295784), Vector2(0, 0.1452837), Vector2(0, 0.050572395), Vector2(0, 0.005706787)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("island0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("island0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_2rbln"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("island0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("island0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ru8st"]
+_data = {
+&"Idle": SubResource("Animation_wuo1k"),
+&"Static": SubResource("Animation_2rbln")
+}
+
+[node name="Float2" type="Node2D" unique_id=1462334723]
+script = ExtResource("1_nowv0")
+bounds = Rect2(-43.89, -36.86, 88, 86)
+
+[node name="island0" type="Node2D" parent="." unique_id=1385959104]
+script = ExtResource("2_bkmte")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=655761908]
+position = Vector2(0.11, 6.14)
+texture = SubResource("AtlasTexture_u773j")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=721096369]
+libraries/ = SubResource("AnimationLibrary_ru8st")

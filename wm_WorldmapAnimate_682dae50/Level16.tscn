@@ -1,0 +1,56 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1nx3c"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ub0ke"]
+[ext_resource type="Texture2D" path="res://art/_textures/b00e59fd-0097-4ecf-8c4b-9148422133df.png" id="3_pbqii"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_682dae50/_level16_light.tscn" id="4_1c5lm"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_682dae50/_level16_fire.tscn" id="5_suuyl"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_682dae50/_level16_drip.tscn" id="6_mfqcl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07bun"]
+atlas = ExtResource("3_pbqii")
+region = Rect2(1, 1, 647, 886)
+
+[sub_resource type="Animation" id="Animation_cyivf"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uuu1i"]
+_data = {
+&"i": SubResource("Animation_cyivf")
+}
+
+[node name="Level16" type="Node2D" unique_id=319648060]
+script = ExtResource("1_1nx3c")
+bounds = Rect2(-315.11, -520.51, 647, 886)
+
+[node name="main" type="Node2D" parent="." unique_id=1943790032]
+script = ExtResource("2_ub0ke")
+
+[node name="0" type="Sprite2D" parent="main" unique_id=830223131]
+position = Vector2(8.39, -77.51)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_07bun")
+
+[node name="_level16_light" type="Node2D" parent="." unique_id=88447219]
+script = ExtResource("2_ub0ke")
+
+[node name="0" parent="_level16_light" unique_id=1251416860 instance=ExtResource("4_1c5lm")]
+position = Vector2(-112.78, -86.36)
+autoplay = &"i"
+
+[node name="_level16_fire" type="Node2D" parent="." unique_id=1412334623]
+script = ExtResource("2_ub0ke")
+
+[node name="0" parent="_level16_fire" unique_id=249064942 instance=ExtResource("5_suuyl")]
+position = Vector2(-112.45, -85.89)
+autoplay = &"i"
+
+[node name="_level16_drip" type="Node2D" parent="." unique_id=1305083450]
+script = ExtResource("2_ub0ke")
+
+[node name="0" parent="_level16_drip" unique_id=732978437 instance=ExtResource("6_mfqcl")]
+position = Vector2(120.93, 19.69)
+autoplay = &"i"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1916707881]
+libraries/ = SubResource("AnimationLibrary_uuu1i")

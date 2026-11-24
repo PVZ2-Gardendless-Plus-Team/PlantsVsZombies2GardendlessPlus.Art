@@ -1,0 +1,126 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_p7vfm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_amc3t"]
+[ext_resource type="Texture2D" path="res://art/_textures/04ee9a11-fd56-4b52-ae53-c22145d1ddc2.png" id="3_g8b80"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twfpv"]
+atlas = ExtResource("3_g8b80")
+region = Rect2(1908, 941, 87, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cbsj"]
+atlas = ExtResource("3_g8b80")
+region = Rect2(1871, 1266, 80, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t3tx"]
+atlas = ExtResource("3_g8b80")
+region = Rect2(1356, 1116, 178, 95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qdbi"]
+atlas = ExtResource("3_g8b80")
+region = Rect2(1847, 1168, 120, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4g0u"]
+atlas = ExtResource("3_g8b80")
+region = Rect2(1908, 790, 50, 149)
+
+[sub_resource type="Animation" id="Animation_wvjrm"]
+length = 4.633333333333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("balloon:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.36666667, 0.43333334, 0.5, 0.56666666, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.8, 0.8333333, 0.9, 0.93333334, 0.96666664, 1.0666667, 1.2666667, 1.3666667, 1.4, 1.4333333, 1.5, 1.5333333, 1.6, 1.6333333, 1.6666666, 1.7, 1.7666667, 1.8333334, 1.9, 1.9666667, 2.0333333, 2.1, 2.1666667, 2.2333333, 2.3, 2.3666666, 2.4333334, 2.5, 2.5666666, 2.6333334, 2.6666667, 2.7333333, 2.7666667, 2.8333333, 2.8666666, 2.9333334, 2.9666667, 3, 3.0666666, 3.1333334, 3.1666667, 3.2333333, 3.2666667, 3.3333333, 3.4333334, 3.5333333, 3.6333334, 3.7, 3.7333333, 3.8, 3.8666666, 3.9, 3.9666667, 4, 4.0333333, 4.1, 4.133333, 4.2, 4.233333, 4.3, 4.366667, 4.4333334, 4.5, 4.5666666, 4.633333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-46.55365, -154.1567), Vector2(-46.55365, -154.18108), Vector2(-46.55365, -154.25903), Vector2(-46.55365, -154.39209), Vector2(-46.55365, -154.58636), Vector2(-46.55365, -154.84633), Vector2(-46.55365, -155.00055), Vector2(-46.55365, -155.36615), Vector2(-46.55365, -155.8155), Vector2(-46.55365, -156.35442), Vector2(-46.55365, -156.97632), Vector2(-46.55365, -157.3215), Vector2(-46.55365, -157.69385), Vector2(-46.55365, -158.09396), Vector2(-46.55365, -158.9654), Vector2(-46.55365, -159.4363), Vector2(-46.55365, -160.44646), Vector2(-46.55365, -160.98454), Vector2(-46.55365, -161.54874), Vector2(-46.55365, -163.34155), Vector2(-46.55365, -167.10184), Vector2(-46.55365, -168.89465), Vector2(-46.55365, -169.45883), Vector2(-46.55365, -169.99693), Vector2(-46.55365, -171.0071), Vector2(-46.55365, -171.478), Vector2(-46.55365, -172.34943), Vector2(-46.55365, -172.74953), Vector2(-46.55365, -173.12189), Vector2(-46.55365, -173.46706), Vector2(-46.55365, -174.08897), Vector2(-46.55365, -174.62787), Vector2(-46.55365, -175.07722), Vector2(-46.55365, -175.44284), Vector2(-46.55365, -175.7369), Vector2(-46.55365, -175.96318), Vector2(-46.55365, -176.12595), Vector2(-46.55365, -176.22989), Vector2(-46.55365, -176.28072), Vector2(-46.55365, -176.28072), Vector2(-46.55365, -176.22803), Vector2(-46.55365, -176.11972), Vector2(-46.55365, -175.95451), Vector2(-46.55365, -175.72021), Vector2(-46.55365, -175.57855), Vector2(-46.55365, -175.23792), Vector2(-46.55365, -175.03749), Vector2(-46.55365, -174.5732), Vector2(-46.55365, -174.3082), Vector2(-46.55365, -173.71022), Vector2(-46.55365, -173.37653), Vector2(-46.55365, -173.01538), Vector2(-46.55365, -172.22127), Vector2(-46.55365, -171.3134), Vector2(-46.55365, -170.83765), Vector2(-46.55365, -169.78903), Vector2(-46.55365, -169.23138), Vector2(-46.55365, -168.05417), Vector2(-46.55365, -166.18501), Vector2(-46.55365, -164.25838), Vector2(-46.55365, -162.38922), Vector2(-46.55365, -161.21199), Vector2(-46.55365, -160.65434), Vector2(-46.55365, -159.60574), Vector2(-46.55365, -158.66838), Vector2(-46.55365, -158.22212), Vector2(-46.55365, -157.42801), Vector2(-46.55365, -157.06686), Vector2(-46.55365, -156.73317), Vector2(-46.55365, -156.13518), Vector2(-46.55365, -155.8702), Vector2(-46.55365, -155.4059), Vector2(-46.55365, -155.20547), Vector2(-46.55365, -154.86482), Vector2(-46.55365, -154.59625), Vector2(-46.55365, -154.39955), Vector2(-46.55365, -154.26154), Vector2(-46.55365, -154.18231), Vector2(-46.55365, -154.1567)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("balloon:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("balloon:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("balloon:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rfykd"]
+_data = {
+&"idle": SubResource("Animation_wvjrm")
+}
+
+[node name="Level03" type="Node2D" unique_id=1538653859]
+script = ExtResource("1_p7vfm")
+bounds = Rect2(-71.55, -184.2, 218.82, 294.31)
+
+[node name="island1" type="Node2D" parent="." unique_id=414898252]
+script = ExtResource("2_amc3t")
+
+[node name="0" type="Sprite2D" parent="island1" unique_id=1081043242]
+position = Vector2(0, 67.86)
+scale = Vector2(0.4433, 0.4433)
+texture = SubResource("AtlasTexture_twfpv")
+
+[node name="island" type="Node2D" parent="." unique_id=932495064]
+script = ExtResource("2_amc3t")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=2037578477]
+position = Vector2(0, 37.7)
+scale = Vector2(0.7788, 0.7788)
+texture = SubResource("AtlasTexture_7cbsj")
+
+[node name="lines3" type="Node2D" parent="." unique_id=490897083]
+script = ExtResource("2_amc3t")
+
+[node name="0" type="Sprite2D" parent="lines3" unique_id=388358875]
+position = Vector2(58.26, -57.97)
+texture = SubResource("AtlasTexture_4t3tx")
+
+[node name="islandFace" type="Node2D" parent="." unique_id=115064859]
+script = ExtResource("2_amc3t")
+
+[node name="0" type="Sprite2D" parent="islandFace" unique_id=109164122]
+position = Vector2(0, 2.43)
+texture = SubResource("AtlasTexture_7qdbi")
+
+[node name="balloon" type="Node2D" parent="." unique_id=729890503]
+position = Vector2(-46.55365, -154.1567)
+script = ExtResource("2_amc3t")
+
+[node name="0" type="Sprite2D" parent="balloon" unique_id=1626985434]
+position = Vector2(0, 44.45)
+texture = SubResource("AtlasTexture_j4g0u")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=764719135]
+libraries/ = SubResource("AnimationLibrary_rfykd")

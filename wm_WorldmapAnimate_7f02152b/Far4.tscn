@@ -1,0 +1,100 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_3vruc"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_1hiuh"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_7f02152b/WaterfallFar.tscn" id="3_6ygii"]
+[ext_resource type="Texture2D" path="res://art/_textures/a40ff701-4f80-424b-97df-13cdd0a8613e.png" id="4_re5tp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl2km"]
+atlas = ExtResource("4_re5tp")
+region = Rect2(2862, 3669, 1048, 366)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sidym"]
+atlas = ExtResource("4_re5tp")
+region = Rect2(3029, 2738, 627, 929)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14m5m"]
+atlas = ExtResource("4_re5tp")
+region = Rect2(1, 3349, 891, 729)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okdmw"]
+atlas = ExtResource("4_re5tp")
+region = Rect2(3967, 1868, 114, 322)
+
+[sub_resource type="Animation" id="Animation_f6py2"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4oj45"]
+_data = {
+&"Idle": SubResource("Animation_f6py2")
+}
+
+[node name="Far4" type="Node2D" unique_id=539600708]
+script = ExtResource("1_3vruc")
+bounds = Rect2(-523.26, -935.72, 1080.35, 1296.11)
+
+[node name="WaterfallFar111" type="Node2D" parent="." unique_id=2084376118]
+script = ExtResource("2_1hiuh")
+
+[node name="0" parent="WaterfallFar111" unique_id=115159577 instance=ExtResource("3_6ygii")]
+position = Vector2(885.21, -12.71)
+scale = Vector2(0.2669, 1.9648)
+autoplay = &"Idle"
+
+[node name="land1" type="Node2D" parent="." unique_id=1812788574]
+script = ExtResource("2_1hiuh")
+
+[node name="0" type="Sprite2D" parent="land1" unique_id=1749803482]
+position = Vector2(0.73, 177.39)
+scale = Vector2(1.8157, 1.8157)
+texture = SubResource("AtlasTexture_fl2km")
+
+[node name="mount2" type="Node2D" parent="." unique_id=417169712]
+script = ExtResource("2_1hiuh")
+
+[node name="0" type="Sprite2D" parent="mount2" unique_id=599593075]
+position = Vector2(-164.01, -471.22)
+scale = Vector2(1, 1.2363)
+texture = SubResource("AtlasTexture_sidym")
+
+[node name="mount1" type="Node2D" parent="." unique_id=541014161]
+script = ExtResource("2_1hiuh")
+
+[node name="0" type="Sprite2D" parent="mount1" unique_id=2105974989]
+position = Vector2(111.59, -187.69)
+texture = SubResource("AtlasTexture_14m5m")
+
+[node name="WaterfallFar" type="Node2D" parent="." unique_id=424616538]
+script = ExtResource("2_1hiuh")
+
+[node name="0" parent="WaterfallFar" unique_id=137667182 instance=ExtResource("3_6ygii")]
+position = Vector2(-398.26, 120.56)
+scale = Vector2(4.5104, 2.4235)
+autoplay = &"Idle"
+
+[node name="columeSingle" type="Node2D" parent="." unique_id=134099548]
+script = ExtResource("2_1hiuh")
+
+[node name="0" type="Sprite2D" parent="columeSingle" unique_id=282510464]
+position = Vector2(-242.79, 11.76)
+texture = SubResource("AtlasTexture_okdmw")
+
+[node name="WaterfallFar1" type="Node2D" parent="." unique_id=1468669703]
+script = ExtResource("2_1hiuh")
+
+[node name="0" parent="WaterfallFar1" unique_id=980670777 instance=ExtResource("3_6ygii")]
+position = Vector2(-767.53, -47.17)
+scale = Vector2(1.7148, 2.0388)
+autoplay = &"Idle"
+
+[node name="WaterfallFar11" type="Node2D" parent="." unique_id=624587724]
+script = ExtResource("2_1hiuh")
+
+[node name="0" parent="WaterfallFar11" unique_id=1952068623 instance=ExtResource("3_6ygii")]
+position = Vector2(-933.93, -47.17)
+scale = Vector2(0.2669, 1.2304)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=702611200]
+libraries/ = SubResource("AnimationLibrary_4oj45")

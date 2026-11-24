@@ -1,0 +1,275 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_e2wjc"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_46jd3"]
+[ext_resource type="Texture2D" path="res://art/_textures/9eccddf7-e0b6-49c2-8237-df77f6ac45d6.png" id="3_5kurx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0b2gw"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1498, 1, 6, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqhbv"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1722, 393, 28, 133)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3yld"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1685, 577, 50, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1jm4"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1660, 763, 56, 61)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1nve"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1464, 760, 58, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iiadw"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1594, 763, 64, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23x58"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1524, 760, 68, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65oss"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1722, 528, 60, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_saa6y"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1524, 819, 85, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8cjt5"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1348, 822, 94, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ql1t"]
+atlas = ExtResource("3_5kurx")
+region = Rect2(1601, 288, 176, 103)
+
+[sub_resource type="Animation" id="Animation_xt2u0"]
+length = 0.16666666666666666
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("rfl01:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("rfl03:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("rfl04:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("rfl05:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("rfl06:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("rfl08:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("rfl09:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("rfl07:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("rfl12:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("rfl13:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("rfl14:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.083333336, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.71), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cvypp"]
+_data = {
+&"idle": SubResource("Animation_xt2u0")
+}
+
+[node name="ReflashesFinished" type="Node2D" unique_id=1442004191]
+script = ExtResource("1_e2wjc")
+bounds = Rect2(-410.47, -395.69, 822.1, 289.99)
+
+[node name="rfl01" type="Node2D" parent="." unique_id=976484388]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl01" unique_id=605438551]
+position = Vector2(233.44, -237.21)
+texture = SubResource("AtlasTexture_0b2gw")
+
+[node name="rfl03" type="Node2D" parent="." unique_id=336266773]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl03" unique_id=1638744435]
+position = Vector2(-395.72, -271.18)
+texture = SubResource("AtlasTexture_mqhbv")
+
+[node name="rfl04" type="Node2D" parent="." unique_id=339016744]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl04" unique_id=2107163294]
+position = Vector2(385.89, -266.87)
+texture = SubResource("AtlasTexture_s3yld")
+
+[node name="rfl05" type="Node2D" parent="." unique_id=793829700]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl05" unique_id=819367255]
+position = Vector2(247.56, -332.24)
+texture = SubResource("AtlasTexture_h1jm4")
+offset = Vector2(-0.5, 0)
+
+[node name="rfl06" type="Node2D" parent="." unique_id=1155365496]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl06" unique_id=1225000912]
+position = Vector2(-251.91, -324.41)
+texture = SubResource("AtlasTexture_s1nve")
+
+[node name="rfl08" type="Node2D" parent="." unique_id=1563179887]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl08" unique_id=1022210358]
+position = Vector2(315.61, -309.58)
+texture = SubResource("AtlasTexture_iiadw")
+
+[node name="rfl09" type="Node2D" parent="." unique_id=76524580]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl09" unique_id=585828716]
+position = Vector2(-319.18, -308.69)
+texture = SubResource("AtlasTexture_23x58")
+
+[node name="rfl07" type="Node2D" parent="." unique_id=269419885]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl07" unique_id=269987833]
+position = Vector2(-261.8, -173.98)
+texture = SubResource("AtlasTexture_65oss")
+
+[node name="rfl12" type="Node2D" parent="." unique_id=1466740343]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl12" unique_id=550706917]
+position = Vector2(-175.49, -116.94)
+texture = SubResource("AtlasTexture_saa6y")
+
+[node name="rfl13" type="Node2D" parent="." unique_id=781899110]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl13" unique_id=982037395]
+position = Vector2(153.62, -116.95)
+texture = SubResource("AtlasTexture_8cjt5")
+
+[node name="rfl14" type="Node2D" parent="." unique_id=1040533921]
+script = ExtResource("2_46jd3")
+
+[node name="0" type="Sprite2D" parent="rfl14" unique_id=1202777134]
+position = Vector2(-6.67, -343.19)
+texture = SubResource("AtlasTexture_2ql1t")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=487266829]
+libraries/ = SubResource("AnimationLibrary_cvypp")

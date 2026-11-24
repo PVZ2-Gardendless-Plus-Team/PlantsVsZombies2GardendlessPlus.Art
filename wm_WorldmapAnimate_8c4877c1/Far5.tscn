@@ -1,0 +1,45 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_xx23g"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_e0wgx"]
+[ext_resource type="Texture2D" path="res://art/_textures/0dfe99a2-9227-4264-852a-41c83dfad806.png" id="3_ir6mc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb6v2"]
+atlas = ExtResource("3_ir6mc")
+region = Rect2(1, 1, 765, 472)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5g8h"]
+atlas = ExtResource("3_ir6mc")
+region = Rect2(403, 810, 584, 270)
+
+[sub_resource type="Animation" id="Animation_gy1gi"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_saa6i"]
+_data = {
+&"Idle": SubResource("Animation_gy1gi")
+}
+
+[node name="Far5" type="Node2D" unique_id=1209198320]
+script = ExtResource("1_xx23g")
+bounds = Rect2(-391.08, -150.47, 765, 472)
+
+[node name="island2" type="Node2D" parent="." unique_id=1428962973]
+script = ExtResource("2_e0wgx")
+
+[node name="0" type="Sprite2D" parent="island2" unique_id=1228964488]
+position = Vector2(-8.58, 85.53)
+scale = Vector2(0.7922, 0.7922)
+texture = SubResource("AtlasTexture_pb6v2")
+
+[node name="sand0" type="Node2D" parent="." unique_id=1473120508]
+script = ExtResource("2_e0wgx")
+
+[node name="0" type="Sprite2D" parent="sand0" unique_id=624291688]
+position = Vector2(2.22, -3.99)
+rotation = 0.06859144
+texture = SubResource("AtlasTexture_d5g8h")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1897247392]
+libraries/ = SubResource("AnimationLibrary_saa6i")

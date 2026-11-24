@@ -1,0 +1,74 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_m85xm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_wccus"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_c8f1c3fe/_fire.tscn" id="3_soq1t"]
+[ext_resource type="Texture2D" path="res://art/_textures/ac3a9595-fcf4-4669-9db6-ad6252e64739.png" id="4_doa7n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bupm"]
+atlas = ExtResource("4_doa7n")
+region = Rect2(1427, 1846, 314, 198)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lvp1"]
+atlas = ExtResource("4_doa7n")
+region = Rect2(1412, 1580, 199, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuob8"]
+atlas = ExtResource("4_doa7n")
+region = Rect2(1412, 1631, 189, 46)
+
+[sub_resource type="Animation" id="Animation_med6d"]
+length = 0.13333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island_corner_lit0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_swwx2"]
+_data = {
+&"Idle": SubResource("Animation_med6d")
+}
+
+[node name="Island_Corner_U" type="Node2D" unique_id=1962862635]
+script = ExtResource("1_m85xm")
+bounds = Rect2(-152.27, -48.82, 313.5, 198)
+
+[node name="_fire" type="Node2D" parent="." unique_id=496217694]
+script = ExtResource("2_wccus")
+
+[node name="0" parent="_fire" unique_id=2079638346 instance=ExtResource("3_soq1t")]
+position = Vector2(0, 113.6)
+scale = Vector2(5.0845, 1.938)
+autoplay = &"Idle"
+
+[node name="island0" type="Node2D" parent="." unique_id=1595737934]
+script = ExtResource("2_wccus")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=1893744592]
+position = Vector2(4.48, 50.18)
+texture = SubResource("AtlasTexture_0bupm")
+
+[node name="island_corner_lit0" type="Node2D" parent="." unique_id=1059474185]
+script = ExtResource("2_wccus")
+display = 1
+
+[node name="0" type="Sprite2D" parent="island_corner_lit0" unique_id=809398353]
+visible = false
+position = Vector2(-1.33, 0.64)
+scale = Vector2(0.9427, 0.9427)
+texture = SubResource("AtlasTexture_6lvp1")
+
+[node name="1" type="Sprite2D" parent="island_corner_lit0" unique_id=1657731869]
+position = Vector2(-0.66, 0.64)
+texture = SubResource("AtlasTexture_tuob8")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2029012546]
+libraries/ = SubResource("AnimationLibrary_swwx2")

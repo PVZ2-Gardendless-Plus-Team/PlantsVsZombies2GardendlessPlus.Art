@@ -1,0 +1,65 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_tx7pr"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_xk42l"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_8fa3fdd7/island.tscn" id="3_85os7"]
+[ext_resource type="Texture2D" path="res://art/_textures/f9a69143-d312-4931-855e-06042ec2be76.png" id="4_wa0yg"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_8fa3fdd7/pathMid.tscn" id="5_xvgck"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_50njg"]
+atlas = ExtResource("4_wa0yg")
+region = Rect2(2448, 1623, 131, 77)
+
+[sub_resource type="Animation" id="Animation_jub4u"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c3iro"]
+_data = {
+&"Idle": SubResource("Animation_jub4u")
+}
+
+[node name="islandU" type="Node2D" unique_id=1602286452]
+script = ExtResource("1_tx7pr")
+bounds = Rect2(-564.83, -276.79, 1129.65, 604.71)
+
+[node name="island" type="Node2D" parent="." unique_id=791128984]
+script = ExtResource("2_xk42l")
+
+[node name="0" parent="island" unique_id=1958742700 instance=ExtResource("3_85os7")]
+autoplay = &"Idle"
+
+[node name="path_D" type="Node2D" parent="." unique_id=629598693]
+script = ExtResource("2_xk42l")
+
+[node name="0" type="Sprite2D" parent="path_D" unique_id=170405898]
+position = Vector2(-157.97, 72.5)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_50njg")
+
+[node name="path_D1" type="Node2D" parent="." unique_id=1384622095]
+script = ExtResource("2_xk42l")
+
+[node name="0" type="Sprite2D" parent="path_D1" unique_id=283648317]
+position = Vector2(157.97, 72.5)
+texture = SubResource("AtlasTexture_50njg")
+
+[node name="pathMid" type="Node2D" parent="." unique_id=116085541]
+script = ExtResource("2_xk42l")
+
+[node name="0" parent="pathMid" unique_id=1718830266 instance=ExtResource("5_xvgck")]
+position = Vector2(-330, 183.68)
+autoplay = &"Idle"
+
+[node name="pathMid1" type="Node2D" parent="." unique_id=1729115278]
+script = ExtResource("2_xk42l")
+
+[node name="0" parent="pathMid1" unique_id=1805216216 instance=ExtResource("5_xvgck")]
+position = Vector2(330, 183.68)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=359752411]
+libraries/ = SubResource("AnimationLibrary_c3iro")

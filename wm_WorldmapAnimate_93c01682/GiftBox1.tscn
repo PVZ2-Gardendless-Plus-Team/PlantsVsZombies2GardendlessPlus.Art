@@ -1,0 +1,71 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_fy2pl"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_s1mkg"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_iku53"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpv0u"]
+atlas = ExtResource("3_iku53")
+region = Rect2(353, 1887, 176, 135)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knjqd"]
+atlas = ExtResource("3_iku53")
+region = Rect2(1059, 795, 208, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xnax"]
+atlas = ExtResource("3_iku53")
+region = Rect2(1398, 428, 125, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku741"]
+atlas = ExtResource("3_iku53")
+region = Rect2(1525, 1, 117, 69)
+
+[sub_resource type="Animation" id="Animation_4ctsa"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xg372"]
+_data = {
+&"idle": SubResource("Animation_4ctsa")
+}
+
+[node name="GiftBox1" type="Node2D" unique_id=1346776211]
+script = ExtResource("1_fy2pl")
+bounds = Rect2(-103.42, -87.42, 208, 200.17)
+
+[node name="island" type="Node2D" parent="." unique_id=972326860]
+script = ExtResource("2_s1mkg")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=189156439]
+position = Vector2(-1.03, 45.26)
+scale = Vector2(0.8245, 0.8233)
+texture = SubResource("AtlasTexture_qpv0u")
+
+[node name="top" type="Node2D" parent="." unique_id=1317686576]
+script = ExtResource("2_s1mkg")
+
+[node name="0" type="Sprite2D" parent="top" unique_id=426350320]
+position = Vector2(0.58, -3.03)
+scale = Vector2(0.7605, 0.7605)
+texture = SubResource("AtlasTexture_knjqd")
+
+[node name="flower_red" type="Node2D" parent="." unique_id=943329200]
+script = ExtResource("2_s1mkg")
+
+[node name="0" type="Sprite2D" parent="flower_red" unique_id=167839045]
+position = Vector2(-40.66, -40.67)
+rotation = 2.9921925
+scale = Vector2(0.8744, -0.8744)
+texture = SubResource("AtlasTexture_2xnax")
+offset = Vector2(0, 0.5)
+
+[node name="lilies" type="Node2D" parent="." unique_id=947429273]
+script = ExtResource("2_s1mkg")
+
+[node name="0" type="Sprite2D" parent="lilies" unique_id=874555966]
+position = Vector2(36, -40.35)
+rotation = -3.0557225
+scale = Vector2(0.9022, -0.9022)
+texture = SubResource("AtlasTexture_ku741")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=607567385]
+libraries/ = SubResource("AnimationLibrary_xg372")

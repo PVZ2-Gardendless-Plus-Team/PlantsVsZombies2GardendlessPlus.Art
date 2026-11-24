@@ -1,0 +1,79 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_8bpan"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_krxsf"]
+[ext_resource type="Texture2D" path="res://art/_textures/04ee9a11-fd56-4b52-ae53-c22145d1ddc2.png" id="3_y4his"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5achw"]
+atlas = ExtResource("3_y4his")
+region = Rect2(1686, 1116, 52, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cbsj"]
+atlas = ExtResource("3_y4his")
+region = Rect2(1871, 1266, 80, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qdbi"]
+atlas = ExtResource("3_y4his")
+region = Rect2(1847, 1168, 120, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uviiv"]
+atlas = ExtResource("3_y4his")
+region = Rect2(1898, 1, 82, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ik4ds"]
+atlas = ExtResource("3_y4his")
+region = Rect2(1997, 972, 44, 54)
+
+[sub_resource type="Animation" id="Animation_i1vj2"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wgn7h"]
+_data = {
+&"idle": SubResource("Animation_i1vj2")
+}
+
+[node name="GiftBox01" type="Node2D" unique_id=597357546]
+script = ExtResource("1_8bpan")
+bounds = Rect2(-59.75, -137.97, 119.5, 230.51)
+
+[node name="island3" type="Node2D" parent="." unique_id=263840844]
+script = ExtResource("2_krxsf")
+
+[node name="0" type="Sprite2D" parent="island3" unique_id=1833639104]
+position = Vector2(0, 70.3)
+scale = Vector2(0.7069, 0.7069)
+texture = SubResource("AtlasTexture_5achw")
+
+[node name="island2" type="Node2D" parent="." unique_id=1417454070]
+script = ExtResource("2_krxsf")
+
+[node name="0" type="Sprite2D" parent="island2" unique_id=2109462683]
+position = Vector2(0, 33.34)
+texture = SubResource("AtlasTexture_7cbsj")
+
+[node name="islandFace2" type="Node2D" parent="." unique_id=859080159]
+script = ExtResource("2_krxsf")
+
+[node name="0" type="Sprite2D" parent="islandFace2" unique_id=1752249634]
+position = Vector2(0, 4.03)
+scale = Vector2(0.83, 0.83)
+texture = SubResource("AtlasTexture_7qdbi")
+
+[node name="stars0" type="Node2D" parent="." unique_id=8203010]
+script = ExtResource("2_krxsf")
+
+[node name="0" type="Sprite2D" parent="stars0" unique_id=996576068]
+position = Vector2(-4.67, -35.97)
+texture = SubResource("AtlasTexture_uviiv")
+
+[node name="lines0" type="Node2D" parent="." unique_id=1895469125]
+script = ExtResource("2_krxsf")
+
+[node name="0" type="Sprite2D" parent="lines0" unique_id=2027110110]
+position = Vector2(14.35, 56.1)
+rotation = -3.1415927
+scale = Vector2(0.8885, -0.8885)
+texture = SubResource("AtlasTexture_ik4ds")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1919920018]
+libraries/ = SubResource("AnimationLibrary_wgn7h")

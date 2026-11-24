@@ -1,0 +1,339 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ep4fm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_0v5oc"]
+[ext_resource type="Texture2D" path="res://art/_textures/c8538d14-9606-41dd-8168-7906d745a9f7.png" id="3_cwo8r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bsv0"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1606, 1, 46, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkubt"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1619, 269, 46, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5r37"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1605, 141, 46, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atm8m"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1557, 141, 46, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0sth"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1126, 435, 90, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2lbw"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(600, 219, 90, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukw15"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1105, 863, 90, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lf8i"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1409, 319, 90, 156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s40tn"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1279, 172, 122, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eosg4"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1396, 1, 122, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a6ky"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(981, 863, 122, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnfq1"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1285, 329, 122, 154)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vedx"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1777, 1, 36, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ii33l"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1654, 41, 40, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbt68"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1738, 81, 40, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vy5j6"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(751, 941, 38, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_offmx"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(630, 419, 13, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4r55"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1626, 129, 18, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj1sh"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(1606, 129, 18, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lktr1"]
+atlas = ExtResource("3_cwo8r")
+region = Rect2(562, 1002, 24, 21)
+
+[sub_resource type="Animation" id="Animation_pheo7"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("eyeL:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.23333333, 0.26666668, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 2, 1, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("eyeR:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.23333333, 0.26666668, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 2, 1, 0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("eyeHeartL:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, -1, 0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("eyeHeartR:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.23333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, -1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r2r1s"]
+_data = {
+&"Idle1": SubResource("Animation_pheo7")
+}
+
+[node name="_bowlingExpl" type="Node2D" unique_id=2138232728]
+script = ExtResource("1_ep4fm")
+bounds = Rect2(-80.53, -138.63, 148.53, 161.07)
+
+[node name="back" type="Node2D" parent="." unique_id=1398544062]
+position = Vector2(9.536743e-07, -54.068512)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="back" unique_id=179857723]
+position = Vector2(-55.03, 3.66)
+texture = SubResource("AtlasTexture_7bsv0")
+offset = Vector2(-0.5, 0)
+
+[node name="1" type="Sprite2D" parent="back" unique_id=1985679176]
+visible = false
+position = Vector2(-55.03, 3.66)
+texture = SubResource("AtlasTexture_nkubt")
+offset = Vector2(-0.5, 0)
+
+[node name="2" type="Sprite2D" parent="back" unique_id=1906058998]
+visible = false
+position = Vector2(-55.03, 3.66)
+texture = SubResource("AtlasTexture_x5r37")
+offset = Vector2(-0.5, 0)
+
+[node name="3" type="Sprite2D" parent="back" unique_id=996741927]
+visible = false
+position = Vector2(-55.03, 3.66)
+texture = SubResource("AtlasTexture_atm8m")
+offset = Vector2(-0.5, 0)
+
+[node name="mid" type="Node2D" parent="." unique_id=1077590135]
+position = Vector2(-26.22395, -129.5615)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="mid" unique_id=288746750]
+position = Vector2(6.64, 70.93)
+texture = SubResource("AtlasTexture_m0sth")
+
+[node name="1" type="Sprite2D" parent="mid" unique_id=756133053]
+visible = false
+position = Vector2(6.63, 70.92)
+texture = SubResource("AtlasTexture_i2lbw")
+
+[node name="2" type="Sprite2D" parent="mid" unique_id=692195866]
+visible = false
+position = Vector2(6.63, 70.92)
+texture = SubResource("AtlasTexture_ukw15")
+
+[node name="3" type="Sprite2D" parent="mid" unique_id=1899447208]
+visible = false
+position = Vector2(6.63, 70.92)
+texture = SubResource("AtlasTexture_7lf8i")
+
+[node name="face" type="Node2D" parent="." unique_id=1495780262]
+position = Vector2(4.2, 14.2815)
+rotation = -1.5834237
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="face" unique_id=132787362]
+position = Vector2(71.33, 1.7)
+rotation = 1.5833627
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_s40tn")
+
+[node name="1" type="Sprite2D" parent="face" unique_id=144134261]
+visible = false
+position = Vector2(71.26, 1.93)
+rotation = 1.5833627
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_eosg4")
+
+[node name="2" type="Sprite2D" parent="face" unique_id=795657926]
+visible = false
+position = Vector2(71.26, 1.93)
+rotation = 1.5833627
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_4a6ky")
+
+[node name="3" type="Sprite2D" parent="face" unique_id=623783209]
+visible = false
+position = Vector2(70.17, 1.92)
+rotation = 1.5833627
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_xnfq1")
+
+[node name="eyeL" type="Node2D" parent="." unique_id=1812903363]
+position = Vector2(-14.7747135, -80.707596)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyeL" unique_id=762038346]
+position = Vector2(-1.37, 0.68)
+texture = SubResource("AtlasTexture_5vedx")
+offset = Vector2(0, -0.5)
+
+[node name="1" type="Sprite2D" parent="eyeL" unique_id=1719840723]
+visible = false
+position = Vector2(-0.76, -0.53)
+texture = SubResource("AtlasTexture_ii33l")
+
+[node name="2" type="Sprite2D" parent="eyeL" unique_id=66181811]
+visible = false
+position = Vector2(-0.45, -1.44)
+texture = SubResource("AtlasTexture_bbt68")
+
+[node name="3" type="Sprite2D" parent="eyeL" unique_id=1186380075]
+visible = false
+position = Vector2(0.15, 0.47)
+texture = SubResource("AtlasTexture_vy5j6")
+
+[node name="eyeR" type="Node2D" parent="." unique_id=1082621738]
+position = Vector2(30.939583, -83.755196)
+rotation = -0.10471975
+scale = Vector2(0.7656, 0.79999995)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyeR" unique_id=834781105]
+position = Vector2(-1.37, 0.68)
+texture = SubResource("AtlasTexture_5vedx")
+offset = Vector2(0, -0.5)
+
+[node name="1" type="Sprite2D" parent="eyeR" unique_id=763195298]
+visible = false
+position = Vector2(-0.76, -0.53)
+texture = SubResource("AtlasTexture_ii33l")
+
+[node name="2" type="Sprite2D" parent="eyeR" unique_id=1644574758]
+visible = false
+position = Vector2(-0.45, -1.44)
+texture = SubResource("AtlasTexture_bbt68")
+
+[node name="3" type="Sprite2D" parent="eyeR" unique_id=1840301213]
+visible = false
+position = Vector2(0.15, 0.47)
+texture = SubResource("AtlasTexture_vy5j6")
+
+[node name="eyeHeartL" type="Node2D" parent="." unique_id=909398137]
+position = Vector2(-9.544714, -80.3406)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyeHeartL" unique_id=1515498914]
+position = Vector2(0.49, -0.01)
+scale = Vector2(0.3632, 0.3632)
+texture = SubResource("AtlasTexture_offmx")
+
+[node name="eyeHeartR" type="Node2D" parent="." unique_id=546256311]
+position = Vector2(22.755493, -83.10343)
+rotation = 0.0046686274
+scale = Vector2(0.95748025, 0.99954015)
+skew = -0.009140849
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyeHeartR" unique_id=1392014703]
+position = Vector2(0.49, -0.01)
+scale = Vector2(0.3078, 0.3078)
+texture = SubResource("AtlasTexture_offmx")
+
+[node name="eyebrowL" type="Node2D" parent="." unique_id=1904147591]
+position = Vector2(-17.200014, -107.3276)
+rotation = 0.3130929
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyebrowL" unique_id=916260168]
+position = Vector2(7.68, 0.2)
+rotation = -0.31311208
+scale = Vector2(1, 0.9)
+texture = SubResource("AtlasTexture_j4r55")
+
+[node name="eyebrowR" type="Node2D" parent="." unique_id=1518256416]
+position = Vector2(27.245182, -106.8762)
+rotation = 2.945067
+scale = Vector2(0.9999999, 0.9999999)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="eyebrowR" unique_id=459450919]
+position = Vector2(5.12, -0.04)
+rotation = -2.735629
+scale = Vector2(0.7, 0.7)
+texture = SubResource("AtlasTexture_sj1sh")
+
+[node name="mouth" type="Node2D" parent="." unique_id=1976199139]
+position = Vector2(8.545684, -60.173203)
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_0v5oc")
+
+[node name="0" type="Sprite2D" parent="mouth" unique_id=1435216864]
+position = Vector2(1.17, 3.23)
+texture = SubResource("AtlasTexture_lktr1")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=36002851]
+libraries/ = SubResource("AnimationLibrary_r2r1s")

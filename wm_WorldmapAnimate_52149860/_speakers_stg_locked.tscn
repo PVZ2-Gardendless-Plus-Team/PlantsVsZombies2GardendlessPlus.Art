@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_cn0s8"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_qu1vn"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_tukt5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3julv"]
+atlas = ExtResource("3_tukt5")
+region = Rect2(2010, 1357, 36, 62)
+
+[sub_resource type="Animation" id="Animation_jafae"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ucegt"]
+_data = {
+&"i": SubResource("Animation_jafae")
+}
+
+[node name="_speakers_stg_locked" type="Node2D" unique_id=2038260284]
+script = ExtResource("1_cn0s8")
+bounds = Rect2(-280.43, -16.42, 560.86, 111.22)
+
+[node name="l" type="Node2D" parent="." unique_id=419578068]
+modulate = Color(0.36, 0.36, 0.36, 1)
+position = Vector2(-179.59225, 62.469)
+rotation = 1.7609464
+scale = Vector2(1.2234, 0.9216)
+script = ExtResource("2_qu1vn")
+
+[node name="0" type="Sprite2D" parent="l" unique_id=1276454135]
+position = Vector2(1.38, 1.95)
+rotation = -2.7797859
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="l1" type="Node2D" parent="." unique_id=1600020228]
+modulate = Color(0.36, 0.36, 0.36, 1)
+position = Vector2(-260.9895, 13.41985)
+rotation = 1.7609464
+scale = Vector2(1.0510999, 0.7386)
+script = ExtResource("2_qu1vn")
+
+[node name="0" type="Sprite2D" parent="l1" unique_id=582601467]
+position = Vector2(1.38, 1.95)
+rotation = -2.7797859
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="l2" type="Node2D" parent="." unique_id=2011266883]
+modulate = Color(0.36, 0.36, 0.36, 1)
+position = Vector2(179.59225, 62.469)
+rotation = 1.3806462
+scale = Vector2(1.2234, -0.9216)
+script = ExtResource("2_qu1vn")
+
+[node name="0" type="Sprite2D" parent="l2" unique_id=455447986]
+position = Vector2(1.38, 1.95)
+rotation = -2.7797859
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="l11" type="Node2D" parent="." unique_id=1412415476]
+modulate = Color(0.36, 0.36, 0.36, 1)
+position = Vector2(260.9895, 13.41985)
+rotation = 1.3806462
+scale = Vector2(1.0510999, -0.7386)
+script = ExtResource("2_qu1vn")
+
+[node name="0" type="Sprite2D" parent="l11" unique_id=1421393796]
+position = Vector2(1.38, 1.95)
+rotation = -2.7797859
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_3julv")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=136576150]
+libraries/ = SubResource("AnimationLibrary_ucegt")

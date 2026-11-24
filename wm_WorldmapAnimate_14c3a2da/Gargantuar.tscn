@@ -1,0 +1,411 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_1svc6"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_a1n1c"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_3m8yx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5msgp"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(1809, 1, 944, 919)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqo36"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(1063, 1870, 147, 161)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71xx8"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(1212, 1870, 125, 114)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_os30v"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(2517, 1872, 100, 102)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grlgi"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(1809, 1564, 357, 243)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh2pq"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(2313, 1859, 202, 179)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45nra"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(1343, 1664, 227, 247)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5v6ub"]
+atlas = ExtResource("3_3m8yx")
+region = Rect2(3612, 1159, 470, 472)
+
+[sub_resource type="Animation" id="Animation_h2s3o"]
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("path2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8666667, 0.93333334, 1, 1.0333333, 1.1, 1.1333333, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8666666, 2.9333334, 3, 3.0333333, 3.1, 3.1333334, 3.2, 3.2333333, 3.2666667, 3.3, 3.3333333, 3.3666666, 3.4, 3.4333334, 3.4666667, 3.5, 3.5333333, 3.5666666, 3.6, 3.6333334, 3.6666667, 3.7, 3.7333333, 3.7666667, 3.8, 3.8333333, 3.8666666, 3.9, 3.9333334, 3.9666667, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(237.35, -266.45), Vector2(237.35, -266.4343), Vector2(237.35, -266.38898), Vector2(237.35, -266.3108), Vector2(237.35, -266.1967), Vector2(237.35, -266.05008), Vector2(237.35, -265.86407), Vector2(237.35, -265.6358), Vector2(237.35, -265.3728), Vector2(237.35, -265.06454), Vector2(237.35, -264.70853), Vector2(237.35, -264.31638), Vector2(237.35, -263.85883), Vector2(237.35, -263.36328), Vector2(237.35, -262.8136), Vector2(237.35, -262.20816), Vector2(237.35, -261.54544), Vector2(237.35, -260.82428), Vector2(237.35, -260.0438), Vector2(237.35, -259.20343), Vector2(237.35, -258.2788), Vector2(237.35, -257.31763), Vector2(237.35, -256.29727), Vector2(237.35, -255.21886), Vector2(237.35, -254.08395), Vector2(237.35, -251.65378), Vector2(237.35, -249.05975), Vector2(237.35, -246.42467), Vector2(237.35, -245.0752), Vector2(237.35, -242.45555), Vector2(237.35, -241.16621), Vector2(237.35, -238.73604), Vector2(237.35, -237.60114), Vector2(237.35, -236.52272), Vector2(237.35, -235.50237), Vector2(237.35, -234.54118), Vector2(237.35, -233.61658), Vector2(237.35, -232.7762), Vector2(237.35, -231.99571), Vector2(237.35, -231.27457), Vector2(237.35, -230.61185), Vector2(237.35, -230.0064), Vector2(237.35, -229.45674), Vector2(237.35, -228.96118), Vector2(237.35, -228.50363), Vector2(237.35, -228.1115), Vector2(237.35, -227.75545), Vector2(237.35, -227.44722), Vector2(237.35, -227.18422), Vector2(237.35, -226.95592), Vector2(237.35, -226.76993), Vector2(237.35, -226.62332), Vector2(237.35, -226.5092), Vector2(237.35, -226.43105), Vector2(237.35, -226.3857), Vector2(237.35, -226.37001), Vector2(237.35, -226.3857), Vector2(237.35, -226.43105), Vector2(237.35, -226.5092), Vector2(237.35, -226.62332), Vector2(237.35, -226.76993), Vector2(237.35, -226.95592), Vector2(237.35, -227.18422), Vector2(237.35, -227.44722), Vector2(237.35, -227.75545), Vector2(237.35, -228.1115), Vector2(237.35, -228.50363), Vector2(237.35, -228.96118), Vector2(237.35, -229.45674), Vector2(237.35, -230.0064), Vector2(237.35, -230.61185), Vector2(237.35, -231.27455), Vector2(237.35, -231.99571), Vector2(237.35, -232.7762), Vector2(237.35, -233.61658), Vector2(237.35, -234.54118), Vector2(237.35, -235.50237), Vector2(237.35, -236.52272), Vector2(237.35, -237.60114), Vector2(237.35, -238.73604), Vector2(237.35, -241.16621), Vector2(237.35, -243.76024), Vector2(237.35, -246.39532), Vector2(237.35, -247.7448), Vector2(237.35, -250.36444), Vector2(237.35, -251.65378), Vector2(237.35, -254.08395), Vector2(237.35, -255.21886), Vector2(237.35, -256.29727), Vector2(237.35, -257.31763), Vector2(237.35, -258.2788), Vector2(237.35, -259.20343), Vector2(237.35, -260.0438), Vector2(237.35, -260.82428), Vector2(237.35, -261.54544), Vector2(237.35, -262.20816), Vector2(237.35, -262.8136), Vector2(237.35, -263.36328), Vector2(237.35, -263.85883), Vector2(237.35, -264.31638), Vector2(237.35, -264.7085), Vector2(237.35, -265.06454), Vector2(237.35, -265.3728), Vector2(237.35, -265.6358), Vector2(237.35, -265.86407), Vector2(237.35, -266.05008), Vector2(237.35, -266.1967), Vector2(237.35, -266.3108), Vector2(237.35, -266.38898), Vector2(237.35, -266.4343), Vector2(237.35, -266.45)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("path2:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("path2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("path2:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("path1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.2, 0.23333333, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.53333336, 0.56666666, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.2, 2.2666667, 2.3, 2.3333333, 2.4333334, 2.4666667, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3, 3.0333333, 3.0666666, 3.1, 3.1333334, 3.1666667, 3.2, 3.2333333, 3.2666667, 3.3, 3.3333333, 3.3666666, 3.4, 3.4333334, 3.4666667, 3.5, 3.5333333, 3.5666666, 3.6, 3.6333334, 3.6666667, 3.7, 3.7333333, 3.7666667, 3.8, 3.8333333, 3.8666666, 3.9, 3.9333334, 3.9666667, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-226.5, -275.34), Vector2(-226.5, -276.86298), Vector2(-226.5, -278.32053), Vector2(-226.5, -279.71838), Vector2(-226.5, -281.09094), Vector2(-226.5, -283.71356), Vector2(-226.5, -284.96814), Vector2(-226.5, -287.3697), Vector2(-226.5, -288.53784), Vector2(-226.5, -289.67316), Vector2(-226.5, -290.76923), Vector2(-226.5, -291.82077), Vector2(-226.5, -292.84702), Vector2(-226.5, -294.83282), Vector2(-226.5, -295.76358), Vector2(-226.5, -297.53513), Vector2(-226.5, -298.3719), Vector2(-226.5, -299.18744), Vector2(-226.5, -299.9592), Vector2(-226.5, -300.68658), Vector2(-226.5, -301.38794), Vector2(-226.5, -302.06097), Vector2(-226.5, -302.68655), Vector2(-226.5, -303.28113), Vector2(-226.5, -303.84262), Vector2(-226.5, -304.369), Vector2(-226.5, -304.84503), Vector2(-226.5, -305.28397), Vector2(-226.5, -305.6839), Vector2(-226.5, -306.0332), Vector2(-226.5, -306.35062), Vector2(-226.5, -306.61618), Vector2(-226.5, -306.84363), Vector2(-226.5, -307.01822), Vector2(-226.5, -307.1453), Vector2(-226.5, -307.22314), Vector2(-226.5, -307.25), Vector2(-226.5, -307.23428), Vector2(-226.5, -307.18896), Vector2(-226.5, -307.11078), Vector2(-226.5, -306.99667), Vector2(-226.5, -306.85007), Vector2(-226.5, -306.66406), Vector2(-226.5, -306.4358), Vector2(-226.5, -306.1728), Vector2(-226.5, -305.86453), Vector2(-226.5, -305.5085), Vector2(-226.5, -305.11636), Vector2(-226.5, -304.6588), Vector2(-226.5, -304.16327), Vector2(-226.5, -303.6136), Vector2(-226.5, -303.00815), Vector2(-226.5, -302.34543), Vector2(-226.5, -301.62427), Vector2(-226.5, -300.84378), Vector2(-226.5, -300.00342), Vector2(-226.5, -299.0788), Vector2(-226.5, -298.1176), Vector2(-226.5, -297.09726), Vector2(-226.5, -296.01886), Vector2(-226.5, -294.88397), Vector2(-226.5, -292.4538), Vector2(-226.5, -289.85974), Vector2(-226.5, -288.5448), Vector2(-226.5, -287.1953), Vector2(-226.5, -283.25555), Vector2(-226.5, -281.96622), Vector2(-226.5, -279.53604), Vector2(-226.5, -278.40115), Vector2(-226.5, -277.32272), Vector2(-226.5, -276.30237), Vector2(-226.5, -275.3412), Vector2(-226.5, -274.41656), Vector2(-226.5, -273.5762), Vector2(-226.5, -272.79572), Vector2(-226.5, -272.07455), Vector2(-226.5, -271.41187), Vector2(-226.5, -270.8064), Vector2(-226.5, -270.25674), Vector2(-226.5, -269.76117), Vector2(-226.5, -269.30365), Vector2(-226.5, -268.9115), Vector2(-226.5, -268.55545), Vector2(-226.5, -268.24722), Vector2(-226.5, -267.98422), Vector2(-226.5, -267.75592), Vector2(-226.5, -267.56992), Vector2(-226.5, -267.42334), Vector2(-226.5, -267.3092), Vector2(-226.5, -267.23105), Vector2(-226.5, -267.1857), Vector2(-226.5, -267.16998), Vector2(-226.5, -267.1968), Vector2(-226.5, -267.27405), Vector2(-226.5, -267.40027), Vector2(-226.5, -267.57098), Vector2(-226.5, -267.78577), Vector2(-226.5, -268.0424), Vector2(-226.5, -268.33838), Vector2(-226.5, -268.67087), Vector2(-226.5, -269.03668), Vector2(-226.5, -269.44308), Vector2(-226.5, -269.882), Vector2(-226.5, -270.3492), Vector2(-226.5, -270.85764), Vector2(-226.5, -271.38962), Vector2(-226.5, -271.96094), Vector2(-226.5, -272.56546), Vector2(-226.5, -273.1961), Vector2(-226.5, -273.86755), Vector2(-226.5, -274.5769), Vector2(-226.5, -275.34)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("path1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("path1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("path1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("path0:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5333333, 1.5666667, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8666667, 1.9333333, 2, 2.0333333, 2.1, 2.1333334, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3, 3.0333333, 3.0666666, 3.1, 3.1333334, 3.1666667, 3.2, 3.2333333, 3.2666667, 3.3, 3.3333333, 3.3666666, 3.4, 3.4333334, 3.4666667, 3.5, 3.5333333, 3.6, 3.6333334, 3.6666667, 3.7, 3.7333333, 3.7666667, 3.8, 3.8333333, 3.8666666, 3.9, 3.9333334, 3.9666667, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-247.3, -213.11), Vector2(-247.3, -214.37498), Vector2(-247.3, -215.57231), Vector2(-247.3, -216.72168), Vector2(-247.3, -217.82748), Vector2(-247.3, -218.89967), Vector2(-247.3, -219.91559), Vector2(-247.3, -220.90819), Vector2(-247.3, -221.87796), Vector2(-247.3, -222.7998), Vector2(-247.3, -223.68016), Vector2(-247.3, -224.52765), Vector2(-247.3, -225.3518), Vector2(-247.3, -226.87106), Vector2(-247.3, -227.57439), Vector2(-247.3, -228.24124), Vector2(-247.3, -228.88162), Vector2(-247.3, -229.46852), Vector2(-247.3, -230.02425), Vector2(-247.3, -230.54553), Vector2(-247.3, -231.01012), Vector2(-247.3, -231.43706), Vector2(-247.3, -231.82349), Vector2(-247.3, -232.16646), Vector2(-247.3, -232.45726), Vector2(-247.3, -232.70096), Vector2(-247.3, -232.89479), Vector2(-247.3, -233.03355), Vector2(-247.3, -233.12076), Vector2(-247.3, -233.15), Vector2(-247.3, -233.13428), Vector2(-247.3, -233.08894), Vector2(-247.3, -233.01077), Vector2(-247.3, -232.89667), Vector2(-247.3, -232.75006), Vector2(-247.3, -232.56407), Vector2(-247.3, -232.33577), Vector2(-247.3, -232.07277), Vector2(-247.3, -231.76454), Vector2(-247.3, -231.4085), Vector2(-247.3, -231.01636), Vector2(-247.3, -230.5588), Vector2(-247.3, -230.06325), Vector2(-247.3, -229.5136), Vector2(-247.3, -228.90814), Vector2(-247.3, -228.24542), Vector2(-247.3, -227.52428), Vector2(-247.3, -226.74379), Vector2(-247.3, -225.90341), Vector2(-247.3, -224.9788), Vector2(-247.3, -224.01762), Vector2(-247.3, -222.99727), Vector2(-247.3, -221.91885), Vector2(-247.3, -220.78395), Vector2(-247.3, -218.35378), Vector2(-247.3, -215.75975), Vector2(-247.3, -213.12466), Vector2(-247.3, -211.77519), Vector2(-247.3, -209.15555), Vector2(-247.3, -207.86621), Vector2(-247.3, -205.43604), Vector2(-247.3, -204.30113), Vector2(-247.3, -203.22272), Vector2(-247.3, -202.20238), Vector2(-247.3, -201.24118), Vector2(-247.3, -200.31657), Vector2(-247.3, -199.47621), Vector2(-247.3, -198.69572), Vector2(-247.3, -197.97456), Vector2(-247.3, -197.31184), Vector2(-247.3, -196.70639), Vector2(-247.3, -196.15674), Vector2(-247.3, -195.66118), Vector2(-247.3, -195.20363), Vector2(-247.3, -194.8115), Vector2(-247.3, -194.45544), Vector2(-247.3, -194.14722), Vector2(-247.3, -193.8842), Vector2(-247.3, -193.65591), Vector2(-247.3, -193.46992), Vector2(-247.3, -193.32332), Vector2(-247.3, -193.20921), Vector2(-247.3, -193.13104), Vector2(-247.3, -193.08571), Vector2(-247.3, -193.06999), Vector2(-247.3, -193.09923), Vector2(-247.3, -193.18642), Vector2(-247.3, -193.3252), Vector2(-247.3, -193.51903), Vector2(-247.3, -193.76273), Vector2(-247.3, -194.05353), Vector2(-247.3, -194.3965), Vector2(-247.3, -194.78291), Vector2(-247.3, -195.20987), Vector2(-247.3, -195.67445), Vector2(-247.3, -196.19574), Vector2(-247.3, -196.75148), Vector2(-247.3, -197.33836), Vector2(-247.3, -197.97874), Vector2(-247.3, -198.64558), Vector2(-247.3, -199.34892), Vector2(-247.3, -200.86818), Vector2(-247.3, -201.69234), Vector2(-247.3, -202.53983), Vector2(-247.3, -203.42018), Vector2(-247.3, -204.34203), Vector2(-247.3, -205.3118), Vector2(-247.3, -206.3044), Vector2(-247.3, -207.32033), Vector2(-247.3, -208.3925), Vector2(-247.3, -209.4983), Vector2(-247.3, -210.64767), Vector2(-247.3, -211.845), Vector2(-247.3, -213.11)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("path0:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("path0:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("path0:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("path5:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.36666667, 0.43333334, 0.5, 0.56666666, 0.6, 0.6333333, 0.7, 0.76666665, 0.8, 0.8666667, 1, 1.1, 1.1333333, 1.2, 1.2666667, 1.3, 1.3666667, 1.4, 1.4333333, 1.5, 1.5666667, 1.6333333, 1.7, 1.7666667, 1.8333334, 1.9, 1.9666667, 2.0333333, 2.1, 2.1666667, 2.2333333, 2.3, 2.3666666, 2.4333334, 2.5, 2.5666666, 2.6, 2.6333334, 2.7, 2.7666667, 2.8, 2.8666666, 3, 3.1, 3.1333334, 3.2, 3.2666667, 3.3, 3.3666666, 3.4, 3.4333334, 3.5, 3.5666666, 3.6333334, 3.7, 3.7666667, 3.8333333, 3.9, 3.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-25, -203.7), Vector2(-25, -203.72078), Vector2(-25, -203.78627), Vector2(-25, -203.89954), Vector2(-25, -204.06686), Vector2(-25, -204.29309), Vector2(-25, -204.42664), Vector2(-25, -204.75124), Vector2(-25, -205.14464), Vector2(-25, -205.61594), Vector2(-25, -205.88174), Vector2(-25, -206.16795), Vector2(-25, -206.8102), Vector2(-25, -207.52496), Vector2(-25, -207.91148), Vector2(-25, -208.73912), Vector2(-25, -210.51999), Vector2(-25, -211.87175), Vector2(-25, -212.31087), Vector2(-25, -213.1385), Vector2(-25, -213.89229), Vector2(-25, -214.23979), Vector2(-25, -214.88203), Vector2(-25, -215.16823), Vector2(-25, -215.43405), Vector2(-25, -215.90535), Vector2(-25, -216.29874), Vector2(-25, -216.62334), Vector2(-25, -216.87814), Vector2(-25, -217.0727), Vector2(-25, -217.21379), Vector2(-25, -217.30258), Vector2(-25, -217.34464), Vector2(-25, -217.34464), Vector2(-25, -217.30258), Vector2(-25, -217.21379), Vector2(-25, -217.0727), Vector2(-25, -216.87814), Vector2(-25, -216.62334), Vector2(-25, -216.29874), Vector2(-25, -215.90535), Vector2(-25, -215.43405), Vector2(-25, -215.16823), Vector2(-25, -214.88203), Vector2(-25, -214.23979), Vector2(-25, -213.52501), Vector2(-25, -213.1385), Vector2(-25, -212.31087), Vector2(-25, -210.52998), Vector2(-25, -209.17822), Vector2(-25, -208.73912), Vector2(-25, -207.91148), Vector2(-25, -207.1577), Vector2(-25, -206.8102), Vector2(-25, -206.16795), Vector2(-25, -205.88174), Vector2(-25, -205.61594), Vector2(-25, -205.14464), Vector2(-25, -204.75124), Vector2(-25, -204.42664), Vector2(-25, -204.17183), Vector2(-25, -203.9773), Vector2(-25, -203.8362), Vector2(-25, -203.7474), Vector2(-25, -203.70534)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("path5:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("path5:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("path5:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("path3:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2666667, 1.3333334, 1.4, 1.4333333, 1.5, 1.5333333, 1.6, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9333334, 3, 3.0333333, 3.1, 3.1666667, 3.2333333, 3.2666667, 3.3666666, 3.4333334, 3.5, 3.5666666, 3.6333334, 3.7, 3.7333333, 3.8, 3.8333333, 3.9, 3.9333334, 3.9666667, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-224, -117.32), Vector2(-224, -118.341835), Vector2(-224, -119.26723), Vector2(-224, -120.107635), Vector2(-224, -120.87504), Vector2(-224, -121.56703), Vector2(-224, -122.18478), Vector2(-224, -122.72638), Vector2(-224, -123.18405), Vector2(-224, -123.552025), Vector2(-224, -123.82702), Vector2(-224, -124.00019), Vector2(-224, -124.06), Vector2(-224, -124.04552), Vector2(-224, -124.00372), Vector2(-224, -123.931656), Vector2(-224, -123.82646), Vector2(-224, -123.6913), Vector2(-224, -123.51983), Vector2(-224, -123.30937), Vector2(-224, -123.0669), Vector2(-224, -122.78274), Vector2(-224, -122.4545), Vector2(-224, -122.09299), Vector2(-224, -121.67117), Vector2(-224, -121.21431), Vector2(-224, -120.70758), Vector2(-224, -120.149414), Vector2(-224, -119.53845), Vector2(-224, -118.87361), Vector2(-224, -118.154076), Vector2(-224, -117.37933), Vector2(-224, -116.52693), Vector2(-224, -115.64081), Vector2(-224, -114.700134), Vector2(-224, -113.70594), Vector2(-224, -112.659676), Vector2(-224, -110.41928), Vector2(-224, -108.027824), Vector2(-224, -105.59853), Vector2(-224, -104.35445), Vector2(-224, -101.93937), Vector2(-224, -100.750725), Vector2(-224, -98.51032), Vector2(-224, -97.464066), Vector2(-224, -96.469864), Vector2(-224, -95.5292), Vector2(-224, -94.643074), Vector2(-224, -93.790665), Vector2(-224, -93.01592), Vector2(-224, -92.296394), Vector2(-224, -91.63155), Vector2(-224, -91.02059), Vector2(-224, -90.462425), Vector2(-224, -89.955696), Vector2(-224, -89.49883), Vector2(-224, -89.07701), Vector2(-224, -88.7155), Vector2(-224, -88.38726), Vector2(-224, -88.103096), Vector2(-224, -87.860634), Vector2(-224, -87.65017), Vector2(-224, -87.4787), Vector2(-224, -87.343544), Vector2(-224, -87.23834), Vector2(-224, -87.16628), Vector2(-224, -87.12449), Vector2(-224, -87.11001), Vector2(-224, -87.12739), Vector2(-224, -87.17771), Vector2(-224, -87.263565), Vector2(-224, -87.378075), Vector2(-224, -87.52842), Vector2(-224, -87.71006), Vector2(-224, -87.91415), Vector2(-224, -88.15428), Vector2(-224, -88.422646), Vector2(-224, -88.71821), Vector2(-224, -89.039955), Vector2(-224, -89.38685), Vector2(-224, -89.75786), Vector2(-224, -90.16595), Vector2(-224, -91.036194), Vector2(-224, -92.022575), Vector2(-224, -92.5371), Vector2(-224, -93.655815), Vector2(-224, -94.88001), Vector2(-224, -96.163765), Vector2(-224, -96.845345), Vector2(-224, -99.017265), Vector2(-224, -100.56949), Vector2(-224, -102.20394), Vector2(-224, -103.92653), Vector2(-224, -105.73722), Vector2(-224, -107.626305), Vector2(-224, -108.592155), Vector2(-224, -110.624794), Vector2(-224, -111.664314), Vector2(-224, -113.832405), Vector2(-224, -114.95577), Vector2(-224, -116.11241), Vector2(-224, -117.32)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("path3:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("path3:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("path3:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("path4:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2333333, 1.2666667, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5333333, 1.6, 1.6666666, 1.7, 1.7666667, 1.8, 1.8666667, 1.9, 1.9333333, 1.9666667, 2, 2.0333333, 2.0666666, 2.1, 2.1333334, 2.1666667, 2.2, 2.2333333, 2.2666667, 2.3, 2.3333333, 2.3666666, 2.4, 2.4333334, 2.4666667, 2.5, 2.5333333, 2.5666666, 2.6, 2.6333334, 2.6666667, 2.7, 2.7333333, 2.7666667, 2.8, 2.8333333, 2.8666666, 2.9, 2.9333334, 2.9666667, 3, 3.0333333, 3.0666666, 3.1, 3.1333334, 3.1666667, 3.2, 3.2333333, 3.2666667, 3.3, 3.3333333, 3.3666666, 3.4333334, 3.4666667, 3.5333333, 3.5666666, 3.6, 3.6333334, 3.6666667, 3.7, 3.7666667, 3.8, 3.8666666, 3.9, 3.9333334, 3.9666667, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(192.35, -129.23999), Vector2(192.35, -130.00217), Vector2(192.35, -130.71062), Vector2(192.35, -131.38127), Vector2(192.35, -132.01114), Vector2(192.35, -132.61493), Vector2(192.35, -133.18555), Vector2(192.35, -133.71687), Vector2(192.35, -134.22469), Vector2(192.35, -134.69133), Vector2(192.35, -135.12968), Vector2(192.35, -135.5356), Vector2(192.35, -135.90096), Vector2(192.35, -136.23303), Vector2(192.35, -136.52867), Vector2(192.35, -136.78499), Vector2(192.35, -136.99951), Vector2(192.35, -137.17), Vector2(192.35, -137.29608), Vector2(192.35, -137.37321), Vector2(192.35, -137.4), Vector2(192.35, -137.38428), Vector2(192.35, -137.33894), Vector2(192.35, -137.26077), Vector2(192.35, -137.14667), Vector2(192.35, -137.00006), Vector2(192.35, -136.81407), Vector2(192.35, -136.58577), Vector2(192.35, -136.32277), Vector2(192.35, -136.01454), Vector2(192.35, -135.6585), Vector2(192.35, -135.26636), Vector2(192.35, -134.8088), Vector2(192.35, -134.31325), Vector2(192.35, -133.7636), Vector2(192.35, -133.15814), Vector2(192.35, -132.49542), Vector2(192.35, -131.77428), Vector2(192.35, -130.99379), Vector2(192.35, -130.15341), Vector2(192.35, -129.2288), Vector2(192.35, -128.26762), Vector2(192.35, -127.24727), Vector2(192.35, -126.16885), Vector2(192.35, -125.033966), Vector2(192.35, -122.60378), Vector2(192.35, -120.00976), Vector2(192.35, -117.37468), Vector2(192.35, -116.02521), Vector2(192.35, -113.40555), Vector2(192.35, -112.11622), Vector2(192.35, -109.686035), Vector2(192.35, -108.55115), Vector2(192.35, -107.472725), Vector2(192.35, -106.45238), Vector2(192.35, -105.49119), Vector2(192.35, -104.56658), Vector2(192.35, -103.72621), Vector2(192.35, -102.945724), Vector2(192.35, -102.22457), Vector2(192.35, -101.56185), Vector2(192.35, -100.9564), Vector2(192.35, -100.406746), Vector2(192.35, -99.91119), Vector2(192.35, -99.453636), Vector2(192.35, -99.0615), Vector2(192.35, -98.70545), Vector2(192.35, -98.397224), Vector2(192.35, -98.13422), Vector2(192.35, -97.90592), Vector2(192.35, -97.71993), Vector2(192.35, -97.573326), Vector2(192.35, -97.45921), Vector2(192.35, -97.38105), Vector2(192.35, -97.33571), Vector2(192.35, -97.32), Vector2(192.35, -97.34687), Vector2(192.35, -97.424736), Vector2(192.35, -97.551865), Vector2(192.35, -97.726494), Vector2(192.35, -97.95402), Vector2(192.35, -98.21966), Vector2(192.35, -98.53716), Vector2(192.35, -98.886604), Vector2(192.35, -99.286644), Vector2(192.35, -99.72573), Vector2(192.35, -100.20193), Vector2(192.35, -100.72843), Vector2(192.35, -101.29011), Vector2(192.35, -101.88487), Vector2(192.35, -102.51064), Vector2(192.35, -103.18391), Vector2(192.35, -103.885475), Vector2(192.35, -104.613075), Vector2(192.35, -105.38508), Vector2(192.35, -106.2009), Vector2(192.35, -107.03791), Vector2(192.35, -108.81003), Vector2(192.35, -109.74107), Vector2(192.35, -111.727486), Vector2(192.35, -112.75406), Vector2(192.35, -113.80595), Vector2(192.35, -114.902336), Vector2(192.35, -116.03803), Vector2(192.35, -117.206535), Vector2(192.35, -119.60883), Vector2(192.35, -120.86382), Vector2(192.35, -123.48725), Vector2(192.35, -124.860245), Vector2(192.35, -126.25855), Vector2(192.35, -127.71655), Vector2(192.35, -129.23999)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("path4:rotation")
+tracks/21/interp = 3
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("path4:scale")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("path4:skew")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lwein"]
+_data = {
+&"Idle": SubResource("Animation_h2s3o")
+}
+
+[node name="Gargantuar" type="Node2D" unique_id=1951886852]
+script = ExtResource("1_1svc6")
+bounds = Rect2(-478.05, -958.19, 944, 1285.05)
+
+[node name="main" type="Node2D" parent="." unique_id=9095785]
+position = Vector2(0, -1.6632)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="main" unique_id=1326897759]
+position = Vector2(-6.05, -497.03)
+texture = SubResource("AtlasTexture_5msgp")
+
+[node name="path2" type="Node2D" parent="." unique_id=860824973]
+position = Vector2(237.35, -266.45)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path2" unique_id=1709280596]
+position = Vector2(2.29, 35.68)
+texture = SubResource("AtlasTexture_kqo36")
+offset = Vector2(-1.5, -2)
+
+[node name="path1" type="Node2D" parent="." unique_id=80087655]
+position = Vector2(-226.5, -307.25)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path1" unique_id=1443903407]
+position = Vector2(10.8, 27.38)
+texture = SubResource("AtlasTexture_71xx8")
+offset = Vector2(-2, -2)
+
+[node name="path0" type="Node2D" parent="." unique_id=1576801665]
+position = Vector2(-247.3, -233.15)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path0" unique_id=1704692771]
+position = Vector2(6.67, 31.8)
+texture = SubResource("AtlasTexture_os30v")
+offset = Vector2(-2, -2)
+
+[node name="path5" type="Node2D" parent="." unique_id=1487191406]
+position = Vector2(-25, -217.34999)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path5" unique_id=1692776715]
+position = Vector2(4.17, 45.97)
+texture = SubResource("AtlasTexture_grlgi")
+offset = Vector2(-2, -2)
+
+[node name="path3" type="Node2D" parent="." unique_id=1974665133]
+position = Vector2(-224, -119.9)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path3" unique_id=184122721]
+position = Vector2(10.44, 36.62)
+texture = SubResource("AtlasTexture_mh2pq")
+offset = Vector2(-2, -2)
+
+[node name="path4" type="Node2D" parent="." unique_id=1812253246]
+position = Vector2(192.35, -137.4)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="path4" unique_id=1551204163]
+position = Vector2(-0.43, 66.57)
+texture = SubResource("AtlasTexture_45nra")
+offset = Vector2(-2.5, -2)
+
+[node name="land" type="Node2D" parent="." unique_id=72572707]
+position = Vector2(0, -1.6632)
+script = ExtResource("2_a1n1c")
+
+[node name="0" type="Sprite2D" parent="land" unique_id=2033480519]
+position = Vector2(1.05, 75.52)
+texture = SubResource("AtlasTexture_5v6ub")
+offset = Vector2(-0.5, 12)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=59637313]
+libraries/ = SubResource("AnimationLibrary_lwein")

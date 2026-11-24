@@ -1,0 +1,75 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_gfc3o"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_byduy"]
+[ext_resource type="Texture2D" path="res://art/_textures/0dfe99a2-9227-4264-852a-41c83dfad806.png" id="3_ptgen"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pb6v2"]
+atlas = ExtResource("3_ptgen")
+region = Rect2(1, 1, 765, 472)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlbuj"]
+atlas = ExtResource("3_ptgen")
+region = Rect2(989, 884, 575, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljclu"]
+atlas = ExtResource("3_ptgen")
+region = Rect2(1820, 861, 131, 104)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4my3m"]
+atlas = ExtResource("3_ptgen")
+region = Rect2(1167, 781, 117, 79)
+
+[sub_resource type="Animation" id="Animation_s7xqk"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n1q10"]
+_data = {
+&"Idle": SubResource("Animation_s7xqk")
+}
+
+[node name="Far0" type="Node2D" unique_id=863793899]
+script = ExtResource("1_gfc3o")
+bounds = Rect2(-390.44, -181.15, 765, 535.82)
+
+[node name="island0" type="Node2D" parent="." unique_id=1075817230]
+script = ExtResource("2_byduy")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=1889623092]
+position = Vector2(-7.94, 118.67)
+texture = SubResource("AtlasTexture_pb6v2")
+
+[node name="sand2" type="Node2D" parent="." unique_id=1313552206]
+script = ExtResource("2_byduy")
+
+[node name="0" type="Sprite2D" parent="sand2" unique_id=2053646518]
+position = Vector2(70.03, -73.4)
+texture = SubResource("AtlasTexture_dlbuj")
+
+[node name="feet" type="Node2D" parent="." unique_id=1231055552]
+script = ExtResource("2_byduy")
+
+[node name="0" type="Sprite2D" parent="feet" unique_id=1691778296]
+position = Vector2(-22.22, -13.83)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_ljclu")
+
+[node name="plants1" type="Node2D" parent="." unique_id=1738184518]
+script = ExtResource("2_byduy")
+
+[node name="0" type="Sprite2D" parent="plants1" unique_id=2100403517]
+position = Vector2(102.74, 0.42)
+texture = SubResource("AtlasTexture_4my3m")
+
+[node name="plants" type="Node2D" parent="." unique_id=1512098938]
+script = ExtResource("2_byduy")
+
+[node name="0" type="Sprite2D" parent="plants" unique_id=1050029651]
+position = Vector2(44.87, -7.97)
+scale = Vector2(1.1961, 1.1961)
+texture = SubResource("AtlasTexture_4my3m")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=358860321]
+libraries/ = SubResource("AnimationLibrary_n1q10")

@@ -1,0 +1,123 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ciqpi"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_xk6n6"]
+[ext_resource type="Texture2D" path="res://art/_textures/cb4474b6-08bb-4ce9-a3c9-29d54c51436e.png" id="3_ro0fg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5n2s1"]
+atlas = ExtResource("3_ro0fg")
+region = Rect2(1683, 944, 140, 137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5uix"]
+atlas = ExtResource("3_ro0fg")
+region = Rect2(1824, 1248, 90, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l37c"]
+atlas = ExtResource("3_ro0fg")
+region = Rect2(2005, 1253, 37, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s48k"]
+atlas = ExtResource("3_ro0fg")
+region = Rect2(1998, 877, 47, 196)
+
+[sub_resource type="Animation" id="Animation_xyoop"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vine0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_06hhi"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vine0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_i8jek"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vine0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_63cqn"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("vine0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6lfls"]
+_data = {
+&"hang0": SubResource("Animation_xyoop"),
+&"hang1": SubResource("Animation_06hhi"),
+&"link0": SubResource("Animation_i8jek"),
+&"link1": SubResource("Animation_63cqn")
+}
+
+[node name="Vine" type="Node2D" unique_id=1081102343]
+script = ExtResource("1_ciqpi")
+bounds = Rect2(-19.66, -9.44, 47, 195.5)
+
+[node name="vine0" type="Node2D" parent="." unique_id=1013691383]
+script = ExtResource("2_xk6n6")
+display = 3
+
+[node name="0" type="Sprite2D" parent="vine0" unique_id=1355557490]
+visible = false
+position = Vector2(-57.6, 64.02)
+texture = SubResource("AtlasTexture_5n2s1")
+
+[node name="1" type="Sprite2D" parent="vine0" unique_id=1940355057]
+visible = false
+position = Vector2(-27.72, 92.02)
+texture = SubResource("AtlasTexture_g5uix")
+
+[node name="2" type="Sprite2D" parent="vine0" unique_id=511436880]
+visible = false
+position = Vector2(2.96, 92.39)
+texture = SubResource("AtlasTexture_2l37c")
+
+[node name="3" type="Sprite2D" parent="vine0" unique_id=341477749]
+position = Vector2(3.84, 88.31)
+texture = SubResource("AtlasTexture_3s48k")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1317168432]
+libraries/ = SubResource("AnimationLibrary_6lfls")

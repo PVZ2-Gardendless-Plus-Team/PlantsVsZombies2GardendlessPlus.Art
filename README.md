@@ -41,6 +41,24 @@ into the same `_index.json`, so either can be re-run on its own.
 with `tools/extract_desktop.py`. Without `--native <dir>`, extract_prefabs.py
 pulls the images from the Docker image directly; extract_rigs.py needs it.
 
+The `wm_<skeleton>_<uuid>` bundles are the world maps: the islands, clouds,
+backdrops, level nodes, paths, gift boxes, portals and world chooser globes.
+Each world ships two or three exports that are all called `WorldmapAnimate`,
+so the first eight characters of the export's uuid tell them apart. They come
+out of the running game rather than the build files, because the island
+layouts are Cocos prefabs. From the main repository's root:
+
+```sh
+node tools/dump_worldmaps.js /tmp/wm                # needs Playwright
+python3 tools/extract_worldmaps.py /tmp/wm art data/native/worldmaps \
+    --native <desktop build>/assets/resources/native
+godot --headless --import
+godot --headless -s tools/bake_rigs.gd -- $(cd art && ls -d wm_*)
+```
+
+The second also writes the island layouts into the main repository's
+`data/native/worldmaps/`.
+
 `fonts/` holds PVZGE's text face, copied as-is from the build's
 `native/86/86615cb2-9939-4358-b8e2-ec2d020efeea/FBUSV8C5EI.ttf` (the font
 its seed packet prices and HUD labels use; the main repository maps it as

@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_wjsia"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_bd4xl"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_jotse"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vn2bv"]
+atlas = ExtResource("3_jotse")
+region = Rect2(2517, 1564, 113, 306)
+
+[sub_resource type="Animation" id="Animation_xn0hq"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g7jd2"]
+_data = {
+&"Idle": SubResource("Animation_xn0hq")
+}
+
+[node name="Cactus0" type="Node2D" unique_id=1654713746]
+script = ExtResource("1_wjsia")
+bounds = Rect2(-45.1, -281.5, 113, 306)
+
+[node name="island0" type="Node2D" parent="." unique_id=264137811]
+script = ExtResource("2_bd4xl")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=507880642]
+position = Vector2(11.4, -128.5)
+texture = SubResource("AtlasTexture_vn2bv")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1266141750]
+libraries/ = SubResource("AnimationLibrary_g7jd2")

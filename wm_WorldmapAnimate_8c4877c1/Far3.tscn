@@ -1,0 +1,67 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_7b6gi"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ic3xu"]
+[ext_resource type="Texture2D" path="res://art/_textures/0dfe99a2-9227-4264-852a-41c83dfad806.png" id="3_0w1lw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_neqr8"]
+atlas = ExtResource("3_0w1lw")
+region = Rect2(1290, 1, 583, 375)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlbuj"]
+atlas = ExtResource("3_0w1lw")
+region = Rect2(989, 884, 575, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1nhc"]
+atlas = ExtResource("3_0w1lw")
+region = Rect2(1612, 884, 206, 237)
+
+[sub_resource type="Animation" id="Animation_2jt8l"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8wicd"]
+_data = {
+&"Idle": SubResource("Animation_2jt8l")
+}
+
+[node name="Far3" type="Node2D" unique_id=1841788202]
+script = ExtResource("1_7b6gi")
+bounds = Rect2(-298.4, -203.94, 583, 512.27)
+
+[node name="island1" type="Node2D" parent="." unique_id=785245344]
+script = ExtResource("2_ic3xu")
+
+[node name="0" type="Sprite2D" parent="island1" unique_id=1375832558]
+position = Vector2(-6.9, 120.83)
+texture = SubResource("AtlasTexture_neqr8")
+
+[node name="sand2" type="Node2D" parent="." unique_id=220705350]
+script = ExtResource("2_ic3xu")
+
+[node name="0" type="Sprite2D" parent="sand2" unique_id=1488959082]
+position = Vector2(-11.07, -65.25)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_dlbuj")
+
+[node name="tree1" type="Node2D" parent="." unique_id=857065983]
+script = ExtResource("2_ic3xu")
+
+[node name="0" type="Sprite2D" parent="tree1" unique_id=1998387794]
+position = Vector2(62.91, -66.45)
+rotation = -0.24085544
+scale = Vector2(0.4934, 0.4934)
+texture = SubResource("AtlasTexture_p1nhc")
+
+[node name="tree" type="Node2D" parent="." unique_id=616388310]
+script = ExtResource("2_ic3xu")
+
+[node name="0" type="Sprite2D" parent="tree" unique_id=790482153]
+position = Vector2(138.96, -85.69)
+rotation = 0.28658307
+scale = Vector2(0.6892, 0.6892)
+texture = SubResource("AtlasTexture_p1nhc")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=983314493]
+libraries/ = SubResource("AnimationLibrary_8wicd")
