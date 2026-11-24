@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_c57mv"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_h1e5l"]
+[ext_resource type="Texture2D" path="res://art/_textures/252a342c-4dd8-4f47-8f11-3a5e978ed2c4.png" id="3_q7vqx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw4q4"]
+atlas = ExtResource("3_q7vqx")
+region = Rect2(1834, 736, 35, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4nmv"]
+atlas = ExtResource("3_q7vqx")
+region = Rect2(1404, 1769, 47, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdqok"]
+atlas = ExtResource("3_q7vqx")
+region = Rect2(1812, 691, 46, 43)
+
+[sub_resource type="Animation" id="Animation_gp4mb"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t2l8e"]
+_data = {
+&"Idle": SubResource("Animation_gp4mb")
+}
+
+[node name="_ray_frame_finish" type="Node2D" unique_id=841976723]
+script = ExtResource("1_c57mv")
+bounds = Rect2(-227.48, -540.9, 183.4, 78.84)
+
+[node name="torchMain1" type="Node2D" parent="." unique_id=1833665712]
+position = Vector2(-178.7903, -520.3322)
+rotation = -2.8858147
+scale = Vector2(1.281, -1.281)
+script = ExtResource("2_h1e5l")
+
+[node name="0" type="Sprite2D" parent="torchMain1" unique_id=1119858178]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue1" type="Node2D" parent="." unique_id=411568848]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-178.7903, -520.3322)
+rotation = -2.8858147
+scale = Vector2(1.281, -1.281)
+script = ExtResource("2_h1e5l")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue1" unique_id=220240625]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_u4nmv")
+offset = Vector2(1.5, 0)
+
+[node name="torchMain2" type="Node2D" parent="." unique_id=2027717214]
+position = Vector2(-71.38335, -535.6064)
+rotation = 2.9992087
+scale = Vector2(1.281, -1.281)
+script = ExtResource("2_h1e5l")
+
+[node name="0" type="Sprite2D" parent="torchMain2" unique_id=502017607]
+position = Vector2(0, 14.36)
+texture = SubResource("AtlasTexture_yw4q4")
+
+[node name="torchLightBlue2" type="Node2D" parent="." unique_id=1540895304]
+modulate = Color(0, 0.18, 0.42, 1)
+position = Vector2(-71.38335, -535.6064)
+rotation = 2.9992087
+scale = Vector2(1.281, -1.281)
+script = ExtResource("2_h1e5l")
+
+[node name="0" type="Sprite2D" parent="torchLightBlue2" unique_id=724661626]
+position = Vector2(5.47, 27.48)
+texture = SubResource("AtlasTexture_tdqok")
+offset = Vector2(-0.5, 0)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=300071824]
+libraries/ = SubResource("AnimationLibrary_t2l8e")

@@ -1,0 +1,81 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_p4sow"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_f5pdd"]
+[ext_resource type="Texture2D" path="res://art/_textures/e07d040c-6daf-4d07-bf0a-6ca87479a759.png" id="3_hvs8k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hw3j"]
+atlas = ExtResource("3_hvs8k")
+region = Rect2(865, 460, 137, 173)
+
+[sub_resource type="Animation" id="Animation_v5bpl"]
+length = 0.16666666666666666
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pars:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pars:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -3.1415927, 0.0, -3.1415927, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pars:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, -1), Vector2(1, 1), Vector2(1, 1), Vector2(1, -1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pars:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hwic0"]
+_data = {
+&"idle": SubResource("Animation_v5bpl")
+}
+
+[node name="_pars" type="Node2D" unique_id=395088139]
+script = ExtResource("1_p4sow")
+bounds = Rect2(-70.5, -86.55, 141, 177)
+
+[node name="pars" type="Node2D" parent="." unique_id=1208881974]
+scale = Vector2(1, -1)
+script = ExtResource("2_f5pdd")
+
+[node name="0" type="Sprite2D" parent="pars" unique_id=649569015]
+position = Vector2(0, -1.95)
+texture = SubResource("AtlasTexture_3hw3j")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=104328577]
+libraries/ = SubResource("AnimationLibrary_hwic0")

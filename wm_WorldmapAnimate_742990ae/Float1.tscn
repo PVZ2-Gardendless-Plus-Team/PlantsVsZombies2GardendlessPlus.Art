@@ -1,0 +1,134 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_axw21"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_a3pf7"]
+[ext_resource type="Texture2D" path="res://art/_textures/497c66af-aa08-4237-b558-317c5dc0eee1.png" id="3_3qf7u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c23h0"]
+atlas = ExtResource("3_3qf7u")
+region = Rect2(817, 872, 36, 31)
+
+[sub_resource type="Animation" id="Animation_em4gv"]
+length = 5.0
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.45833334, 0.5833333, 0.6666667, 0.75, 0.8333333, 0.9166667, 1, 1.125, 1.4166666, 1.5416666, 1.625, 1.7083334, 1.7916666, 1.875, 1.9583334, 2.0416667, 2.1666667, 2.2916667, 2.4166667, 2.5416667, 2.6666667, 2.7916667, 2.9166667, 3, 3.0833333, 3.1666667, 3.25, 3.3333333, 3.4166667, 3.5, 3.625, 3.9166667, 4.0416665, 4.125, 4.2083335, 4.2916665, 4.375, 4.4583335, 4.5416665, 4.6666665, 4.7916665, 4.9166665, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0.025286464), Vector2(0, 0.10642579), Vector2(0, 0.25165015), Vector2(0, 0.38754663), Vector2(0, 0.6605036), Vector2(0, 0.89084923), Vector2(0, 1.1636033), Vector2(0, 1.484188), Vector2(0, 1.8441086), Vector2(0, 2.2461262), Vector2(0, 2.9217267), Vector2(0, 4.5924635), Vector2(0, 5.2400117), Vector2(0, 5.621225), Vector2(0, 5.9637556), Vector2(0, 6.258162), Vector2(0, 6.509524), Vector2(0, 6.7193336), Vector2(0, 6.8924537), Vector2(0, 7.084337), Vector2(0, 7.2073584), Vector2(0, 7.268912), Vector2(0, 7.277147), Vector2(0, 7.233987), Vector2(0, 7.1321087), Vector2(0, 6.96368), Vector2(0, 6.809346), Vector2(0, 6.6194963), Vector2(0, 6.389151), Vector2(0, 6.116397), Vector2(0, 5.795812), Vector2(0, 5.4358916), Vector2(0, 5.033874), Vector2(0, 4.3582735), Vector2(0, 2.6875367), Vector2(0, 2.0399885), Vector2(0, 1.6587753), Vector2(0, 1.3162446), Vector2(0, 1.0218382), Vector2(0, 0.77047634), Vector2(0, 0.56066656), Vector2(0, 0.38754654), Vector2(0, 0.19566298), Vector2(0, 0.07264185), Vector2(0, 0.011088371), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("island0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("island0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_sdl3t"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("island0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("island0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("island0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4gdd3"]
+_data = {
+&"Idle": SubResource("Animation_em4gv"),
+&"Static": SubResource("Animation_sdl3t")
+}
+
+[node name="Float1" type="Node2D" unique_id=394078490]
+script = ExtResource("1_axw21")
+bounds = Rect2(-19.06, -12.26, 40, 36.5)
+
+[node name="island0" type="Node2D" parent="." unique_id=2087776859]
+script = ExtResource("2_a3pf7")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=34653148]
+position = Vector2(0.94, 5.99)
+texture = SubResource("AtlasTexture_c23h0")
+offset = Vector2(-1, -2)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1693304280]
+libraries/ = SubResource("AnimationLibrary_4gdd3")

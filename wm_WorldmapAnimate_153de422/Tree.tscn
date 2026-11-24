@@ -1,0 +1,148 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_3kc0n"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_hy8uk"]
+[ext_resource type="Texture2D" path="res://art/_textures/dc4dfb0c-ecc6-4293-9864-1ce6c1ad5930.png" id="3_wncyo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o1jc"]
+atlas = ExtResource("3_wncyo")
+region = Rect2(3502, 755, 160, 218)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pgdv"]
+atlas = ExtResource("3_wncyo")
+region = Rect2(525, 1309, 161, 220)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1eg5"]
+atlas = ExtResource("3_wncyo")
+region = Rect2(3730, 1791, 151, 162)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omrjv"]
+atlas = ExtResource("3_wncyo")
+region = Rect2(3447, 1664, 65, 55)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxl8h"]
+atlas = ExtResource("3_wncyo")
+region = Rect2(3832, 247, 130, 104)
+
+[sub_resource type="Animation" id="Animation_klyq7"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trees:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_oksos"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trees:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_wd3bp"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trees:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_kwkjl"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trees:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_b7wlt"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("trees:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uv6bv"]
+_data = {
+&"i0": SubResource("Animation_klyq7"),
+&"i1": SubResource("Animation_oksos"),
+&"i2": SubResource("Animation_wd3bp"),
+&"i3": SubResource("Animation_kwkjl"),
+&"i4": SubResource("Animation_b7wlt")
+}
+
+[node name="Tree" type="Node2D" unique_id=392682270]
+script = ExtResource("1_3kc0n")
+bounds = Rect2(-64.75, -63.44, 129.5, 103.5)
+
+[node name="trees" type="Node2D" parent="." unique_id=573841654]
+script = ExtResource("2_hy8uk")
+display = 4
+
+[node name="0" type="Sprite2D" parent="trees" unique_id=1174575795]
+visible = false
+position = Vector2(3.68, -46.13)
+texture = SubResource("AtlasTexture_3o1jc")
+
+[node name="1" type="Sprite2D" parent="trees" unique_id=1023541109]
+visible = false
+position = Vector2(-13.23, -46.13)
+texture = SubResource("AtlasTexture_2pgdv")
+
+[node name="2" type="Sprite2D" parent="trees" unique_id=1830689276]
+visible = false
+position = Vector2(-32.26, -62.16)
+texture = SubResource("AtlasTexture_t1eg5")
+
+[node name="3" type="Sprite2D" parent="trees" unique_id=46660813]
+visible = false
+texture = SubResource("AtlasTexture_omrjv")
+
+[node name="4" type="Sprite2D" parent="trees" unique_id=319273812]
+position = Vector2(0, -11.69)
+texture = SubResource("AtlasTexture_lxl8h")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1588701902]
+libraries/ = SubResource("AnimationLibrary_uv6bv")

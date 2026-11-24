@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_nuhc4"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_01dxm"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_4ftvj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75xik"]
+atlas = ExtResource("3_4ftvj")
+region = Rect2(2082, 1952, 171, 64)
+
+[sub_resource type="Animation" id="Animation_gmlbd"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1314h"]
+_data = {
+&"Idle": SubResource("Animation_gmlbd")
+}
+
+[node name="FarFence0" type="Node2D" unique_id=1777172213]
+script = ExtResource("1_nuhc4")
+bounds = Rect2(-85.55, -45.29, 171, 64)
+
+[node name="island0" type="Node2D" parent="." unique_id=715048869]
+script = ExtResource("2_01dxm")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=478819940]
+position = Vector2(-0.05, -13.29)
+texture = SubResource("AtlasTexture_75xik")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=764011063]
+libraries/ = SubResource("AnimationLibrary_1314h")

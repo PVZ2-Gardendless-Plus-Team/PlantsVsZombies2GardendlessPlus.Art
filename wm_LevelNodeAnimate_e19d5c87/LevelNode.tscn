@@ -1,0 +1,92 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_enapi"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_mesxr"]
+[ext_resource type="Texture2D" path="res://art/_textures/c8538d14-9606-41dd-8168-7906d745a9f7.png" id="3_4eccg"]
+[ext_resource type="PackedScene" path="res://art/wm_LevelNodeAnimate_e19d5c87/_body.tscn" id="4_dv4f5"]
+[ext_resource type="PackedScene" path="res://art/wm_LevelNodeAnimate_e19d5c87/_ray.tscn" id="5_r60eb"]
+[ext_resource type="PackedScene" path="res://art/wm_LevelNodeAnimate_e19d5c87/_absorbing.tscn" id="6_xyaay"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c262l"]
+atlas = ExtResource("3_4eccg")
+region = Rect2(562, 941, 147, 59)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nql1c"]
+atlas = ExtResource("3_4eccg")
+region = Rect2(1055, 1, 69, 671)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhu3o"]
+atlas = ExtResource("3_4eccg")
+region = Rect2(112, 947, 147, 47)
+
+[sub_resource type="Animation" id="Animation_712w2"]
+length = 0.8333333333333334
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b6to8"]
+_data = {
+&"Idle": SubResource("Animation_712w2")
+}
+
+[node name="LevelNode" type="Node2D" unique_id=999154971]
+script = ExtResource("1_enapi")
+bounds = Rect2(-154.7, -132.36, 309.4, 248.84)
+
+[node name="back" type="Node2D" parent="." unique_id=299171458]
+position = Vector2(0, -20)
+script = ExtResource("2_mesxr")
+
+[node name="0" type="Sprite2D" parent="back" unique_id=2010360224]
+position = Vector2(1.47, -2.22)
+texture = SubResource("AtlasTexture_c262l")
+
+[node name="blastColume" type="Node2D" parent="." unique_id=1755319319]
+position = Vector2(0, -20)
+rotation = -1.5707964
+script = ExtResource("2_mesxr")
+display = -1
+
+[node name="0" type="Sprite2D" parent="blastColume" unique_id=1174641996]
+visible = false
+position = Vector2(103.41, 0.66)
+rotation = 1.5707964
+texture = SubResource("AtlasTexture_nql1c")
+offset = Vector2(-0.5, -9.5)
+
+[node name="body" type="Node2D" parent="." unique_id=118204757]
+position = Vector2(0, 4.1532993)
+script = ExtResource("2_mesxr")
+
+[node name="0" parent="body" unique_id=427201176 instance=ExtResource("4_dv4f5")]
+position = Vector2(0, -25.04)
+autoplay = &"Idle"
+
+[node name="ray" type="Node2D" parent="." unique_id=613143097]
+position = Vector2(0, -7.9399004)
+rotation = -1.5707964
+scale = Vector2(1.8789, 1)
+script = ExtResource("2_mesxr")
+
+[node name="0" parent="ray" unique_id=1037578317 instance=ExtResource("5_r60eb")]
+rotation = 1.5707964
+scale = Vector2(1.3503, 0.8541)
+autoplay = &"Idle"
+
+[node name="front" type="Node2D" parent="." unique_id=680414768]
+position = Vector2(0, -20)
+script = ExtResource("2_mesxr")
+
+[node name="0" type="Sprite2D" parent="front" unique_id=819160013]
+position = Vector2(1.18, 23.41)
+texture = SubResource("AtlasTexture_hhu3o")
+
+[node name="absornb_green" type="Node2D" parent="." unique_id=1927834627]
+position = Vector2(0, -20)
+script = ExtResource("2_mesxr")
+
+[node name="0" parent="absornb_green" unique_id=980575434 instance=ExtResource("6_xyaay")]
+position = Vector2(0, 14.51)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1186346307]
+libraries/ = SubResource("AnimationLibrary_b6to8")

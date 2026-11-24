@@ -1,0 +1,202 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_x481n"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_oimqt"]
+[ext_resource type="Texture2D" path="res://art/_textures/6eab8f07-0e03-4070-8f20-6650c7078359.png" id="3_0h0ef"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_063n3"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(624, 3959, 51, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcqth"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(580, 3959, 42, 71)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5eqm"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(68, 4058, 30, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alby7"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(577, 4032, 29, 39)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7ng6"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(100, 4063, 23, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckgsw"]
+atlas = ExtResource("3_0h0ef")
+region = Rect2(442, 3959, 72, 97)
+
+[sub_resource type="Animation" id="Animation_8l7f4"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jybv4"]
+_data = {
+&"Idle": SubResource("Animation_8l7f4")
+}
+
+[node name="Bird0" type="Node2D" unique_id=1860270589]
+script = ExtResource("1_x481n")
+bounds = Rect2(-34.44, -68.24, 116.45, 104.98)
+
+[node name="wingThere0" type="Node2D" parent="." unique_id=262329913]
+position = Vector2(1.0431747, 1.9710655)
+rotation = -2.0653832
+scale = Vector2(0.9832091, 0.91674566)
+skew = 0.080963016
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingThere0" unique_id=1076533393]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingThere1" type="Node2D" parent="." unique_id=2126884141]
+position = Vector2(-0.2402649, -0.58075714)
+rotation = -1.7083884
+scale = Vector2(1.0596479, 0.6652818)
+skew = 0.10689044
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingThere1" unique_id=44958728]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingThere2" type="Node2D" parent="." unique_id=2142871780]
+position = Vector2(1.0431747, 1.9710655)
+rotation = -1.5309924
+scale = Vector2(1.0807917, 0.5522962)
+skew = 0.09942794
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingThere2" unique_id=2044766562]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingBaseThere" type="Node2D" parent="." unique_id=50352722]
+position = Vector2(30.55386, -33.325043)
+rotation = 2.2575676
+scale = Vector2(0.89840007, 1)
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingBaseThere" unique_id=1799324314]
+position = Vector2(16.15, 13.85)
+rotation = 1.2613494
+scale = Vector2(0.99999994, 1.1465)
+texture = SubResource("AtlasTexture_fcqth")
+offset = Vector2(0.5, 0)
+
+[node name="chest" type="Node2D" parent="." unique_id=563617748]
+position = Vector2(29.499985, -39.374996)
+rotation = 0.012552471
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="chest" unique_id=50107098]
+position = Vector2(3.7, -7.62)
+rotation = -0.012566372
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_k5eqm")
+offset = Vector2(0, -0.5)
+
+[node name="head" type="Node2D" parent="." unique_id=151939810]
+position = Vector2(60.4, -49.29998)
+rotation = 0.73980844
+scale = Vector2(1.0000001, 1.0000001)
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="head" unique_id=1349636187]
+position = Vector2(8.19, -0.83)
+rotation = -0.73984504
+texture = SubResource("AtlasTexture_alby7")
+offset = Vector2(0.5, 0)
+
+[node name="neck" type="Node2D" parent="." unique_id=193146825]
+position = Vector2(47.424973, -39.149982)
+rotation = -0.6684872
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="neck" unique_id=1285513333]
+position = Vector2(4.45, -1.19)
+rotation = -2.3218117
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_l7ng6")
+offset = Vector2(-0.5, 0.5)
+
+[node name="neck1" type="Node2D" parent="." unique_id=635344586]
+position = Vector2(29.499985, -39.374996)
+rotation = 0.012552471
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="neck1" unique_id=493068432]
+position = Vector2(10.86, -0.59)
+rotation = -0.5635668
+texture = SubResource("AtlasTexture_l7ng6")
+offset = Vector2(-0.5, 0.5)
+
+[node name="body" type="Node2D" parent="." unique_id=403460754]
+position = Vector2(-5.175, 1.9)
+rotation = -0.8929052
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="body" unique_id=394356318]
+position = Vector2(15.76, -3.4)
+rotation = 0.8929105
+texture = SubResource("AtlasTexture_ckgsw")
+offset = Vector2(-0.5, 0)
+
+[node name="wingHere0" type="Node2D" parent="." unique_id=1030604954]
+position = Vector2(-2.5000305, -2.2249908)
+rotation = -2.060288
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingHere0" unique_id=1158314830]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingHere1" type="Node2D" parent="." unique_id=1843244651]
+position = Vector2(-2.8614655, -5.1145782)
+rotation = -1.6888276
+scale = Vector2(1.1165, 0.6988001)
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingHere1" unique_id=196371881]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingHere2" type="Node2D" parent="." unique_id=1842974743]
+position = Vector2(-2.5000305, -2.2249908)
+rotation = -1.5142651
+scale = Vector2(1.1601, 0.56990004)
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingHere2" unique_id=500552178]
+position = Vector2(25.35, 8.07)
+rotation = -0.33981562
+texture = SubResource("AtlasTexture_063n3")
+offset = Vector2(0, -0.5)
+
+[node name="wingBaseHere" type="Node2D" parent="." unique_id=1498495796]
+position = Vector2(40.47498, -30.074999)
+rotation = 2.557972
+script = ExtResource("2_oimqt")
+
+[node name="0" type="Sprite2D" parent="wingBaseHere" unique_id=1905617979]
+position = Vector2(16.15, 13.85)
+rotation = 1.2613494
+scale = Vector2(0.99999994, 1.1465)
+texture = SubResource("AtlasTexture_fcqth")
+offset = Vector2(0.5, 0)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=91369197]
+libraries/ = SubResource("AnimationLibrary_jybv4")

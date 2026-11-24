@@ -1,0 +1,86 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_d5jw5"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_0oiwt"]
+[ext_resource type="Texture2D" path="res://art/_textures/a78f3667-3bab-4064-ba76-ee13f9fe3ef0.png" id="3_fu2wu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pb3r"]
+atlas = ExtResource("3_fu2wu")
+region = Rect2(191, 1611, 85, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yiyi"]
+atlas = ExtResource("3_fu2wu")
+region = Rect2(1483, 1306, 83, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2mrx"]
+atlas = ExtResource("3_fu2wu")
+region = Rect2(1397, 1306, 84, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl14l"]
+atlas = ExtResource("3_fu2wu")
+region = Rect2(1, 1663, 86, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ldp1"]
+atlas = ExtResource("3_fu2wu")
+region = Rect2(104, 1611, 85, 59)
+
+[sub_resource type="Animation" id="Animation_yjuod"]
+length = 0.20833333333333334
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sheetSlot:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.041666668, 0.083333336, 0.125, 0.16666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e5kqa"]
+_data = {
+&"fire": SubResource("Animation_yjuod")
+}
+
+[node name="fire" type="Node2D" unique_id=1664862839]
+script = ExtResource("1_d5jw5")
+bounds = Rect2(-67.07, -34.53, 102, 68)
+
+[node name="sheetSlot" type="Node2D" parent="." unique_id=1913319127]
+script = ExtResource("2_0oiwt")
+display = 3
+
+[node name="0" type="Sprite2D" parent="sheetSlot" unique_id=9767370]
+visible = false
+position = Vector2(-14.26, -0.53)
+texture = SubResource("AtlasTexture_4pb3r")
+offset = Vector2(2.5, 1)
+
+[node name="1" type="Sprite2D" parent="sheetSlot" unique_id=1592266473]
+visible = false
+position = Vector2(-13.52, 0.32)
+texture = SubResource("AtlasTexture_4yiyi")
+offset = Vector2(2.5, 0.5)
+
+[node name="2" type="Sprite2D" parent="sheetSlot" unique_id=488673722]
+visible = false
+position = Vector2(-13.52, -0.42)
+texture = SubResource("AtlasTexture_r2mrx")
+offset = Vector2(2.5, 0.5)
+
+[node name="3" type="Sprite2D" parent="sheetSlot" unique_id=1504608924]
+position = Vector2(-16.07, -0.53)
+texture = SubResource("AtlasTexture_bl14l")
+offset = Vector2(4, 0)
+
+[node name="4" type="Sprite2D" parent="sheetSlot" unique_id=1139349895]
+visible = false
+position = Vector2(-14.15, 0.1)
+texture = SubResource("AtlasTexture_5ldp1")
+offset = Vector2(2, 0.5)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1707505319]
+libraries/ = SubResource("AnimationLibrary_e5kqa")

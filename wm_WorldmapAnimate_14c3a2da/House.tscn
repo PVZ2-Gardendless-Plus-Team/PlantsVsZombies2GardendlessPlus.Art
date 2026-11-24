@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_um5yv"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_uol60"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_fmedi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hevf0"]
+atlas = ExtResource("3_fmedi")
+region = Rect2(3275, 1, 486, 543)
+
+[sub_resource type="Animation" id="Animation_rvr8f"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4hjfs"]
+_data = {
+&"Idle": SubResource("Animation_rvr8f")
+}
+
+[node name="House" type="Node2D" unique_id=909945383]
+script = ExtResource("1_um5yv")
+bounds = Rect2(-242.24, -443.15, 486, 543)
+
+[node name="island0" type="Node2D" parent="." unique_id=1052531221]
+script = ExtResource("2_uol60")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=858770108]
+position = Vector2(0.76, -171.65)
+texture = SubResource("AtlasTexture_hevf0")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1324394317]
+libraries/ = SubResource("AnimationLibrary_4hjfs")

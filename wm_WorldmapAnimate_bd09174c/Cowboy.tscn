@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_g6v2o"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_2pxsk"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbed6ff7-a994-4040-97b1-7b8f5ffc4e57.png" id="3_m5j6k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k857x"]
+atlas = ExtResource("3_m5j6k")
+region = Rect2(1180, 2451, 532, 1151)
+
+[sub_resource type="Animation" id="Animation_dfujn"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i3et1"]
+_data = {
+&"Idle": SubResource("Animation_dfujn")
+}
+
+[node name="Cowboy" type="Node2D" unique_id=1502919173]
+script = ExtResource("1_g6v2o")
+bounds = Rect2(-238.74, -575.5, 532, 1151)
+
+[node name="cowboy" type="Node2D" parent="." unique_id=226204044]
+script = ExtResource("2_2pxsk")
+
+[node name="0" type="Sprite2D" parent="cowboy" unique_id=260037913]
+position = Vector2(27.26, 0)
+texture = SubResource("AtlasTexture_k857x")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=671796547]
+libraries/ = SubResource("AnimationLibrary_i3et1")

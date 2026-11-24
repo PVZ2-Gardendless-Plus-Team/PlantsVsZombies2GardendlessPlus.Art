@@ -1,0 +1,165 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_sumvs"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_nam81"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_d6q0e"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_crack_0.tscn" id="4_25gpf"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_falling_lava.tscn" id="5_oqvu6"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_water_pit.tscn" id="6_127pv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3kd0"]
+atlas = ExtResource("3_d6q0e")
+region = Rect2(557, 1871, 196, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cayyt"]
+atlas = ExtResource("3_d6q0e")
+region = Rect2(1174, 1871, 224, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ervr1"]
+atlas = ExtResource("3_d6q0e")
+region = Rect2(1122, 202, 60, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_deyxr"]
+atlas = ExtResource("3_d6q0e")
+region = Rect2(1592, 316, 84, 89)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7w0k"]
+atlas = ExtResource("3_d6q0e")
+region = Rect2(1400, 269, 116, 77)
+
+[sub_resource type="Animation" id="Animation_0sw64"]
+length = 4.666666666666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bush1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-14.77935, -92.6417)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bush1:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5666666, 4.6666665),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0021254055, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bush1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.3666667, 1.9, 2.4333334, 2.9333334, 3.7, 4.366667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.98, 1.211), Vector2(0.97998816, 1.2119604), Vector2(0.9799349, 1.2162638), Vector2(0.97986865, 1.2215829), Vector2(0.9798538, 1.2227752), Vector2(0.9798844, 1.2203215), Vector2(0.9799836, 1.2123265), Vector2(0.9799999, 1.2110072)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bush1:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.56666666, 0.73333335, 0.9, 1.1, 1.3666667, 1.5333333, 1.7, 1.8666667, 2.0333333, 2.2333333, 2.4666667, 2.6666667, 2.8333333, 3, 3.1666667, 3.3333333, 3.7333333, 3.9, 4.0333333, 4.2, 4.366667, 4.5666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0014793873, 0.006406188, 0.013811469, 0.024739861, 0.03950894, 0.06158173, 0.09235406, 0.108421445, 0.120753646, 0.12934268, 0.13478005, 0.13781953, 0.13753879, 0.13391745, 0.12793338, 0.11861622, 0.105496645, 0.08867991, 0.042884827, 0.02742982, 0.01771903, 0.00899148, 0.0034552813, 0.0003569126]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rc4wv"]
+_data = {
+&"idle": SubResource("Animation_0sw64")
+}
+
+[node name="Level27" type="Node2D" unique_id=1588027794]
+script = ExtResource("1_sumvs")
+bounds = Rect2(-87.42, -148.41, 243.3, 296.37)
+
+[node name="island" type="Node2D" parent="." unique_id=1790587198]
+position = Vector2(22.77135, 60.9608)
+scale = Vector2(1.0313, 0.8783)
+script = ExtResource("2_nam81")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=1508213034]
+scale = Vector2(0.998, 0.9986)
+texture = SubResource("AtlasTexture_s3kd0")
+
+[node name="crack" type="Node2D" parent="." unique_id=362851085]
+position = Vector2(22.77135, 60.9608)
+scale = Vector2(1.0313, 0.8783)
+script = ExtResource("2_nam81")
+
+[node name="0" parent="crack" unique_id=1045242517 instance=ExtResource("4_25gpf")]
+autoplay = &"i"
+
+[node name="top0" type="Node2D" parent="." unique_id=1309686665]
+script = ExtResource("2_nam81")
+
+[node name="0" type="Sprite2D" parent="top0" unique_id=344461940]
+position = Vector2(24.33, 8.24)
+scale = Vector2(0.9456, 0.9456)
+texture = SubResource("AtlasTexture_cayyt")
+
+[node name="_falling_lava" type="Node2D" parent="." unique_id=251363344]
+script = ExtResource("2_nam81")
+
+[node name="0" parent="_falling_lava" unique_id=832834554 instance=ExtResource("5_oqvu6")]
+position = Vector2(60.8, 31.74)
+autoplay = &"1s"
+
+[node name="_falling_lava1" type="Node2D" parent="." unique_id=723423723]
+script = ExtResource("2_nam81")
+
+[node name="0" parent="_falling_lava1" unique_id=1081736861 instance=ExtResource("5_oqvu6")]
+position = Vector2(-18.5, 22.74)
+autoplay = &"1s"
+
+[node name="bush3" type="Node2D" parent="." unique_id=1359405677]
+script = ExtResource("2_nam81")
+
+[node name="0" type="Sprite2D" parent="bush3" unique_id=699878248]
+position = Vector2(-15.49, -60)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_ervr1")
+
+[node name="bush1" type="Node2D" parent="." unique_id=1912659269]
+position = Vector2(-14.77935, -92.6417)
+scale = Vector2(0.98, 1.211)
+script = ExtResource("2_nam81")
+
+[node name="0" type="Sprite2D" parent="bush1" unique_id=1281606536]
+position = Vector2(-0.11, -9.3)
+texture = SubResource("AtlasTexture_deyxr")
+
+[node name="rock1" type="Node2D" parent="." unique_id=106128374]
+script = ExtResource("2_nam81")
+
+[node name="0" type="Sprite2D" parent="rock1" unique_id=1468778524]
+position = Vector2(97.88, -21.02)
+rotation = -3.1415927
+scale = Vector2(0.5283, -0.5283)
+texture = SubResource("AtlasTexture_d7w0k")
+
+[node name="_water_pit" type="Node2D" parent="." unique_id=1437471835]
+script = ExtResource("2_nam81")
+
+[node name="0" parent="_water_pit" unique_id=995770988 instance=ExtResource("6_127pv")]
+position = Vector2(22.24, -8.01)
+scale = Vector2(0.8725, 0.8725)
+autoplay = &"idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=979484262]
+libraries/ = SubResource("AnimationLibrary_rc4wv")

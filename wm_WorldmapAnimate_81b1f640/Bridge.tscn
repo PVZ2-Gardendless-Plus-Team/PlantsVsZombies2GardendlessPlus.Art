@@ -1,0 +1,149 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_55lvp"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ks53s"]
+[ext_resource type="Texture2D" path="res://art/_textures/cb4474b6-08bb-4ce9-a3c9-29d54c51436e.png" id="3_7xfpb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mknrr"]
+atlas = ExtResource("3_7xfpb")
+region = Rect2(1516, 407, 202, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ud7h"]
+atlas = ExtResource("3_7xfpb")
+region = Rect2(1516, 576, 202, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbqax"]
+atlas = ExtResource("3_7xfpb")
+region = Rect2(1323, 678, 176, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qsxw"]
+atlas = ExtResource("3_7xfpb")
+region = Rect2(1323, 960, 144, 137)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcb3j"]
+atlas = ExtResource("3_7xfpb")
+region = Rect2(1516, 745, 227, 139)
+
+[sub_resource type="Animation" id="Animation_bqkw0"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bridge0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_5t67b"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bridge0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_p4sme"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bridge0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_cg1ev"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bridge0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_ebleh"]
+length = 0.041666666666666664
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bridge0:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m4ld0"]
+_data = {
+&"i0": SubResource("Animation_bqkw0"),
+&"i1": SubResource("Animation_5t67b"),
+&"i2": SubResource("Animation_p4sme"),
+&"i3": SubResource("Animation_cg1ev"),
+&"i4": SubResource("Animation_ebleh")
+}
+
+[node name="Bridge" type="Node2D" unique_id=227331374]
+script = ExtResource("1_55lvp")
+bounds = Rect2(-206.65, -8.54, 226.5, 139)
+
+[node name="bridge0" type="Node2D" parent="." unique_id=576406020]
+script = ExtResource("2_ks53s")
+display = 4
+
+[node name="0" type="Sprite2D" parent="bridge0" unique_id=538428856]
+visible = false
+position = Vector2(-63.18, 58.76)
+texture = SubResource("AtlasTexture_mknrr")
+
+[node name="1" type="Sprite2D" parent="bridge0" unique_id=493746946]
+visible = false
+position = Vector2(-62.86, 59.09)
+texture = SubResource("AtlasTexture_7ud7h")
+
+[node name="2" type="Sprite2D" parent="bridge0" unique_id=511912903]
+visible = false
+position = Vector2(-76.35, 73.68)
+texture = SubResource("AtlasTexture_hbqax")
+
+[node name="3" type="Sprite2D" parent="bridge0" unique_id=1151341176]
+visible = false
+position = Vector2(-33.85, 43.4)
+texture = SubResource("AtlasTexture_8qsxw")
+
+[node name="4" type="Sprite2D" parent="bridge0" unique_id=379252234]
+position = Vector2(-93.4, 60.96)
+texture = SubResource("AtlasTexture_hcb3j")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1632900417]
+libraries/ = SubResource("AnimationLibrary_m4ld0")

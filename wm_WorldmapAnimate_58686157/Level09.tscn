@@ -1,0 +1,74 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_l1cag"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_i71tr"]
+[ext_resource type="Texture2D" path="res://art/_textures/04ee9a11-fd56-4b52-ae53-c22145d1ddc2.png" id="3_xct4y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybdl5"]
+atlas = ExtResource("3_xct4y")
+region = Rect2(1356, 908, 165, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twfpv"]
+atlas = ExtResource("3_xct4y")
+region = Rect2(1908, 941, 87, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wt3do"]
+atlas = ExtResource("3_xct4y")
+region = Rect2(1740, 1234, 129, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phr71"]
+atlas = ExtResource("3_xct4y")
+region = Rect2(660, 765, 28, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryv5m"]
+atlas = ExtResource("3_xct4y")
+region = Rect2(1871, 697, 24, 21)
+
+[sub_resource type="Animation" id="Animation_ogeim"]
+length = 2.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gyr4e"]
+_data = {
+&"idle": SubResource("Animation_ogeim")
+}
+
+[node name="Level09" type="Node2D" unique_id=82645475]
+script = ExtResource("1_l1cag")
+bounds = Rect2(-64.25, -117.08, 183.4, 204.37)
+
+[node name="lines4" type="Node2D" parent="." unique_id=762139921]
+script = ExtResource("2_i71tr")
+
+[node name="0" type="Sprite2D" parent="lines4" unique_id=395512291]
+position = Vector2(36.65, -63.08)
+texture = SubResource("AtlasTexture_ybdl5")
+
+[node name="island" type="Node2D" parent="." unique_id=108286692]
+script = ExtResource("2_i71tr")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=537006385]
+position = Vector2(0, 45.04)
+texture = SubResource("AtlasTexture_twfpv")
+
+[node name="islandFace" type="Node2D" parent="." unique_id=1880294093]
+script = ExtResource("2_i71tr")
+
+[node name="0" type="Sprite2D" parent="islandFace" unique_id=580082338]
+texture = SubResource("AtlasTexture_wt3do")
+
+[node name="plate" type="Node2D" parent="." unique_id=1094608575]
+script = ExtResource("2_i71tr")
+
+[node name="0" type="Sprite2D" parent="plate" unique_id=2031732934]
+position = Vector2(22.78, 50.87)
+texture = SubResource("AtlasTexture_phr71")
+
+[node name="lines2" type="Node2D" parent="." unique_id=607233956]
+script = ExtResource("2_i71tr")
+
+[node name="0" type="Sprite2D" parent="lines2" unique_id=776727976]
+position = Vector2(30.14, 51.89)
+texture = SubResource("AtlasTexture_ryv5m")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=866301325]
+libraries/ = SubResource("AnimationLibrary_gyr4e")

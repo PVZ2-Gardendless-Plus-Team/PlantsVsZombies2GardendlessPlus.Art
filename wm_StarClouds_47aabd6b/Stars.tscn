@@ -1,0 +1,474 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ooj4t"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_gd0mk"]
+[ext_resource type="PackedScene" path="res://art/wm_StarClouds_47aabd6b/star.tscn" id="3_ijm5d"]
+
+[sub_resource type="Animation" id="Animation_yvetl"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sn5yy"]
+_data = {
+&"Idle": SubResource("Animation_yvetl")
+}
+
+[node name="Stars" type="Node2D" unique_id=124837003]
+script = ExtResource("1_ooj4t")
+bounds = Rect2(-8616.56, -964.54, 18088.13, 1746.58)
+
+[node name="star" type="Node2D" parent="." unique_id=508449476]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star" unique_id=1357196776 instance=ExtResource("3_ijm5d")]
+position = Vector2(361.25, -631.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star1" type="Node2D" parent="." unique_id=1190858102]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1" unique_id=141918231 instance=ExtResource("3_ijm5d")]
+position = Vector2(956.25, 286.25)
+autoplay = &"Idle"
+
+[node name="star2" type="Node2D" parent="." unique_id=1796095292]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star2" unique_id=510323358 instance=ExtResource("3_ijm5d")]
+position = Vector2(-321.25, 138.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star3" type="Node2D" parent="." unique_id=1965603327]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star3" unique_id=534603597 instance=ExtResource("3_ijm5d")]
+position = Vector2(-943.75, -141.25)
+autoplay = &"Idle"
+
+[node name="star4" type="Node2D" parent="." unique_id=89290661]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star4" unique_id=1818743177 instance=ExtResource("3_ijm5d")]
+position = Vector2(1741.25, 338.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star5" type="Node2D" parent="." unique_id=218240930]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star5" unique_id=1683421560 instance=ExtResource("3_ijm5d")]
+position = Vector2(1886.25, -273.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star6" type="Node2D" parent="." unique_id=81186307]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star6" unique_id=76153878 instance=ExtResource("3_ijm5d")]
+position = Vector2(-1521.25, 393.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star7" type="Node2D" parent="." unique_id=1004993562]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star7" unique_id=1726397543 instance=ExtResource("3_ijm5d")]
+position = Vector2(-1476.25, -266.25)
+autoplay = &"Idle"
+
+[node name="star8" type="Node2D" parent="." unique_id=1530444006]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star8" unique_id=701632533 instance=ExtResource("3_ijm5d")]
+position = Vector2(-2216.25, -18.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star9" type="Node2D" parent="." unique_id=1643528332]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star9" unique_id=2027801809 instance=ExtResource("3_ijm5d")]
+position = Vector2(-2403.75, -873.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star10" type="Node2D" parent="." unique_id=156877201]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star10" unique_id=1798360192 instance=ExtResource("3_ijm5d")]
+position = Vector2(-438.75, 736.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star11" type="Node2D" parent="." unique_id=1274913023]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star11" unique_id=370989019 instance=ExtResource("3_ijm5d")]
+position = Vector2(1333.75, -841.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star12" type="Node2D" parent="." unique_id=1021329314]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star12" unique_id=34602877 instance=ExtResource("3_ijm5d")]
+position = Vector2(2628.75, 706.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star13" type="Node2D" parent="." unique_id=178774355]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star13" unique_id=911664627 instance=ExtResource("3_ijm5d")]
+position = Vector2(3298.75, -771.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star14" type="Node2D" parent="." unique_id=266560715]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star14" unique_id=1797831741 instance=ExtResource("3_ijm5d")]
+position = Vector2(4508.75, 41.25)
+autoplay = &"Idle"
+
+[node name="star15" type="Node2D" parent="." unique_id=571234175]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star15" unique_id=2142107618 instance=ExtResource("3_ijm5d")]
+position = Vector2(6113.75, -171.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star16" type="Node2D" parent="." unique_id=1965702342]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star16" unique_id=21408884 instance=ExtResource("3_ijm5d")]
+position = Vector2(6066.25, 558.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star151" type="Node2D" parent="." unique_id=1754705997]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star151" unique_id=2033746188 instance=ExtResource("3_ijm5d")]
+position = Vector2(5633.75, -801.25)
+autoplay = &"Idle"
+
+[node name="star152" type="Node2D" parent="." unique_id=736560197]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star152" unique_id=2061141624 instance=ExtResource("3_ijm5d")]
+position = Vector2(7021.25, -591.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star1521" type="Node2D" parent="." unique_id=2091143424]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1521" unique_id=613324279 instance=ExtResource("3_ijm5d")]
+position = Vector2(7523.75, 606.25)
+autoplay = &"Idle"
+
+[node name="star15211" type="Node2D" parent="." unique_id=1594182975]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star15211" unique_id=982507548 instance=ExtResource("3_ijm5d")]
+position = Vector2(7978.75, -186.25)
+autoplay = &"Idle"
+
+[node name="star15212" type="Node2D" parent="." unique_id=572230257]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star15212" unique_id=814457980 instance=ExtResource("3_ijm5d")]
+position = Vector2(8118.75, 63.75)
+autoplay = &"Idle"
+
+[node name="star152111" type="Node2D" parent="." unique_id=1163423563]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star152111" unique_id=1950486202 instance=ExtResource("3_ijm5d")]
+position = Vector2(8441.25, -898.75)
+autoplay = &"Idle"
+
+[node name="star1522" type="Node2D" parent="." unique_id=1118582653]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1522" unique_id=1149322919 instance=ExtResource("3_ijm5d")]
+position = Vector2(9426.25, 168.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star1521111" type="Node2D" parent="." unique_id=791735697]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1521111" unique_id=1958019213 instance=ExtResource("3_ijm5d")]
+position = Vector2(8558.75, -478.75)
+autoplay = &"Idle"
+
+[node name="star15221" type="Node2D" parent="." unique_id=1209277372]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star15221" unique_id=494526409 instance=ExtResource("3_ijm5d")]
+position = Vector2(8826.25, -583.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star15213" type="Node2D" parent="." unique_id=1740688544]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star15213" unique_id=1938231523 instance=ExtResource("3_ijm5d")]
+position = Vector2(8626.25, 448.75)
+autoplay = &"Idle"
+
+[node name="star1523" type="Node2D" parent="." unique_id=1203391767]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1523" unique_id=917292674 instance=ExtResource("3_ijm5d")]
+position = Vector2(6841.25, 63.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star1511" type="Node2D" parent="." unique_id=1670566315]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star1511" unique_id=1775704224 instance=ExtResource("3_ijm5d")]
+position = Vector2(5241.25, -71.25)
+autoplay = &"Idle"
+
+[node name="star141" type="Node2D" parent="." unique_id=1456664096]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star141" unique_id=1150055526 instance=ExtResource("3_ijm5d")]
+position = Vector2(4616.25, -506.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star142" type="Node2D" parent="." unique_id=410951255]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star142" unique_id=1967840062 instance=ExtResource("3_ijm5d")]
+position = Vector2(4846.25, 423.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star143" type="Node2D" parent="." unique_id=904386025]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star143" unique_id=303012653 instance=ExtResource("3_ijm5d")]
+position = Vector2(3581.25, 251.25)
+autoplay = &"Idle"
+
+[node name="star131" type="Node2D" parent="." unique_id=1978979733]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star131" unique_id=1912580715 instance=ExtResource("3_ijm5d")]
+position = Vector2(2941.25, 36.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star51" type="Node2D" parent="." unique_id=810110079]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star51" unique_id=1009638859 instance=ExtResource("3_ijm5d")]
+position = Vector2(523.75, -53.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star17" type="Node2D" parent="." unique_id=220453877]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star17" unique_id=1280875817 instance=ExtResource("3_ijm5d")]
+position = Vector2(-733.75, 486.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star31" type="Node2D" parent="." unique_id=1992271961]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star31" unique_id=1423708270 instance=ExtResource("3_ijm5d")]
+position = Vector2(346.25, 248.75)
+autoplay = &"Idle"
+
+[node name="star32" type="Node2D" parent="." unique_id=1209566927]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star32" unique_id=1409053315 instance=ExtResource("3_ijm5d")]
+position = Vector2(-1828.75, -778.75)
+autoplay = &"Idle"
+
+[node name="star81" type="Node2D" parent="." unique_id=111443611]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star81" unique_id=1508823102 instance=ExtResource("3_ijm5d")]
+position = Vector2(-3258.75, 691.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star321" type="Node2D" parent="." unique_id=1507182546]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star321" unique_id=2094939312 instance=ExtResource("3_ijm5d")]
+position = Vector2(-3091.25, -251.25)
+autoplay = &"Idle"
+
+[node name="star91" type="Node2D" parent="." unique_id=76620178]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91" unique_id=472499605 instance=ExtResource("3_ijm5d")]
+position = Vector2(-3533.75, -316.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star3211" type="Node2D" parent="." unique_id=1657958929]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star3211" unique_id=1669855211 instance=ExtResource("3_ijm5d")]
+position = Vector2(-4323.75, -531.25)
+autoplay = &"Idle"
+
+[node name="star911" type="Node2D" parent="." unique_id=489054805]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star911" unique_id=1217018407 instance=ExtResource("3_ijm5d")]
+position = Vector2(-3818.75, 136.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star811" type="Node2D" parent="." unique_id=952245712]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star811" unique_id=771381618 instance=ExtResource("3_ijm5d")]
+position = Vector2(-4998.75, 526.25)
+autoplay = &"Idle"
+
+[node name="star9111" type="Node2D" parent="." unique_id=135409331]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star9111" unique_id=970490494 instance=ExtResource("3_ijm5d")]
+position = Vector2(-4466.25, -21.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star32111" type="Node2D" parent="." unique_id=179334918]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star32111" unique_id=1928771471 instance=ExtResource("3_ijm5d")]
+position = Vector2(-4538.75, -918.75)
+autoplay = &"Idle"
+
+[node name="star91111" type="Node2D" parent="." unique_id=904589392]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91111" unique_id=1378983148 instance=ExtResource("3_ijm5d")]
+position = Vector2(-5488.75, -131.25)
+autoplay = &"Idle"
+
+[node name="star8111" type="Node2D" parent="." unique_id=914988856]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star8111" unique_id=1146090489 instance=ExtResource("3_ijm5d")]
+position = Vector2(-5061.25, -576.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star911111" type="Node2D" parent="." unique_id=837983761]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star911111" unique_id=1721049416 instance=ExtResource("3_ijm5d")]
+position = Vector2(-5743.75, -721.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star321111" type="Node2D" parent="." unique_id=392154789]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star321111" unique_id=364559501 instance=ExtResource("3_ijm5d")]
+position = Vector2(-5266.25, 106.25)
+autoplay = &"Idle"
+
+[node name="star8112" type="Node2D" parent="." unique_id=2046773780]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star8112" unique_id=1422623272 instance=ExtResource("3_ijm5d")]
+position = Vector2(-6431.25, 348.75)
+autoplay = &"Idle"
+
+[node name="star91112" type="Node2D" parent="." unique_id=2031114339]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91112" unique_id=1398076986 instance=ExtResource("3_ijm5d")]
+position = Vector2(-6343.75, -373.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star9111111" type="Node2D" parent="." unique_id=1056737336]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star9111111" unique_id=1541993579 instance=ExtResource("3_ijm5d")]
+position = Vector2(-7173.75, 298.75)
+autoplay = &"Idle"
+
+[node name="star81121" type="Node2D" parent="." unique_id=2123030810]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star81121" unique_id=135189535 instance=ExtResource("3_ijm5d")]
+position = Vector2(-6568.75, -631.25)
+autoplay = &"Idle"
+
+[node name="star91113" type="Node2D" parent="." unique_id=1255660942]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91113" unique_id=47643640 instance=ExtResource("3_ijm5d")]
+position = Vector2(-5743.75, 723.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star911131" type="Node2D" parent="." unique_id=1932860156]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star911131" unique_id=2115870269 instance=ExtResource("3_ijm5d")]
+position = Vector2(-6896.25, -151.25)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star91111111" type="Node2D" parent="." unique_id=483116922]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91111111" unique_id=1974542251 instance=ExtResource("3_ijm5d")]
+position = Vector2(-7353.75, -626.25)
+autoplay = &"Idle"
+
+[node name="star9111311" type="Node2D" parent="." unique_id=1668925636]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star9111311" unique_id=529144285 instance=ExtResource("3_ijm5d")]
+position = Vector2(-7746.25, -68.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star91111112" type="Node2D" parent="." unique_id=260797632]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91111112" unique_id=1940483774 instance=ExtResource("3_ijm5d")]
+position = Vector2(-8031.25, -208.75)
+autoplay = &"Idle"
+
+[node name="star91113111" type="Node2D" parent="." unique_id=1333497163]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star91113111" unique_id=748957029 instance=ExtResource("3_ijm5d")]
+position = Vector2(-8413.75, 378.75)
+scale = Vector2(1.3202, 1.3202)
+autoplay = &"Idle"
+
+[node name="star911111121" type="Node2D" parent="." unique_id=542915502]
+script = ExtResource("2_gd0mk")
+
+[node name="0" parent="star911111121" unique_id=1372925244 instance=ExtResource("3_ijm5d")]
+position = Vector2(-8571.25, -393.75)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1728955062]
+libraries/ = SubResource("AnimationLibrary_sn5yy")

@@ -1,0 +1,94 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_x2maj"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_xb1od"]
+[ext_resource type="Texture2D" path="res://art/_textures/37aeaa3f-8ac6-4844-b0ed-5c07ed8d4ea2.png" id="3_pn3ge"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2on57"]
+atlas = ExtResource("3_pn3ge")
+region = Rect2(1347, 2010, 119, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h85n7"]
+atlas = ExtResource("3_pn3ge")
+region = Rect2(1831, 1741, 167, 178)
+
+[sub_resource type="Animation" id="Animation_mb11e"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bush1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5.62395, -65.0315)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bush1:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.6, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0021406664, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bush1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.9, 1.3666667, 1.9, 2.4333334, 3.2333333, 4.5, 5.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.98, 1.211), Vector2(0.97998816, 1.2119604), Vector2(0.9799349, 1.2162638), Vector2(0.97986865, 1.2215829), Vector2(0.97985333, 1.2228122), Vector2(0.9798814, 1.2205615), Vector2(0.97998446, 1.2122558), Vector2(0.97999996, 1.2110037)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bush1:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.56666666, 0.73333335, 0.9, 1.1, 1.3666667, 1.5333333, 1.7, 1.8666667, 2.0333333, 2.2333333, 2.5333333, 2.8666666, 3.1333334, 3.3666666, 3.6, 3.8666666, 4.5333333, 4.8, 5.0333333, 5.3, 5.6, 5.9333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0014793873, 0.006406188, 0.013811469, 0.024739861, 0.03950894, 0.06158173, 0.09235406, 0.108421445, 0.120753646, 0.12934268, 0.13478005, 0.13781953, 0.1375984, 0.13376498, 0.12748182, 0.11919558, 0.107911706, 0.09139323, 0.042884827, 0.027181387, 0.016602516, 0.008104205, 0.0024286509, 6.41346e-05]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jbr8u"]
+_data = {
+&"idle": SubResource("Animation_mb11e")
+}
+
+[node name="grass3" type="Node2D" unique_id=1448015692]
+script = ExtResource("1_x2maj")
+bounds = Rect2(-89.23, -165.3, 167, 216.35)
+
+[node name="bush3" type="Node2D" parent="." unique_id=1727192619]
+script = ExtResource("2_xb1od")
+
+[node name="0" type="Sprite2D" parent="bush3" unique_id=1186044457]
+position = Vector2(-2.89, -28.95)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_2on57")
+
+[node name="bush1" type="Node2D" parent="." unique_id=386782513]
+position = Vector2(-5.62395, -65.0315)
+scale = Vector2(0.98, 1.211)
+script = ExtResource("2_xb1od")
+
+[node name="0" type="Sprite2D" parent="bush1" unique_id=1704090309]
+position = Vector2(-0.11, -9.3)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_h85n7")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1667791705]
+libraries/ = SubResource("AnimationLibrary_jbr8u")

@@ -1,0 +1,87 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ipuui"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_2oyb4"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_8c4877c1/_mirror.tscn" id="3_28obx"]
+
+[sub_resource type="Animation" id="Animation_vls2a"]
+length = 50.0
+step = 0.041666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("_mirror:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 10.416667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-685.06, 0), Vector2(685.06, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("_mirror:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("_mirror:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("_mirror:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("_mirror:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.41666666, 10, 10.416667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kmh58"]
+_data = {
+&"Idle": SubResource("Animation_vls2a")
+}
+
+[node name="Mirror" type="Node2D" unique_id=1242300366]
+script = ExtResource("1_ipuui")
+bounds = Rect2(-58.31, -51.16, 116.62, 102.31)
+
+[node name="_mirror" type="Node2D" parent="." unique_id=103705725]
+script = ExtResource("2_2oyb4")
+
+[node name="0" parent="_mirror" unique_id=1671009214 instance=ExtResource("3_28obx")]
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=2033802663]
+libraries/ = SubResource("AnimationLibrary_kmh58")

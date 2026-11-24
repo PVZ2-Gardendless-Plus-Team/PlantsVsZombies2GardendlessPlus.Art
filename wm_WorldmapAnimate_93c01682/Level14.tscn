@@ -1,0 +1,131 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_5b5c7"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_5pv60"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_k3pnw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rujkn"]
+atlas = ExtResource("3_k3pnw")
+region = Rect2(1059, 676, 185, 117)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7cpi"]
+atlas = ExtResource("3_k3pnw")
+region = Rect2(1508, 149, 103, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knjqd"]
+atlas = ExtResource("3_k3pnw")
+region = Rect2(1059, 795, 208, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku741"]
+atlas = ExtResource("3_k3pnw")
+region = Rect2(1525, 1, 117, 69)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksxvi"]
+atlas = ExtResource("3_k3pnw")
+region = Rect2(953, 2010, 61, 35)
+
+[sub_resource type="Animation" id="Animation_xvwju"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("pins:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(34.24645, -29.0699)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pins:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [3.1415927, -3.1398714, 3.1415927]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pins:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4666667, 3, 3.8333333, 4.4666667, 5.0666666, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.9841, -1.211), Vector2(0.98408794, -1.2119746), Vector2(0.98400056, -1.219046), Vector2(0.983998, -1.2192583), Vector2(0.98404354, -1.2155812), Vector2(0.98409206, -1.2116423), Vector2(0.9841, -1.211)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pins:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.6666667, 0.93333334, 1.2, 1.4666667, 2.1, 2.3666666, 2.6333334, 2.9, 3.2, 3.5666666, 3.8, 4, 4.2, 4.366667, 4.5666666, 5, 5.2, 5.366667, 5.5666666, 5.766667, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0018769503, 0.0067451, 0.014232278, 0.025210619, 0.039803028, 0.08069706, 0.09480214, 0.10519767, 0.11221218, 0.116648674, 0.11813223, 0.1161412, 0.11146426, 0.10334265, 0.09352279, 0.07791519, 0.03775263, 0.022712946, 0.013359547, 0.0057867765, 0.001555562, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c3fuc"]
+_data = {
+&"idle": SubResource("Animation_xvwju")
+}
+
+[node name="Level14" type="Node2D" unique_id=1621972239]
+script = ExtResource("1_5b5c7")
+bounds = Rect2(-103.42, -108.65, 213.76, 220.6)
+
+[node name="island" type="Node2D" parent="." unique_id=1150987942]
+script = ExtResource("2_5pv60")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=2057623116]
+position = Vector2(0.23, 53.7)
+scale = Vector2(0.65, 0.8927)
+texture = SubResource("AtlasTexture_rujkn")
+
+[node name="pins" type="Node2D" parent="." unique_id=427132844]
+position = Vector2(34.24645, -29.0699)
+rotation = 3.1415927
+scale = Vector2(0.9841, -1.211)
+script = ExtResource("2_5pv60")
+
+[node name="0" type="Sprite2D" parent="pins" unique_id=22121020]
+position = Vector2(-25.25, -31.04)
+texture = SubResource("AtlasTexture_m7cpi")
+
+[node name="top" type="Node2D" parent="." unique_id=1429766233]
+script = ExtResource("2_5pv60")
+
+[node name="0" type="Sprite2D" parent="top" unique_id=1367503219]
+position = Vector2(0.58, -3.03)
+scale = Vector2(0.6824, 0.6824)
+texture = SubResource("AtlasTexture_knjqd")
+
+[node name="lilies" type="Node2D" parent="." unique_id=1628484080]
+script = ExtResource("2_5pv60")
+
+[node name="0" type="Sprite2D" parent="lilies" unique_id=831724170]
+position = Vector2(-18.4, -43.62)
+rotation = 0.0141371675
+scale = Vector2(0.9, 0.9022)
+texture = SubResource("AtlasTexture_ku741")
+
+[node name="pit_oil_collect" type="Node2D" parent="." unique_id=530662792]
+script = ExtResource("2_5pv60")
+
+[node name="0" type="Sprite2D" parent="pit_oil_collect" unique_id=1084228581]
+position = Vector2(-8.38, 68.7)
+scale = Vector2(0.9064, 0.9064)
+texture = SubResource("AtlasTexture_ksxvi")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=537665383]
+libraries/ = SubResource("AnimationLibrary_c3fuc")

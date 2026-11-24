@@ -1,0 +1,88 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_g0jeh"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_b3j17"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_adtib"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_crack_1.tscn" id="4_8qusq"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_falling_lava.tscn" id="5_h2ubq"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_falling_rocks.tscn" id="6_ahjk1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fwof"]
+atlas = ExtResource("3_adtib")
+region = Rect2(755, 1871, 196, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfmqi"]
+atlas = ExtResource("3_adtib")
+region = Rect2(656, 676, 228, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oft3"]
+atlas = ExtResource("3_adtib")
+region = Rect2(1122, 284, 80, 48)
+
+[sub_resource type="Animation" id="Animation_d2nt2"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_js0qi"]
+_data = {
+&"idle": SubResource("Animation_d2nt2")
+}
+
+[node name="PrimalSunflower" type="Node2D" unique_id=1846836483]
+script = ExtResource("1_g0jeh")
+bounds = Rect2(-116.18, -41.52, 232.5, 197.14)
+
+[node name="island3" type="Node2D" parent="." unique_id=617016554]
+position = Vector2(-0.3134, 70.87325)
+scale = Vector2(0.801, 0.801)
+script = ExtResource("2_b3j17")
+
+[node name="0" type="Sprite2D" parent="island3" unique_id=181840512]
+texture = SubResource("AtlasTexture_4fwof")
+
+[node name="crack" type="Node2D" parent="." unique_id=717050955]
+position = Vector2(-0.3134, 70.87325)
+scale = Vector2(0.801, 0.801)
+script = ExtResource("2_b3j17")
+
+[node name="0" parent="crack" unique_id=1802803560 instance=ExtResource("4_8qusq")]
+autoplay = &"i"
+
+[node name="top0" type="Node2D" parent="." unique_id=318655556]
+script = ExtResource("2_b3j17")
+
+[node name="0" type="Sprite2D" parent="top0" unique_id=1428201069]
+position = Vector2(0.07, 16.48)
+scale = Vector2(0.8296, 0.8296)
+texture = SubResource("AtlasTexture_sfmqi")
+offset = Vector2(-0.5, -1)
+
+[node name="bone2" type="Node2D" parent="." unique_id=729955056]
+script = ExtResource("2_b3j17")
+
+[node name="0" type="Sprite2D" parent="bone2" unique_id=876947660]
+position = Vector2(-43.75, -10.15)
+texture = SubResource("AtlasTexture_4oft3")
+
+[node name="_falling_lava" type="Node2D" parent="." unique_id=869062587]
+script = ExtResource("2_b3j17")
+
+[node name="0" parent="_falling_lava" unique_id=832834554 instance=ExtResource("5_h2ubq")]
+position = Vector2(-38.59, 19.06)
+autoplay = &"1s"
+
+[node name="_falling_lava1" type="Node2D" parent="." unique_id=886237475]
+script = ExtResource("2_b3j17")
+
+[node name="0" parent="_falling_lava1" unique_id=2019496524 instance=ExtResource("5_h2ubq")]
+position = Vector2(83.11, 6.96)
+autoplay = &"1s"
+
+[node name="_falling_rocks" type="Node2D" parent="." unique_id=759665054]
+script = ExtResource("2_b3j17")
+
+[node name="0" parent="_falling_rocks" unique_id=1447847525 instance=ExtResource("6_ahjk1")]
+position = Vector2(82.4, 2.35)
+autoplay = &"1s"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=516285766]
+libraries/ = SubResource("AnimationLibrary_js0qi")

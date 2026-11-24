@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ihe3s"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_6w1ee"]
+[ext_resource type="Texture2D" path="res://art/_textures/0dfe99a2-9227-4264-852a-41c83dfad806.png" id="3_sb8fk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewqdo"]
+atlas = ExtResource("3_sb8fk")
+region = Rect2(1968, 938, 71, 47)
+
+[sub_resource type="Animation" id="Animation_5j1ma"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5lotf"]
+_data = {
+&"Idle": SubResource("Animation_5j1ma")
+}
+
+[node name="IslandPlankShorter" type="Node2D" unique_id=1704829137]
+script = ExtResource("1_ihe3s")
+bounds = Rect2(-38.28, -13.63, 70.5, 46.5)
+
+[node name="islandPlankVeryShort" type="Node2D" parent="." unique_id=941042182]
+script = ExtResource("2_6w1ee")
+
+[node name="0" type="Sprite2D" parent="islandPlankVeryShort" unique_id=867905092]
+position = Vector2(-3.03, 9.62)
+texture = SubResource("AtlasTexture_ewqdo")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=823793318]
+libraries/ = SubResource("AnimationLibrary_5lotf")

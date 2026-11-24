@@ -1,0 +1,75 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_0ppdh"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_kypio"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_c8f1c3fe/_fire.tscn" id="3_2auu2"]
+[ext_resource type="Texture2D" path="res://art/_textures/ac3a9595-fcf4-4669-9db6-ad6252e64739.png" id="4_76x3o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3my2o"]
+atlas = ExtResource("4_76x3o")
+region = Rect2(1004, 1019, 295, 219)
+
+[sub_resource type="Animation" id="Animation_v5rqh"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sej78"]
+_data = {
+&"Idle": SubResource("Animation_v5rqh")
+}
+
+[node name="Island3" type="Node2D" unique_id=1877227355]
+script = ExtResource("1_0ppdh")
+bounds = Rect2(-148.99, -52.73, 295, 218.5)
+
+[node name="_fire3" type="Node2D" parent="." unique_id=777644005]
+position = Vector2(0, -7.5252)
+scale = Vector2(1.1013, 1.1013)
+script = ExtResource("2_kypio")
+
+[node name="0" parent="_fire3" unique_id=2079638346 instance=ExtResource("3_2auu2")]
+position = Vector2(0, 101.08)
+scale = Vector2(2.7433, 1.1516)
+autoplay = &"Idle"
+
+[node name="_fire" type="Node2D" parent="." unique_id=974720605]
+position = Vector2(0, -7.5252)
+scale = Vector2(1.1013, 1.1013)
+script = ExtResource("2_kypio")
+
+[node name="0" parent="_fire" unique_id=1774066479 instance=ExtResource("3_2auu2")]
+position = Vector2(-51.01, 126.83)
+rotation = 0.9885545
+scale = Vector2(2.3915, 1.3685)
+autoplay = &"Idle"
+
+[node name="_fire1" type="Node2D" parent="." unique_id=886675365]
+position = Vector2(0, -7.5252)
+scale = Vector2(1.1013, 1.1013)
+script = ExtResource("2_kypio")
+
+[node name="0" parent="_fire1" unique_id=204747163 instance=ExtResource("3_2auu2")]
+position = Vector2(51.01, 126.83)
+rotation = -0.9885545
+scale = Vector2(2.3915, 1.3685)
+autoplay = &"Idle"
+
+[node name="island0" type="Node2D" parent="." unique_id=2815859]
+script = ExtResource("2_kypio")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=1540406773]
+position = Vector2(-1.49, 56.52)
+texture = SubResource("AtlasTexture_3my2o")
+
+[node name="_fire2" type="Node2D" parent="." unique_id=1272398692]
+position = Vector2(0, -7.5252)
+scale = Vector2(1.1013, 1.1013)
+script = ExtResource("2_kypio")
+
+[node name="0" parent="_fire2" unique_id=1859920822 instance=ExtResource("3_2auu2")]
+position = Vector2(0, 137.72)
+scale = Vector2(2.7433, 1.4976)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=538065341]
+libraries/ = SubResource("AnimationLibrary_sej78")

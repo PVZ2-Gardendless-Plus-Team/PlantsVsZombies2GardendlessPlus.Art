@@ -1,0 +1,155 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_yfogx"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_4sxda"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_h0bi6"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_crack_0.tscn" id="4_osw1q"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_93c01682/_falling_rocks.tscn" id="5_n5stx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3kd0"]
+atlas = ExtResource("3_h0bi6")
+region = Rect2(557, 1871, 196, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfmqi"]
+atlas = ExtResource("3_h0bi6")
+region = Rect2(656, 676, 228, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db5ca"]
+atlas = ExtResource("3_h0bi6")
+region = Rect2(707, 790, 133, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4u3dq"]
+atlas = ExtResource("3_h0bi6")
+region = Rect2(1644, 1, 55, 47)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4oft3"]
+atlas = ExtResource("3_h0bi6")
+region = Rect2(1122, 284, 80, 48)
+
+[sub_resource type="Animation" id="Animation_beucf"]
+length = 4.333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bush:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(65.69565, -2.5098)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bush:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.4, 4.3333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.11028387, 0.11240377, 0.11028387]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bush:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8666667, 1.8333334, 2.4, 2.9, 3.4666667, 4.3333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.7785999, 0.96199995), Vector2(0.7785888, 0.9628993), Vector2(0.7784915, 0.9707366), Vector2(0.77848715, 0.97108823), Vector2(0.77852726, 0.9678631), Vector2(0.7785888, 0.9628993), Vector2(0.7785999, 0.96199995)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("bush:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.36666667, 0.53333336, 0.7, 0.8333333, 1, 1.2666667, 1.4, 1.5333333, 1.6666666, 1.8333334, 2, 2.2, 2.4, 2.5666666, 2.7, 2.8666666, 3, 3.1666667, 3.4333334, 3.5666666, 3.7, 3.8333333, 4, 4.1666665, 4.3333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0017210245, 0.0062242746, 0.014199376, 0.0263623, 0.039328933, 0.05887139, 0.092078686, 0.10620713, 0.11752784, 0.12609482, 0.13322985, 0.13703966, 0.1381433, 0.13586307, 0.13077533, 0.12423873, 0.1122452, 0.099413514, 0.079984546, 0.046719432, 0.03246987, 0.02101016, 0.012313247, 0.005053401, 0.0011711121, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_37mjn"]
+_data = {
+&"idle": SubResource("Animation_beucf")
+}
+
+[node name="Level21" type="Node2D" unique_id=342875889]
+script = ExtResource("1_yfogx")
+bounds = Rect2(-121.26, -117.48, 257.46, 282.86)
+
+[node name="island" type="Node2D" parent="." unique_id=113599815]
+position = Vector2(-1.04765, 78.38725)
+scale = Vector2(0.889, 0.889)
+script = ExtResource("2_4sxda")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=1306015098]
+scale = Vector2(0.998, 0.9986)
+texture = SubResource("AtlasTexture_s3kd0")
+
+[node name="top0" type="Node2D" parent="." unique_id=499829016]
+script = ExtResource("2_4sxda")
+
+[node name="0" type="Sprite2D" parent="top0" unique_id=1645867553]
+position = Vector2(-5.01, 21.55)
+scale = Vector2(0.9118, 0.9118)
+texture = SubResource("AtlasTexture_sfmqi")
+offset = Vector2(-0.5, -1)
+
+[node name="bush" type="Node2D" parent="." unique_id=1366239307]
+position = Vector2(65.69565, -2.5098)
+rotation = 0.11028387
+scale = Vector2(0.7785999, 0.96199995)
+script = ExtResource("2_4sxda")
+
+[node name="0" type="Sprite2D" parent="bush" unique_id=492172000]
+position = Vector2(-1.39, -50.3)
+texture = SubResource("AtlasTexture_db5ca")
+
+[node name="crack" type="Node2D" parent="." unique_id=603262569]
+position = Vector2(-1.04765, 78.38725)
+scale = Vector2(0.889, 0.889)
+script = ExtResource("2_4sxda")
+
+[node name="0" parent="crack" unique_id=1045242517 instance=ExtResource("4_osw1q")]
+autoplay = &"i"
+
+[node name="_falling_rocks" type="Node2D" parent="." unique_id=945825169]
+script = ExtResource("2_4sxda")
+
+[node name="0" parent="_falling_rocks" unique_id=1447847525 instance=ExtResource("5_n5stx")]
+position = Vector2(-47.68, 19.23)
+autoplay = &"1s"
+
+[node name="_falling_rocks1" type="Node2D" parent="." unique_id=1770890182]
+script = ExtResource("2_4sxda")
+
+[node name="0" parent="_falling_rocks1" unique_id=167018865 instance=ExtResource("5_n5stx")]
+position = Vector2(103.71, 2.27)
+autoplay = &"1s"
+
+[node name="fossile1" type="Node2D" parent="." unique_id=1385021088]
+script = ExtResource("2_4sxda")
+
+[node name="0" type="Sprite2D" parent="fossile1" unique_id=1488696095]
+position = Vector2(-33.47, 102.08)
+scale = Vector2(0.895, 0.895)
+texture = SubResource("AtlasTexture_4u3dq")
+
+[node name="bone2" type="Node2D" parent="." unique_id=1831789855]
+script = ExtResource("2_4sxda")
+
+[node name="0" type="Sprite2D" parent="bone2" unique_id=617974313]
+position = Vector2(-58.51, -13.34)
+texture = SubResource("AtlasTexture_4oft3")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1016535522]
+libraries/ = SubResource("AnimationLibrary_37mjn")

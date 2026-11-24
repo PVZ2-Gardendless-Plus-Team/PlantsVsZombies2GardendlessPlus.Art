@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_d1lmq"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_oljx1"]
+[ext_resource type="Texture2D" path="res://art/_textures/136839bf-9a76-4eb9-95e1-006d79bfa7ff.png" id="3_6lw1v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgwut"]
+atlas = ExtResource("3_6lw1v")
+region = Rect2(3612, 546, 381, 611)
+
+[sub_resource type="Animation" id="Animation_0smxu"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6fbjf"]
+_data = {
+&"Idle": SubResource("Animation_0smxu")
+}
+
+[node name="FarWell" type="Node2D" unique_id=419309126]
+script = ExtResource("1_d1lmq")
+bounds = Rect2(-231.28, -539.46, 381, 611)
+
+[node name="island0" type="Node2D" parent="." unique_id=1427143344]
+script = ExtResource("2_oljx1")
+
+[node name="0" type="Sprite2D" parent="island0" unique_id=338161159]
+position = Vector2(-40.78, -233.96)
+texture = SubResource("AtlasTexture_bgwut")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=393578584]
+libraries/ = SubResource("AnimationLibrary_6fbjf")

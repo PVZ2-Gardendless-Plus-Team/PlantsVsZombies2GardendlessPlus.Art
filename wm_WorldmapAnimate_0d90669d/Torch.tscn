@@ -1,0 +1,64 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_sj30n"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_my6yj"]
+[ext_resource type="Texture2D" path="res://art/_textures/67191340-0bb7-4872-927c-add3357180b8.png" id="3_6udes"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_0d90669d/_fire.tscn" id="4_7ubnl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i1r0"]
+atlas = ExtResource("3_6udes")
+region = Rect2(1978, 816, 58, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3hwa"]
+atlas = ExtResource("3_6udes")
+region = Rect2(1514, 1535, 44, 14)
+
+[sub_resource type="Animation" id="Animation_g3yxx"]
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("torch_light:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.62), Color(1, 1, 1, 0.17), Color(1, 1, 1, 0.62)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c5scu"]
+_data = {
+&"idle": SubResource("Animation_g3yxx")
+}
+
+[node name="Torch" type="Node2D" unique_id=283022464]
+script = ExtResource("1_sj30n")
+bounds = Rect2(-36.28, -224.47, 58.5, 235)
+
+[node name="torch" type="Node2D" parent="." unique_id=832281747]
+script = ExtResource("2_my6yj")
+
+[node name="0" type="Sprite2D" parent="torch" unique_id=894176064]
+position = Vector2(-7.03, -106.97)
+texture = SubResource("AtlasTexture_3i1r0")
+offset = Vector2(-0.5, 0)
+
+[node name="torch_light" type="Node2D" parent="." unique_id=1886478463]
+script = ExtResource("2_my6yj")
+
+[node name="0" type="Sprite2D" parent="torch_light" unique_id=1664918832]
+position = Vector2(-3.55, -204.39)
+texture = SubResource("AtlasTexture_d3hwa")
+
+[node name="_fire" type="Node2D" parent="." unique_id=632635843]
+script = ExtResource("2_my6yj")
+
+[node name="0" parent="_fire" unique_id=107376784 instance=ExtResource("4_7ubnl")]
+position = Vector2(-2.97, -223.75)
+scale = Vector2(0.5013, 1)
+autoplay = &"Idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=48436593]
+libraries/ = SubResource("AnimationLibrary_c5scu")

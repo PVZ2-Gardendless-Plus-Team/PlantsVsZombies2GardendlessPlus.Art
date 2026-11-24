@@ -1,0 +1,481 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_n6lxr"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_e26ei"]
+[ext_resource type="Texture2D" path="res://art/_textures/bb74b50c-dae3-4dd0-bd28-fd4d8b9196d6.png" id="3_a5k2b"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/Water.tscn" id="4_pk8ps"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/ele1.tscn" id="5_ivu7i"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/ele2.tscn" id="6_ax5md"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/flagL.tscn" id="7_q6jev"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/flagR.tscn" id="8_6ytit"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/ele0.tscn" id="9_l617l"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_4819e304/ele3.tscn" id="10_qesmu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xdos"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1, 1741, 1082, 867)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyfsy"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1, 1, 1083, 869)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27s2b"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1, 872, 1082, 867)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xs8d"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1069, 2610, 428, 497)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spi2i"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(884, 3401, 429, 499)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hdtf"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1315, 3401, 434, 491)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjbly"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1, 2610, 1066, 789)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ea7p"]
+atlas = ExtResource("3_a5k2b")
+region = Rect2(1, 3401, 881, 309)
+
+[sub_resource type="Animation" id="Animation_d217o"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ele1:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ele2:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("reflashLight:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BG_Rainbow:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ele0:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ele3:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_as8hc"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ele1:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ele2:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("reflashLight:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BG_Rainbow:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ele0:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ele3:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_4ubgd"]
+length = 1.5333333333333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ele1:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ele2:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("island:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("reflashLight:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 1, 1.0666667, 1.1333333, 1.2, 1.2666667, 1.3333334, 1.4, 1.4666667, 1.5333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BG_Rainbow:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ele0:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ele3:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_codtf"]
+_data = {
+&"Idle_Finished": SubResource("Animation_d217o"),
+&"Idle_Locked": SubResource("Animation_as8hc"),
+&"Idle_Unlock": SubResource("Animation_4ubgd")
+}
+
+[node name="Zomboss" type="Node2D" unique_id=761559563]
+script = ExtResource("1_n6lxr")
+bounds = Rect2(-512.87, -648.73, 1083, 900.94)
+
+[node name="BG" type="Node2D" parent="." unique_id=2053143646]
+position = Vector2(28.62785, -198.25626)
+script = ExtResource("2_e26ei")
+display = 1
+
+[node name="0" type="Sprite2D" parent="BG" unique_id=1504721129]
+visible = false
+texture = SubResource("AtlasTexture_6xdos")
+offset = Vector2(-0.5, 1)
+
+[node name="1" type="Sprite2D" parent="BG" unique_id=1616313015]
+texture = SubResource("AtlasTexture_pyfsy")
+
+[node name="2" type="Sprite2D" parent="BG" unique_id=56726061]
+visible = false
+texture = SubResource("AtlasTexture_27s2b")
+offset = Vector2(-0.5, 1)
+
+[node name="Water" type="Node2D" parent="." unique_id=570892586]
+position = Vector2(28.62785, -198.25626)
+script = ExtResource("2_e26ei")
+
+[node name="0" parent="Water" unique_id=1453765422 instance=ExtResource("4_pk8ps")]
+autoplay = &"Idle"
+
+[node name="ele1" type="Node2D" parent="." unique_id=1905608292]
+position = Vector2(1.36095, -28.9481)
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" parent="ele1" unique_id=972173291 instance=ExtResource("5_ivu7i")]
+visible = false
+position = Vector2(-430.7, -168.09)
+rotation = 1.6372933
+scale = Vector2(0.99999994, -0.99999994)
+autoplay = &"idle"
+
+[node name="ele2" type="Node2D" parent="." unique_id=1053084334]
+position = Vector2(1.36095, -28.9481)
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" parent="ele2" unique_id=1713692017 instance=ExtResource("6_ax5md")]
+visible = false
+position = Vector2(469.63, -178.31)
+rotation = 1.6097171
+scale = Vector2(1.0523, 1)
+autoplay = &"idle"
+
+[node name="flagL" type="Node2D" parent="." unique_id=1372671920]
+position = Vector2(28.62785, -198.25626)
+script = ExtResource("2_e26ei")
+
+[node name="0" parent="flagL" unique_id=1481906094 instance=ExtResource("7_q6jev")]
+position = Vector2(-241.62, -332.58)
+scale = Vector2(1.3865, 1.3865)
+autoplay = &"Idle"
+
+[node name="flagR" type="Node2D" parent="." unique_id=29944177]
+position = Vector2(28.62785, -198.25626)
+script = ExtResource("2_e26ei")
+
+[node name="0" parent="flagR" unique_id=1727317343 instance=ExtResource("8_6ytit")]
+position = Vector2(334.26, -152.8)
+rotation = 0.0991347
+scale = Vector2(1.6916, 1.6916)
+autoplay = &"Idle"
+
+[node name="island" type="Node2D" parent="." unique_id=525619643]
+script = ExtResource("2_e26ei")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=55172802]
+position = Vector2(10.63, -78.51)
+texture = SubResource("AtlasTexture_7xs8d")
+offset = Vector2(-1, -1)
+
+[node name="1" type="Sprite2D" parent="island" unique_id=1950135878]
+visible = false
+position = Vector2(9.31, -79.82)
+texture = SubResource("AtlasTexture_spi2i")
+
+[node name="2" type="Sprite2D" parent="island" unique_id=1611196270]
+visible = false
+position = Vector2(8.58, -79.3)
+texture = SubResource("AtlasTexture_1hdtf")
+
+[node name="reflashLight" type="Node2D" parent="." unique_id=1179633109]
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" type="Sprite2D" parent="reflashLight" unique_id=1606418645]
+visible = false
+position = Vector2(31.73, -157.18)
+texture = SubResource("AtlasTexture_tjbly")
+
+[node name="BG_Rainbow" type="Node2D" parent="." unique_id=702015349]
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" type="Sprite2D" parent="BG_Rainbow" unique_id=1785027855]
+visible = false
+position = Vector2(0, -343.06)
+texture = SubResource("AtlasTexture_3ea7p")
+
+[node name="ele0" type="Node2D" parent="." unique_id=682129256]
+position = Vector2(1.36095, -28.9481)
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" parent="ele0" unique_id=1651766444 instance=ExtResource("9_l617l")]
+visible = false
+position = Vector2(-107.14, -272.87)
+scale = Vector2(0.6963, 1)
+autoplay = &"idle"
+
+[node name="ele3" type="Node2D" parent="." unique_id=513395689]
+position = Vector2(1.36095, -28.9481)
+script = ExtResource("2_e26ei")
+display = -1
+
+[node name="0" parent="ele3" unique_id=1851434078 instance=ExtResource("10_qesmu")]
+visible = false
+position = Vector2(-114.5, 149.78)
+scale = Vector2(0.6965, -0.8857)
+autoplay = &"idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1800923166]
+libraries/ = SubResource("AnimationLibrary_codtf")

@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_eq7lc"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_epxc3"]
+[ext_resource type="Texture2D" path="res://art/_textures/bbed6ff7-a994-4040-97b1-7b8f5ffc4e57.png" id="3_fg6ro"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgkap"]
+atlas = ExtResource("3_fg6ro")
+region = Rect2(2741, 1, 518, 1121)
+
+[sub_resource type="Animation" id="Animation_848dt"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hyspf"]
+_data = {
+&"Idle": SubResource("Animation_848dt")
+}
+
+[node name="Future" type="Node2D" unique_id=1230692440]
+script = ExtResource("1_eq7lc")
+bounds = Rect2(-259, -560.5, 518, 1121)
+
+[node name="future" type="Node2D" parent="." unique_id=31731254]
+script = ExtResource("2_epxc3")
+
+[node name="0" type="Sprite2D" parent="future" unique_id=1316776025]
+texture = SubResource("AtlasTexture_qgkap")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1104677693]
+libraries/ = SubResource("AnimationLibrary_hyspf")

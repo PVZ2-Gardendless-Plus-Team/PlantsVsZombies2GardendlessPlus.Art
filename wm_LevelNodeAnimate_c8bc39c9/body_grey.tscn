@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_y3d0w"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_6kf38"]
+[ext_resource type="Texture2D" path="res://art/_textures/c205302e-ce99-4acf-9d41-0a882480ca81.png" id="3_42cra"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbsbt"]
+atlas = ExtResource("3_42cra")
+region = Rect2(273, 914, 120, 83)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gbto"]
+atlas = ExtResource("3_42cra")
+region = Rect2(1, 938, 127, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mt8p"]
+atlas = ExtResource("3_42cra")
+region = Rect2(499, 903, 93, 50)
+
+[sub_resource type="Animation" id="Animation_t0521"]
+length = 0.041666666666666664
+step = 0.041666668
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ao826"]
+_data = {
+&"Idle": SubResource("Animation_t0521")
+}
+
+[node name="body_grey" type="Node2D" unique_id=620159818]
+script = ExtResource("1_y3d0w")
+bounds = Rect2(-69, -49.58, 138, 95.08)
+
+[node name="body" type="Node2D" parent="." unique_id=35444679]
+script = ExtResource("2_6kf38")
+
+[node name="0" type="Sprite2D" parent="body" unique_id=938630326]
+texture = SubResource("AtlasTexture_kbsbt")
+offset = Vector2(0, -2)
+
+[node name="shade" type="Node2D" parent="." unique_id=2115589080]
+script = ExtResource("2_6kf38")
+
+[node name="0" type="Sprite2D" parent="shade" unique_id=1096637693]
+position = Vector2(0, -3.58)
+scale = Vector2(0.951, 0.951)
+texture = SubResource("AtlasTexture_8gbto")
+offset = Vector2(0.5, -0.5)
+
+[node name="light" type="Node2D" parent="." unique_id=1109336427]
+script = ExtResource("2_6kf38")
+
+[node name="0" type="Sprite2D" parent="light" unique_id=1722432409]
+position = Vector2(-10.37, -9.25)
+texture = SubResource("AtlasTexture_4mt8p")
+offset = Vector2(-2, -8)
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=42732579]
+libraries/ = SubResource("AnimationLibrary_ao826")

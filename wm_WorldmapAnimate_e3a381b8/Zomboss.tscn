@@ -1,0 +1,970 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_b5drm"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_mw5ta"]
+[ext_resource type="Texture2D" path="res://art/_textures/9eccddf7-e0b6-49c2-8237-df77f6ac45d6.png" id="3_ur88h"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/ReflashesLocked.tscn" id="4_rlerm"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/ReflashesFinished.tscn" id="5_0d2yb"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/FireLight.tscn" id="6_n7h64"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/Sparkles.tscn" id="7_mpw7j"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/fire.tscn" id="8_liotb"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/FireFlies.tscn" id="9_hrqok"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_e3a381b8/Ball.tscn" id="10_y63ua"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l3ckd"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1, 1697, 1294, 846)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnf6d"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1, 849, 1294, 846)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb2v7"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1, 1, 1345, 846)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlud2"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1, 2545, 752, 450)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vaow0"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(755, 2545, 752, 450)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yt1h"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1685, 715, 31, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2ihw"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1550, 564, 45, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w84sh"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1598, 577, 85, 184)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqenl"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1432, 1, 64, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ap3ug"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1597, 394, 123, 181)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asrgd"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1473, 577, 123, 181)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pc5a"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1348, 525, 123, 181)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mema"]
+atlas = ExtResource("3_ur88h")
+region = Rect2(1297, 849, 555, 213)
+
+[sub_resource type="Animation" id="Animation_tnl3f"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("islandLocked:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Reflashes:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FireFlies:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FireFlies1:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FireFlies2:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("FireFlies3:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("FireFlies4:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("FireFlies5:display")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("tableL:display")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("tableR:display")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("unlockedLight:display")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("BallL:display")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BallR:display")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("unlockedLight:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_j5s5s"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("islandLocked:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Reflashes:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FireFlies:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FireFlies1:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FireFlies2:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("FireFlies3:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("FireFlies4:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("FireFlies5:display")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("tableL:display")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("tableR:display")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("unlockedLight:display")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("BallL:display")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BallR:display")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("unlockedLight:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_indev"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BG:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("islandLocked:display")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Reflashes:display")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FireFlies:display")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FireFlies1:display")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FireFlies2:display")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("FireFlies3:display")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("FireFlies4:display")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("FireFlies5:display")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("tableL:display")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("tableR:display")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("unlockedLight:display")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("BallL:display")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BallR:display")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("unlockedLight:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.16666667, 0.23333333, 0.3, 0.36666667, 0.43333334, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.96666664, 1.0666667, 1.1333333, 1.2, 1.2666667, 1.3333334, 1.4, 1.6, 1.6666666, 1.7333333, 1.8, 1.8666667, 1.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.99269056), Color(1, 1, 1, 0.9782747), Color(1, 1, 1, 0.95463574), Color(1, 1, 1, 0.9200822), Color(1, 1, 1, 0.8733442), Color(1, 1, 1, 0.81541646), Color(1, 1, 1, 0.65426695), Color(1, 1, 1, 0.601936), Color(1, 1, 1, 0.5611847), Color(1, 1, 1, 0.53232515), Color(1, 1, 1, 0.5134384), Color(1, 1, 1, 0.50076157), Color(1, 1, 1, 0.50316024), Color(1, 1, 1, 0.5134384), Color(1, 1, 1, 0.53232515), Color(1, 1, 1, 0.5611847), Color(1, 1, 1, 0.601936), Color(1, 1, 1, 0.6542669), Color(1, 1, 1, 0.84573305), Color(1, 1, 1, 0.898064), Color(1, 1, 1, 0.9388153), Color(1, 1, 1, 0.96767485), Color(1, 1, 1, 0.9865616), Color(1, 1, 1, 0.99923843)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b5b7i"]
+_data = {
+&"Idle_Finished": SubResource("Animation_tnl3f"),
+&"Idle_Locked": SubResource("Animation_j5s5s"),
+&"Idle_Unlock": SubResource("Animation_indev")
+}
+
+[node name="Zomboss" type="Node2D" unique_id=1571385814]
+script = ExtResource("1_b5drm")
+bounds = Rect2(-673.82, -538.02, 1345, 845.5)
+
+[node name="BG" type="Node2D" parent="." unique_id=1030360179]
+position = Vector2(-1.31775, -115.2729)
+script = ExtResource("2_mw5ta")
+display = 2
+
+[node name="0" type="Sprite2D" parent="BG" unique_id=604066469]
+visible = false
+position = Vector2(-5.08, 0)
+texture = SubResource("AtlasTexture_l3ckd")
+
+[node name="1" type="Sprite2D" parent="BG" unique_id=1885706184]
+visible = false
+position = Vector2(-5.09, 0)
+texture = SubResource("AtlasTexture_tnf6d")
+
+[node name="2" type="Sprite2D" parent="BG" unique_id=337854271]
+texture = SubResource("AtlasTexture_hb2v7")
+
+[node name="islandLocked" type="Node2D" parent="." unique_id=1149047812]
+position = Vector2(-3.9547, 29.83505)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" type="Sprite2D" parent="islandLocked" unique_id=2014666772]
+visible = false
+position = Vector2(0.85, -4.24)
+texture = SubResource("AtlasTexture_nlud2")
+
+[node name="1" type="Sprite2D" parent="islandLocked" unique_id=849536693]
+visible = false
+position = Vector2(0.31, -5.74)
+texture = SubResource("AtlasTexture_vaow0")
+
+[node name="Reflashes" type="Node2D" parent="." unique_id=505077059]
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="Reflashes" unique_id=668182283 instance=ExtResource("4_rlerm")]
+autoplay = &"idle"
+
+[node name="1" parent="Reflashes" unique_id=1442004191 instance=ExtResource("5_0d2yb")]
+visible = false
+autoplay = &"idle"
+
+[node name="flag_smallL" type="Node2D" parent="." unique_id=935943431]
+position = Vector2(0, -468)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="flag_smallL" unique_id=2002145484]
+position = Vector2(-60.51, 16.78)
+texture = SubResource("AtlasTexture_4yt1h")
+
+[node name="flag_smallR" type="Node2D" parent="." unique_id=310557672]
+position = Vector2(0, -468)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="flag_smallR" unique_id=885705362]
+position = Vector2(60.51, 16.78)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_4yt1h")
+
+[node name="stick_hL" type="Node2D" parent="." unique_id=2103024536]
+position = Vector2(0, -468)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="stick_hL" unique_id=1144201526]
+position = Vector2(-55.84, -1.54)
+texture = SubResource("AtlasTexture_b2ihw")
+
+[node name="stick_hR" type="Node2D" parent="." unique_id=644932965]
+position = Vector2(0, -468)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="stick_hR" unique_id=1841237345]
+position = Vector2(55.84, -1.54)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_b2ihw")
+
+[node name="flL" type="Node2D" parent="." unique_id=1783088725]
+position = Vector2(-324.7506, -244.3143)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="flL" unique_id=504167360 instance=ExtResource("6_n7h64")]
+position = Vector2(22.67, -105.34)
+scale = Vector2(0.5639, 0.5639)
+autoplay = &"idle"
+
+[node name="spkBL" type="Node2D" parent="." unique_id=444495869]
+position = Vector2(-324.7506, -244.3143)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="spkBL" unique_id=1315491133 instance=ExtResource("7_mpw7j")]
+position = Vector2(17.95, -101.08)
+scale = Vector2(0.2143, 0.2143)
+autoplay = &"Idle"
+
+[node name="fireSL" type="Node2D" parent="." unique_id=305256097]
+position = Vector2(-324.7506, -244.3143)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="fireSL" unique_id=663640120 instance=ExtResource("8_liotb")]
+position = Vector2(13.99, -78.32)
+rotation = 1.8132225
+scale = Vector2(0.18870002, 0.18870002)
+autoplay = &"fire"
+
+[node name="stickL" type="Node2D" parent="." unique_id=1329308039]
+position = Vector2(-324.7506, -244.3143)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="stickL" unique_id=231343593]
+texture = SubResource("AtlasTexture_w84sh")
+
+[node name="flag_bigL" type="Node2D" parent="." unique_id=2118095171]
+position = Vector2(-324.7506, -244.3143)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="flag_bigL" unique_id=807848462]
+position = Vector2(-12.94, -8.39)
+texture = SubResource("AtlasTexture_mqenl")
+
+[node name="flR" type="Node2D" parent="." unique_id=1886176489]
+position = Vector2(324.75, -244.3143)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="flR" unique_id=2105920479 instance=ExtResource("6_n7h64")]
+position = Vector2(22.67, -105.34)
+scale = Vector2(0.5639, 0.5639)
+autoplay = &"idle"
+
+[node name="spkBR" type="Node2D" parent="." unique_id=2084449152]
+position = Vector2(324.75, -244.3143)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="spkBR" unique_id=2070043008 instance=ExtResource("7_mpw7j")]
+position = Vector2(17.95, -101.08)
+scale = Vector2(0.2143, 0.2143)
+autoplay = &"Idle"
+
+[node name="fireSR" type="Node2D" parent="." unique_id=336900480]
+position = Vector2(324.75, -244.3143)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="fireSR" unique_id=255668390 instance=ExtResource("8_liotb")]
+position = Vector2(13.99, -78.32)
+rotation = 1.8132225
+scale = Vector2(0.18870002, 0.18870002)
+autoplay = &"fire"
+
+[node name="stickR" type="Node2D" parent="." unique_id=1813475794]
+position = Vector2(324.75, -244.3143)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="stickR" unique_id=107013062]
+texture = SubResource("AtlasTexture_w84sh")
+
+[node name="flag_bigR" type="Node2D" parent="." unique_id=8125967]
+position = Vector2(324.75, -244.3143)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="flag_bigR" unique_id=1737854783]
+position = Vector2(-12.94, -8.39)
+texture = SubResource("AtlasTexture_mqenl")
+
+[node name="FireFlies" type="Node2D" parent="." unique_id=1577785561]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies" unique_id=662345821 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(-443.2, -248.49)
+autoplay = &"Idle"
+
+[node name="FireFlies1" type="Node2D" parent="." unique_id=1360249611]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies1" unique_id=1165851920 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(-256.45, -229.14)
+rotation = -1.0862929
+autoplay = &"Idle"
+
+[node name="FireFlies2" type="Node2D" parent="." unique_id=1129962445]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies2" unique_id=302693010 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(360.92, -242.2)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+autoplay = &"Idle"
+
+[node name="FireFlies3" type="Node2D" parent="." unique_id=1522301460]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies3" unique_id=1583976948 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(210.14, -258.82)
+rotation = -1.8994418
+autoplay = &"Idle"
+
+[node name="FireFlies4" type="Node2D" parent="." unique_id=1106520232]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies4" unique_id=1612990826 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(65.3, -217.27)
+autoplay = &"Idle"
+
+[node name="FireFlies5" type="Node2D" parent="." unique_id=2005231385]
+scale = Vector2(0.7901, 0.7901)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="FireFlies5" unique_id=1348526134 instance=ExtResource("9_hrqok")]
+visible = false
+position = Vector2(-132.97, -261.19)
+scale = Vector2(1, -1)
+autoplay = &"Idle"
+
+[node name="spkL" type="Node2D" parent="." unique_id=1278146353]
+position = Vector2(-156.55556, -89.99575)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="spkL" unique_id=240955350 instance=ExtResource("7_mpw7j")]
+position = Vector2(13.77, -112.64)
+scale = Vector2(0.5804, 0.5804)
+autoplay = &"Idle"
+
+[node name="fireL" type="Node2D" parent="." unique_id=1861082873]
+position = Vector2(-156.55556, -89.99575)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="fireL" unique_id=511507496 instance=ExtResource("8_liotb")]
+position = Vector2(16.1, -61.93)
+rotation = 1.5707964
+scale = Vector2(0.454, 0.5254)
+autoplay = &"fire"
+
+[node name="tableL" type="Node2D" parent="." unique_id=665323111]
+position = Vector2(-156.55556, -89.99575)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="tableL" unique_id=8589993]
+texture = SubResource("AtlasTexture_ap3ug")
+
+[node name="1" type="Sprite2D" parent="tableL" unique_id=774880233]
+visible = false
+texture = SubResource("AtlasTexture_asrgd")
+
+[node name="2" type="Sprite2D" parent="tableL" unique_id=2026485955]
+visible = false
+texture = SubResource("AtlasTexture_5pc5a")
+
+[node name="spkR" type="Node2D" parent="." unique_id=1140795202]
+position = Vector2(145.4876, -89.99575)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="spkR" unique_id=2043791881 instance=ExtResource("7_mpw7j")]
+position = Vector2(13.77, -112.64)
+scale = Vector2(0.5804, 0.5804)
+autoplay = &"Idle"
+
+[node name="fireR" type="Node2D" parent="." unique_id=718213159]
+position = Vector2(145.4876, -89.99575)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" parent="fireR" unique_id=1066124938 instance=ExtResource("8_liotb")]
+position = Vector2(16.1, -61.93)
+rotation = 1.5707964
+scale = Vector2(0.454, 0.5254)
+autoplay = &"fire"
+
+[node name="tableR" type="Node2D" parent="." unique_id=2005506938]
+position = Vector2(145.4876, -89.99575)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+
+[node name="0" type="Sprite2D" parent="tableR" unique_id=203954960]
+texture = SubResource("AtlasTexture_ap3ug")
+
+[node name="1" type="Sprite2D" parent="tableR" unique_id=1118025897]
+visible = false
+texture = SubResource("AtlasTexture_asrgd")
+
+[node name="2" type="Sprite2D" parent="tableR" unique_id=783348870]
+visible = false
+texture = SubResource("AtlasTexture_5pc5a")
+
+[node name="unlockedLight" type="Node2D" parent="." unique_id=2113541628]
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" type="Sprite2D" parent="unlockedLight" unique_id=175897170]
+visible = false
+position = Vector2(-2.87, 8.18)
+texture = SubResource("AtlasTexture_7mema")
+
+[node name="BallL" type="Node2D" parent="." unique_id=1119827223]
+position = Vector2(-375.4037, -121.18785)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="BallL" unique_id=693559924 instance=ExtResource("10_y63ua")]
+visible = false
+autoplay = &"idle"
+
+[node name="BallR" type="Node2D" parent="." unique_id=1983639769]
+position = Vector2(364.6907, -121.18785)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+script = ExtResource("2_mw5ta")
+display = -1
+
+[node name="0" parent="BallR" unique_id=1885941116 instance=ExtResource("10_y63ua")]
+visible = false
+autoplay = &"idle"
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=270025812]
+libraries/ = SubResource("AnimationLibrary_b5b7i")

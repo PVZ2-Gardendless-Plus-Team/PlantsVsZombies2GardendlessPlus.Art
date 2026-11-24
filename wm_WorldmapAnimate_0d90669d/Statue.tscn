@@ -1,0 +1,345 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_2psnb"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_ydvv6"]
+[ext_resource type="Texture2D" path="res://art/_textures/67191340-0bb7-4872-927c-add3357180b8.png" id="3_k73s0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uvii"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(1251, 1479, 82, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bbcm"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(270, 1546, 84, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45psm"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(835, 1490, 105, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2s6l"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(509, 1616, 109, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nvrpd"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(154, 1997, 114, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ov3dr"]
+atlas = ExtResource("3_k73s0")
+region = Rect2(1162, 1215, 181, 187)
+
+[sub_resource type="Animation" id="Animation_lg5dv"]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lf0:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-13.3, -67.375)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("lf0:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.23333333, 0.26666668, 0.33333334, 0.5, 0.56666666, 0.6, 0.6666667, 0.73333335, 0.8, 0.9, 1, 1.1, 1.1666666, 1.2333333, 1.3, 1.5333333, 1.6333333, 1.7, 1.8, 1.9, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-2.6853025, -2.6863747, -2.6899338, -2.6965778, -2.7012625, -2.7069569, -2.7213278, -2.7660398, -2.7804108, -2.786105, -2.7945163, -2.7995586, -2.8018034, -2.801525, -2.7984264, -2.7919328, -2.7853668, -2.7766933, -2.7660398, -2.7213278, -2.7060764, -2.698498, -2.6906807, -2.6865447, -2.6853025]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("lf0:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("lf0:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("lf1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-8.875, -37.65)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("lf1:rotation")
+tracks/5/interp = 3
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.3, 0.36666667, 0.43333334, 0.56666666, 0.6333333, 0.7, 0.76666665, 0.8333333, 0.9, 0.96666664, 1.0333333, 1.1, 1.1666666, 1.2333333, 1.3, 1.3666667, 1.4333333, 1.5666667, 1.6333333, 1.7, 1.7666667, 1.8333334, 1.9, 1.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.908429, 2.9073632, 2.9038975, 2.897529, 2.8877976, 2.8814807, 2.8657207, 2.8461878, 2.802071, 2.7825382, 2.7667782, 2.7551267, 2.747156, 2.7422948, 2.7400868, 2.7400868, 2.7422948, 2.747156, 2.7551267, 2.7667782, 2.7825382, 2.802071, 2.8461878, 2.8657207, 2.8814807, 2.8931322, 2.9011033, 2.9059641, 2.9081721]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("lf1:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("lf1:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("lf2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(20.55, -16.45)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("lf2:rotation")
+tracks/9/interp = 3
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.16666667, 0.26666668, 0.36666667, 0.46666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 0.96666664, 1.0333333, 1.1, 1.2333333, 1.3, 1.3666667, 1.4333333, 1.5, 1.5666667, 1.6333333, 1.7, 1.7333333, 1.7666667, 1.8333334, 1.9, 1.9666667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.026085692, 0.044958707, 0.06939731, 0.0900557, 0.106879085, 0.119623415, 0.12566592, 0.12947188, 0.13080542, 0.12978947, 0.12648514, 0.120413244, 0.1111352, 0.1051127, 0.090086915, 0.07146375, 0.029402317, 0.01077915, -0.004246632, -0.015355238, -0.022954917, -0.027589463, -0.02969454, -0.029225918, -0.02718973, -0.023956992, -0.014351882, -0.0010037273, 0.015988626, 0.026085692]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("lf2:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("lf2:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("lf3:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(54.4, -52.825)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("lf3:rotation")
+tracks/13/interp = 3
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.16666667, 0.23333333, 0.3, 0.36666667, 0.43333334, 0.5, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334, 1, 1.1, 1.1666666, 1.2333333, 1.3, 1.3333334, 1.3666667, 1.4, 1.4333333, 1.4666667, 1.5, 1.5666667, 1.6333333, 1.6666666, 1.7, 1.7333333, 1.7666667, 1.8, 1.8333334, 1.8666667, 1.9333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.013899802, -0.012136065, -0.008732796, -0.0031803807, 0.0048381477, 0.0155997025, 0.029393176, 0.04590149, 0.09210518, 0.1086135, 0.12240698, 0.13316853, 0.14118706, 0.14673947, 0.15113963, 0.15190646, 0.15038389, 0.14533001, 0.14118706, 0.13589534, 0.1292428, 0.121156625, 0.111610666, 0.100749634, 0.07561558, 0.04943497, 0.037257046, 0.026396003, 0.016850052, 0.0087638805, 0.0021113371, -0.0031803807, -0.0073233284, -0.012377212, -0.013899802]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("lf3:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.99999994, 0.99999994)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("lf3:skew")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("lf4:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12.65, -42.7)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("lf4:rotation")
+tracks/17/interp = 3
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.4, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.8, 0.9, 0.93333334, 0.96666664, 1, 1.0333333, 1.0666667, 1.1, 1.1333333, 1.1666666, 1.2, 1.2666667, 1.3333334, 1.4, 1.4666667, 1.5333333, 1.6, 1.6666666, 1.7333333, 1.8, 1.8666667, 1.9333333, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-3.11225, -3.093377, -3.0766873, -3.0616157, -3.0482802, -3.036666, -3.0267682, -3.0187125, -3.01267, -3.008864, -3.0075305, -3.009055, -3.0140133, -3.0180109, -3.0231245, -3.0294147, -3.0370464, -3.0460835, -3.0567052, -3.0686302, -3.0819502, -3.1121862, 3.123495, 3.10887, 3.0955503, 3.0836253, 3.0730035, 3.0639665, 3.0563345, 3.0500443, 3.044931, 3.0409331, 3.035975, 3.0344503, 3.0361884, 3.041149, 3.0490243, 3.0595236, 3.0724237, 3.087561, 3.1049416, 3.124585, -3.136848, -3.11225]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("lf4:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("lf4:skew")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c2jn3"]
+_data = {
+&"Idle": SubResource("Animation_lg5dv")
+}
+
+[node name="Statue" type="Node2D" unique_id=839187669]
+script = ExtResource("1_2psnb")
+bounds = Rect2(-113.25, -148.86, 260.71, 186.5)
+
+[node name="lf0" type="Node2D" parent="." unique_id=2015759452]
+position = Vector2(-13.3, -67.375)
+rotation = -2.6853025
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="lf0" unique_id=202369954]
+position = Vector2(39.93, 7.65)
+rotation = 2.6853635
+texture = SubResource("AtlasTexture_1uvii")
+
+[node name="lf1" type="Node2D" parent="." unique_id=1563434186]
+position = Vector2(-8.875, -37.65)
+rotation = 2.908429
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="lf1" unique_id=298137096]
+position = Vector2(36.47, 3.7)
+rotation = -2.9084167
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_2bbcm")
+
+[node name="lf2" type="Node2D" parent="." unique_id=1570016803]
+position = Vector2(20.55, -16.45)
+rotation = 0.026085692
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="lf2" unique_id=1350033991]
+position = Vector2(46.97, -12.63)
+rotation = -0.026005406
+texture = SubResource("AtlasTexture_45psm")
+
+[node name="lf3" type="Node2D" parent="." unique_id=209953933]
+position = Vector2(54.4, -52.825)
+rotation = -0.013899802
+scale = Vector2(0.99999994, 0.99999994)
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="lf3" unique_id=613164311]
+position = Vector2(39, -13.09)
+rotation = 0.013962634
+texture = SubResource("AtlasTexture_x2s6l")
+
+[node name="lf4" type="Node2D" parent="." unique_id=178895857]
+position = Vector2(-12.65, -42.7)
+rotation = -3.11225
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="lf4" unique_id=1828345231]
+position = Vector2(43.89, 9.25)
+rotation = 3.112271
+scale = Vector2(0.99999994, 0.99999994)
+texture = SubResource("AtlasTexture_nvrpd")
+offset = Vector2(1, 0)
+
+[node name="main" type="Node2D" parent="." unique_id=150272639]
+script = ExtResource("2_ydvv6")
+
+[node name="0" type="Sprite2D" parent="main" unique_id=967091543]
+position = Vector2(0, -55.61)
+texture = SubResource("AtlasTexture_ov3dr")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=404920045]
+libraries/ = SubResource("AnimationLibrary_c2jn3")

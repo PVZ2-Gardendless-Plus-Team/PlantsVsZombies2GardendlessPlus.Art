@@ -1,0 +1,142 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_62ykc"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_87m25"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_81b1f640/portal.tscn" id="3_2vm4f"]
+[ext_resource type="PackedScene" path="res://art/wm_WorldmapAnimate_81b1f640/Leaves.tscn" id="4_mbmt0"]
+[ext_resource type="Texture2D" path="res://art/_textures/cb4474b6-08bb-4ce9-a3c9-29d54c51436e.png" id="5_08wpl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fon13"]
+atlas = ExtResource("5_08wpl")
+region = Rect2(1485, 1143, 170, 103)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1sf5"]
+atlas = ExtResource("5_08wpl")
+region = Rect2(1824, 1437, 158, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5h77r"]
+atlas = ExtResource("5_08wpl")
+region = Rect2(963, 688, 358, 453)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5uix"]
+atlas = ExtResource("5_08wpl")
+region = Rect2(1824, 1248, 90, 187)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l37c"]
+atlas = ExtResource("5_08wpl")
+region = Rect2(2005, 1253, 37, 195)
+
+[sub_resource type="Animation" id="Animation_6l08v"]
+length = 0.03333333333333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_207f2"]
+_data = {
+&"idle": SubResource("Animation_6l08v")
+}
+
+[node name="Gargantuar" type="Node2D" unique_id=2001052982]
+script = ExtResource("1_62ykc")
+bounds = Rect2(-225.01, -311.24, 453.34, 563.59)
+
+[node name="portal" type="Node2D" parent="." unique_id=564043210]
+script = ExtResource("2_87m25")
+
+[node name="0" parent="portal" unique_id=1346787433 instance=ExtResource("3_2vm4f")]
+position = Vector2(0, 166.15)
+rotation = 1.5707964
+scale = Vector2(5.1093, 7.0913)
+autoplay = &"Idle"
+
+[node name="Leaves" type="Node2D" parent="." unique_id=1579511560]
+script = ExtResource("2_87m25")
+
+[node name="0" parent="Leaves" unique_id=1270020744 instance=ExtResource("4_mbmt0")]
+position = Vector2(-128.88, 7.07)
+rotation = 1.2767084
+scale = Vector2(0.763, 0.763)
+autoplay = &"idle0"
+
+[node name="Leaves1" type="Node2D" parent="." unique_id=1965779449]
+script = ExtResource("2_87m25")
+
+[node name="0" parent="Leaves1" unique_id=1167522973 instance=ExtResource("4_mbmt0")]
+position = Vector2(132.21, 13.72)
+rotation = 1.8453366
+scale = Vector2(0.8334, -0.8334)
+autoplay = &"idle0"
+
+[node name="bush11" type="Node2D" parent="." unique_id=2076853433]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="bush11" unique_id=2063533436]
+position = Vector2(75.69, -162.57)
+rotation = -2.8794441
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_fon13")
+
+[node name="bush01" type="Node2D" parent="." unique_id=1615782789]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="bush01" unique_id=1547514508]
+position = Vector2(101.45, -101.01)
+rotation = 0.34382987
+texture = SubResource("AtlasTexture_n1sf5")
+
+[node name="bush0" type="Node2D" parent="." unique_id=1517002954]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="bush0" unique_id=393994591]
+position = Vector2(-112.25, -99.34)
+rotation = -0.4749041
+texture = SubResource("AtlasTexture_n1sf5")
+
+[node name="bush1" type="Node2D" parent="." unique_id=1814335374]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="bush1" unique_id=1339055039]
+position = Vector2(-24.93, -154.26)
+texture = SubResource("AtlasTexture_fon13")
+
+[node name="Leaves2" type="Node2D" parent="." unique_id=1151713768]
+script = ExtResource("2_87m25")
+
+[node name="0" parent="Leaves2" unique_id=356033224 instance=ExtResource("4_mbmt0")]
+position = Vector2(-114.75, -72.76)
+rotation = -0.38170353
+scale = Vector2(0.7782999, 0.7782999)
+autoplay = &"idle0"
+
+[node name="Leaves3" type="Node2D" parent="." unique_id=1204377911]
+script = ExtResource("2_87m25")
+
+[node name="0" parent="Leaves3" unique_id=855315446 instance=ExtResource("4_mbmt0")]
+position = Vector2(110.59, -129.3)
+rotation = -2.7377234
+scale = Vector2(0.7394, -0.7394)
+autoplay = &"idle0"
+
+[node name="main" type="Node2D" parent="." unique_id=428927345]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="main" unique_id=1202788170]
+position = Vector2(-8.21, -84.74)
+texture = SubResource("AtlasTexture_5h77r")
+
+[node name="vine1" type="Node2D" parent="." unique_id=686078407]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="vine1" unique_id=1384484261]
+position = Vector2(99.49, 158.85)
+texture = SubResource("AtlasTexture_g5uix")
+
+[node name="vine2" type="Node2D" parent="." unique_id=1946306950]
+script = ExtResource("2_87m25")
+
+[node name="0" type="Sprite2D" parent="vine2" unique_id=1364538531]
+position = Vector2(-104.43, 95.58)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_2l37c")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1918585131]
+libraries/ = SubResource("AnimationLibrary_207f2")

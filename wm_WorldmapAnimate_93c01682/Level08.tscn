@@ -1,0 +1,132 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_mkomy"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_c0n7i"]
+[ext_resource type="Texture2D" path="res://art/_textures/785aae1d-422e-4db9-8ea3-95d351e64b22.png" id="3_d7w8v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rujkn"]
+atlas = ExtResource("3_d7w8v")
+region = Rect2(1059, 676, 185, 117)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knjqd"]
+atlas = ExtResource("3_d7w8v")
+region = Rect2(1059, 795, 208, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxa5l"]
+atlas = ExtResource("3_d7w8v")
+region = Rect2(1702, 90, 92, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oojb8"]
+atlas = ExtResource("3_d7w8v")
+region = Rect2(1067, 296, 46, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yny8"]
+atlas = ExtResource("3_d7w8v")
+region = Rect2(1246, 709, 116, 77)
+
+[sub_resource type="Animation" id="Animation_fjkt0"]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("flower_green_heart:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-51.10205, -19.07525)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("flower_green_heart:rotation")
+tracks/1/interp = 3
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.76666665, 0.9, 1.0333333, 1.2, 1.3666667, 1.5333333, 1.9333333, 2.1, 2.2666667, 2.4333334, 2.6, 2.7666667, 2.9333334, 3.1333334, 3.3333333, 3.5, 3.6666667, 3.8, 3.9333334, 4.0666666, 4.2, 4.3333335, 4.4666667, 4.6, 4.866667, 5, 5.1, 5.2, 5.3333335, 5.4666667, 5.6, 5.733333, 5.9, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [3.1415927, 3.1401575, 3.1355155, 3.1270735, 3.1166885, 3.1059818, 3.0928247, 3.0728858, 3.0491047, 3.0224383, 2.9539225, 2.9282637, 2.9060714, 2.887596, 2.8731265, 2.862139, 2.8541758, 2.8483844, 2.845918, 2.8463545, 2.8503172, 2.8565068, 2.8659186, 2.8789055, 2.8958597, 2.9170895, 2.942524, 2.971112, 3.0309093, 3.0579062, 3.0758457, 3.0914922, 3.1084466, 3.1214333, 3.130845, 3.1370347, 3.1409976, 3.1415927]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("flower_green_heart:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.9154, -0.9154)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("flower_green_heart:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i6ijk"]
+_data = {
+&"idle": SubResource("Animation_fjkt0")
+}
+
+[node name="Level08" type="Node2D" unique_id=1137191592]
+script = ExtResource("1_mkomy")
+bounds = Rect2(-120.78, -63.87, 208, 173.74)
+
+[node name="island" type="Node2D" parent="." unique_id=1978338154]
+script = ExtResource("2_c0n7i")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=243340316]
+position = Vector2(-16.78, 51.62)
+scale = Vector2(0.5772, 0.7803)
+texture = SubResource("AtlasTexture_rujkn")
+
+[node name="top" type="Node2D" parent="." unique_id=1725661773]
+script = ExtResource("2_c0n7i")
+
+[node name="0" type="Sprite2D" parent="top" unique_id=2124910763]
+position = Vector2(-16.78, 0.83)
+scale = Vector2(0.5834, 0.647)
+texture = SubResource("AtlasTexture_knjqd")
+
+[node name="flower_green" type="Node2D" parent="." unique_id=640757993]
+position = Vector2(-51.10205, -19.07525)
+rotation = -3.1415927
+scale = Vector2(0.9154, -0.9154)
+script = ExtResource("2_c0n7i")
+
+[node name="0" type="Sprite2D" parent="flower_green" unique_id=183314658]
+position = Vector2(6.84, -10.95)
+texture = SubResource("AtlasTexture_lxa5l")
+
+[node name="flower_green_heart" type="Node2D" parent="." unique_id=1213044060]
+position = Vector2(-51.10205, -19.07525)
+rotation = 3.1415927
+scale = Vector2(0.9154, -0.9154)
+script = ExtResource("2_c0n7i")
+
+[node name="0" type="Sprite2D" parent="flower_green_heart" unique_id=1124246000]
+position = Vector2(16.87, -21.89)
+texture = SubResource("AtlasTexture_oojb8")
+
+[node name="rock0" type="Node2D" parent="." unique_id=440460234]
+script = ExtResource("2_c0n7i")
+
+[node name="0" type="Sprite2D" parent="rock0" unique_id=1892528602]
+position = Vector2(-53.2, -2.09)
+scale = Vector2(0.3117, 0.3852)
+texture = SubResource("AtlasTexture_5yny8")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1105928149]
+libraries/ = SubResource("AnimationLibrary_i6ijk")

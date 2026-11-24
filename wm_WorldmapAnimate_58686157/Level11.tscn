@@ -1,0 +1,67 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ij2m5"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_65xnc"]
+[ext_resource type="Texture2D" path="res://art/_textures/04ee9a11-fd56-4b52-ae53-c22145d1ddc2.png" id="3_6ut86"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twfpv"]
+atlas = ExtResource("3_6ut86")
+region = Rect2(1908, 941, 87, 85)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cbsj"]
+atlas = ExtResource("3_6ut86")
+region = Rect2(1871, 1266, 80, 70)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t3tx"]
+atlas = ExtResource("3_6ut86")
+region = Rect2(1356, 1116, 178, 95)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qdbi"]
+atlas = ExtResource("3_6ut86")
+region = Rect2(1847, 1168, 120, 60)
+
+[sub_resource type="Animation" id="Animation_7covq"]
+length = 4.633333333333334
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vsdao"]
+_data = {
+&"idle": SubResource("Animation_7covq")
+}
+
+[node name="Level11" type="Node2D" unique_id=1629646171]
+script = ExtResource("1_ij2m5")
+bounds = Rect2(-59.75, -102.35, 200.15, 214.12)
+
+[node name="island1" type="Node2D" parent="." unique_id=414113281]
+script = ExtResource("2_65xnc")
+
+[node name="0" type="Sprite2D" parent="island1" unique_id=676340315]
+position = Vector2(0, 69.53)
+scale = Vector2(0.4901, 0.4901)
+texture = SubResource("AtlasTexture_twfpv")
+
+[node name="island" type="Node2D" parent="." unique_id=1192306411]
+script = ExtResource("2_65xnc")
+
+[node name="0" type="Sprite2D" parent="island" unique_id=670870429]
+position = Vector2(0, 37.7)
+scale = Vector2(0.7788, 0.7788)
+texture = SubResource("AtlasTexture_7cbsj")
+
+[node name="lines3" type="Node2D" parent="." unique_id=917049868]
+script = ExtResource("2_65xnc")
+
+[node name="0" type="Sprite2D" parent="lines3" unique_id=1482206434]
+position = Vector2(51.4, -54.85)
+texture = SubResource("AtlasTexture_4t3tx")
+
+[node name="islandFace" type="Node2D" parent="." unique_id=1426406361]
+script = ExtResource("2_65xnc")
+
+[node name="0" type="Sprite2D" parent="islandFace" unique_id=1900292310]
+position = Vector2(0, 2.43)
+scale = Vector2(0.8303, 0.8303)
+texture = SubResource("AtlasTexture_7qdbi")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1892587791]
+libraries/ = SubResource("AnimationLibrary_vsdao")

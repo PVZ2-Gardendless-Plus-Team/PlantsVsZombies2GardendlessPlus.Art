@@ -1,0 +1,67 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://core/art/armature.gd" id="1_ifobo"]
+[ext_resource type="Script" path="res://core/art/rig_slot.gd" id="2_dmbwj"]
+[ext_resource type="Texture2D" path="res://art/_textures/67191340-0bb7-4872-927c-add3357180b8.png" id="3_e8e8j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkgvi"]
+atlas = ExtResource("3_e8e8j")
+region = Rect2(1667, 1556, 34, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfd2i"]
+atlas = ExtResource("3_e8e8j")
+region = Rect2(620, 1661, 33, 35)
+
+[sub_resource type="Animation" id="Animation_apuau"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("star:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_y6q4a"]
+length = 0.03333333333333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("star:display")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5vepu"]
+_data = {
+&"Pink": SubResource("Animation_apuau"),
+&"Red": SubResource("Animation_y6q4a")
+}
+
+[node name="Star" type="Node2D" unique_id=1248687808]
+script = ExtResource("1_ifobo")
+bounds = Rect2(-16.5, -17.5, 33, 35)
+
+[node name="star" type="Node2D" parent="." unique_id=1615547873]
+script = ExtResource("2_dmbwj")
+display = 1
+
+[node name="0" type="Sprite2D" parent="star" unique_id=39901371]
+visible = false
+texture = SubResource("AtlasTexture_kkgvi")
+
+[node name="1" type="Sprite2D" parent="star" unique_id=1485433480]
+texture = SubResource("AtlasTexture_vfd2i")
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1111499085]
+libraries/ = SubResource("AnimationLibrary_5vepu")
